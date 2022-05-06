@@ -1,0 +1,73 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="2/6/2021 12:33:52 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="P10974318-1"
+  DTS:CreatorName="P10974318-1\10974318"
+  DTS:DTSID="{59F487F0-480C-4E85-A163-C5A0F654E07B}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.180"
+  DTS:LocaleID="7177"
+  DTS:ObjectName="S1_Recreate_DB_Objects"
+  DTS:PackageType="5"
+  DTS:VersionBuild="9"
+  DTS:VersionGUID="{67F7AF7A-DD40-4A1F-8334-54FB5D3DABB6}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[S1_Create_Objects.sql]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{0B6C6839-CFB3-4F8B-80CC-E7EC1FB62FEF}"
+      DTS:ObjectName="S1_Create_Objects.sql">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[$Project::SQLScripts_Folder] + "S1_Create_Objects.sql"</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\Llewellyn\Desktop\Honours Resources\DATA WAREHOUSING\PROJECT\DW2022\SQLScripts\S1_Create_Objects.sql" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Execute SQL Task - Recreate Stage1 Objects"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{C906D627-34CC-4AEB-ACC8-4E4523267F29}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute SQL Task - Recreate Stage1 Objects"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{64878C56-8722-4A7B-9DFA-0F9E0AF988BD}"
+          SQLTask:SqlStmtSourceType="FileConnection"
+          SQLTask:SqlStatementSource="S1_Create_Objects.sql" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="289.6,41.6"
+          Id="Package\Execute SQL Task - Recreate Stage1 Objects"
+          TopLeft="112,65" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

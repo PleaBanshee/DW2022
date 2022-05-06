@@ -1,0 +1,580 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="09f71b16-8028-438d-8c28-983c88fb3f7d" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Material Management</ID>
+  <Name>Material Management</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="18" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-15103" scrolltop="-1094" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="87" x="19950" y="10901" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Material Dimension" left="-17763" top="7247" logicalid="8" controlid="1" masterid="0" hint1="0" hint2="0" width="6670" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00000e1a000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Material" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Stock Take Fact" left="-8371" top="6737" logicalid="9" controlid="2" masterid="0" hint1="0" hint2="0" width="8477" height="8619" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00001d210000ab210000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Stock_Take_Fact" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Stock Take Indicators Dimension" left="-2457" top="10527" logicalid="11" controlid="4" masterid="0" hint1="0" hint2="0" width="8890" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000ba22000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Stock_Take_Indicators" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="-11393" top="7608" logicalid="12" controlid="5" masterid="0" hint1="0" hint2="0" width="3322" height="1049" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_Stock_Take_Fact_Material]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Oblique" sourceid="1" destid="2" sourceattachpoint="289" destattachpoint="81" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="-11093" y="8007" />
+              <point x="-10593" y="8007" />
+              <point x="-8871" y="8357" />
+              <point x="-8371" y="8357" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="-194" top="8477" logicalid="13" controlid="6" masterid="0" hint1="0" hint2="0" width="7427" height="3210" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_Stock_Take_Fact_Stock_Take_Indicators]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Oblique" sourceid="4" destid="2" sourceattachpoint="289" destattachpoint="534" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="6433" y="11287" />
+              <point x="6933" y="11287" />
+              <point x="606" y="8777" />
+              <point x="106" y="8777" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Year Dimension" left="2418" top="5054" logicalid="16" controlid="9" masterid="0" hint1="0" hint2="0" width="3000" height="1916" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b00007c070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Year Dimension" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="-194" top="5415" logicalid="17" controlid="10" masterid="0" hint1="0" hint2="0" width="2912" height="2802" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[Stock_Take_Fact-Year Dimension]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Oblique" sourceid="9" destid="2" sourceattachpoint="38" destattachpoint="491" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="2418" y="5814" />
+              <point x="1918" y="5814" />
+              <point x="606" y="7917" />
+              <point x="106" y="7917" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-15103</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-1094</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-17763</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>5054</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>87</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="4468c840-75aa-49da-9d6f-618b0436a9b0">
+      <ID>Stock Take Indicators Dimension</ID>
+      <Name>Stock Take Indicators</Name>
+      <DimensionID>Stock Take Indicators Dimension</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="5f2b73f4-400f-4738-b5c7-7d79d31ea781">
+          <AttributeID>Stock Take Indicators Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2fd9e414-d043-4682-b61e-a7c12e4ef36b">
+          <AttributeID>Stock Take Comment</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ea398c3e-5084-417f-b758-d595e154859d">
+          <AttributeID>Length Measured Indicator</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ef3c8bab-af91-4fed-96ad-f99f0503e5ce">
+          <AttributeID>Width Measured Indicator</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="204e5779-89b8-4885-9cdf-65b314b9d738">
+          <AttributeID>Full Units Counted Indicator</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="945cd091-95a0-41df-8283-db5361f16e53">
+          <AttributeID>Material Scrapped Indicator</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5acfeee6-2f6b-4130-b600-d652539b72ed">
+          <AttributeID>Unit Price Available Indicator</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2c74684d-9145-4e21-a393-16b2ca08d83c">
+          <AttributeID>VAT Percentage</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="8d6984c6-98a8-4b76-ac9d-7f24432d7ae9">
+      <ID>Material Dimension</ID>
+      <Name>Material</Name>
+      <DimensionID>Material Dimension</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="a3c1f2ca-3f13-48e0-b434-8dd0d7d97ed0">
+          <AttributeID>Material Item Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="909d53eb-d3e4-42ab-86ba-7cb056ab6d19">
+          <AttributeID>Material Item ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="005ac3b6-c2e8-4700-a27c-5aca0cac7b14">
+          <AttributeID>Material Current Group</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="79e374e0-e2c0-417b-a8dd-5b6d0666893b">
+          <AttributeID>Material Group</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ba80265f-de6a-4ceb-98cc-e86d74a577fb">
+          <AttributeID>Material Type</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b7fc9f22-ff5d-45e0-a145-b63eb34baaad">
+          <AttributeID>Material Item Current Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2ad2d3de-0ea5-4499-ba5c-f548423ddce5">
+          <AttributeID>Material Item Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="56ca2b4d-4c0c-4f99-abf8-51fff739927d">
+          <AttributeID>Material Category Item Type</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2ac1a59e-876e-4e41-a44d-a7b147e358c7">
+          <AttributeID>Material Item Category</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="eef30bed-45c0-4569-94c4-eee67b5bd483">
+          <AttributeID>Material Item Detail 1</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="91ea3a31-f044-4a50-9bc4-864a36f3d48a">
+          <AttributeID>Material Item Detail 2</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b7bef1a1-7994-4334-9dc5-0207aa2b99da">
+          <AttributeID>Material Item Size</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ed2e935c-d6eb-4369-ba8a-8f64aa325eea">
+          <AttributeID>Material Item Size Unit Of Measure</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="032d852e-559a-4b31-9684-b1520181e4cc">
+          <AttributeID>Material Item Size Note</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7449e0f3-7d6f-45dd-873b-08dcb34a1d8e">
+          <AttributeID>Material Item Standard Length mm</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="42b9182e-d333-46b5-ba35-d4d161e974d5">
+          <AttributeID>Material Item Standard Width Or Diameter mm</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="76748625-0ec3-4dcd-8434-bef15cd72087">
+          <AttributeID>Material Item Standard Height mm</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="51057d15-5bc6-42f6-82cd-388ebdce367f">
+          <AttributeID>Material Item Standard Interior Diameter mm</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d59178d5-5900-470c-ad83-53d6c419f82b">
+          <AttributeID>Material Item Standard Thinkness Or Wall mm</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3b477251-705e-44c0-afed-f2575a5456ef">
+          <AttributeID>Material Item Quantity Unit Of Measure</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="26bff083-cee8-4aa0-ac67-f266201f1f70">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="e22d8a31-0d56-4ef5-a34d-6b94bdd8d881">
+      <ID>Year Dimension</ID>
+      <Name>Year</Name>
+      <DimensionID>Year Dimension</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="326713d2-cadd-4e4f-8b2c-d478e9434ef7">
+          <AttributeID>Year Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="43b6a1e0-574d-4b5e-b2cd-4de82173fae8">
+          <AttributeID>Year</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="ae0a0c4f-ba7e-458d-bdd2-b26c107c161b">
+      <ID>Stock Take Fact</ID>
+      <Name>Stock Take Fact</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Description>Transaction fact table or measure group for stock take events</Description>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="28b9857c-fb22-4ba0-b19f-066b2797e261">
+          <ID>Material Length Measured m</ID>
+          <Name>Material Length Measured m</Name>
+          <Source dwd:design-time-name="c9ec5326-1012-4413-af5e-e44cfa4e3ee1">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="45acd334-6d91-489e-b8b6-39adaf6d8a3d">
+              <TableID>dbo_Stock_Take_Fact</TableID>
+              <ColumnID>Material_Length_Measured_m</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Material Quantities</DisplayFolder>
+        </Measure>
+        <Measure dwd:design-time-name="6ad33376-a21d-49a6-818e-6db0208c3dfe">
+          <ID>Material Width Measured m</ID>
+          <Name>Material Width Measured m</Name>
+          <Source dwd:design-time-name="17442eb5-49d0-4000-87ac-beb3134441af">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="00d44313-3d90-4ce4-b7d5-9d3c99c51bdd">
+              <TableID>dbo_Stock_Take_Fact</TableID>
+              <ColumnID>Material_Width_Measured_m</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Material Quantities</DisplayFolder>
+        </Measure>
+        <Measure dwd:design-time-name="26a20f9d-c224-484e-8bc6-5beee5394001">
+          <ID>Material Full Units Counted</ID>
+          <Name>Material Full Units Counted</Name>
+          <Source dwd:design-time-name="72544b9c-218c-43f2-b0b4-e5cb48d7c508">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="4c2b8237-e88d-4340-8f9c-15fa10ae5c6d">
+              <TableID>dbo_Stock_Take_Fact</TableID>
+              <ColumnID>Material_Full_Units_Counted</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Material Quantities</DisplayFolder>
+        </Measure>
+        <Measure dwd:design-time-name="28a85db9-1ae3-4c1a-b4cb-e776d0c9b40a">
+          <ID>Material Quantity Scrapped</ID>
+          <Name>Material Quantity Scrapped</Name>
+          <Source dwd:design-time-name="0c6f96b8-18d6-4a80-8288-d1bdd1765b5a">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="66aea8da-d6bd-489e-80cb-eb1f273a2123">
+              <TableID>dbo_Stock_Take_Fact</TableID>
+              <ColumnID>Material_Quantity_Scrapped</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Material Quantities</DisplayFolder>
+        </Measure>
+        <Measure dwd:design-time-name="a5cbbcc4-03c0-4e68-af01-a735b5c8362e">
+          <ID>Material Unit Price Incl VAT</ID>
+          <Name>Material Unit Price Incl VAT</Name>
+          <AggregateFunction>None</AggregateFunction>
+          <Source dwd:design-time-name="e0fe4b7f-434f-4f61-97c7-8c147f832d6b">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b1da373b-90a3-4ea2-b1cf-b4c786bc9c89">
+              <TableID>dbo_Stock_Take_Fact</TableID>
+              <ColumnID>Material_Unit_Price_incl_VAT</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Material Unit Prices</DisplayFolder>
+        </Measure>
+        <Measure dwd:design-time-name="00cc0fb9-2324-4ffd-9505-cd05892499aa">
+          <ID>VAT Decimal</ID>
+          <Name>VAT Decimal</Name>
+          <Source dwd:design-time-name="44f9d0ba-de59-4794-a201-7df0fd2df823">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="f30459ad-99e4-4f2b-a7b8-e6be2bc942ab">
+              <TableID>dbo_Stock_Take_Fact</TableID>
+              <ColumnID>VAT_Decimal</ColumnID>
+            </Source>
+          </Source>
+          <Visible>false</Visible>
+        </Measure>
+        <Measure dwd:design-time-name="8c1af9fa-379d-4d7a-bb90-bceb533f94d3">
+          <ID>Material Source Quantity On Hand Value Excl VAT</ID>
+          <Name>Material Source Quantity On Hand Value Excl VAT</Name>
+          <Source dwd:design-time-name="bf7e20cc-8309-495b-8ae5-04f64a7c46b4">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b29b3981-f0f0-4a84-ac64-a755cb54d4ca">
+              <TableID>dbo_Stock_Take_Fact</TableID>
+              <ColumnID>Material_Source_Quantity_on_Hand_Value_excl_VAT</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Material Quantities</DisplayFolder>
+        </Measure>
+        <Measure dwd:design-time-name="6c0fc8f8-121d-47ef-bd09-a11e15d29bc3">
+          <ID>Material Unit Price Excl VAT</ID>
+          <Name>Material Unit Price Excl VAT</Name>
+          <AggregateFunction>None</AggregateFunction>
+          <Source dwd:design-time-name="cdb02e82-f158-4081-98e7-e2631da33969">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="c1eb0fd0-2be5-439b-bab2-8184f0753a7f">
+              <TableID>dbo_Stock_Take_Fact</TableID>
+              <ColumnID>Material_Unit_Price_excl_VAT</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Material Unit Prices</DisplayFolder>
+        </Measure>
+        <Measure dwd:design-time-name="40fe096c-17ed-4bea-a08b-1cef71fe192e">
+          <ID>Material Quantity Counted</ID>
+          <Name>Material Quantity Counted</Name>
+          <Source dwd:design-time-name="939066fb-eb31-474f-9719-575ba6a24f6e">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="ae270846-6a59-41c4-a3ab-ed988214723a">
+              <TableID>dbo_Stock_Take_Fact</TableID>
+              <ColumnID>Material_Quantity_Counted</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Material Quantities</DisplayFolder>
+        </Measure>
+        <Measure dwd:design-time-name="978f4fe1-166d-4d24-8d3e-5358067d6952">
+          <ID>Material Quantity On Hand</ID>
+          <Name>Material Quantity On Hand</Name>
+          <Source dwd:design-time-name="ea8e4426-942e-4d15-b914-246011b1d5b5">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="34079311-7bb5-42bf-8022-fd05df4d3b39">
+              <TableID>dbo_Stock_Take_Fact</TableID>
+              <ColumnID>Material_Quantity_on_Hand</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Material Quantities</DisplayFolder>
+        </Measure>
+        <Measure dwd:design-time-name="60a2b92a-938b-4e35-b250-1357f58b3715">
+          <ID>Material Value On Hand Excl VAT</ID>
+          <Name>Material Value On Hand Excl VAT</Name>
+          <Source dwd:design-time-name="566fd349-e974-4d32-a5ed-cf48c340ae2c">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="5442725c-79e3-4f58-bf1b-f89803e7b6cc">
+              <TableID>dbo_Stock_Take_Fact</TableID>
+              <ColumnID>Material_Value_on_Hand_excl_VAT</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Material values</DisplayFolder>
+          <FormatString>R# ##0.00;-R# ##0.00</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="2a247210-7029-4ebe-971c-2307c1dc0919">
+          <ID>Material Value Scrapped Excl VAT</ID>
+          <Name>Material Value Scrapped Excl VAT</Name>
+          <Source dwd:design-time-name="5e8c3c8b-9bc5-48ba-af56-b3774979c92d">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="18c29b60-c20f-499c-9620-f8b59e7d512b">
+              <TableID>dbo_Stock_Take_Fact</TableID>
+              <ColumnID>Material_Value_Scrapped_excl_VAT</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Material values</DisplayFolder>
+        </Measure>
+        <Measure dwd:design-time-name="7bd79dbe-6fed-45fe-aa2b-70f1f98caa3b">
+          <ID>Stock Take Fact Count</ID>
+          <Name>Stock Take Fact Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="ab952a4d-8523-4d34-a97b-2bf607b56766">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="aa4d796b-0571-4c62-b7ca-41830f19290f">
+              <TableID>dbo_Stock_Take_Fact</TableID>
+            </Source>
+          </Source>
+          <DisplayFolder>Stock Take Event Counts</DisplayFolder>
+        </Measure>
+        <Measure dwd:design-time-name="d80a4260-8520-43d6-9897-6b8be0efefc5">
+          <ID>Stock Take Transaction ID Count</ID>
+          <Name>Stock Take Transaction Distinct Count</Name>
+          <AggregateFunction>DistinctCount</AggregateFunction>
+          <DataType>Integer</DataType>
+          <Source dwd:design-time-name="4f16fbe3-a6ab-4f20-9640-8a5665f96ae4">
+            <DataType>WChar</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="6677d761-b5e2-49ce-a06b-6de38bc59805">
+              <TableID>dbo_Stock_Take_Fact</TableID>
+              <ColumnID>Stock_Take_Transaction_ID</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Stock Take Event Counts</DisplayFolder>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="a3ca221f-5b1f-4373-a8d7-e35efae24d34">
+          <CubeDimensionID>Stock Take Indicators Dimension</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="9f4c7390-1f69-4a41-a74c-a2ebfbe63164">
+              <AttributeID>Stock Take Indicators Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="de2ef69e-b143-4298-8281-f960a0309aee">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e5918db7-abe1-461f-a087-81e00eb0351a">
+                    <TableID>dbo_Stock_Take_Fact</TableID>
+                    <ColumnID>Stock_Take_Indicators_Key</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="07bafaef-85c3-40eb-a215-50d814c5de71">
+          <CubeDimensionID>Material Dimension</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="63c12389-ee85-44d2-a14d-3b28032f0119">
+              <AttributeID>Material Item Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ddeff17d-31df-46ff-bdb1-fc4c2ebe61e7">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c5a1b2ed-deb9-49d0-a891-d47a7dd626d5">
+                    <TableID>dbo_Stock_Take_Fact</TableID>
+                    <ColumnID>Material_Item_Key</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="b369f24d-7224-4b62-8565-2b413428787b">
+          <CubeDimensionID>Year Dimension</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="98a9874f-6661-4c23-95c6-0151d912a792">
+              <AttributeID>Year Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="5977269c-cbce-46a7-82d5-9a07af8e1843">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e0a674e3-24ff-47ae-a7dd-0c6472233c7b">
+                    <TableID>dbo_Stock_Take_Fact</TableID>
+                    <ColumnID>Stock_Take_Date_Key</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="34984761-b258-4c2b-8377-f3b8e4073e21">
+    <DataSourceViewID>Material Management</DataSourceViewID>
+  </Source>
+  <MdxScripts>
+    <MdxScript dwd:design-time-name="cf3c3da5-5ec8-497c-b352-8c414fc5c39a">
+      <ID>MdxScript</ID>
+      <Name>MdxScript</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Commands>
+        <Command>
+          <Text>/*
+The CALCULATE command controls the aggregation of leaf cells in the cube.
+If the CALCULATE command is deleted or modified, the data within the cube is affected.
+You should edit this command only if you manually specify how the cube is aggregated.
+*/
+CALCULATE; 
+CREATE MEMBER CURRENTCUBE.[Measures].[Material Percentage Scrapped]
+ AS [Measures].[Material Quantity Scrapped]/[Measures].[Material Quantity Counted], 
+FORMAT_STRING = "Percent", 
+NON_EMPTY_BEHAVIOR = { [Material Quantity Scrapped] }, 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Material Percentages' ,  ASSOCIATED_MEASURE_GROUP = 'Stock Take Fact'  ; </Text>
+        </Command>
+      </Commands>
+    </MdxScript>
+  </MdxScripts>
+  <Kpis>
+    <Kpi dwd:design-time-name="c15ea092-6e8f-4c4b-b4b1-06e4a0e5da79">
+      <ID>KPI</ID>
+      <Name>KPI Material Scrapped</Name>
+      <AssociatedMeasureGroupID>Stock Take Fact</AssociatedMeasureGroupID>
+      <Value>[Measures].[Material Quantity Scrapped]</Value>
+      <Goal>0</Goal>
+      <Status>
+Case  
+  When KpiValue("KPI Material Scrapped") - KpiGoal("KPI Material Scrapped") = 0 Then 1  
+  When KpiValue("KPI Material Scrapped") - KpiGoal("KPI Material Scrapped") &gt; 5 Then -1  
+  Else 0  
+End</Status>
+      <Trend>
+Case  
+  When IsEmpty(ParallelPeriod([Year].[Year].[Year],1, [Year].[Year])) Then 0  
+  When [Measures].[Material Quantity Scrapped] &gt; (ParallelPeriod([Year].[Year].[Year],1, [Year].[Year]), [Measures].[Material Quantity Scrapped])  
+    Then 1  
+  When [Measures].[Material Quantity Scrapped] = (ParallelPeriod([Year].[Year].[Year],1, [Year].[Year]), [Measures].[Material Quantity Scrapped])  
+    Then 0  
+  Else -1  
+End</Trend>
+      <TrendGraphic>Standard Arrow</TrendGraphic>
+      <StatusGraphic>Smiley Face</StatusGraphic>
+    </Kpi>
+  </Kpis>
+</Cube>

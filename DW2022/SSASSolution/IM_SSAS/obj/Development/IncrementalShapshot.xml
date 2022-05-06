@@ -1,0 +1,75 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>IM_SSAS</Database>
+    <Server>LAPTOP-QKV1G6CM\SQLSERVER</Server>
+    <ConnectionString>Data Source=LAPTOP-QKV1G6CM\SQLSERVER;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>Default</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>DIn2C47qBgGcYXLxjIv/WUSpdg8=2022/04/03 20:23:462022/03/18 17:45:46</TimeStamp>
+        <ID>
+          <String>Atomic DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>C/LRNlVPAv2umfudrsesT8XtkZ4=2021/02/07 13:58:022022/03/18 17:45:46</TimeStamp>
+        <ID>
+          <String>Material Management</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>A2M0U5Cqxpv3MKWjTvNXJR8XsFY=2021/02/07 14:00:102022/03/18 17:45:46</TimeStamp>
+        <ID>
+          <String>Year Dimension</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>jV4rN3n2XAN8JPHIvH3QnvJkuEI=2020/10/15 16:14:532022/03/18 17:45:46</TimeStamp>
+        <ID>
+          <String>Material Dimension</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>OO5qTG0EtteyyujOwlLwH4msMJU=2020/10/16 19:35:482022/03/18 17:45:46</TimeStamp>
+        <ID>
+          <String>Stock Take Indicators Dimension</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>DfZOoF9C5I+E50BL3aRgCdpj3Uc=2021/02/07 14:21:062022/03/18 17:45:460oe4rRprr+k4CQsidd1Sv1jJoQc=2020/10/19 08:47:042022/03/18 17:45:46</TimeStamp>
+        <ID>
+          <String>Material Management</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>QU0VjgFIezJrIIPPUxb3rFu45sI=2020/10/15 08:22:572022/03/18 17:45:46</TimeStamp>
+      <ID>
+        <String>IM_SSAS</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2022-04-06T12:10:49.236667Z</LastDeployed>
+</DeploymentSnapshot>

@@ -1,0 +1,817 @@
+Year,Item ID,Material,Item Category,Item Detail 1,Item Detail 2,Item Size,Size Unit of Measure,Size Note,Comment,Standard Length (mm),Standard Width or Diameter (mm),Standard Height (mm),Standard Interior Diameter (mm),Standard Thinkness / Wall (mm),Item Length Measured (m),Item Width Measured (m),Full Units Counted,Quantity Unit of Measure,Quantity Scapped,Unit price incl VAT,VAT,Source Quantity on hand value excl VAT rounded
+2021,ALM00001,Aluminium,Angle iron,,,12.7 x 12.7 x 1.54,mm,,,,12.7,12.7,,1.54,25.19,,,m,,5.51,0.14,121.7516667
+2021,ALM00002,Aluminium,Angle iron,,,14.8 x 14.8 x 1.8,mm,,,,14.8,14.8,,1.8,0,,,m,,12.9,0.14,0
+2021,ALM00003,Aluminium,Angle iron,,,19.3 x 19.3 x 3.4,mm,,,,19.3,19.3,,3.4,15,,,m,,13.68,0.14,180
+2021,ALM00004,Aluminium,Angle iron,,,25 x 25 x 2.2,mm,,,,25,25,,2.2,0.885,,,m,,18.34,0.14,14.23763158
+2021,ALM00005,Aluminium,Angle iron,,,25.5 x 25.5 x 3.6,mm,,,,25.5,25.5,,3.6,7.1,,,m,,18.34,0.14,114.222807
+2021,ALM00006,Aluminium,Angle iron,,,38 x 38 x 6,mm,,,,38,38,,6,6,,,m,,26.98,0.14,142
+2021,ALM00007,Aluminium,Angle iron,,,50.7 x 50.7 x 6.35,mm,,,,50.7,50.7,,6.35,0,,,m,,76.57,0.14,0
+2021,ALM00008,Aluminium,Angle iron,,,50.8 x 50.8 x 4.6,mm,,,,50.8,50.8,,4.6,3.645,,,m,,76.57,0.14,244.8225
+2021,MST00001,Mild steel,Angle iron,,,20 x 20 x 2,mm,,,,20,20,,2,34.94,,,m,,6.67,0.14,204.4296491
+2021,MST00002,Mild steel,Angle iron,,,25 x 25 x 3,mm,,,,25,25,,3,0.53,,,m,,16.52,0.14,7.680350877
+2021,MST00003,Mild steel,Angle iron,,,25 x 25 x 5,mm,,,,25,25,,5,24.07,,,m,,25.97,0.14,548.3314912
+2021,MST00004,Mild steel,Angle iron,,,30 x 30 x 3,mm,,,,30,30,,3,13.07,,,m,,20.22,0.14,231.8205263
+2021,MST00005,Mild steel,Angle iron,,,30 x 30 x 5,mm,,,,30,30,,5,9.8,,,m,,31.92,0.14,274.4
+2021,MST00006,Mild steel,Angle iron,,,40 x 40 x 3,mm,,,,40,40,,3,0,,,m,,23.94,0.14,0
+2021,MST00007,Mild steel,Angle iron,,,40 x 40 x 5,mm,,,,40,40,,5,0.96,,,m,,43.55,0.14,36.67368421
+2021,MST00008,Mild steel,Angle iron,,,40 x 40 x 6,mm,,,,40,40,,6,1.475,,,m,,51.18,0.14,66.21973684
+2021,MST00009,Mild steel,Angle iron,,,50 x 50 x 5,mm,,,,50,50,,5,12,,,m,,54.87,0.14,577.5789474
+2021,MST00010,Mild steel,Angle iron,,,50 x 50 x 6,mm,,,,50,50,,6,5.545,,,m,,65.05,0.14,316.4054825
+2021,MST00011,Mild steel,Angle iron,,,50 x 50 x 8,mm,,,,50,50,,8,6,,,m,,85.22,0.14,448.5263158
+2021,MST00012,Mild steel,Angle iron,,,60 x 60 x 6,mm,,,,60,60,,6,15.02,,,m,,78.93,0.14,1039.937368
+2021,MST00013,Mild steel,Angle iron,,,60 x 60 x 8,mm,,,,60,60,,8,6,,,m,,103.8,0.14,546.3157895
+2021,SST00001,Stainless steel,Angle iron,,,25.2 x 25.2 x 3.1,mm,,,,25.2,25.2,,3.1,11.92,,,m,,62.7,0.14,655.6
+2021,SST00002,Stainless steel,Angle iron,,,30 x 30 x 3,mm,,,,30,30,,3,0.925,,,m,,64.98,0.14,52.725
+2021,SST00003,Stainless steel,Angle iron,,,40 x 40 x 3,mm,,,,40,40,,3,11.185,,,m,,77.52,0.14,760.58
+2021,SST00004,Stainless steel,Angle iron,,,50 x 50 x 5,mm,,,,50,50,,5,2.025,,,m,,167.58,0.14,297.675
+2021,SST00005,Stainless steel,Angle iron,,,64 x 64 x 6,mm,,,,64,64,,6,2.185,,,m,,285,0.14,546.25
+2021,ALM00009,Aluminium,Bar,Flat,,12.7 x 3.15,mm,,,,12.7,,,3.15,35.13,,,m,,7.83,0.14,241.2876316
+2021,ALM00010,Aluminium,Bar,Flat,,25.16 x 6.3,mm,,,,25.16,,,6.3,1.2,,,m,,29.64,0.14,31.2
+2021,ALM00011,Aluminium,Bar,Flat,,25.3 x 12.7,mm,,,,25.3,,,12.7,0.995,,,m,,21.85,0.14,19.07083333
+2021,ALM00012,Aluminium,Bar,Flat,,25.4 x 3.15,mm,,,,25.4,,,3.15,2.155,,,m,,21.85,0.14,41.30416667
+2021,ALM00013,Aluminium,Bar,Flat,,25.4 x 4.6,mm,,,,25.4,,,4.6,12,,,m,,26.26,0.14,276.4210526
+2021,ALM00014,Aluminium,Bar,Flat,,31.34 x 4.5,mm,,,,31.34,,,4.5,3.585,,,m,,18.05,0.14,56.7625
+2021,ALM00015,Aluminium,Bar,Flat,,38 x 4.9,mm,,,,38,,,4.9,9.64,,,m,,22.97,0.14,194.2375439
+2021,ALM00016,Aluminium,Bar,Flat,,38 x 6.15,mm,,,,38,,,6.15,8.845,,,m,,43.51,0.14,337.5841667
+2021,BRS00001,Brass,Bar,Flat,,12.7  x 3.2,mm,,,,12.7,,,3.2,12.9,,,m,,31.09,0.14,351.8078947
+2021,BRS00002,Brass,Bar,Flat,,12.7 x 6.5,mm,,,,12.7,,,6.5,4.595,,,m,,53.2,0.14,214.4333333
+2021,BRS00003,Brass,Bar,Flat,,19.25 x 9.68,mm,,,,19.25,,,9.68,5.165,,,m,,114,0.14,516.5
+2021,BRS00004,Brass,Bar,Flat,,20.1 x 3.15,mm,,,,20.1,,,3.15,0.83,,,m,,106.59,0.14,77.605
+2021,BRS00005,Brass,Bar,Flat,,25.15 x 3.15,mm,,No Unit Price available,,25.15,,,3.15,5.02,,,m,,,0.14,0
+2021,BRS00006,Brass,Bar,Flat,,25.32 x 5.28,mm,,,,25.32,,,5.28,6.4,,,m,,106.59,0.14,598.4
+2021,BRS00007,Brass,Bar,Flat,,38.17 x 9.65,mm,,No Unit Price available,,38.17,,,9.65,3.27,,,m,,,0.14,0
+2021,BRS00008,Brass,Bar,Flat,,38.26 x 15.89,mm,,No Unit Price available,,38.26,,,15.89,2.17,,,m,,,0.14,0
+2021,BRS00009,Brass,Bar,Flat,,38.46 x 4.8,mm,,No Unit Price available,,38.46,,,4.8,1.685,,,m,,,0.14,0
+2021,BRS00010,Brass,Bar,Flat,,38.52 x 3.25,mm,,No Unit Price available,,38.52,,,3.25,1.9,,,m,,,0.14,0
+2021,BRS00011,Brass,Bar,Flat,,51.03 x 3.3,mm,,,,51.03,,,3.3,5.2,,,m,,77.75,0.14,354.6491228
+2021,BRS00012,Brass,Bar,Flat,,75.38 x 15.55,mm,,No Unit Price available,,75.38,,,15.55,2.565,,,m,,,0.14,0
+2021,BRS00013,Brass,Bar,Flat,,76.5 x 6.25,mm,,No Unit Price available,,76.5,,,6.25,2.455,,,m,,,0.14,0
+2021,BRS00014,Brass,Bar,Flat,,76.5 x 6.7,mm,,No Unit Price available,,76.5,,,6.7,3.75,,,m,,,0.14,0
+2021,BRS00015,Brass,Bar,Flat,,76.59 x 9.64,mm,,No Unit Price available,,76.59,,,9.64,1.725,,,m,,,0.14,0
+2021,CPR00001,Copper,Bar,Flat,,15.2 x 3.2,mm,,,,15.2,,,3.2,2.99,,,m,,28.4,0.14,74.4877193
+2021,MST00014,Mild steel,Bar,Flat,,12 x 3,mm,,,,12,,,3,0,,,m,,4.01,0.14,0
+2021,MST00015,Mild steel,Bar,Flat,,12.7 x 3.17,mm,,,,12.7,,,3.17,11.93,,,m,,4.01,0.14,41.96429825
+2021,MST00016,Mild steel,Bar,Flat,,20 x 3,mm,,,,20,,,3,2.68,,,m,,7.2,0.14,16.92631579
+2021,MST00017,Mild steel,Bar,Flat,,20 x 5,mm,,,,20,,,5,6,,,m,,11.3,0.14,59.47368421
+2021,MST00018,Mild steel,Bar,Flat,,25 x 5,mm,,,,25,,,5,18,,,m,,14.12,0.14,222.9473684
+2021,MST00019,Mild steel,Bar,Flat,,25 x 6,mm,,,,25,,,6,10.095,,,m,,16.91,0.14,149.7425
+2021,MST00020,Mild steel,Bar,Flat,,25 x 8,mm,,,,25,,,8,40.825,,,m,,24.52,0.14,878.095614
+2021,MST00021,Mild steel,Bar,Flat,,30 x 3,mm,,,,30,,,3,3.815,,,m,,10.81,0.14,36.17557018
+2021,MST00022,Mild steel,Bar,Flat,,30 x 5,mm,,,,30,,,5,1.73,,,m,,16.95,0.14,25.72236842
+2021,MST00023,Mild steel,Bar,Flat,,30 x 6,mm,,,,30,,,6,23.1,,,m,,20.25,0.14,410.3289474
+2021,MST00024,Mild steel,Bar,Flat,,30 x 8,mm,,,,30,,,8,6,,,m,,26.98,0.14,142
+2021,MST00025,Mild steel,Bar,Flat,,40 x 5,mm,,,,40,,,5,0,,,m,,22.49,0.14,0
+2021,MST00026,Mild steel,Bar,Flat,,40 x 6,mm,,,,40,,,6,0,,,m,,26.9,0.14,0
+2021,MST00027,Mild steel,Bar,Flat,,40 x 8,mm,,,,40,,,8,28.32,,,m,,35.81,0.14,889.5957895
+2021,MST00028,Mild steel,Bar,Flat,,40 x 10,mm,,,,40,,,10,1.91,,,m,,37.7,0.14,63.16403509
+2021,MST00029,Mild steel,Bar,Flat,,50 x 6,mm,,,,50,,,6,5.53,,,m,,33.62,0.14,163.0864912
+2021,MST00030,Mild steel,Bar,Flat,,50 x 8,mm,,,,50,,,8,11.34,,,m,,44.76,0.14,445.2442105
+2021,MST00031,Mild steel,Bar,Flat,,50 x 10,mm,,,,50,,,10,24.125,,,m,,55.8,0.14,1180.855263
+2021,MST00032,Mild steel,Bar,Flat,,60 x 6,mm,,,,60,,,6,1.04,,,m,,53.6,0.14,48.89824561
+2021,MST00033,Mild steel,Bar,Flat,,60 x 8,mm,,,,60,,,8,6.1,,,m,,53.6,0.14,286.8070175
+2021,MST00034,Mild steel,Bar,Flat,,60 x 16,mm,,,,60,,,16,1.195,,,m,,53.6,0.14,56.18596491
+2021,MST00035,Mild steel,Bar,Flat,,80 x 6,mm,,,,80,,,6,2.185,,,m,,53.61,0.14,102.7525
+2021,MST00036,Mild steel,Bar,Flat,,90 x 12,mm,,,,90,,,12,6.005,,,m,,129.72,0.14,683.3057895
+2021,MST00037,Mild steel,Bar,Flat,,100 x 6,mm,,,,100,,,6,6.43,,,m,,69.11,0.14,389.8046491
+2021,MST00038,Mild steel,Bar,Flat,,100 x 8,mm,,,,100,,,8,6,,,m,,86.66,0.14,456.1052632
+2021,MST00039,Mild steel,Bar,Flat,,100 x 10,mm,,,,100,,,10,6.95,,,m,,108.21,0.14,659.7013158
+2021,SST00006,Stainless steel,Bar,Flat,,13 x 6,mm,,No Unit Price available,,13,,,6,0.745,,,m,,,0.14,0
+2021,SST00007,Stainless steel,Bar,Flat,,25 x 3,mm,,,,25,,,3,12.93,,,m,,10.615,0.14,120.3964474
+2021,SST00008,Stainless steel,Bar,Flat,,25 x 6,mm,,,,25,,,6,8.97,,,m,,55.63,0.14,437.7202632
+2021,SST00009,Stainless steel,Bar,Flat,,50 x 5,mm,,,,50,,,5,4.4,,,m,,110.8,0.14,427.6491228
+2021,SST00010,Stainless steel,Bar,Flat,,65 x 6,mm,,,,65,,,6,1.325,,,m,,202.92,0.14,235.85
+2021,ALM00017,Aluminium,Bar,Hexagon,,13,mm,,,,13,,,,0.72,,,m,,29.64,0.14,18.72
+2021,BRS00016,Brass,Bar,Hexagon,,6.35,mm,,,,6.35,,,,18.095,,,m,,25,0.14,396.8201754
+2021,BRS00017,Brass,Bar,Hexagon,,8,mm,,,,8,,,,3.98,,,m,,25.65,0.14,89.55
+2021,BRS00018,Brass,Bar,Hexagon,,9.55,mm,,,,9.55,,,,1.4,,,m,,37.81,0.14,46.43333333
+2021,BRS00019,Brass,Bar,Hexagon,,10,mm,,,,10,,,,0.91,,,m,,37.81,0.14,30.18166667
+2021,BRS00020,Brass,Bar,Hexagon,,10.9,mm,,,,10.9,,,,0,,,m,,45.6,0.14,0
+2021,BRS00021,Brass,Bar,Hexagon,,12,mm,,,,12,,,,8.075,,,m,,53.2,0.14,376.8333333
+2021,BRS00022,Brass,Bar,Hexagon,,20,mm,,,,20,,,,0.85,,,m,,236.38,0.14,176.2482456
+2021,BRS00023,Brass,Bar,Hexagon,,23.88,mm,,,,23.88,,,,0.72,,,m,,160.74,0.14,101.52
+2021,MST00040,Mild steel,Bar,Hexagon,,11,mm,,,,11,,,,7.28,,,m,,53.18,0.14,339.605614
+2021,MST00041,Mild steel,Bar,Hexagon,,19,mm,,,,19,,,,1.62,,,m,,40.24,0.14,57.18315789
+2021,MST00042,Mild steel,Bar,Hexagon,,22,mm,,,,22,,,,2.02,,,m,,93.72,0.14,166.0652632
+2021,MST00043,Mild steel,Bar,Hexagon,,27,mm,,,,27,,,,2.745,,,m,,141.29,0.14,340.2114474
+2021,SST00011,Stainless steel,Bar,Hexagon,,10,mm,,,,10,,,,2.37,,,m,,43.22,0.14,89.85210526
+2021,MST00044,Mild steel,Bar,Hollow,,32 x 16 x 8,mm,,,,32,16,,8,2.32,,,m,,99.18,0.14,201.84
+2021,MST00045,Mild steel,Bar,Round,Bright,4,mm,,,,4,,,,29.47,,,m,,2.85,0.14,73.675
+2021,MST00046,Mild steel,Bar,Round,Bright,4.75,mm,,,,4.75,,,,2.125,,,m,,2.85,0.14,5.3125
+2021,MST00047,Mild steel,Bar,Round,Bright,5,mm,,,,5,,,,12.115,,,m,,3.51,0.14,37.30144737
+2021,MST00048,Mild steel,Bar,Round,Bright,6,mm,,,,6,,,,0,,,m,,4.67,0.14,0
+2021,MST00049,Mild steel,Bar,Round,Bright,8,mm,,,,8,,,,17.645,,,m,,7.71,0.14,119.3359211
+2021,MST00050,Mild steel,Bar,Round,Bright,10,mm,,,,10,,,,18.335,,,m,,11.68,0.14,187.8533333
+2021,MST00051,Mild steel,Bar,Round,Bright,12,mm,,,,12,,,,34.055,,,m,,16.95,0.14,506.3440789
+2021,MST00052,Mild steel,Bar,Round,Bright,16,mm,,,,16,,,,20.14,,,m,,26.54,0.14,468.8733333
+2021,MST00053,Mild steel,Bar,Round,Bright,20,mm,,,,20,,,,0,,,m,,31.19,0.14,0
+2021,MST00054,Mild steel,Bar,Round,Bright,22,mm,,,,22,,,,15.985,,,m,,53.03,0.14,743.5829386
+2021,MST00055,Mild steel,Bar,Round,Bright,24,mm,,,,24,,,,5.75,,,m,,68,0.14,342.9824561
+2021,MST00056,Mild steel,Bar,Round,Bright,25,mm,,,,25,,,,4.37,,,m,,68,0.14,260.6666667
+2021,MST00057,Mild steel,Bar,Round,Bright,28,mm,,,,28,,,,5.545,,,m,,97.88,0.14,476.0917544
+2021,MST00058,Mild steel,Bar,Round,Bright,30,mm,,,,30,,,,3.46,,,m,,97.88,0.14,297.074386
+2021,MST00059,Mild steel,Bar,Round,Bright,40,mm,,,,40,,,,2.965,,,m,,184.61,0.14,480.1479386
+2021,ALM00018,Aluminium,Bar,Round,,4.7,mm,,,,4.7,,,,,,,m,,2.28,0.14,0
+2021,ALM00019,Aluminium,Bar,Round,,6,mm,,,,6,,,,63.205,,,m,,7.52,0.14,416.9312281
+2021,ALM00020,Aluminium,Bar,Round,,8,mm,,,,8,,,,24.66,,,m,,9.12,0.14,29.65
+2021,ALM00021,Aluminium,Bar,Round,,9.5,mm,,,,9.5,,,,4.1,,,m,,9.38,0.14,33.73508772
+2021,ALM00022,Aluminium,Bar,Round,,10,mm,,,,10,,,,57.81,,,m,,14.25,0.14,722.625
+2021,ALM00023,Aluminium,Bar,Round,,12,mm,,,,12,,,,19.48,,,m,,21.66,0.14,370.12
+2021,ALM00024,Aluminium,Bar,Round,,12.7,mm,,,,12.7,,,,1.845,,,m,,21.66,0.14,35.055
+2021,ALM00025,Aluminium,Bar,Round,,16,mm,,,,16,,,,14.35,,,m,,35.91,0.14,452.025
+2021,ALM00026,Aluminium,Bar,Round,,20,mm,,,,20,,,,2.52,,,m,,57,0.14,126
+2021,ALM00027,Aluminium,Bar,Round,,25,mm,,,,25,,,,1.88,,,m,,86.64,0.14,142.88
+2021,ALM00028,Aluminium,Bar,Round,,30,mm,,,,30,,,,0,,,m,,132.81,0.14,0
+2021,ALM00029,Aluminium,Bar,Round,,32,mm,,,,32,,,,11.6,,,m,,144.1,0.14,1466.280702
+2021,ALM00030,Aluminium,Bar,Round,,40,mm,,,,40,,,,1.53,,,m,,753.25,0.14,1010.940789
+2021,ALM00031,Aluminium,Bar,Round,,45,mm,,,,45,,,,1.715,,,m,,291.84,0.14,439.04
+2021,ALM00032,Aluminium,Bar,Round,,51,mm,,,,51,,,,5.65,,,m,,347.7,0.14,1723.25
+2021,ALM00033,Aluminium,Bar,Round,,65,mm,,,,65,,,,0.75,,,m,,753.25,0.14,495.5592105
+2021,BRS00024,Brass,Bar,Round,,5,mm,,,,5,,,,7.18,,,m,,14.82,0.14,93.34
+2021,BRS00025,Brass,Bar,Round,,6,mm,,,,6,,,,0.86,,,m,,19.16,0.14,14.45403509
+2021,BRS00026,Brass,Bar,Round,,8,mm,,,,8,,,,19.165,,,m,,45.03,0.14,757.0175
+2021,BRS00027,Brass,Bar,Round,,10,mm,,,,10,,,,16.605,,,m,,53.15,0.14,774.1717105
+2021,BRS00028,Brass,Bar,Round,,12,mm,,,,12,,,,19.29,,,m,,76.17,0.14,1288.876579
+2021,BRS00029,Brass,Bar,Round,,14,mm,,,,14,,,,10.275,,,m,,104.09,0.14,938.1796053
+2021,BRS00030,Brass,Bar,Round,,16,mm,,,,16,,,,13.765,,,m,,170.62,0.14,2060.161667
+2021,BRS00031,Brass,Bar,Round,,20,mm,,,,20,,,,5.355,,,m,,199.5,0.14,937.125
+2021,BRS00032,Brass,Bar,Round,,22,mm,,,,22,,,,7.865,,,m,,275.31,0.14,1899.3975
+2021,BRS00033,Brass,Bar,Round,,25,mm,,,,25,,,,10.975,,,m,,311.22,0.14,2996.175
+2021,BRS00034,Brass,Bar,Round,,30,mm,,,,30,,,,1.035,,,m,,558.22,0.14,506.805
+2021,BRS00035,Brass,Bar,Round,,32,mm,,,,32,,,,2.815,,,m,,642.68,0.14,1586.968596
+2021,BRS00036,Brass,Bar,Round,,38,mm,,,,38,,,,1.47,,,m,,743.28,0.14,958.44
+2021,BRS00037,Brass,Bar,Round,,40,mm,,,,40,,,,2.045,,,m,,992.18,0.14,1779.831667
+2021,BRS00038,Brass,Bar,Round,,45,mm,,,,45,,,,2.685,,,m,,1200,0.14,2826.315789
+2021,BRS00039,Brass,Bar,Round,,50,mm,,,,50,,,,1.965,,,m,,1581.56,0.14,2726.11
+2021,MST00060,Mild steel,Bar,Round,,6,mm,,,,6,,,,8.435,,,m,,3.68,0.14,27.22877193
+2021,MST00061,Mild steel,Bar,Round,,8,mm,,,,8,,,,0,,,m,,7.71,0.14,0
+2021,MST00062,Mild steel,Bar,Round,,10,mm,,,,10,,,,36.18,,,m,,11.68,0.14,370.6863158
+2021,MST00063,Mild steel,Bar,Round,,12,mm,,,,12,,,,2.395,,,m,,16.95,0.14,35.60986842
+2021,MST00064,Mild steel,Bar,Round,,20,mm,,,,20,,,,6,,,m,,30.06,0.14,158.2105263
+2021,PTL00001,Polyethylene,Bar,Round,,20,mm,,,,20,,,,2.28,,,m,,53.12,0.14,106.24
+2021,PTL00002,Polyethylene,Bar,Round,,25,mm,,,,25,,,,1.165,,,m,,82.21,0.14,84.01285088
+2021,NYL00001,Nylatron,Bar,Round,,50,mm,,,,50,,,,0.975,,,m,,430.75,0.14,368.4046053
+2021,PPL00001,Polypropylene,Bar,Round,,10,mm,,,,10,,,,4,,,m,,13.96,0.14,48.98245614
+2021,PPL00002,Polypropylene,Bar,Round,,15,mm,,,,15,,,,1.2,,,m,,35.11,0.14,36.95789474
+2021,PPL00003,Polypropylene,Bar,Round,,25,mm,,,,25,,,,0.72,,,m,,67.68,0.14,42.74526316
+2021,PPL00004,Polypropylene,Bar,Round,,30,mm,,,,30,,,,0.585,,,m,,113.65,0.14,58.32039474
+2021,PPL00005,Polypropylene,Bar,Round,,35,mm,,,,35,,,,0.215,,,m,,146.06,0.14,27.54640351
+2021,PPL00006,Polypropylene,Bar,Round,,40,mm,,,,40,,,,0.21,,,m,,172.01,0.14,31.68605263
+2021,PPL00007,Polypropylene,Bar,Round,,50,mm,,,,50,,,,0.15,,,m,,316.04,0.14,41.58421053
+2021,PPL00008,Polypropylene,Bar,Round,,60,mm,,,,60,,,,0,,,m,,407.03,0.14,0
+2021,PPL00009,Polypropylene,Bar,Round,,90,mm,,,,90,,,,0,,,m,,1154,0.14,0
+2021,SST00012,Stainless steel,Bar,Round,,2.5,mm,,Only round bar with specified standard length,4200,2.5,,,,123.81,,,m,,1.88,0.14,204.1778947
+2021,SST00013,Stainless steel,Bar,Round,,3,mm,,,,3,,,,90.905,,,m,,9.63,0.14,767.9080263
+2021,SST00014,Stainless steel,Bar,Round,,3.5,mm,,,,3.5,,,,0,,,m,,2.8,0.14,0
+2021,SST00015,Stainless steel,Bar,Round,,4,mm,,,,4,,,,27.72,,,m,,5.13,0.14,124.74
+2021,SST00016,Stainless steel,Bar,Round,,5,mm,,,,5,,,,31.645,,,m,,6.84,0.14,189.87
+2021,SST00017,Stainless steel,Bar,Round,,6,mm,,,,6,,,,4.475,,,m,,12.49,0.14,49.02872807
+2021,SST00018,Stainless steel,Bar,Round,,8,mm,,,,8,,,,14.95,,,m,,18.24,0.14,239.2
+2021,SST00019,Stainless steel,Bar,Round,,10,mm,,,,10,,,,15.17,,,m,,30.78,0.14,409.59
+2021,SST00020,Stainless steel,Bar,Round,,12,mm,,,,12,,,,8.45,,,m,,43.32,0.14,321.1
+2021,SST00021,Stainless steel,Bar,Round,,12.7,mm,,,,12.7,,,,0,,,m,,43.32,0.14,0
+2021,SST00022,Stainless steel,Bar,Round,,16,mm,,,,16,,,,13.24,,,m,,75.24,0.14,873.84
+2021,SST00023,Stainless steel,Bar,Round,,20,mm,,,,20,,,,8.725,,,m,,119.7,0.14,916.125
+2021,SST00024,Stainless steel,Bar,Round,,22,mm,,,,22,,,,10.825,,,m,,165.3,0.14,1569.625
+2021,SST00025,Stainless steel,Bar,Round,,24,mm,,,,24,,,,0,,,m,,177.84,0.14,0
+2021,SST00026,Stainless steel,Bar,Round,,25,mm,,,,25,,,,6.37,,,m,,212.04,0.14,1184.82
+2021,SST00027,Stainless steel,Bar,Round,,28,mm,,,,28,,,,0.67,,,m,,242.36,0.14,142.4396491
+2021,SST00028,Stainless steel,Bar,Round,,30,mm,,,,30,,,,0,,,m,,283.86,0.14,0
+2021,SST00029,Stainless steel,Bar,Round,,32,mm,,,,32,,,,2.37,,,m,,291.84,0.14,606.72
+2021,SST00030,Stainless steel,Bar,Round,,38,mm,,,,38,,,,5.075,,,m,,462.84,0.14,2060.45
+2021,SST00031,Stainless steel,Bar,Round,,45,mm,,,,45,,,,1,,,m,,642.96,0.14,564
+2021,SST00032,Stainless steel,Bar,Round,,50,mm,,,,50,,,,0,,,m,,784.32,0.14,0
+2021,SST00033,Stainless steel,Bar,Round,,65,mm,,,,65,,,,0,,,m,,1299.03,0.14,0
+2021,TFL00001,Teflon,Bar,Round,,6,mm,,,,6,,,,0,,,m,,29.98,0.14,0
+2021,TFL00002,Teflon,Bar,Round,,7,mm,,,,7,,,,0.92,,,m,,44.96,0.14,36.28350877
+2021,TFL00003,Teflon,Bar,Round,,8,mm,,,,8,,,,2.82,,,m,,44.96,0.14,111.2168421
+2021,TFL00004,Teflon,Bar,Round,,10,mm,,,,10,,,,2.96,,,m,,56.95,0.14,147.8701754
+2021,TFL00005,Teflon,Bar,Round,,16,mm,,,,16,,,,0.275,,,m,,187.35,0.14,45.19407895
+2021,TFL00006,Teflon,Bar,Round,,20,mm,,,,20,,,,0.305,,,m,,224.83,0.14,60.15188596
+2021,TFL00007,Teflon,Bar,Round,,60,mm,,,,60,,,,0.315,,,m,,1922.19,0.14,531.1314474
+2021,TFN00001,Tufnol,Bar,Round,,50,mm,,,,50,,,,0.335,,,m,,651.32,0.14,191.3966667
+2021,TFN00002,Tufnol,Bar,Round,,70,mm,,,,70,,,,0.11,,,m,,1611.34,0.14,155.4801754
+2021,ALM00034,Aluminium,Bar,Square,,6.35 x 6.35,mm,,,,6.35,6.35,,,10.195,,,m,,10.33,0.14,92.38100877
+2021,ALM00035,Aluminium,Bar,Square,,9.5 x 9.5,mm,,,,9.5,9.5,,,10.015,,,m,,13.68,0.14,120.18
+2021,ALM00036,Aluminium,Bar,Square,,13 x 13,mm,,,,13,13,,,13.13,,,m,,31.35,0.14,361.075
+2021,ALM00037,Aluminium,Bar,Square,,15.82 x 15.82,mm,,,,15.82,15.82,,,9.51,,,m,,48.56,0.14,405.0926316
+2021,ALM00038,Aluminium,Bar,Square,,20.28 x 20.28,mm,,,,20.28,20.28,,,6.68,,,m,,72.96,0.14,427.52
+2021,ALM00039,Aluminium,Bar,Square,,30.2 x 30.2,mm,,,,30.2,30.2,,,3.1,,,m,,174.42,0.14,474.3
+2021,BRS00040,Brass,Bar,Square,,6.35 x 6.35,mm,,,,6.35,6.35,,,6,,,m,,38.3,0.14,201.5789474
+2021,BRS00041,Brass,Bar,Square,,8 x 8,mm,,,,8,8,,,5.33,,,m,,47.88,0.14,223.86
+2021,BRS00042,Brass,Bar,Square,,9.6 x 9.6,mm,,,,9.6,9.6,,,5.725,,,m,,47.5,0.14,238.5416667
+2021,BRS00043,Brass,Bar,Square,,12.7 x 12.7,mm,,,,12.7,12.7,,,4.28,,,m,,98.04,0.14,368.08
+2021,BRS00044,Brass,Bar,Square,,38 x 38,mm,,,,38,38,,,1.35,,,m,,1208.4,0.14,1431
+2021,MST00065,Mild steel,Bar,Square,,8 x 8,mm,,,,8,8,,,9.53,,,m,,8.33,0.14,69.63587719
+2021,MST00066,Mild steel,Bar,Square,,10 x 10,mm,,,,10,10,,,62.235,,,m,,10.75,0.14,586.8651316
+2021,MST00067,Mild steel,Bar,Square,,12 x 12,mm,,,,12,12,,,7.02,,,m,,15.47,0.14,95.26263158
+2021,MST00068,Mild steel,Bar,Square,,19 x 19,mm,,,,19,19,,,4.965,,,m,,43.59,0.14,189.8459211
+2021,MST00069,Mild steel,Bar,Square,,20 x 20,mm,,,,20,20,,,6.1,,,m,,43.59,0.14,233.2447368
+2021,SST00034,Stainless steel,Bar,Square,,6 x 6,mm,,,,6,6,,,1.31,,,m,,29.64,0.14,34.06
+2021,SST00035,Stainless steel,Bar,Square,,10 x 10,mm,,,,10,10,,,2.4,,,m,,55.63,0.14,117.1157895
+2021,SST00036,Stainless steel,Bar,Square,,12 x 12,mm,,,,12,12,,,0.54,,,m,,55.63,0.14,26.35105263
+2021,SST00037,Stainless steel,Bar,Square,,25 x 25,mm,,,,25,25,,,3.2,,,m,,308.96,0.14,867.2561404
+2021,GLS00001,Glass,Clip,Conical,POM,NS14,,,No Size units and measurement available,,,,,,,,5,each,,31.05,0.14,136.1842105
+2021,GLS00002,Glass,Clip,Conical,POM,NS24,,,No Size units and measurement available,,,,,,,,13,each,,34.1,0.14,388.8596491
+2021,GLS00003,Glass,Clip,Conical,POM,NS29,,,No Size units and measurement available,,,,,,,,20,each,,35.49,0.14,622.6315789
+2021,GLS00004,Glass,Clip,Conical,POM,NS34,,,No Size units and measurement available,,,,,,,,8,each,,36.59,0.14,256.7719298
+2021,GLS00005,Glass,Clip,Conical,POM,NS45,,,No Size units and measurement available,,,,,,,,4,each,,44.92,0.14,157.6140351
+2021,GLS00006,Glass,Clip,Spherical,Nickel,NS13,,,No Size units and measurement available,,,,,,,,4,each,,136.69,0.14,479.6140351
+2021,GLS00007,Glass,Clip,Spherical,Nickel,NS19,,,No Size units and measurement available,,,,,,,,4,each,,146.66,0.14,514.5964912
+2021,GLS00008,Glass,Clip,Spherical,Nickel,NS29,,,No Size units and measurement available,,,,,,,,5,each,,166.91,0.14,732.0614035
+2021,GLS00009,Glass,Clip,Spherical,POM,NS13,,,No Size units and measurement available,,,,,,,,8,each,,41.03,0.14,287.9298246
+2021,GLS00010,Glass,Clip,Spherical,POM,NS19,,,No Size units and measurement available,,,,,,,,2,each,,42.42,0.14,74.42105263
+2021,GLS00011,Glass,Cone,Langpunt,,14,,,No Size units and measurement available,,,,,,,,53,each,,31.33,0.14,1456.570175
+2021,GLS00012,Glass,Cone,Langpunt,,19,,,No Size units and measurement available,,,,,,,,20,each,,37.98,0.14,666.3157895
+2021,GLS00013,Glass,Cone,Langpunt,,24,,,No Size units and measurement available,,,,,,,,26,each,,46.02,0.14,1049.578947
+2021,GLS00014,Glass,Cone,Langpunt,,29,,,No Size units and measurement available,,,,,,,,5,each,,48.24,0.14,211.5789474
+2021,GLS00015,Glass,Cone,Langpunt,,34,,,No Size units and measurement available,,,,,,,,23,each,,86.5,0.14,1745.175439
+2021,GLS00016,Glass,Cone,Langpunt,,40,,,No Size units and measurement available,,,,,,,,8,each,,117,0.14,821.0526316
+2021,GLS00017,Glass,Cone,Langpunt,,45,,,No Size units and measurement available,,,,,,,,2,each,,117,0.14,205.2631579
+2021,GLS00018,Glass,Cone,,,14,,,No Size units and measurement available,,,,,,,,33,each,,29.66,0.14,858.5789474
+2021,GLS00019,Glass,Cone,,,19,,,No Size units and measurement available,,,,,,,,27,each,,37.43,0.14,886.5
+2021,GLS00020,Glass,Cone,,,24,,,No Size units and measurement available,,,,,,,,6,each,,42.98,0.14,226.2105263
+2021,GLS00021,Glass,Cone,,,29,,,No Size units and measurement available,,,,,,,,9,each,,44.64,0.14,352.4210526
+2021,GLS00022,Glass,Cone,,,34,,,No Size units and measurement available,,,,,,,,14,each,,82.34,0.14,1011.192982
+2021,GLS00023,Glass,Cone,,,40,,,No Size units and measurement available,,,,,,,,4,each,,108.96,0.14,382.3157895
+2021,GLS00024,Glass,Cone,,,45,,,No Size units and measurement available,,,,,,,,11,each,,108.95,0.14,1051.27193
+2021,GLS00025,Glass,Filter disc,Por 0,,25,mm,,,,25,,,,,,19,each,,57,0.14,950
+2021,GLS00026,Glass,Filter disc,Por 2,,60,mm,,,,60,,,,,,1,each,,154.71,0.14,135.7105263
+2021,GLS00027,Glass,Filter disc,Por 3,,10,mm,,,,10,,,,,,5,each,,47.69,0.14,209.1666667
+2021,GLS00028,Glass,Filter disc,Por 3,,20,mm,,,,20,,,,,,1,each,,49.35,0.14,43.28947368
+2021,GLS00029,Glass,Filter disc,Por 3,,30,mm,,,,30,,,,,,1,each,,56.01,0.14,49.13157895
+2021,GLS00030,Glass,Filter disc,Por 3,,50,mm,,,,50,,,,,,12,each,,96.48,0.14,1015.578947
+2021,GLS00031,Glass,Filter disc,Por 3,,65,mm,,,,65,,,,,,6,each,,232.61,0.14,1224.263158
+2021,GLS00032,Glass,Filter disc,Por 4,,50,mm,,,,50,,,,,,8,each,,111.46,0.14,782.1754386
+2021,GLS00033,Glass,Filter disc,Por 5,,50,mm,,,,50,,,,,,2,each,,345.17,0.14,605.5614035
+2021,GLS00034,Glass,Hose bent,,,GL 14,,,No Size units and measurement available,,,,,,,,0,each,,14.97,0.14,0
+2021,GLS00035,Glass,Joint,Spherical,Ball,19,,,No Size units and measurement available,,,,,,,,6,each,,120.75,0.14,635.5263158
+2021,GLS00036,Glass,Joint,Spherical,Ball,29,,,No Size units and measurement available,,,,,,,,3,each,,147.78,0.14,388.8947368
+2021,GLS00039,Glass,Joint,Spherical,Cup,19,,,No Size units and measurement available,,,,,,,,18,each,,120.75,0.14,1906.578947
+2021,GLS00038,Glass,Joint,Spherical,Cup,29,,,No Size units and measurement available,,,,,,,,6,each,,147.78,0.14,777.7894737
+2021,GLS00040,Glass,Joint,Spherical,Cup,35,,,No Size units and measurement available,,,,,,,,9,each,,184,0.14,1452.631579
+2021,GLS00041,Glass,Rod,Boro,,5,mm,,,,5,,,,32.3,,,m,,31.55,0.14,893.9166667
+2021,GLS00042,Glass,Rod,Boro,,6,mm,,,,6,,,,17.49,,,m,,45.36,0.14,695.9178947
+2021,GLS00043,Glass,Rod,Boro,,8,mm,,,,8,,,,30.78,,,m,,52.62,0.14,1420.74
+2021,GLS00044,Glass,Rod,Boro,,9,mm,,,,9,,,,7.67,,,m,,66.83,0.14,449.6369298
+2021,ELN00001,Ertalon,Rod,,,40,mm,,,,40,,,,0.15,,,m,,140.8,0.14,18.52631579
+2021,ELN00002,Ertalon,Rod,,,50,mm,,,,50,,,,0.515,,,m,,459.11,0.14,207.4049561
+2021,ELT00001,Ertalyte,Rod,,,20,mm,,,,20,,,,0,,,m,,90.08,0.14,0
+2021,ELT00002,Ertalyte,Rod,,,40,mm,,,,40,,,,0,,,m,,354.94,0.14,0
+2021,ELT00003,Ertalyte,Rod,,,60,mm,,,,60,,,,0.16,,,m,,459.11,0.14,64.43649123
+2021,VLN00001,Vescolene,Rod,,,20,mm,,,,20,,,,0,,,m,,23.42,0.14,0
+2021,VLN00002,Vescolene,Rod,,,25,mm,,,,25,,,,0,,,m,,36.28,0.14,0
+2021,VLN00003,Vescolene,Rod,,,30,mm,,,,30,,,,0,,,m,,51.93,0.14,0
+2021,VNT00001,Vesconite,Rod,,,12,mm,,,,12,,,,0.425,,,m,,236.95,0.14,88.33662281
+2021,VNT00002,Vesconite,Rod,,,18,mm,,,,18,,,,0.38,,,m,,337.2,0.14,112.4
+2021,VNT00003,Vesconite,Rod,,,25,mm,,,,25,,,,0,,,m,,581.74,0.14,0
+2021,VNT00004,Vesconite,Rod,,,30,mm,,,,30,,,,0.31,,,m,,808.94,0.14,219.9749123
+2021,VNT00005,Vesconite,Rod,,,35,mm,,,,35,,,,0.66,,,m,,1063.24,0.14,615.56
+2021,VNT00006,Vesconite,Rod,,,40,mm,,,,40,,,,0.735,,,m,,1392.62,0.14,897.8734211
+2021,VNL00001,Vesconylon,Rod,,,20,mm,,,,20,,,,0,,,m,,77.41,0.14,0
+2021,VNL00002,Vesconylon,Rod,,,25,mm,,,,25,,,,2.055,,,m,,77.41,0.14,139.5417105
+2021,PSP00001,Perspex,Rod,,,6,mm,,,,6,,,,0.53,,,m,,28.73,0.14,13.35692982
+2021,PSP00002,Perspex,Rod,,,8,mm,,,,8,,,,0.84,,,m,,42.86,0.14,31.58105263
+2021,PSP00003,Perspex,Rod,,,10,mm,,,,10,,,,0,,,m,,63.68,0.14,0
+2021,PSP00004,Perspex,Rod,,,40,mm,,,,40,,,,0,,,m,,1031.34,0.14,0
+2021,PSP00005,Perspex,Rod,,,70,mm,,,,70,,,,0,,,m,,362.44,0.14,0
+2021,PCN00001,Polycarbonate,Rod,,,26,mm,,,,26,,,,1,,,m,,173.67,0.14,152.3421053
+2021,PVC00001,PVC,Rod,,,5,mm,,,,5,,,,9.545,,,m,,5.28,0.14,44.20842105
+2021,PVC00002,PVC,Rod,,,6,mm,,,,6,,,,15.065,,,m,,7.82,0.14,103.340614
+2021,PVC00003,PVC,Rod,,,8,mm,,,,8,,,,15.2,,,m,,13.82,0.14,184.2666667
+2021,PVC00004,PVC,Rod,,,10,mm,,,,10,,,,5.88,,,m,,21.45,0.14,110.6368421
+2021,PVC00005,PVC,Rod,,,12,mm,,,,12,,,,3.205,,,m,,30.92,0.14,86.92859649
+2021,PVC00006,PVC,Rod,,,15,mm,,,,15,,,,4.39,,,m,,47.82,0.14,184.1489474
+2021,PVC00007,PVC,Rod,,,20,mm,,,,20,,,,5,,,m,,51.5,0.14,225.877193
+2021,PVC00008,PVC,Rod,,,25,mm,,,,25,,,,3.73,,,m,,93.15,0.14,304.7802632
+2021,PVC00009,PVC,Rod,,,30,mm,,,,30,,,,1.79,,,m,,114.44,0.14,179.6908772
+2021,PVC00010,PVC,Rod,,,35,mm,,,,35,,,,0,,,m,,191.98,0.14,0
+2021,PVC00011,PVC,Rod,,,40,mm,,,,40,,,,1.61,,,m,,202.46,0.14,285.9303509
+2021,PVC00012,PVC,Rod,,,50,mm,,,,50,,,,1.91,,,m,,316.89,0.14,530.9297368
+2021,PVC00013,PVC,Rod,,,60,mm,,,,60,,,,0,,,m,,722.82,0.14,0
+2021,PVC00014,PVC,Rod,,,90,mm,,,,90,,,,0.11,,,m,,1321.7,0.14,127.5324561
+2021,GLS00045,Glass,Screw cap,Closed,,GL 14,,,No Size units and measurement available,,,,,,,,17,each,,24.4,0.14,363.8596491
+2021,GLS00046,Glass,Screw cap,Closed,,GL 18,,,No Size units and measurement available,,,,,,,,1,each,,27.72,0.14,24.31578947
+2021,GLS00047,Glass,Screw cap,Closed,,GL 25,,,No Size units and measurement available,,,,,,,,10,each,,34.66,0.14,304.0350877
+2021,GLS00048,Glass,Screw cap,Closed,,GL 32,,,No Size units and measurement available,,,,,,,,14,each,,46.58,0.14,572.0350877
+2021,GLS00049,Glass,Screw cap,With aperture,,GL 14,,,No Size units and measurement available,,,,,,,,0,each,,14.14,0.14,0
+2021,ALM00040,Aluminium,Sheet,Anodised,,1.1,mm,,,2440,1220,,,1.1,0,0,,m²,,815.36,0.14,0
+2021,PSP00006,Perspex,Sheet,Black,,5,mm,,,3050,2030,,,5,1.54,1.465,,m²,,733.58,0.14,1451.78056
+2021,PSP00007,Perspex,Sheet,Blue,,3,mm,,,3050,2030,,,3,1.55,1.285,,m²,,440.15,0.14,769.0076864
+2021,BRS00045,Brass,Sheet,Engraving,,0.8,mm,,,600,2000,,,0.8,0.745,0.6,,m²,,1402.96,0.14,550.108
+2021,BRS00046,Brass,Sheet,Engraving,,1.2,mm,,,600,2000,,,1.2,1.985,0.6,,m²,,1492.6,0.14,1559.374211
+2021,BRS00047,Brass,Sheet,Engraving,,1.6,mm,,,600,2000,,,1.6,1.705,0.6,,m²,,1989.3,0.14,1785.135
+2021,BRS00048,Brass,Sheet,Engraving,,2,mm,,,600,2000,,,2,0.255,0.6,,m²,,2076,0.14,278.6210526
+2021,BRS00049,Brass,Sheet,Engraving,,3,mm,,,600,2000,,,3,0.525,0.6,,m²,,2435,0.14,672.8289474
+2021,MST00070,Mild steel,Sheet,Galvinised,,0.5,mm,,,2450,1225,,,0.5,1.805,0.93,,m²,,62.37,0.14,91.839825
+2021,MST00070,Mild steel,Sheet,Galvinised,,0.5,mm,,,2450,1225,,,0.5,1.805,0.93,,m²,,62.37,0.14,91.839825
+2021,MST00070,Mild steel,Sheet,Galvinised,,0.5,mm,,,2450,1225,,,0.5,1.805,0.93,,m²,,62.37,0.14,91.839825
+2021,MST00071,Mild steel,Sheet,Galvinised,,0.7,mm,,,2450,1225,,,0.7,1.71,1.23,,m²,,109.77,0.14,202.52565
+2021,MST00072,Mild steel,Sheet,Galvinised,,1,mm,,,2450,1225,,,1,0,0,,m²,,101.13,0.14,0
+2021,MST00072,Mild steel,Sheet,Galvinised,,1,mm,,,2450,1225,,,1,2.03,1.23,,m²,,101.13,0.14,221.5013132
+2021,MST00072,Mild steel,Sheet,Galvinised,,1,mm,,,2450,1225,,,1,0.975,1.23,,m²,,101.13,0.14,106.3860987
+2021,MST00072,Mild steel,Sheet,Galvinised,,1,mm,,,2450,1225,,,1,1.51,1.23,,m²,,101.13,0.14,164.7620605
+2021,MST00072,Mild steel,Sheet,Galvinised,,1,mm,,,2450,1225,,,1,1.755,1.23,,m²,,101.13,0.14,191.4949776
+2021,MST00073,Mild steel,Sheet,Galvinised,,1.2,mm,,,2450,1225,,,1.2,0,0,1,m²,,120.29,0.14,316.6845285
+2021,MST00074,Mild steel,Sheet,Galvinised,,1.6,mm,,,2450,1225,,,1.6,2.45,0.45,,m²,,158.22,0.14,153.0153947
+2021,PSP00008,Perspex,Sheet,Green,,3,mm,,,3050,2030,,,3,1.94,1.51,,m²,,377.41,0.14,969.8112754
+2021,SST00040,Stainless steel,Sheet,Magnetic,Bright,0.5,mm,,No standard length and width available,,,,,0.5,2.05,0.2,,m²,,179.95,0.14,124.03
+2021,SST00041,Stainless steel,Sheet,Magnetic,Bright,0.8,mm,,No standard length and width available,,,,,0.8,1.98,1.25,,m²,,320,0.14,694.7368421
+2021,SST00042,Stainless steel,Sheet,Magnetic,Bright,1,mm,,No standard length and width available,,,,,1,1.905,1.22,,m²,,350,0.14,713.5394737
+2021,PSP00009,Perspex,Sheet,Opal,,3,mm,,,3050,2030,,,3,1.54,1.39,,m²,,360.92,0.14,677.7064491
+2021,PSP00010,Perspex,Sheet,Opal,,5,mm,,,3050,2030,,,5,2.03,0.79,,m²,,723.737,0.14,1018.120199
+2021,PSP00010,Perspex,Sheet,Opal,,5,mm,,,3050,2030,,,5,2.03,0.79,,m²,,723.737,0.14,1018.120199
+2021,PSP00010,Perspex,Sheet,Opal,,5,mm,,,3050,2030,,,5,2.03,0.79,,m²,,723.737,0.14,1018.120199
+2021,PSP00010,Perspex,Sheet,Opal,,5,mm,,,3050,2030,,,5,2.03,0.79,,m²,,723.737,0.14,1018.120199
+2021,PSP00010,Perspex,Sheet,Opal,,5,mm,,,3050,2030,,,5,1.02,0.91,,m²,,723.737,0.14,589.2742837
+2021,PSP00010,Perspex,Sheet,Opal,,5,mm,,,3050,2030,,,5,1.02,0.91,,m²,,723.737,0.14,589.2742837
+2021,PSP00010,Perspex,Sheet,Opal,,5,mm,,,3050,2030,,,5,1.02,0.91,,m²,,723.737,0.14,589.2742837
+2021,PSP00010,Perspex,Sheet,Opal,,5,mm,,,3050,2030,,,5,1.02,0.91,,m²,,723.737,0.14,589.2742837
+2021,PSP00010,Perspex,Sheet,Opal,,5,mm,,,3050,2030,,,5,1.02,0.91,,m²,,723.737,0.14,589.2742837
+2021,PSP00010,Perspex,Sheet,Opal,,5,mm,,,3050,2030,,,5,1.02,0.91,,m²,,723.737,0.14,589.2742837
+2021,PSP00010,Perspex,Sheet,Opal,,5,mm,,,3050,2030,,,5,1.02,0.91,,m²,,723.737,0.14,589.2742837
+2021,PSP00010,Perspex,Sheet,Opal,,5,mm,,,3050,2030,,,5,1.02,0.91,,m²,,723.737,0.14,589.2742837
+2021,PSP00010,Perspex,Sheet,Opal,,5,mm,,,3050,2030,,,5,1.03,0.91,,m²,,723.737,0.14,595.0514825
+2021,PSP00010,Perspex,Sheet,Opal,,5,mm,,,3050,2030,,,5,1.03,0.91,,m²,,723.737,0.14,595.0514825
+2021,PSP00010,Perspex,Sheet,Opal,,5,mm,,,3050,2030,,,5,1.03,0.91,,m²,,723.737,0.14,595.0514825
+2021,PSP00010,Perspex,Sheet,Opal,,5,mm,,,3050,2030,,,5,1.03,0.91,,m²,,723.737,0.14,595.0514825
+2021,PSP00010,Perspex,Sheet,Opal,,5,mm,,,3050,2030,,,5,1.03,0.91,,m²,,723.737,0.14,595.0514825
+2021,PSP00010,Perspex,Sheet,Opal,,5,mm,,,3050,2030,,,5,1.03,0.91,,m²,,723.737,0.14,595.0514825
+2021,PSP00010,Perspex,Sheet,Opal,,5,mm,,,3050,2030,,,5,1.03,0.91,,m²,,723.737,0.14,595.0514825
+2021,PSP00010,Perspex,Sheet,Opal,,5,mm,,,3050,2030,,,5,1.03,0.91,,m²,,723.737,0.14,595.0514825
+2021,ALM00041,Aluminium,Sheet,Ripple plate,,1,mm,,,2500,1250,,,1,2.505,1.25,,m²,,215,0.14,590.5427632
+2021,PVC00015,PVC,Sheet,Simona,,5,mm,,,2000,1000,,,5,1.455,1,,m²,,801.36,0.14,1022.788421
+2021,PVC00015,PVC,Sheet,Simona,,5,mm,,,2000,1000,,,5,0.76,0.35,,m²,0.266,801.36,0.14,0
+2021,PVC00016,PVC,Sheet,Simona,,6,mm,,,2000,1000,,,6,2.44,1.06,,m²,,975.57,0.14,2213.345832
+2021,PVC00016,PVC,Sheet,Simona,,6,mm,,,2000,1000,,,6,1.215,0.395,,m²,,975.57,0.14,410.7021336
+2021,PVC00017,PVC,Sheet,Simona,,6.5,mm,,,2000,1000,,,6.5,0.59,0.395,,m²,,975.57,0.14,199.4356039
+2021,PSP00011,Perspex,Sheet,Tinted,,3,mm,,,3050,2030,,,3,0.785,0.74,,m²,,440.15,0.14,224.2834518
+2021,ALM00042,Aluminium,Sheet,Vastrap,,2.8,mm,,,2500,1200,,,2.8,2.02,0.445,,m²,,376.58,0.14,296.9366333
+2021,ALM00042,Aluminium,Sheet,Vastrap,,2.8,mm,,,2500,1200,,,2.8,2.02,0.445,,m²,,376.58,0.14,296.9366333
+2021,ALM00042,Aluminium,Sheet,Vastrap,,2.8,mm,,,2500,1200,,,2.8,2.02,0.8,,m²,,376.58,0.14,533.8186667
+2021,ALM00042,Aluminium,Sheet,Vastrap,,2.8,mm,,,2500,1200,,,2.8,2.02,0.8,,m²,,376.58,0.14,533.8186667
+2021,PSP00012,Perspex,Sheet,White,,3,mm,,,3050,2030,,,3,0,0,,m²,,360.92,0.14,0
+2021,PSP00012,Perspex,Sheet,White,,3,mm,,,3050,2030,,,3,0.85,0.455,,m²,,397.53,0.14,134.8637961
+2021,PSP00012,Perspex,Sheet,White,,3,mm,,,3050,2030,,,3,1.955,1.37,,m²,,397.53,0.14,933.9688382
+2021,ALM00043,Aluminium,Sheet,,,0.7,mm,,,2500,1250,,,0.7,2.5,1.25,3,m²,,94.85,0.14,1040.02193
+2021,ALM00044,Aluminium,Sheet,,,0.9,mm,,,2500,1250,,,0.9,2.38,1.25,,m²,,120.38,0.14,314.1495614
+2021,ALM00045,Aluminium,Sheet,,,1,mm,,,2500,1250,,,1,2.31,1.25,,m²,,126.38,0.14,320.1072368
+2021,ALM00045,Aluminium,Sheet,,,1,mm,,,2500,1250,,,1,2.37,1.25,,m²,,126.38,0.14,328.4217105
+2021,ALM00045,Aluminium,Sheet,,,1,mm,,,2500,1250,,,1,2.5,1.25,,m²,3.125,126.38,0.14,0
+2021,ALM00046,Aluminium,Sheet,,,1.2,mm,,,2500,1250,,,1.2,2.5,1.25,2,m²,,162.34,0.14,1335.032895
+2021,ALM00046,Aluminium,Sheet,,,1.2,mm,,,2500,1250,,,1.2,1.58,1.25,,m²,,162.34,0.14,281.2469298
+2021,ALM00046,Aluminium,Sheet,,,1.2,mm,,,2500,1250,,,1.2,2.065,1.25,,m²,,162.34,0.14,367.579057
+2021,ALM00046,Aluminium,Sheet,,,1.2,mm,,,2500,1250,,,1.2,2.5,1.25,,m²,,162.34,0.14,110.3627193
+2021,ALM00047,Aluminium,Sheet,,,1.6,mm,,,2500,1250,,,1.6,1.25,1.035,,m²,,228.9,0.14,259.7713816
+2021,ALM00047,Aluminium,Sheet,,,1.6,mm,,,2500,1250,,,1.6,2.07,1.25,,m²,2.5875,228.9,0.14,0
+2021,ALM00047,Aluminium,Sheet,,,1.6,mm,,,2500,1250,,,1.6,2.215,1.25,,m²,2.76875,228.9,0.14,0
+2021,ALM00047,Aluminium,Sheet,,,1.6,mm,,,2500,1250,,,1.6,2.5,1.25,,m²,,228.9,0.14,627.4671053
+2021,ALM00048,Aluminium,Sheet,,,2,mm,,No Unit Price available,2500,1250,,,2,2.5,1.25,,m²,,,0.14,0
+2021,ALM00048,Aluminium,Sheet,,,2,mm,,,2500,1250,,,2,1.155,0.75,,m²,0.86625,259.74,0.14,0
+2021,ALM00049,Aluminium,Sheet,,,2.5,mm,,,2500,1250,,,2.5,1.455,1.25,,m²,1.81875,346.56,0.14,0
+2021,ALM00049,Aluminium,Sheet,,,2.5,mm,,,2500,1250,,,2.5,2.105,0.81,,m²,,346.56,0.14,518.3352
+2021,ALM00050,Aluminium,Sheet,,,3,mm,,,2500,1250,,,3,0.94,0.75,,m²,0.705,386.69,0.14,0
+2021,ALM00051,Aluminium,Sheet,,,4.5,mm,,,2500,1250,,,4.5,1.25,1.25,,m²,,643.14,0.14,881.4967105
+2021,ALM00052,Aluminium,Sheet,,,6,mm,,,2500,1250,,,6,2.5,1.255,,m²,,808.76,0.14,2225.863596
+2021,ALM00053,Aluminium,Sheet,,,8,mm,,,2500,1250,,,8,1.185,0.95,,m²,,1386,0.14,1368.675
+2021,ALM00054,Aluminium,Sheet,,,12,mm,,,2500,1250,,,12,0.225,0.305,,m²,,1660.98,0.14,99.986625
+2021,ALM00054,Aluminium,Sheet,,,12,mm,,No Unit Price available,2500,1250,,,12,0.46,0.53,,m²,,,0.14,0
+2021,ALM00054,Aluminium,Sheet,,,12,mm,,,2500,1250,,,12,1.74,1.27,,m²,,1660.98,0.14,3219.6786
+2021,ALM00055,Aluminium,Sheet,,,12.5,mm,,,2500,1250,,,12.5,0,0,,m²,,1100,0.14,0
+2021,ALM00056,Aluminium,Sheet,,,16,mm,,,2500,1250,,,16,1.005,0.69,,m²,,1400,0.14,851.6052632
+2021,ALM00057,Aluminium,Sheet,,,20,mm,,,2500,1250,,,20,0.175,0.33,,m²,0.05775,1661,0.14,0
+2021,ALM00057,Aluminium,Sheet,,,20,mm,,,2500,1250,,,20,0.45,0.41,,m²,0.1845,2185.3,0.14,0
+2021,ALM00058,Aluminium,Sheet,,,25,mm,,,2500,1250,,,25,0.155,0.255,,m²,0.039525,4359.24,0.14,0
+2021,ALM00058,Aluminium,Sheet,,,25,mm,,,2500,1250,,,25,0.475,0.38,,m²,0.1805,4359.24,0.14,0
+2021,ALM00059,Aluminium,Sheet,,,30,mm,,,2500,1250,,,30,0.3,0.325,,m²,,0,0.14,0
+2021,ALM00059,Aluminium,Sheet,,,30,mm,,,2500,1250,,,30,0.105,0.175,,m²,,0,0.14,0
+2021,ALM00060,Aluminium,Sheet,,,40,mm,,,2500,1250,,,40,0.19,0.275,,m²,,5244.73,0.14,240.3834583
+2021,ALM00061,Aluminium,Sheet,,,50,mm,,,2500,1250,,,50,0.38,0.455,,m²,0.1729,6950.15,0.14,0
+2021,BRS00050,Brass,Sheet,,,4.8,mm,,,2000,1000,,,4.8,0.29,0.125,,m²,0.03625,4357.65,0.14,0
+2021,BRS00050,Brass,Sheet,,,4.8,mm,,,2000,1000,,,4.8,1.65,0.9,,m²,,4358.65,0.14,5677.715132
+2021,BRS00050,Brass,Sheet,,,4.8,mm,,,2000,1000,,,4.8,0.915,0.69,,m²,,4358.65,0.14,2413.889191
+2021,BRS00051,Brass,Sheet,,,6.5,mm,,,2000,1000,,,6.5,1.8,0.9,,m²,,5643,0.14,8019
+2021,BRS00052,Brass,Sheet,,,6.7,mm,,,2000,1000,,,6.7,0.495,0.425,,m²,,5643,0.14,1041.35625
+2021,BRS00053,Brass,Sheet,,,8,mm,,,2000,1000,,,8,1.8,0.9,,m²,,8527.2,0.14,12117.6
+2021,BRS00054,Brass,Sheet,,,9.7,mm,,,2000,1000,,,9.7,0.42,0.24,,m²,0.1008,8527.2,0.14,0
+2021,BRS00054,Brass,Sheet,,,9.7,mm,,,2000,1000,,,9.7,1.27,0.9,,m²,,8527.2,0.14,8549.64
+2021,BRS00055,Brass,Sheet,,,12.7,mm,,,2000,1000,,,12.7,0.9,0.45,,m²,,10822.02,0.14,3844.665
+2021,BRS00055,Brass,Sheet,,,12.7,mm,,,2000,1000,,,12.7,0.9,0.71,,m²,,10822.02,0.14,6066.027
+2021,BRS00055,Brass,Sheet,,,12.7,mm,,,2000,1000,,,12.7,0.45,0.295,,m²,,10822.02,0.14,1260.19575
+2021,CPR00002,Copper,Sheet,,,0.9,mm,,,600,1800,,,0.9,0,0,1,m²,,1599.63,0.14,1515.438947
+2021,CPR00002,Copper,Sheet,,,0.9,mm,,,600,1800,,,0.9,1.06,0.6,,m²,,1599.63,0.14,892.4251579
+2021,CPR00002,Copper,Sheet,,,0.9,mm,,No Unit Price available,600,1800,,,0.9,0.28,0.385,,m²,,,0.14,0
+2021,CPR00003,Copper,Sheet,,,3,mm,,,600,1800,,,3,0.98,0.5,,m²,,4116.67,0.14,1769.445877
+2021,MST00075,Mild steel,Sheet,,,0.5,mm,,,2450,1225,,,0.5,1.375,1.23,,m²,,55.46,0.14,82.27782895
+2021,MST00075,Mild steel,Sheet,,,0.5,mm,,,2450,1225,,,0.5,2.235,1.23,,m²,,55.46,0.14,133.7388711
+2021,MST00076,Mild steel,Sheet,,,0.7,mm,,,2450,1225,,,0.7,0.66,1.23,,m²,,68.38,0.14,48.69375789
+2021,MST00076,Mild steel,Sheet,,,0.7,mm,,,2450,1225,,,0.7,0,0,,m²,,68.38,0.14,0
+2021,MST00076,Mild steel,Sheet,,,0.7,mm,,,2450,1225,,,0.7,0,0,2,m²,,68.38,0.14,360.044693
+2021,MST00077,Mild steel,Sheet,,,0.9,mm,,,2450,1225,,,0.9,0,0,3,m²,,107.71,0.14,850.6964145
+2021,MST00077,Mild steel,Sheet,,,0.9,mm,,,2450,1225,,,0.9,0,0,,m²,,107.71,0.14,0
+2021,MST00078,Mild steel,Sheet,,,1,mm,,,2450,1225,,,1,0.86,0.825,,m²,0.7095,125.77,0.14,0
+2021,MST00078,Mild steel,Sheet,,,1,mm,,,2450,1225,,,1,0.76,0.72,,m²,0.5472,125.77,0.14,0
+2021,MST00079,Mild steel,Sheet,,,1.2,mm,,,2450,1225,,,1.2,2.45,1.23,,m²,,0,0.14,0
+2021,MST00079,Mild steel,Sheet,,,1.2,mm,,,2450,1225,,,1.2,1.25,1.74,,m²,,141.64,0.14,270.2342105
+2021,MST00080,Mild steel,Sheet,,,1.5,mm,,,2450,1225,,,1.5,2.45,1.23,,m²,,123.29,0.14,325.9073816
+2021,MST00081,Mild steel,Sheet,,,1.6,mm,,,2450,1225,,,1.6,1.04,0.91,,m²,,186.61,0.14,154.9190386
+2021,MST00081,Mild steel,Sheet,,,1.6,mm,,,2450,1225,,,1.6,1.735,0.73,,m²,,186.61,0.14,207.3253469
+2021,MST00081,Mild steel,Sheet,,,1.6,mm,,,2450,1225,,,1.6,0,0,,m²,,186.61,0.14,0
+2021,MST00081,Mild steel,Sheet,,,1.6,mm,,,2450,1225,,,1.6,0,0,,m²,,186.61,0.14,0
+2021,MST00081,Mild steel,Sheet,,,1.6,mm,,,2450,1225,,,1.6,0,0,,m²,,186.61,0.14,0
+2021,MST00081,Mild steel,Sheet,,,1.6,mm,,,2450,1225,,,1.6,0,0,,m²,,186.61,0.14,0
+2021,MST00082,Mild steel,Sheet,,,1.7,mm,,,2450,1225,,,1.7,1.33,1.23,,m²,1.6359,189.92,0.14,0
+2021,MST00083,Mild steel,Sheet,,,3,mm,,,2450,1225,,,3,1.74,1.23,,m²,,316.79,0.14,594.7315421
+2021,PSP00013,Perspex,Sheet,,,1,mm,,,3050,2030,,,1,1.84,1.245,,m²,,127.32,0.14,255.8461895
+2021,PSP00014,Perspex,Sheet,,,1.5,mm,,,3050,2030,,,1.5,0.69,0.81,,m²,,127.32,0.14,62.42030526
+2021,PSP00014,Perspex,Sheet,,,1.5,mm,,,3050,2030,,,1.5,2.055,3.055,,m²,,127.32,0.14,701.1562658
+2021,PSP00015,Perspex,Sheet,,,2,mm,,,3050,2030,,,2,2.05,0.65,,m²,,351.73,0.14,411.1230044
+2021,PSP00015,Perspex,Sheet,,,2,mm,,,3050,2030,,,2,2.05,0.65,,m²,,351.73,0.14,411.1230044
+2021,PSP00015,Perspex,Sheet,,,2,mm,,,3050,2030,,,2,2.05,0.65,,m²,,351.73,0.14,411.1230044
+2021,PSP00015,Perspex,Sheet,,,2,mm,,,3050,2030,,,2,1.7,0.6,,m²,,351.73,0.14,314.7057895
+2021,PSP00015,Perspex,Sheet,,,2,mm,,,3050,2030,,,2,1.7,0.6,,m²,,351.73,0.14,314.7057895
+2021,PSP00015,Perspex,Sheet,,,2,mm,,,3050,2030,,,2,1.525,0.3,,m²,,351.73,0.14,141.1548026
+2021,PSP00015,Perspex,Sheet,,,2,mm,,,3050,2030,,,2,2.41,0.35,,m²,,351.73,0.14,260.2493465
+2021,PSP00015,Perspex,Sheet,,,2,mm,,,3050,2030,,,2,0.83,0.525,,m²,,351.73,0.14,134.4441645
+2021,PSP00015,Perspex,Sheet,,,2,mm,,,3050,2030,,,2,0.805,0.69,,m²,,351.73,0.14,171.3758145
+2021,PSP00015,Perspex,Sheet,,,2,mm,,,3050,2030,,,2,1.715,0.475,,m²,,351.73,0.14,251.3403958
+2021,PSP00015,Perspex,Sheet,,,2,mm,,,3050,2030,,,2,1.205,0.48,,m²,,351.73,0.14,178.4566947
+2021,PSP00015,Perspex,Sheet,,,2,mm,,,3050,2030,,,2,1.205,0.48,,m²,,351.73,0.14,178.4566947
+2021,PSP00015,Perspex,Sheet,,,2,mm,,,3050,2030,,,2,1.205,0.48,,m²,,351.73,0.14,178.4566947
+2021,PSP00016,Perspex,Sheet,,,3,mm,,No Unit Price available,3050,2030,,,3,1.725,1.365,,m²,,,0.14,0
+2021,PSP00016,Perspex,Sheet,,,3,mm,,,3050,2030,,,3,2.03,1.37,,m²,,360.92,0.14,880.4865018
+2021,PSP00017,Perspex,Sheet,,,4,mm,,,3050,2030,,,4,0.335,2.03,,m²,,554.45,0.14,330.7488794
+2021,PSP00018,Perspex,Sheet,,,5,mm,,,3050,2030,,,5,0.505,1.295,,m²,,699.89,0.14,401.5004936
+2021,PSP00018,Perspex,Sheet,,,5,mm,,,3050,2030,,,5,0.615,1.2,,m²,,699.89,0.14,453.0866842
+2021,PSP00019,Perspex,Sheet,,,6,mm,,,3050,2030,,,6,1.545,1.52,,m²,,839.86,0.14,1730.1116
+2021,PSP00020,Perspex,Sheet,,,8,mm,,No Unit Price available,3050,2030,,,8,0,0,,m²,,,0.14,0
+2021,PSP00021,Perspex,Sheet,,,10,mm,,,3050,2030,,,10,1.53,1.16,,m²,,1302.91,0.14,2028.425147
+2021,PSP00022,Perspex,Sheet,,,12,mm,,,3050,2030,,,12,0.555,0.93,,m²,,1128.55,0.14,510.9658618
+2021,PSP00022,Perspex,Sheet,,,12,mm,,,3050,2030,,,12,2.03,1.53,,m²,,1128.55,0.14,3074.704776
+2021,PSP00023,Perspex,Sheet,,,15,mm,,,3050,2030,,,15,1.515,2.03,,m²,,2358.8,0.14,6363.483737
+2021,PSP00024,Perspex,Sheet,,,20,mm,,,3050,2030,,,20,1.915,1.515,,m²,,3349.5,0.14,8524.257138
+2021,PSP00025,Perspex,Sheet,,,25,mm,,,3050,2030,,,25,0.67,0.59,,m²,,4021.54,0.14,1394.486633
+2021,PCN00002,Polycarbonate,Sheet,,,1,mm,,,3050,2050,,,1,1.84,1.25,,m²,,87.22,0.15,174.44
+2021,PCN00003,Polycarbonate,Sheet,,,6,mm,,,3050,2050,,,6,1.525,1.3,,m²,,396.45,0.15,683.4453261
+2021,PTL00003,Polyethylene,Sheet,,,3,mm,,No Unit Price available,2000,1000,,,3,0,0,,m²,,,0.14,0
+2021,PTL00004,Polyethylene,Sheet,,,12,mm,,No Unit Price available,2000,1000,,,12,0,0,,m²,,,0.14,0
+2021,PTL00005,Polyethylene,Sheet,,,15,mm,,No Unit Price available,2000,1000,,,15,0,0,,m²,,,0.14,0
+2021,PTL00006,Polyethylene,Sheet,,,40,mm,,No Unit Price available,2000,1000,,,40,0,0,,m²,,,0.14,0
+2021,PTL00007,Polyethylene,Sheet,,,50,mm,,No Unit Price available,2000,1000,,,50,0,0,,m²,,,0.14,0
+2021,PTL00008,Polyethylene,Sheet,,,60,mm,,No Unit Price available,2000,1000,,,60,0,0,,m²,,,0.14,0
+2021,PPL00010,Polypropylene,Sheet,,,1.5,mm,,,1000,2000,,,1.5,1.745,1,,m²,,159.11,0.14,243.5499561
+2021,PPL00011,Polypropylene,Sheet,,,3,mm,,,1000,2000,,,3,1.1,0.85,,m²,,244.48,0.14,200.5164912
+2021,PPL00012,Polypropylene,Sheet,,,8,mm,,,1000,2000,,,8,1.82,1,,m²,,584.88,0.14,933.7557895
+2021,PPL00013,Polypropylene,Sheet,,,12,mm,,,1000,2000,,,12,1.57,1,,m²,,1036.73,0.14,1427.777281
+2021,PPL00013,Polypropylene,Sheet,,,12,mm,,,1000,2000,,,12,0.9,0.355,,m²,,1036.73,0.14,290.5572237
+2021,PPL00013,Polypropylene,Sheet,,,12,mm,,,1000,2000,,,12,0,0,,m²,,1036.73,0.14,0
+2021,PPL00013,Polypropylene,Sheet,,,12,mm,,,1000,2000,,,12,0,0,,m²,,1036.73,0.14,0
+2021,PPL00014,Polypropylene,Sheet,,,15,mm,,,1000,2000,,,15,0.85,0.63,,m²,,1294.9,0.14,608.2622368
+2021,PPL00015,Polypropylene,Sheet,,,25,mm,,,1000,2000,,,25,0.58,0.68,,m²,,2156.39,0.14,746.0352772
+2021,PPL00016,Polypropylene,Sheet,,,30,mm,,,1000,2000,,,30,0,0,,m²,,2587.47,0.14,0
+2021,PPL00016,Polypropylene,Sheet,,,30,mm,,,1000,2000,,,30,0,0,,m²,,2587.47,0.14,0
+2021,PPL00017,Polypropylene,Sheet,,,40,mm,,,1000,2000,,,40,0.945,1,,m²,,7309.61,0.14,6059.281974
+2021,PPL00018,Polypropylene,Sheet,,,50,mm,,,1000,2000,,,50,0.375,0.59,,m²,,9136.54,0.14,1773.210066
+2021,PPL00018,Polypropylene,Sheet,,,50,mm,,,1000,2000,,,50,0.7,0.77,,m²,,9136.54,0.14,4319.820228
+2021,PPL00019,Polypropylene,Sheet,,,60,mm,,,1000,2000,,,60,0,0,,m²,,10964.42,0.14,0
+2021,PVC00018,PVC,Sheet,,,3,mm,,,1000,2000,,,3,1.5,0.94,,m²,1.41,314.4,0.14,0
+2021,PVC00019,PVC,Sheet,,,4,mm,,,1000,2000,,,4,2.36,1.5,,m²,,419.2,0.14,1301.726316
+2021,PVC00019,PVC,Sheet,,,4,mm,,,1000,2000,,,4,1.335,1.5,,m²,,419.2,0.14,736.3578947
+2021,PVC00020,PVC,Sheet,,,5,mm,,,1000,2000,,,5,0.725,0.815,,m²,,524,0.14,271.5951754
+2021,PVC00020,PVC,Sheet,,,5,mm,,,1000,2000,,,5,1.5,0.94,,m²,,524,0.14,648.1052632
+2021,PVC00020,PVC,Sheet,,,5,mm,,No Unit Price available,1000,2000,,,5,3,1.5,,m²,,,0.14,0
+2021,PVC00020,PVC,Sheet,,,5,mm,,,1000,2000,,,5,0.995,1.125,,m²,,524,0.14,514.5197368
+2021,PVC00021,PVC,Sheet,,,6,mm,,,1000,2000,,,6,2,1,,m²,,628.8,0.14,1103.157895
+2021,PVC00021,PVC,Sheet,,,6,mm,,,1000,2000,,,6,1.5,0.88,,m²,,628.8,0.14,728.0842105
+2021,PVC00021,PVC,Sheet,,,6,mm,,,1000,2000,,,6,1,0.495,,m²,0.495,628.8,0.14,0
+2021,PVC00021,PVC,Sheet,,,6,mm,,,1000,2000,,,6,2,1,,m²,,628.8,0.14,1103.157895
+2021,PVC00022,PVC,Sheet,,,8,mm,,,1000,2000,,,8,1.125,1,,m²,,838.4,0.14,735.4385965
+2021,PVC00022,PVC,Sheet,,,8,mm,,,1000,2000,,,8,0.815,0.385,,m²,0.313775,838.4,0.14,0
+2021,PVC00022,PVC,Sheet,,,8,mm,,,1000,2000,,,8,2,1,,m²,,838.4,0.14,1470.877193
+2021,PVC00023,PVC,Sheet,,,10,mm,,,1000,2000,,,10,0.95,0.48,,m²,,1048,0.14,419.2
+2021,PVC00024,PVC,Sheet,,,30,mm,,,1000,2000,,,30,0.455,0.455,,m²,0.207025,3323.65,0.14,0
+2021,SST00043,Stainless steel,Sheet,,,0.5,mm,,,2500,1250,,,0.5,2.5,1.25,,m²,,242.88,0.14,665.7894737
+2021,SST00043,Stainless steel,Sheet,,,0.5,mm,,,2500,1250,,,0.5,2.5,1.25,,m²,,242.88,0.14,665.7894737
+2021,SST00043,Stainless steel,Sheet,,,0.5,mm,,,2500,1250,,,0.5,0.945,1.25,,m²,,242.88,0.14,251.6684211
+2021,SST00043,Stainless steel,Sheet,,,0.5,mm,,,2500,1250,,,0.5,1.39,1.25,,m²,,242.88,0.14,370.1363368
+2021,SST00044,Stainless steel,Sheet,,,0.7,mm,,,2500,1250,,,0.7,2.5,1.25,,m²,,263.75,0.14,722.9989035
+2021,SST00044,Stainless steel,Sheet,,,0.7,mm,,,2500,1250,,,0.7,0.78,1.25,,m²,,263.75,0.14,225.5756579
+2021,SST00045,Stainless steel,Sheet,,,0.9,mm,,,2500,1250,,,0.9,1.25,1.18,,m²,,378.3,0.14,489.4671053
+2021,SST00046,Stainless steel,Sheet,,,1,mm,,,2500,1250,,,1,0,0,1,m²,3.125,347.65,0.14,0
+2021,SST00047,Stainless steel,Sheet,,,1.2,mm,,,2500,1250,,,1.2,2.23,1.25,,m²,,433.38,0.14,1059.690132
+2021,SST00047,Stainless steel,Sheet,,,1.2,mm,,No Unit Price available,2500,1250,,,1.2,2.5,1.25,,m²,3.125,,0.14,0
+2021,SST00048,Stainless steel,Sheet,,,1.5,mm,,No Unit Price available,2500,1250,,,1.5,1.8,0.895,,m²,1.611,,0.14,0
+2021,SST00048,Stainless steel,Sheet,,,1.5,mm,,No Unit Price available,2500,1250,,,1.5,2.5,1.25,,m²,3.125,,0.14,0
+2021,SST00049,Stainless steel,Sheet,,,2,mm,,,2500,1250,,,2,2.5,1.25,,m²,3.125,828.37,0.14,0
+2021,SST00049,Stainless steel,Sheet,,,2,mm,,,2500,1250,,,2,0.76,0.955,,m²,,828.37,0.14,527.3955667
+2021,SST00050,Stainless steel,Sheet,,,3,mm,,No Unit Price available,2500,1250,,,3,1.25,1.795,,m²,2.24375,,0.14,0
+2021,TFL00008,Teflon,Sheet,,,3,mm,,,1200,1200,,,3,0.49,0.85,,m²,,3352.44,0.14,1224.816895
+2021,TFL00009,Teflon,Sheet,,,16,mm,,,1200,1200,,,16,0.21,0.065,,m²,,12571.67,0.14,150.5292066
+2021,TFL00009,Teflon,Sheet,,,16,mm,,,1200,1200,,,16,0.11,0.15,,m²,0.0165,0,0.14,0
+2021,TFN00003,Tufnol,Sheet,,,0.76,mm,,No standard length and width available,,,,,0.76,1.23,1.23,,m²,,128,0.14,169.8694737
+2021,TFN00003,Tufnol,Sheet,,,0.76,mm,,No standard length and width available,,,,,0.76,1.1,1.04,,m²,,128,0.14,128.4491228
+2021,TFN00004,Tufnol,Sheet,,,1.6,mm,,No standard length and width available,,,,,1.6,0.93,1.14,,m²,,218,0.14,202.74
+2021,TFN00004,Tufnol,Sheet,,,1.6,mm,,No standard length and width available,,,,,1.6,1.23,1.23,,m²,,218,0.14,289.3089474
+2021,TFN00004,Tufnol,Sheet,,,1.6,mm,,No standard length and width available,,,,,1.6,1.23,1.23,,m²,,218,0.14,289.3089474
+2021,TFN00004,Tufnol,Sheet,,,1.6,mm,,No standard length and width available,,,,,1.6,1.23,1.03,,m²,,218,0.14,242.2668421
+2021,TFN00004,Tufnol,Sheet,,,1.6,mm,,No standard length and width available,,,,,1.6,1.05,0.8,,m²,,218,0.14,160.6315789
+2021,TFN00005,Tufnol,Sheet,,,3.2,mm,,No standard length and width available,,,,,3.2,0.955,0.945,,m²,,500,0.14,395.8223684
+2021,TFN00006,Tufnol,Sheet,,,8.34,mm,,No standard length and width available,,,,,8.34,0.97,0.79,,m²,,1022,0.14,686.9812281
+2021,TFN00007,Tufnol,Sheet,,,13,mm,,No standard length and width available,,,,,13,1.23,0.775,,m²,,1532,0.14,1281.034211
+2021,TFN00008,Tufnol,Sheet,,,20.36,mm,,No standard length and width available,,,,,20.36,0.955,1.115,,m²,,3160,0.14,2951.620175
+2021,GLS00050,Glass,Socket,,,12,,,No Size units and measurement available,,,,,,,,19,each,,32.79,0.14,546.5
+2021,GLS00051,Glass,Socket,,,14,,,No Size units and measurement available,,,,,,,,0,each,,23,0.14,0
+2021,GLS00052,Glass,Socket,,,19,,,No Size units and measurement available,,,,,,,,16,each,,28.75,0.14,403.5087719
+2021,GLS00053,Glass,Socket,,,24,,,No Size units and measurement available,,,,,,,,13,each,,37.95,0.14,432.7631579
+2021,GLS00054,Glass,Socket,,,29,,,No Size units and measurement available,,,,,,,,14,each,,49.74,0.14,610.8421053
+2021,GLS00055,Glass,Socket,,,40,,,No Size units and measurement available,,,,,,,,6,each,,122.1,0.14,642.6315789
+2021,GLS00056,Glass,Socket,,,45,,,No Size units and measurement available,,,,,,,,2,each,,122.1,0.14,214.2105263
+2021,GLS00057,Glass,Stopcock,3-way,PTFE,NS 18.8 / 2.5,,,No Size units and measurement available,,,,,,,,1,each,,604.2,0.14,530
+2021,GLS00058,Glass,Stopcock,3-way,SWB,NS 14.5 / 2,,,No Size units and measurement available,,,,,,,,3,each,,355.99,0.14,936.8157895
+2021,GLS00059,Glass,Stopcock,Single way,PTFE,14.5 / 2.5,,,No Size units and measurement available,,,,,,,,12,each,,241.5,0.14,2542.105263
+2021,GLS00060,Glass,Stopcock,Single way,PTFE,14.5 / 4,,,No Size units and measurement available,,,,,,,,12,each,,287.5,0.14,3026.315789
+2021,GLS00061,Glass,Stopcock,Single way,PTFE,24-Jun,,,No Size units and measurement available,,,,,,,,7,each,,684,0.14,4200
+2021,GLS00062,Glass,Stopcock,Single way,PTFE,24-Aug,,,No Size units and measurement available,,,,,,,,5,each,,695.06,0.14,3048.508772
+2021,GLS00063,Glass,Stopcock,Single way,SWB,14.5 / 2.5,,,No Size units and measurement available,,,,,,,,17,each,,161,0.14,2400.877193
+2021,GLS00064,Glass,Stopcock,Single way,SWB,14.5 / 4,,,No Size units and measurement available,,,,,,,,18,each,,195.5,0.14,3086.842105
+2021,GLS00065,Glass,Stopcock,Single way,SWB,18.8 / 6,,,No Size units and measurement available,,,,,,,,0,each,,252.02,0.14,0
+2021,GLS00066,Glass,Tubing,Boro,,6 x 1,mm,,,,6,,,1,50.73,,,m,,33.28,0.14,1480.96
+2021,GLS00067,Glass,Tubing,Boro,,6 x 1.5,mm,,,,6,,,1.5,44.7,,,m,,33.28,0.14,1304.926316
+2021,GLS00068,Glass,Tubing,Boro,,7 x 1.5,mm,,,,7,,,1.5,231.73,,,m,,28.66,0.14,5825.773509
+2021,GLS00069,Glass,Tubing,Boro,,8 x 1.5,mm,,,,8,,,1.5,95.35,,,m,,34.5,0.14,2885.592105
+2021,GLS00070,Glass,Tubing,Boro,,9 x 1.5,mm,,,,9,,,1.5,36.33,,,m,,42.17,0.14,1343.891316
+2021,GLS00071,Glass,Tubing,Boro,,10 x 1.5,mm,,,,10,,,1.5,20.65,,,m,,36.86,0.14,667.6833333
+2021,GLS00072,Glass,Tubing,Boro,,12 x 1,mm,,,,12,,,1,3.35,,,m,,34.5,0.14,101.3815789
+2021,GLS00073,Glass,Tubing,Boro,,12 x 1.5,mm,,,,12,,,1.5,14.18,,,m,,45.39,0.14,564.5878947
+2021,GLS00074,Glass,Tubing,Boro,,13 x 1.5,mm,,,,13,,,1.5,12.46,,,m,,50.27,0.14,549.4422807
+2021,GLS00075,Glass,Tubing,Boro,,13 x 2.2,mm,,,,13,,,2.2,2.49,,,m,,69.11,0.14,150.9507895
+2021,GLS00076,Glass,Tubing,Boro,,14 x 1.5,mm,,,,14,,,1.5,0.96,,,m,,54.08,0.14,45.54105263
+2021,GLS00077,Glass,Tubing,Boro,,14 x 2.2,mm,,,,14,,,2.2,6.46,,,m,,75.57,0.14,428.23
+2021,GLS00078,Glass,Tubing,Boro,,15 x 1.8,mm,,,,15,,,1.8,28.3,,,m,,69.11,0.14,1715.625439
+2021,GLS00079,Glass,Tubing,Boro,,16 x 1.8,mm,,,,16,,,1.8,18.95,,,m,,73.91,0.14,1228.591667
+2021,GLS00080,Glass,Tubing,Boro,,18 x 1.8,mm,,,,18,,,1.8,18.12,,,m,,84.63,0.14,1345.171579
+2021,GLS00081,Glass,Tubing,Boro,,19 x 2.5,mm,,,,19,,,2.5,0,,,m,,119.8,0.14,0
+2021,GLS00082,Glass,Tubing,Boro,,20 x 1.8,mm,,,,20,,,1.8,27.76,,,m,,95.22,0.14,2318.690526
+2021,GLS00083,Glass,Tubing,Boro,,22 x 1.8,mm,,,,22,,,1.8,9.51,,,m,,105.97,0.14,884.0128947
+2021,GLS00084,Glass,Tubing,Boro,,24 x 1.2,mm,,,,24,,,1.2,3,,,m,,79.1,0.14,208.1578947
+2021,GLS00085,Glass,Tubing,Boro,,24 x 1.8,mm,,,,24,,,1.8,16.5,,,m,,116.11,0.14,1680.539474
+2021,GLS00086,Glass,Tubing,Boro,,26 x 2,mm,,,,26,,,2,10.2,,,m,,139.33,0.14,1246.636842
+2021,GLS00087,Glass,Tubing,Boro,,28 x 2,mm,,,,28,,,2,23.2,,,m,,152.05,0.14,3094.350877
+2021,GLS00088,Glass,Tubing,Boro,,30 x 1.4,mm,,,,30,,,1.4,19.28,,,m,,116.73,0.14,1974.170526
+2021,GLS00089,Glass,Tubing,Boro,,30 x 2,mm,,,,30,,,2,17.07,,,m,,162.41,0.14,2431.876053
+2021,GLS00090,Glass,Tubing,Boro,,30 x 2.8,mm,,,,30,,,2.8,1.5,,,m,,162.41,0.14,213.6973684
+2021,GLS00091,Glass,Tubing,Boro,,32 x 2,mm,,,,32,,,2,14.62,,,m,,202.13,0.14,2592.228596
+2021,GLS00092,Glass,Tubing,Boro,,36 x 2,mm,,,,36,,,2,13.44,,,m,,230.55,0.14,2718.063158
+2021,GLS00093,Glass,Tubing,Boro,,38 x 2,mm,,,,38,,,2,2.78,,,m,,240.16,0.14,585.6533333
+2021,GLS00094,Glass,Tubing,Boro,,40 x 2.3,mm,,,,40,,,2.3,3.55,,,m,,292.19,0.14,909.8899123
+2021,GLS00095,Glass,Tubing,Boro,,42 x 2.3,mm,,,,42,,,2.3,9.35,,,m,,306.2,0.14,2511.377193
+2021,GLS00096,Glass,Tubing,Boro,,44 x 2.3,mm,,,,44,,,2.3,5.68,,,m,,320.21,0.14,1595.432281
+2021,GLS00097,Glass,Tubing,Boro,,46 x 1.6,mm,,,,46,,,1.6,16.06,,,m,,338,0.14,4761.649123
+2021,GLS00098,Glass,Tubing,Boro,,46 x 2.3,mm,,,,46,,,2.3,1.55,,,m,,338,0.14,459.5614035
+2021,GLS00099,Glass,Tubing,Boro,,48 x 2.3,mm,,,,48,,,2.3,11.42,,,m,,352.23,0.14,3528.479474
+2021,GLS00100,Glass,Tubing,Boro,,50 x 2.5,mm,,,,50,,,2.5,3.97,,,m,,400.26,0.14,1393.887895
+2021,GLS00101,Glass,Tubing,Boro,,52 x 2.5,mm,,,,52,,,2.5,7.5,,,m,,488.85,0.14,3216.118421
+2021,GLS00102,Glass,Tubing,Boro,,54 x 1.8,mm,,,,54,,,1.8,0.86,,,m,,371.86,0.14,280.5259649
+2021,GLS00103,Glass,Tubing,Boro,,54 x 2.5,mm,,,,54,,,2.5,2.9,,,m,,509.74,0.14,1296.707018
+2021,GLS00104,Glass,Tubing,Boro,,56 x 1.8,mm,,,,56,,,1.8,2.75,,,m,,526.45,0.14,1269.945175
+2021,GLS00105,Glass,Tubing,Boro,,58 x 4.5,mm,,,,58,,,4.5,0,,,m,,752.08,0.14,0
+2021,GLS00106,Glass,Tubing,Boro,,60 x 3.2,mm,,,,60,,,3.2,1.56,,,m,,718.66,0.14,983.4294737
+2021,GLS00107,Glass,Tubing,Boro,,65 x 2.2,mm,,,,65,,,2.2,14.3,,,m,,549.96,0.14,6898.621053
+2021,GLS00108,Glass,Tubing,Boro,,65 x 3.2,mm,,,,65,,,3.2,1.85,,,m,,780.28,0.14,1266.24386
+2021,GLS00109,Glass,Tubing,Boro,,70 x 2.2,mm,,,,70,,,2.2,2.35,,,m,,587.56,0.14,1211.198246
+2021,GLS00110,Glass,Tubing,Boro,,75 x 3.2,mm,,,,75,,,3.2,2.19,,,m,,911.89,0.14,1751.788684
+2021,GLS00111,Glass,Tubing,Boro,,85 x 2.5,mm,,,,85,,,2.5,0.22,,,m,,1128.11,0.14,217.7054386
+2021,GLS00112,Glass,Tubing,Boro,,90 x 3.5,mm,,,,90,,,3.5,0.81,,,m,,1193.92,0.14,848.3115789
+2021,GLS00113,Glass,Tubing,Boro,,95 x 2.5,mm,,,,95,,,2.5,0.46,,,m,,864.89,0.14,348.9907018
+2021,GLS00114,Glass,Tubing,Boro,,100 x 2.5,mm,,,,100,,,2.5,1.13,,,m,,1341.21,0.14,1329.445
+2021,GLS00115,Glass,Tubing,Boro,,120 x 5,mm,,,,120,,,5,0.57,,,m,,2596.4,0.14,1298.2
+2021,GLS00116,Glass,Tubing,Boro,,125 x 5,mm,,,,125,,,5,0.35,,,m,,2703.68,0.14,830.077193
+2021,SST00051,Stainless steel,Tubing,Dairy,,8 x 1.2,mm,,No Unit Price available,,8,,,1.2,0,,,m,,,0.14,0
+2021,SST00052,Stainless steel,Tubing,Dairy,,15 x 1,mm,,No Unit Price available,,15,,,1,0.97,,,m,,,0.14,0
+2021,SST00053,Stainless steel,Tubing,Dairy,,19 x 1,mm,,No Unit Price available,,19,,,1,0,,,m,,,0.14,0
+2021,SST00054,Stainless steel,Tubing,Dairy,,22 x 1.5,mm,,No Unit Price available,,22,,,1.5,5.14,,,m,,,0.14,0
+2021,SST00055,Stainless steel,Tubing,Dairy,,25.4 x 1.5,mm,,No Unit Price available,,25.4,,,1.5,1.725,,,m,,,0.14,0
+2021,SST00056,Stainless steel,Tubing,Dairy,,31.7 x 1.5,mm,,No Unit Price available,,31.7,,,1.5,2.755,,,m,,,0.14,0
+2021,SST00057,Stainless steel,Tubing,Dairy,,33.35 x 2.7,mm,,No Unit Price available,,33.35,,,2.7,0,,,m,,,0.14,0
+2021,SST00058,Stainless steel,Tubing,Dairy,,41.26 x 1.6,mm,,No Unit Price available,,41.26,,,1.6,4.86,,,m,,,0.14,0
+2021,SST00059,Stainless steel,Tubing,Dairy,,48.4 x 3.5,mm,,No Unit Price available,,48.4,,,3.5,2.6,,,m,,,0.14,0
+2021,SST00060,Stainless steel,Tubing,Dairy,,51 x 1.2,mm,,No Unit Price available,,51,,,1.2,5.7,,,m,,,0.14,0
+2021,SST00061,Stainless steel,Tubing,Dairy,,60.3 x 2.8,mm,,No Unit Price available,,60.3,,,2.8,0,,,m,,,0.14,0
+2021,SST00062,Stainless steel,Tubing,Dairy,,60.7 x 6.5,mm,,No Unit Price available,,60.7,,,6.5,0,,,m,,,0.14,0
+2021,SST00063,Stainless steel,Tubing,Dairy,,63.5 x 1.6,mm,,No Unit Price available,,63.5,,,1.6,1.01,,,m,,,0.14,0
+2021,SST00064,Stainless steel,Tubing,Dairy,,76.3 x 1.5,mm,,No Unit Price available,,76.3,,,1.5,5.45,,,m,,,0.14,0
+2021,SST00065,Stainless steel,Tubing,Hydraulic,,3.18 x 0.9,mm,,No Unit Price available,,3.18,,,0.9,0,,,m,,,0.14,0
+2021,SST00066,Stainless steel,Tubing,Hydraulic,,6.35,mm,"(1/4"")",No Unit Price available,,6.35,,,,5.025,,,m,,,0.14,0
+2021,SST00067,Stainless steel,Tubing,Hydraulic,,8,mm,,No Unit Price available,,8,,,,1.1,,,m,,,0.14,0
+2021,SST00068,Stainless steel,Tubing,Hydraulic,,10 x 1,mm,,No Unit Price available,,10,,,1,13.015,,,m,,,0.14,0
+2021,SST00069,Stainless steel,Tubing,Hydraulic,,12 x 1,mm,,No Unit Price available,,12,,,1,2.52,,,m,,,0.14,0
+2021,SST00070,Stainless steel,Tubing,Hydraulic,,12.7 x 1.2,mm,,No Unit Price available,,12.7,,,1.2,1.42,,,m,,,0.14,0
+2021,SST00071,Stainless steel,Tubing,Hydraulic,,17.3 x 12.5,mm,,No Unit Price available,,17.3,,,12.5,0.445,,,m,,,0.14,0
+2021,SST00072,Stainless steel,Tubing,Hydraulic,,21.5 x 2,mm,,No Unit Price available,,21.5,,,2,3,,,m,,,0.14,0
+2021,SST00073,Stainless steel,Tubing,Hydraulic,,21.5 x 2.5,mm,,No Unit Price available,,21.5,,,2.5,8.145,,,m,,,0.14,0
+2021,SST00074,Stainless steel,Tubing,Hydraulic,,26.8 x 2.5,mm,,No Unit Price available,,26.8,,,2.5,2.02,,,m,,,0.14,0
+2021,SST00075,Stainless steel,Tubing,Hydraulic,,33.4 x 2.6,mm,,No Unit Price available,,33.4,,,2.6,0.54,,,m,,,0.14,0
+2021,SST00077,Stainless steel,Tubing,Hydraulic,,9.53,mm,"(3/8"")",No Unit Price available,,,,,,9.17,,,m,,,0.14,0
+2021,ALM00062,Aluminium,Tubing,Rectangular,,50 x 25 x 2,mm,,,,50,25,,2,6.945,,,m,,56.54,0.14,344.4476316
+2021,MST00084,Mild steel,Tubing,Rectangular,,16 x 9.5 x 1.63,mm,,,,16,9.5,,1.63,1.13,,,m,,23.33,0.14,23.12535088
+2021,MST00085,Mild steel,Tubing,Rectangular,,26 x 9.5 x 1.3,mm,,,,26,9.5,,1.3,8.245,,,m,,10.83,0.14,78.3275
+2021,MST00086,Mild steel,Tubing,Rectangular,,26 x 12 x 1.6,mm,,,,26,12,,1.6,42.33,,,m,,10.83,0.14,402.135
+2021,MST00087,Mild steel,Tubing,Rectangular,,38 x 25 x 1.6,mm,,,,38,25,,1.6,0,,,m,,23.59,0.14,0
+2021,MST00087,Mild steel,Tubing,Rectangular,,38 x 25 x 1.6,mm,,,,38,25,,1.6,0,,,m,,23.59,0.14,0
+2021,MST00088,Mild steel,Tubing,Rectangular,,38 x 25 x 2,mm,,,,38,25,,2,0,,,m,,29.2,0.14,0
+2021,MST00088,Mild steel,Tubing,Rectangular,,38 x 25 x 2,mm,,,,38,25,,2,3.75,,,m,,29.2,0.14,96.05263158
+2021,MST00089,Mild steel,Tubing,Rectangular,,76 x 38 x 2.0,mm,,,,76,38,,2,2.64,,,m,,39.15,0.14,90.66315789
+2021,MST00090,Mild steel,Tubing,Rectangular,,76 x 50 x 2,mm,,,,76,50,,2,3.97,,,m,,4.07,0.14,14.17359649
+2021,MST00091,Mild steel,Tubing,Rectangular,,76 x 50 x 2.5,mm,,,,76,50,,2.5,0,,,m,,39.15,0.14,0
+2021,SST00078,Stainless steel,Tubing,Rectangular,,30 x 19.8 x 1.5,mm,,,,30,19.8,,1.5,3.9,,,m,,16.15,0.14,55.25
+2021,SST00079,Stainless steel,Tubing,Rectangular,,80 x 40 x 1.8,mm,,,,80,40,,1.8,6,,,m,,243.96,0.14,1284
+2021,ALM00063,Aluminium,Tubing,Round,,8 x 1,mm,,,,8,,7,1,21.61,,,m,,6.34,0.14,120.1819298
+2021,ALM00064,Aluminium,Tubing,Round,,9 x 1.1,mm,,,,9,,7.9,1.1,2.44,,,m,,5.69,0.14,12.17859649
+2021,ALM00065,Aluminium,Tubing,Round,,9.5 x 1.2,mm,,,,9.5,,8.3,1.2,10.11,,,m,,5.69,0.14,50.46131579
+2021,ALM00066,Aluminium,Tubing,Round,,15.8 x 1.6,mm,,,,15.8,,14.2,1.6,1.49,,,m,,9.5,0.14,12.41666667
+2021,ALM00067,Aluminium,Tubing,Round,,18.8 x 1.6,mm,,,,18.8,,17.2,1.6,2.395,,,m,,15.96,0.14,33.53
+2021,ALM00068,Aluminium,Tubing,Round,,19 x 3,mm,,,,19,,16,3,30.645,,,m,,39.12,0.14,1051.607368
+2021,ALM00069,Aluminium,Tubing,Round,,19 x 1.8,mm,,,,19,,17.2,1.8,5.98,,,m,,15.96,0.14,83.72
+2021,ALM00070,Aluminium,Tubing,Round,,19 x 1.2,mm,,,,19,,17.8,1.2,29.545,,,m,,12.16,0.14,315.1466667
+2021,ALM00071,Aluminium,Tubing,Round,,19.5 x 1.5,mm,,,,19.5,,18,1.5,0,,,m,,9.39,0.14,0
+2021,ALM00072,Aluminium,Tubing,Round,,22.5 x 1.9,mm,,,,22.5,,20.6,1.9,11.9,,,m,,18.81,0.14,196.35
+2021,ALM00073,Aluminium,Tubing,Round,,25.4 x 3,mm,,,,25.4,,22.4,3,2.505,,,m,,40.28,0.14,88.51
+2021,ALM00074,Aluminium,Tubing,Round,,25.4 x 1.6,mm,,,,25.4,,23.8,1.6,18.965,,,m,,22.04,0.14,366.6566667
+2021,ALM00075,Aluminium,Tubing,Round,,27.1 x 1.8,mm,,,,27.1,,25.3,1.8,1.935,,,m,,45.43,0.14,77.11144737
+2021,ALM00076,Aluminium,Tubing,Round,,31.7 x 1.8,mm,,,,31.7,,29.9,1.8,17.36,,,m,,19.76,0.14,300.9066667
+2021,ALM00077,Aluminium,Tubing,Round,,32 x 3.5,mm,,,,32,,28.5,3.5,5.48,,,m,,11.97,0.14,57.54
+2021,ALM00078,Aluminium,Tubing,Round,,32 x 2,mm,,,,32,,30,2,7.2,,,m,,11.97,0.14,75.6
+2021,ALM00079,Aluminium,Tubing,Round,,34.9 x 4.7,mm,,,,34.9,,30.2,4.7,2.9,,,m,,11.97,0.14,30.45
+2021,ALM00080,Aluminium,Tubing,Round,,37.95 x 1.6,mm,,,,37.95,,36.35,1.6,18.905,,,m,,33.73,0.14,559.3558333
+2021,ALM00081,Aluminium,Tubing,Round,,38 x 3.3,mm,,,,38,,34.7,3.3,5.635,,,m,,61.94,0.14,306.1683333
+2021,ALM00082,Aluminium,Tubing,Round,,38.2 x 3.6,mm,,,,38.2,,34.6,3.6,6.81,,,m,,33.73,0.14,201.4923684
+2021,ALM00083,Aluminium,Tubing,Round,,38.4 x 2,mm,,,,38.4,,36.4,2,0,,,m,,61.94,0.14,0
+2021,ALM00084,Aluminium,Tubing,Round,,50.4 x 1.6,mm,,,,50.4,,48.8,1.6,7.5,,,m,,32.3,0.14,212.5
+2021,ALM00085,Aluminium,Tubing,Round,,50.75 x 3.5,mm,,,,50.75,,47.25,3.5,0,,,m,,102.5,0.14,0
+2021,ALM00086,Aluminium,Tubing,Round,,51 x 2.2,mm,,,,51,,48.8,2.2,6.67,,,m,,32.3,0.14,188.9833333
+2021,ALM00087,Aluminium,Tubing,Round,,51 x 1.6,mm,,,,51,,49.4,1.6,2.945,,,m,,32.3,0.14,83.44166667
+2021,ALM00088,Aluminium,Tubing,Round,,51 x 1.2,mm,,,,51,,49.8,1.2,5.95,,,m,,32.3,0.14,168.5833333
+2021,ALM00089,Aluminium,Tubing,Round,,51.1 x 1.8,mm,,,,51.1,,49.3,1.8,1.63,,,m,,32.3,0.14,46.18333333
+2021,ALM00090,Aluminium,Tubing,Round,,51.5 x 1.2,mm,,,,51.5,,50.3,1.2,2.73,,,m,,32.3,0.14,77.35
+2021,ALM00092,Aluminium,Tubing,Round,,68.5 x 2.5,mm,,,,68.5,,66,2.5,2.17,,,m,,65.36,0.14,124.4133333
+2021,ALM00093,Aluminium,Tubing,Round,,70 x 5,mm,,,,70,,65,5,3.5,,,m,,75.24,0.14,231
+2021,ALM00094,Aluminium,Tubing,Round,,108 x 3.5,mm,,,,108,,104.5,3.5,10.26,,,m,,154.65,0.14,1391.85
+2021,ALM00095,Aluminium,Tubing,Round,,151 x 1.8,mm,,,,151,,149.2,1.8,0.92,,,m,,285,0.14,230
+2021,BRS00056,Brass,Tubing,Round,,6.35 x 0.8,mm,,,,6.35,,5.55,0.8,3.62,,,m,,8.36,0.14,26.54666667
+2021,BRS00057,Brass,Tubing,Round,,10 x 1.6,mm,,No Unit Price available,,10,,8.4,1.6,5,,,m,,,0.14,0
+2021,BRS00058,Brass,Tubing,Round,,12.7 x 4,mm,,No Unit Price available,,12.7,,8.7,4,1.97,,,m,,,0.14,0
+2021,BRS00059,Brass,Tubing,Round,,12.7 x 1.6,mm,,No Unit Price available,,12.7,,11.1,1.6,9.87,,,m,,,0.14,0
+2021,BRS00060,Brass,Tubing,Round,,15.9 x 1.2,mm,,,,15.9,,14.7,1.2,22.61,,,m,,95.65,0.14,1897.058333
+2021,BRS00061,Brass,Tubing,Round,,19 x 3.3,mm,,,,19,,15.7,3.3,0.81,,,m,,87.52,0.14,62.18526316
+2021,BRS00062,Brass,Tubing,Round,,25.4 x 2,mm,,,,25.4,,23.4,2,2.035,,,m,,126.63,0.14,226.0456579
+2021,BRS00063,Brass,Tubing,Round,,28.6 x 1.8,mm,,No Unit Price available,,28.6,,26.8,1.8,6.68,,,m,,,0.14,0
+2021,BRS00064,Brass,Tubing,Round,,31.8 x 3.5,mm,,No Unit Price available,,31.8,,28.3,3.5,4.73,,,m,,,0.14,0
+2021,BRS00065,Brass,Tubing,Round,,31.8 x 2,mm,,No Unit Price available,,31.8,,29.8,2,0.78,,,m,,,0.14,0
+2021,BRS00066,Brass,Tubing,Round,,38.1 x 3.3,mm,,No Unit Price available,,38.1,,34.8,3.3,1.745,,,m,,,0.14,0
+2021,BRS00067,Brass,Tubing,Round,,38.1 x 2,mm,,No Unit Price available,,38.1,,36.1,2,1.87,,,m,,,0.14,0
+2021,BRS00068,Brass,Tubing,Round,,38.1 x 1.2,mm,,,,38.1,,36.9,1.2,6,,,m,,231,0.14,1215.789474
+2021,BRS00069,Brass,Tubing,Round,,44.5 x 3.3,mm,,No Unit Price available,,44.5,,41.2,3.3,2.55,,,m,,,0.14,0
+2021,BRS00070,Brass,Tubing,Round,,50.8 x 1.2,mm,,,,50.8,,49.6,1.2,4.245,,,m,,364.8,0.14,1358.4
+2021,BRS00071,Brass,Tubing,Round,,51 x 4.6,mm,,No Unit Price available,,51,,46.4,4.6,0,,,m,,,0.14,0
+2021,BRS00072,Brass,Tubing,Round,,51 x 4.2,mm,,No Unit Price available,,51,,46.8,4.2,7.275,,,m,,,0.14,0
+2021,BRS00073,Brass,Tubing,Round,,51 x 2,mm,,No Unit Price available,,51,,49,2,1.57,,,m,,,0.14,0
+2021,BRS00074,Brass,Tubing,Round,,57.2 x 2.7,mm,,No Unit Price available,,57.2,,54.5,2.7,1.37,,,m,,,0.14,0
+2021,BRS00075,Brass,Tubing,Round,,63.5 x 3.5,mm,,No Unit Price available,,63.5,,60,3.5,2.175,,,m,,,0.14,0
+2021,BRS00076,Brass,Tubing,Round,,63.7 x 1.7,mm,,No Unit Price available,,63.7,,62,1.7,0.35,,,m,,,0.14,0
+2021,BRS00077,Brass,Tubing,Round,,70 x 3.2,mm,,No Unit Price available,,70,,66.8,3.2,2.035,,,m,,,0.14,0
+2021,MST00092,Mild steel,Tubing,Round,,10 x 6 x 2,mm,,,,10,,6,2,0.58,,,m,,2.98,0.14,1.516140351
+2021,MST00093,Mild steel,Tubing,Round,,16 x 12 x 2,mm,,,,16,,12,2,0.86,,,m,,8.21,0.14,6.193508772
+2021,MST00094,Mild steel,Tubing,Round,,25.5 x 21.6 x 2,mm,,,,25.5,,21.6,2,3.99,,,m,,12.38,0.14,43.33
+2021,MST00095,Mild steel,Tubing,Round,,32 x 28.5 x 1.75,mm,,,,32,,28.5,1.75,0,,,m,,16.92,0.14,0
+2021,MST00096,Mild steel,Tubing,Round,,34 x 29 x 2.5,mm,,,,34,,29,2.5,5,,,m,,31.04,0.14,136.1403509
+2021,MST00097,Mild steel,Tubing,Round,,38 x 35 x 1.5,mm,,,,38,,35,1.5,0,,,m,,18.66,0.14,0
+2021,MST00098,Mild steel,Tubing,Round,,42 x 37 x 2.5,mm,,,,42,,37,2.5,4.1,,,m,,30.05,0.14,108.0745614
+2021,MST00099,Mild steel,Tubing,Round,,43 x 40 x 1.5,mm,,,,43,,40,1.5,0,,,m,,21.06,0.14,0
+2021,MST00100,Mild steel,Tubing,Round,,48 x 44 x 2,mm,,,,48,,44,2,1.94,,,m,,19.96,0.14,33.96701754
+2021,MST00101,Mild steel,Tubing,Round,,48.5 x 38.6 x 4.95,mm,,,,48.5,,38.6,4.95,0.61,,,m,,73.29,0.14,39.21657895
+2021,MST00102,Mild steel,Tubing,Round,,48.5 x 40.7 x 3.9,mm,,,,48.5,,40.7,3.9,1.23,,,m,,56.84,0.14,61.32736842
+2021,MST00103,Mild steel,Tubing,Round,,48.5 x 42.5 x 3,mm,,,,48.5,,42.5,3,0,,,m,,56.84,0.14,0
+2021,MST00104,Mild steel,Tubing,Round,,56 x 53 x 1.5,mm,,,,56,,53,1.5,0,,,m,,33.69,0.14,0
+2021,MST00105,Mild steel,Tubing,Round,,57 x 54 x 1.5,mm,,,,57,,54,1.5,13.5,,,m,,33.69,0.14,398.9605263
+2021,MST00106,Mild steel,Tubing,Round,,57.5 x 54 x 1.75,mm,,,,57.5,,54,1.75,1.13,,,m,,33.69,0.14,33.39447368
+2021,MST00107,Mild steel,Tubing,Round,,60 x 51 x 4.5,mm,,,,60,,51,4.5,0,,,m,,91.41,0.14,0
+2021,MST00108,Mild steel,Tubing,Round,,60 x 52 x 4,mm,,,,60,,52,4,4.445,,,m,,91.41,0.14,356.4188158
+2021,MST00109,Mild steel,Tubing,Round,,60 x 53.5 x 3.25,mm,,,,60,,53.5,3.25,0.38,,,m,,91.41,0.14,30.47
+2021,MST00110,Mild steel,Tubing,Round,,76 x 71 x 2.5,mm,,,,76,,71,2.5,0.47,,,m,,75.72,0.14,31.21789474
+2021,PSP00026,Perspex,Tubing,Round,,10 x 7 x 1.5,mm,,,,10,,7,1.5,1.16,,,m,,36.47,0.14,37.10982456
+2021,PSP00027,Perspex,Tubing,Round,,12 x 6 x 3,mm,,,,12,,6,3,0.71,,,m,,69.16,0.14,43.07333333
+2021,PSP00028,Perspex,Tubing,Round,,12 x 8 x 2,mm,,,,12,,8,2,0,,,m,,50.92,0.14,0
+2021,PSP00029,Perspex,Tubing,Round,,12 x 10 x 1,mm,,,,12,,10,1,0.46,,,m,,28.07,0.14,11.32649123
+2021,PSP00030,Perspex,Tubing,Round,,15 x 11 x 2,mm,,,,15,,11,2,0,,,m,,65.08,0.14,0
+2021,PSP00031,Perspex,Tubing,Round,,16 x 12 x 2,mm,,,,16,,12,2,0,,,m,,87,0.14,0
+2021,PSP00032,Perspex,Tubing,Round,,20 x 14 x 3,mm,,,,20,,14,3,0.955,,,m,,128.17,0.14,107.3704825
+2021,PSP00033,Perspex,Tubing,Round,,30 x 26 x 2,mm,,,,30,,26,2,0.72,,,m,,114.9,0.14,72.56842105
+2021,PSP00034,Perspex,Tubing,Round,,40 x 30 x 5,mm,,,,40,,30,5,0.67,,,m,,315.87,0.14,185.6428947
+2021,PSP00035,Perspex,Tubing,Round,,50 x 40 x 5,mm,,,,50,,40,5,0.285,,,m,,353.84,0.14,88.46
+2021,PSP00036,Perspex,Tubing,Round,,50 x 44 x 3,mm,,,,50,,44,3,0.59,,,m,,221.74,0.14,114.7601754
+2021,PSP00037,Perspex,Tubing,Round,,60 x 50 x 5,mm,,,,60,,50,5,0.64,,,m,,557,0.14,312.7017544
+2021,PSP00038,Perspex,Tubing,Round,,60 x 52 x 4,mm,,,,60,,52,4,0.56,,,m,,453.53,0.14,222.7866667
+2021,PSP00039,Perspex,Tubing,Round,,64 x 58 x 3,mm,,,,64,,58,3,0.115,,,m,,204.38,0.14,20.6172807
+2021,PSP00040,Perspex,Tubing,Round,,70 x 60 x 5,mm,,,,70,,60,5,0.4,,,m,,554.4,0.14,194.5263158
+2021,PSP00041,Perspex,Tubing,Round,,70 x 64 x 3,mm,,,,70,,64,3,1.285,,,m,,339.98,0.14,383.2230702
+2021,PSP00042,Perspex,Tubing,Round,,75 x 69 x 3,mm,,,,75,,69,3,0.42,,,m,,339.98,0.14,125.2557895
+2021,PSP00043,Perspex,Tubing,Round,,80 x 70 x 5,mm,,,,80,,70,5,3.51,,,m,,635.49,0.14,1956.640263
+2021,PSP00044,Perspex,Tubing,Round,,80 x 74 x 3,mm,,,,80,,74,3,0.53,,,m,,391.48,0.14,182.0038596
+2021,PSP00045,Perspex,Tubing,Round,,80 x 75 x 2.5,mm,,,,80,,75,2.5,0,,,m,,391.48,0.14,0
+2021,PSP00046,Perspex,Tubing,Round,,100 x 90 x 5,mm,,,,100,,90,5,1.23,,,m,,809.03,0.14,872.9007895
+2021,PSP00047,Perspex,Tubing,Round,,100 x 94 x 3,mm,,,,100,,94,3,0.39,,,m,,499.84,0.14,170.9978947
+2021,PSP00048,Perspex,Tubing,Round,,110 x 104 x 3,mm,,,,110,,104,3,0.335,,,m,,658.2,0.14,193.4184211
+2021,PSP00049,Perspex,Tubing,Round,,120 x 110 x 5,mm,,,,120,,110,5,0.815,,,m,,930.74,0.14,665.3974561
+2021,PSP00050,Perspex,Tubing,Round,,120 x 114 x 3,mm,,,,120,,114,3,0.245,,,m,,568.22,0.14,122.1174561
+2021,PSP00051,Perspex,Tubing,Round,,132 x 126 x 3,mm,,,,132,,126,3,1.01,,,m,,631.04,0.14,559.0792982
+2021,PSP00052,Perspex,Tubing,Round,,150 x 140 x 5,mm,,,,150,,140,5,1.15,,,m,,1173.8,0.14,1184.096491
+2021,PSP00053,Perspex,Tubing,Round,,150 x 142 x 4,mm,,,,150,,142,4,0.285,,,m,,945,0.14,236.25
+2021,PSP00054,Perspex,Tubing,Round,,180 x 172 x 4,mm,,,,180,,172,4,0.415,,,m,,1139.5,0.14,414.8179825
+2021,PSP00054,Perspex,Tubing,Round,,180 x 172 x 4,mm,,,,180,,172,4,0.255,,,m,,1047.79,0.14,234.3740789
+2021,PSP00055,Perspex,Tubing,Round,,200 x 190 x 5,mm,,,,200,,190,5,0.219,,,m,,1577.78,0.14,303.0998421
+2021,PSP00056,Perspex,Tubing,Round,,200 x 194 x 3,mm,,,,200,,194,3,1.65,,,m,,956.3,0.14,1384.118421
+2021,PSP00057,Perspex,Tubing,Round,,250 x 240 x 5,mm,,,,250,,240,5,0.39,,,m,,2954.52,0.14,1010.756842
+2021,SST00080,Stainless steel,Tubing,Round,,6 x 1,mm,,,,6,,5,1,0.945,,,m,,38.76,0.14,32.13
+2021,SST00081,Stainless steel,Tubing,Round,,10 x 1.2,mm,,,,10,,8.8,1.2,0,,,m,,57,0.14,0
+2021,SST00082,Stainless steel,Tubing,Round,,12 x 1.2,mm,,No Unit Price available,,12,,10.8,1.2,0,,,m,,,0.14,0
+2021,SST00083,Stainless steel,Tubing,Round,,19 x 1.6,mm,,,,19,,17.4,1.6,3.66,,,m,,36.48,0.14,117.12
+2021,SST00084,Stainless steel,Tubing,Round,,22 x 2.5,mm,,No Unit Price available,,22,,19.5,2.5,0,,,m,,,0.14,0
+2021,SST00085,Stainless steel,Tubing,Round,,30 x 2,mm,,No Unit Price available,,30,,28,2,0,,,m,,,0.14,0
+2021,SST00086,Stainless steel,Tubing,Round,,38.1 x 1.5,mm,,No Unit Price available,,38.1,,36.6,1.5,0,,,m,,,0.14,0
+2021,SST00087,Stainless steel,Tubing,Round,,41.2 x 1.5,mm,,No Unit Price available,,41.2,,39.7,1.5,0,,,m,,,0.14,0
+2021,SST00088,Stainless steel,Tubing,Round,,44.45 x 1.5,mm,,No Unit Price available,,44.45,,42.95,1.5,0,,,m,,,0.14,0
+2021,SST00089,Stainless steel,Tubing,Round,,48.26 x 2.77,mm,,No Unit Price available,,48.26,,45.49,2.77,0,,,m,,,0.14,0
+2021,SST00090,Stainless steel,Tubing,Round,,50 x 1.2,mm,,No Unit Price available,,50,,48.8,1.2,0,,,m,,,0.14,0
+2021,SST00091,Stainless steel,Tubing,Round,,60.33 x 2.77,mm,,,,60.33,,57.56,2.77,3.44,,,m,,197.22,0.14,595.12
+2021,GLS00117,Glass,Tubing,Screw thread,,GL 14,,,No Size units and measurement available,,,,,,,,6,each,,18.4,0.14,96.84210526
+2021,GLS00118,Glass,Tubing,Screw thread,,GL 18,,,No Size units and measurement available,,,,,,,,1,each,,20.24,0.14,17.75438596
+2021,GLS00119,Glass,Tubing,Screw thread,,GL 25,,,No Size units and measurement available,,,,,,,,8,each,,36.59,0.14,256.7719298
+2021,GLS00120,Glass,Tubing,Screw thread,,GL 32,,,No Size units and measurement available,,,,,,,,12,each,,62.11,0.14,653.7894737
+2021,GLS00121,Glass,Tubing,Soda,,8 x 0.9,mm,,,,8,,7.1,0.9,84.77,,,m,,20,0.14,1487.192982
+2021,ALM00096,Aluminium,Tubing,Square,,17.9 x 17.9 x 1.1,mm,,,,17.9,17.9,,1.1,1.535,,,m,,9.88,0.14,13.30333333
+2021,ALM00097,Aluminium,Tubing,Square,,19.2 x 19.2 x 1.9,mm,,,,19.2,19.2,,1.9,3.22,,,m,,21.28,0.14,60.10666667
+2021,ALM00098,Aluminium,Tubing,Square,,19.2 x 19.2 x 3.15,mm,,,,19.2,19.2,,3.15,1.945,,,m,,25.8,0.14,44.01842105
+2021,ALM00099,Aluminium,Tubing,Square,,25 x 25 x 3.2,mm,,,,25,25,,3.2,15.075,,,m,,47.88,0.14,633.15
+2021,ALM00100,Aluminium,Tubing,Square,,25.3x25.3x1.6,mm,,,,25.3,25.3,,1.6,26.81,,,m,,30.66,0.14,721.0478947
+2021,ALM00101,Aluminium,Tubing,Square,,25.3x25.3x2,mm,,No Unit Price available,,25.3,25.3,,2,1.08,,,m,,,0.14,0
+2021,ALM00102,Aluminium,Tubing,Square,,25.5 x 25.5 x 3.3,mm,,,,25.5,25.5,,3.3,8.21,,,m,,47.88,0.14,344.82
+2021,ALM00103,Aluminium,Tubing,Square,,38.35 x 38.35 x 2.9,mm,,,,38.35,38.35,,2.9,3.425,,,m,,55.1,0.14,165.5416667
+2021,ALM00104,Aluminium,Tubing,Square,,50.8 x 50.8 x 3.26,mm,,,,50.8,50.8,,3.26,1.4,,,m,,168,0.14,206.3157895
+2021,ALM00105,Aluminium,Tubing,Square,,50.8 x 50.8 x 6,mm,,,,50.8,50.8,,6,4.73,,,m,,168,0.14,697.0526316
+2021,BRS00078,Brass,Tubing,Square,,13 x 13 x 1.2,mm,,No Unit Price available,,13,13,,1.2,0,,,m,,,0.14,0
+2021,BRS00079,Brass,Tubing,Square,,19 x 19 x 1.2,mm,,No Unit Price available,,19,19,,1.2,8.19,,,m,,,0.14,0
+2021,BRS00080,Brass,Tubing,Square,,25.4 x 25.4 x 1.2,mm,,No Unit Price available,,25.4,25.4,,1.2,3.17,,,m,,,0.14,0
+2021,BRS00081,Brass,Tubing,Square,,31.6 x 31.6 x 1.2,mm,,No Unit Price available,,31.6,31.6,,1.2,10.835,,,m,,,0.14,0
+2021,MST00111,Mild steel,Tubing,Square,,12.7 x 12.7 x 1,mm,,,,12.7,12.7,,1,30.245,,,m,,9.2,0.14,244.0824561
+2021,MST00112,Mild steel,Tubing,Square,,12.7 x 12.7 x 1.6,mm,,,,12.7,12.7,,1.6,102.97,,,m,,9.2,0.14,830.9859649
+2021,MST00113,Mild steel,Tubing,Square,,12.7 x 12.7 x 2,mm,,,,12.7,12.7,,2,12.04,,,m,,9.2,0.14,97.16491228
+2021,MST00114,Mild steel,Tubing,Square,,19 x 19 x 1.6,mm,,,,19,19,,1.6,0,,,m,,14.39,0.14,0
+2021,MST00115,Mild steel,Tubing,Square,,20 x 20 x 1.6,mm,,,,20,20,,1.6,8.465,,,m,,14.39,0.14,106.8520614
+2021,MST00116,Mild steel,Tubing,Square,,22 x 22 x 1.2,mm,,,,22,22,,1.2,21.61,,,m,,15.56,0.14,294.9575439
+2021,MST00117,Mild steel,Tubing,Square,,22 x 22 x 1.6,mm,,,,22,22,,1.6,0,,,m,,15.56,0.14,0
+2021,MST00118,Mild steel,Tubing,Square,,25 x 25 x 1.6,mm,,,,25,25,,1.6,5.31,,,m,,18.6,0.14,86.6592
+2021,MST00119,Mild steel,Tubing,Square,,32 x 32 x 1.6,mm,,,,32,32,,1.6,7.31,,,m,,21.88,0.14,140.3007018
+2021,MST00120,Mild steel,Tubing,Square,,32 x 32 x 2,mm,,,,32,32,,2,3.955,,,m,,24.3,0.14,84.30394737
+2021,MST00121,Mild steel,Tubing,Square,,32 x 32 x 3,mm,,,,32,32,,3,2.89,,,m,,24.3,0.14,61.60263158
+2021,MST00122,Mild steel,Tubing,Square,,38 x 38 x 1.6,mm,,,,38,38,,1.6,9.765,,,m,,23.74,0.14,203.3518421
+2021,MST00123,Mild steel,Tubing,Square,,38 x 38 x 2,mm,,,,38,38,,2,0,,,m,,29.42,0.14,0
+2021,MST00124,Mild steel,Tubing,Square,,50 x 50 x 1.6,mm,,,,50,50,,1.6,29.2,,,m,,36.63,0.14,938.2421053
+2021,MST00126,Mild steel,Tubing,Square,,75 x 75 x 1.6,mm,,,,75,75,,1.6,0,,,m,,64.35,0.14,0
+2021,MST00127,Mild steel,Tubing,Square,,75 x 75 x 2,mm,,,,75,75,,2,2.35,,,m,,64.35,0.14,132.6513158
+2021,SST00092,Stainless steel,Tubing,Square,,20 x 20 x 1.5,mm,,,,20,20,,1.5,0,,,m,,57,0.14,0
+2021,SST00093,Stainless steel,Tubing,Square,,25 x 25 x 1.5,mm,,,,25,25,,1.5,13.03,,,m,,67.15,0.14,767.5127193
+2021,SST00094,Stainless steel,Tubing,Square,,40 x 40 x 1.5,mm,,No Unit Price available,,40,40,,1.5,2.275,,,m,,,0.14,0
+2021,SST00095,Stainless steel,Tubing,Square,,80.3 x 80.3 x 1.8,mm,,,,80.3,80.3,,1.8,4.435,,,m,,243.96,0.14,949.09
+2021,CPR00004,Copper,Tubing,,,15 x 0.5,mm,,,,15,,14.5,0.5,5.985,,,m,,10.72,0.14,56.28
+2021,CPR00005,Copper,Tubing,,,15.9 x 0.8,mm,,,,15.9,,15.1,0.8,2.71,,,m,,80.69,0.14,191.8157018
+2021,CPR00006,Copper,Tubing,,,19 x 1.9,mm,,,,19,,17.1,1.9,13.86,,,m,,187.18,0.14,2275.714737
+2021,CPR00007,Copper,Tubing,,,22 x 1.5,mm,,,,22,,20.5,1.5,0.945,,,m,,198.07,0.14,164.1896053
+2021,CPR00008,Copper,Tubing,,,28.7 x 1.2,mm,,,,28.7,,27.5,1.2,4.18,,,m,,207.15,0.14,759.55
+2021,CPR00009,Copper,Tubing,,,28.7 x 1.0,mm,,,,28.7,,27.7,1,0,,,m,,157.09,0.14,0
+2021,CPR00010,Copper,Tubing,,,38 x 1.6,mm,,,,38,,36.4,1.6,0,,,m,,259.9,0.14,0
+2021,PVC00025,PVC,Tubing,,,25 x 20 x 2.5,mm,,,,25,,20,2.5,0,,,m,,81.01,0.14,0
+2021,PVC00026,PVC,Tubing,,,25 x 21 x 2,mm,,,,25,,21,2,1.79,,,m,,81.01,0.14,127.1999123
+2021,PVC00027,PVC,Tubing,,,32 x 27 x 2.5,mm,,,,32,,27,2.5,1.07,,,m,,106.01,0.14,99.50061404
+2021,PVC00028,PVC,Tubing,,,50 x 45 x 2.5,mm,,,,50,,45,2.5,0.53,,,m,,159.44,0.14,74.12561404
+2021,PVC00029,PVC,Tubing,,,75 x 67 x 4,mm,,,,75,,67,4,0.545,,,m,,427.9,0.14,204.5662281
+2021,PVC00030,PVC,Tubing,,,110 x 105 x 2.5,mm,,,,110,,105,2.5,0.86,,,m,,362.41,0.14,273.3970175
+2021,TFN00009,Tufnol,Tubing,,,9.5 x 6,mm,,,,9.5,,6,3.5,4.05,,,m,,80.95,0.14,287.5855263
+2021,TFN00010,Tufnol,Tubing,,,12.5  x 9.5,mm,,,,12.5,,9.5,3,0.815,,,m,,161.88,0.14,115.73
+2021,TFN00011,Tufnol,Tubing,,,13 x 9,mm,,,,13,,9,4,1.21,,,m,,161.88,0.14,171.82
+2021,TFN00012,Tufnol,Tubing,,,16 x 12.5,mm,,,,16,,12.5,3.5,2.69,,,m,,114.57,0.14,270.345
+2021,TFN00013,Tufnol,Tubing,,,19 x 12.5,mm,,,,19,,12.5,6.5,0.775,,,m,,229.14,0.14,155.775
+2021,TFN00014,Tufnol,Tubing,,,19 x 15.5,mm,,,,19,,15.5,3.5,18.755,,,m,,229.14,0.14,3769.755
+2021,TFN00015,Tufnol,Tubing,,,22  x 15.5,mm,,,,22,,15.5,6.5,3.745,,,m,,397.86,0.14,1307.005
+2021,TFN00016,Tufnol,Tubing,,,32  x 25,mm,,,,32,,25,7,12.22,,,m,,547.2,0.14,5865.6
+2021,TFN00017,Tufnol,Tubing,,,38  x 25,mm,,,,38,,25,13,2.935,,,m,,876.66,0.14,2257.015
+2021,TFN00018,Tufnol,Tubing,,,63 x 50,mm,,,,63,,50,13,1.135,,,m,,1723.68,0.14,1716.12
+2021,TFN00019,Tufnol,Tubing,,,65  x 50,mm,,,,65,,50,15,3.24,,,m,,1723.68,0.14,4898.88
+2021,TFN00020,Tufnol,Tubing,,,120 x 100,mm,,,,120,,100,20,0,,,m,,2584.84,0.14,0
+2021,ALM00106,Aluminium,U channel,,,9.7 x 9.7 x 1.7,mm,,,,9.7,9.7,,1.7,12.175,,,m,,12.16,0.14,129.8666667
+2021,ALM00107,Aluminium,U channel,,,9.9 x 13 x 2,mm,,,,9.9,13,,2,14.85,,,m,,12.16,0.14,158.4
+2021,ALM00108,Aluminium,U channel,,,12.7 x 9.54 x 1.5,mm,,,,12.7,9.54,,1.5,17.2,,,m,,5.16,0.14,77.85263158
+2021,ALM00109,Aluminium,U channel,,,12.7 x 12.7 x 2,mm,,,,12.7,12.7,,2,11.54,,,m,,5.16,0.14,52.23368421
+2021,ALM00110,Aluminium,U channel,,,25.3 x 25.3 x 3.1,mm,,,,25.3,25.3,,3.1,3.115,,,m,,25.33,0.14,69.21311404
+2021,ALM00111,Aluminium,U channel,,,76.3 x 38 x 8,mm,,,,76.3,38,,8,5.905,,,m,,189.81,0.14,983.1825
+2021,ALM00112,Aluminium,U channel,,,102 x 50.5 x 8,mm,,,,102,50.5,,8,15.61,,,m,,258,0.14,3532.789474
+2021,GLS00122,Glass,Valve,90°,Produran,0-4,mm,Passage,,,,,,,,,4,each,,584.72,0.14,2051.649123
+2021,GLS00123,Glass,Valve,Straight,Produran,0-4,mm,Passage,,,,,,,,,3,each,,621.59,0.14,1635.763158

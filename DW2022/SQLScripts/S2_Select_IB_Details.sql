@@ -1,0 +1,10 @@
+USE [Stage2]
+GO
+DECLARE @MAX_IB_ID Int
+SET @MAX_IB_ID = (SELECT  MAX(IB_ID) FROM  Import_Batch)
+SELECT * FROM Import_Batch WHERE IB_ID = @MAX_IB_ID
+SELECT * FROM Import_Batch_Process WHERE IB_ID = @MAX_IB_ID
+SELECT IBPT.* FROM Import_Batch_Process_Task AS IBPT INNER JOIN Import_Batch_Process AS IBP ON IBPT.IBP_ID = IBP.IBP_ID
+         WHERE IBP.IB_ID = @MAX_IB_ID
+GO
+

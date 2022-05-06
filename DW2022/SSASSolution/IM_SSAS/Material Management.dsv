@@ -1,0 +1,430 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="ad296ea6-9f40-4650-ace7-42179495d359" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Material Management</ID>
+  <Name>Material Management</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout>
+              <dds>
+                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="20" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-5276" scrolltop="2592" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="21590" y="12224" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                  <font>
+                    <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+                  </font>
+                  <mouseicon>
+                    <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                  </mouseicon>
+                </diagram>
+                <layoutmanager>
+                  <ddsxmlobj />
+                </layoutmanager>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Material Dimension" left="-7067" top="3790" logicalid="8" controlid="1" masterid="0" hint1="0" hint2="0" width="7329" height="6552" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e0000a11c000098190000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_Material" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Stock Take Indicators Dimension" left="13771" top="7612" logicalid="9" controlid="2" masterid="0" hint1="0" hint2="0" width="6854" height="5776" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e0000c61a000090160000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_Stock_Take_Indicators" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Stock Take Fact" left="2462" top="6996" logicalid="10" controlid="3" masterid="0" hint1="0" hint2="0" width="8017" height="9551" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e0000511f00004f250000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_Stock_Take_Fact" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="10179" top="7993" logicalid="16" controlid="9" masterid="0" hint1="0" hint2="0" width="3892" height="1343" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK_Stock_Take_Fact_Stock_Take_Indicators]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Oblique" sourceid="2" destid="3" sourceattachpoint="39" destattachpoint="581" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="13771" y="8392" />
+                    <point x="13271" y="8392" />
+                    <point x="10979" y="9036" />
+                    <point x="10479" y="9036" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="-38" top="3951" logicalid="17" controlid="10" masterid="0" hint1="0" hint2="0" width="2800" height="4965" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK_Stock_Take_Fact_Material]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Oblique" sourceid="1" destid="3" sourceattachpoint="357" destattachpoint="81" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="262" y="4350" />
+                    <point x="762" y="4350" />
+                    <point x="1962" y="8616" />
+                    <point x="2462" y="8616" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Year Dimension" left="11762" top="2998" logicalid="18" controlid="11" masterid="0" hint1="0" hint2="0" width="4799" height="1940" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e0000bf12000094070000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="Year Dimension" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="10179" top="3379" logicalid="19" controlid="12" masterid="0" hint1="0" hint2="0" width="1883" height="5117" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[Stock_Take_Fact-Year Dimension]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Oblique" sourceid="11" destid="3" sourceattachpoint="39" destattachpoint="539" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="11762" y="3778" />
+                    <point x="11262" y="3778" />
+                    <point x="10979" y="8196" />
+                    <point x="10479" y="8196" />
+                  </connector>
+                </ddscontrol>
+              </dds>
+</DiagramLayout>
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>False</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>-5276</DiagramViewPortLeft>
+            <DiagramViewPortTop>2592</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>75</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Atomic DW</DataSourceID>
+  <Schema>
+    <xs:schema id="Material_x0020_Management" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Material_x0020_Management" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="50781285-9b4d-4ff7-8710-f79b2010672d">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Material" msprop:design-time-name="cc2509f9-595d-4003-b2dc-9b10328c5e0a" msprop:FriendlyName="Material Dimension" msprop:DbSchemaName="dbo" msprop:DbTableName="Material" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Material_Item_Key" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="b6d07ea2-7225-4660-86e1-b48bd07f9475" msprop:DbColumnName="Material_Item_Key" msprop:FriendlyName="Material_Item_Key" type="xs:int" />
+                  <xs:element name="Material_Item_ID" msprop:Description="Inventory item id" msprop:design-time-name="9f3c314a-bc5e-4fdd-982e-5dc67c590c8c" msprop:DbColumnName="Material_Item_ID" msprop:FriendlyName="Material Item ID">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Material_Current_Group" msprop:Description="Type of material group - the current value" msprop:design-time-name="4c4300f9-40a7-4bfd-aa9f-ee5e03aeaa7c" msprop:DbColumnName="Material_Current_Group" msprop:FriendlyName="Material Current Group">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Material_Group" msprop:Description="Type of material group" msprop:design-time-name="aca225c2-4fad-462f-ba0d-cce3fb9beb7b" msprop:DbColumnName="Material_Group" msprop:FriendlyName="Material Group">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Material_Type" msprop:Description="Type of material - groups into Material Group" msprop:design-time-name="7b3fbb5f-d4ef-431e-9e9e-09458b06ac9b" msprop:DbColumnName="Material_Type" msprop:FriendlyName="Material Type">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Material_Item_Current_Name" msprop:Description="The current name of the material item" msprop:design-time-name="392cb00e-047f-4b6d-9170-dabec8f523a8" msprop:DbColumnName="Material_Item_Current_Name" msprop:FriendlyName="Material Item Current Name">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="150" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Material_Item_Name" msprop:Description="The historic name of the material item" msprop:design-time-name="1dc4bbae-2a6d-4844-b862-1f3a87542233" msprop:DbColumnName="Material_Item_Name" msprop:FriendlyName="Material Item Name">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="150" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Material_Category_Item_Type" msprop:Description="The material category and type of item combined" msprop:design-time-name="fb68a67c-3ddb-42dd-8c7c-8be24cab55d1" msprop:DbColumnName="Material_Category_Item_Type" msprop:FriendlyName="Material Category Item Type">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Material_Item_Category" msprop:Description="The item category describes the type of item and not the material it is made of" msprop:design-time-name="86a5e51b-ef41-446f-95d7-ff2a45864a00" msprop:DbColumnName="Material_Item_Category" msprop:FriendlyName="Material Item Category">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Material_Item_Detail_1" msprop:Description="Primary detail description of the item" msprop:design-time-name="f404059a-e5cf-4cbd-88e4-0b0f5a303ebd" msprop:DbColumnName="Material_Item_Detail_1" msprop:FriendlyName="Material Item Detail 1">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Material_Item_Detail_2" msprop:Description="Secondary detail description of the item" msprop:design-time-name="c9f6eef8-98ad-452d-9eb7-d1d38adb2d50" msprop:DbColumnName="Material_Item_Detail_2" msprop:FriendlyName="Material Item Detail 2">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Material_Item_Size" msprop:Description="The dimensions of the item, in 1, 2, or 3 measurements, or a code given to the standard size of the item" msprop:design-time-name="9d67b7f6-efe9-4472-a5cc-a14bef3e99d7" msprop:DbColumnName="Material_Item_Size" msprop:FriendlyName="Material Item Size">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Material_Item_Size_Unit_Of_Measure" msprop:Description="Unit of measure for the size measurements, such mm. Not all items sizes are described in a unit of measure" msprop:design-time-name="8a5a2e29-4f62-4134-b049-45439b5c2078" msprop:DbColumnName="Material_Item_Size_Unit_Of_Measure" msprop:FriendlyName="Material Item Size Unit Of Measure">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="5" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Material_Item_Size_Note" msprop:Description="Further describes the size of the item (if needed)" msprop:design-time-name="4ad35e1a-21e8-454d-a9e9-74e3c9868a10" msprop:DbColumnName="Material_Item_Size_Note" msprop:FriendlyName="Material Item Size Note">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Material_Item_Standard_Length_mm" msprop:Description="Standard item length in mm (-1 if no length applies)" msprop:design-time-name="e5775ae3-b58d-41cc-9373-f6c97049b10c" msprop:DbColumnName="Material_Item_Standard_Length_mm" msprop:FriendlyName="Material Item Standard Length (mm)" type="xs:decimal" />
+                  <xs:element name="Material_Item_Standard_Width_or_Diameter_mm" msprop:Description="Standard item width or diameter in mm" msprop:design-time-name="880010a5-122a-4315-9005-f35fb3a5bbf7" msprop:DbColumnName="Material_Item_Standard_Width_or_Diameter_mm" msprop:FriendlyName="Material Item Standard Width or Diameter (mm)" type="xs:decimal" />
+                  <xs:element name="Material_Item_Standard_Height_mm" msprop:Description="Standard item height in mm" msprop:design-time-name="1d3f8acc-9398-4a73-8c19-9c1b8a61ff5e" msprop:DbColumnName="Material_Item_Standard_Height_mm" msprop:FriendlyName="Material Item Standard Height (mm)" type="xs:decimal" />
+                  <xs:element name="Material_Item_Standard_Interior_Diameter_mm" msprop:Description="Standard item interior diameter in mm" msprop:design-time-name="4ee3b9e1-75d8-48ec-9b9d-81be5d9c27a0" msprop:DbColumnName="Material_Item_Standard_Interior_Diameter_mm" msprop:FriendlyName="Material Item Standard Interior Diameter (mm)" type="xs:decimal" />
+                  <xs:element name="Material_Item_Standard_Thinkness_or_Wall_mm" msprop:Description="Standard item thinkness or wall in mm" msprop:design-time-name="4fd266db-fc71-4712-9b37-b0bcd4dfe5d5" msprop:DbColumnName="Material_Item_Standard_Thinkness_or_Wall_mm" msprop:FriendlyName="Material Item Standard Thinkness or Wall (mm)" type="xs:decimal" />
+                  <xs:element name="Material_Item_Quantity_Unit_of_Measure" msprop:Description="The unit of measure for expressing the quantity of the item" msprop:design-time-name="dfd5a4a3-e0af-496c-9c72-3464252a0947" msprop:DbColumnName="Material_Item_Quantity_Unit_of_Measure" msprop:FriendlyName="Material Item Quantity Unit of Measure">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Effective_Date" msprop:design-time-name="1456a2bb-912b-4253-83cb-5bb5894dc30f" msprop:DbColumnName="Effective_Date" msprop:FriendlyName="Effective_Date" type="xs:dateTime" />
+                  <xs:element name="Expiration_Date" msprop:design-time-name="94d44673-e6fd-42a7-a40d-8a17221bf5c4" msprop:DbColumnName="Expiration_Date" msprop:FriendlyName="Expiration_Date" type="xs:dateTime" />
+                  <xs:element name="IsCurrent" msprop:design-time-name="2a4bfbe9-e1a5-4a23-a71e-432af470f350" msprop:DbColumnName="IsCurrent" msprop:FriendlyName="IsCurrent" type="xs:boolean" />
+                  <xs:element name="Import_Action" msprop:design-time-name="4fc10e13-d137-498a-b1b0-02d7bd33b8eb" msprop:DbColumnName="Import_Action" msprop:FriendlyName="Import_Action">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="IBPT_ID" msprop:design-time-name="68de078f-25c4-476d-920b-ff6446eab310" msprop:DbColumnName="IBPT_ID" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Stock_Take_Indicators" msprop:design-time-name="6c9f1d9b-998c-4264-9ecb-9775379b78bc" msprop:FriendlyName="Stock Take Indicators Dimension" msprop:DbSchemaName="dbo" msprop:DbTableName="Stock_Take_Indicators" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Stock_Take_Indicators_Key" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="017a2f88-8af4-4e62-b5f2-92e79ec06c44" msprop:DbColumnName="Stock_Take_Indicators_Key" msprop:FriendlyName="Stock_Take_Indicators_Key" type="xs:int" />
+                  <xs:element name="Stock_Take_Comment" msprop:Description="Comment added about the item stock take event" msprop:design-time-name="61df55d7-fc94-48ab-9208-18ec07f6cd57" msprop:DbColumnName="Stock_Take_Comment" msprop:FriendlyName="Stock Take Comment">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Length_Measured_Indicator" msprop:Description="'No length measured' or 'Length measured'." msprop:design-time-name="b4acecf3-0810-4b22-affc-049173eab17d" msprop:DbColumnName="Length_Measured_Indicator" msprop:FriendlyName="Length Measured Indicator">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Width_Measured_Indicator" msprop:Description="'No width measured' or 'Width measured'" msprop:design-time-name="67135689-23c9-4e17-b21f-ad3a25d748e3" msprop:DbColumnName="Width_Measured_Indicator" msprop:FriendlyName="Width Measured Indicator">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Full_Units_Counted_Indicator" msprop:Description="'No full units counted' or 'Full units counted'" msprop:design-time-name="a59513e0-ffcc-4d7e-9f3c-4e44323cdb34" msprop:DbColumnName="Full_Units_Counted_Indicator" msprop:FriendlyName="Full Units Counted Indicator">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Material_Scrapped_Indicator" msprop:Description="'No material scrapped' or 'Material Scrapped'" msprop:design-time-name="7213ac17-17dd-4822-b3e1-e07b8c46859f" msprop:DbColumnName="Material_Scrapped_Indicator" msprop:FriendlyName="Material Scrapped Indicator">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Unit_Price_Available_Indicator" msprop:Description="'No unit price available' or 'Unit price available'" msprop:design-time-name="9e6e5029-f85c-4034-b9c4-4d771f636f4e" msprop:DbColumnName="Unit_Price_Available_Indicator" msprop:FriendlyName="Unit Price Available Indicator">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="VAT_Percentage" msprop:Description="For example &quot;14%&quot; or &quot;15%&quot;" msprop:design-time-name="8c0d09a8-2988-44f5-9e83-45aecdd9052e" msprop:DbColumnName="VAT_Percentage" msprop:FriendlyName="VAT Percentage">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Effective_Date" msprop:design-time-name="8c26a381-d144-4992-afa5-50d70c4c9469" msprop:DbColumnName="Effective_Date" msprop:FriendlyName="Effective_Date" type="xs:dateTime" />
+                  <xs:element name="Import_Action" msprop:design-time-name="b6572cdb-4c09-4de7-a7b9-6ad3064bbaf8" msprop:DbColumnName="Import_Action" msprop:FriendlyName="Import_Action">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="IBPT_ID" msprop:design-time-name="15a287b5-93c3-495d-941f-04e488b7eea0" msprop:DbColumnName="IBPT_ID" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Stock_Take_Fact" msprop:design-time-name="9767c141-7004-4c9a-b50e-6162666c0290" msprop:FriendlyName="Stock Take Fact" msprop:DbSchemaName="dbo" msprop:DbTableName="Stock_Take_Fact" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Stock_Take_Date_Key" msprop:design-time-name="621ef26c-8ede-4705-b89b-a5669a96a4f2" msprop:DbColumnName="Stock_Take_Date_Key" msprop:FriendlyName="Stock Take Year Key" type="xs:int" />
+                  <xs:element name="Material_Item_Key" msprop:design-time-name="61fa957b-7bbb-46f9-a731-e112aa35edbc" msprop:DbColumnName="Material_Item_Key" msprop:FriendlyName="Material Item Key" type="xs:int" />
+                  <xs:element name="Stock_Take_Indicators_Key" msprop:design-time-name="39d5e261-409e-4451-bc46-3778b38933ce" msprop:DbColumnName="Stock_Take_Indicators_Key" msprop:FriendlyName="Stock Take Indicators Key" type="xs:int" />
+                  <xs:element name="Stock_Take_Transaction_ID" msprop:Description="Supernatural key created to link back to the source system - has the year and source line number" msprop:design-time-name="32c18aae-432f-4791-b0ce-81d2cb950982" msprop:DbColumnName="Stock_Take_Transaction_ID" msprop:FriendlyName="Stock Take Transaction ID">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Material_Length_Measured_m" msprop:Description="Length of the item measured in meter" msprop:design-time-name="7363a374-ab24-4daa-b70c-14e118f3de0e" msprop:DbColumnName="Material_Length_Measured_m" msprop:FriendlyName="Material Length Measured (m)" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="Material_Width_Measured_m" msprop:Description="Width of the item measured in meter" msprop:design-time-name="b9a3f541-7b4f-458b-a5ac-6a3a17a616aa" msprop:DbColumnName="Material_Width_Measured_m" msprop:FriendlyName="Material Width Measured (m)" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="Material_Full_Units_Counted" msprop:Description="Number of material item full units counted" msprop:design-time-name="cfa55e22-3b7c-4253-ae22-b0d1df4678ee" msprop:DbColumnName="Material_Full_Units_Counted" msprop:FriendlyName="Material Full Units Counted" type="xs:short" minOccurs="0" />
+                  <xs:element name="Material_Quantity_Scrapped" msprop:Description="Quantity of the item that was scrapped after counting" msprop:design-time-name="55f99750-3527-4689-a187-c41bc222af1f" msprop:DbColumnName="Material_Quantity_Scrapped" msprop:FriendlyName="Material Quantity Scrapped" type="xs:double" minOccurs="0" />
+                  <xs:element name="Material_Unit_Price_incl_VAT" msprop:Description="Unit price per unit quantity unit of measure, including VAT" msprop:design-time-name="ccb0c0f4-ec0f-4f8a-bea6-d2965fa2229e" msprop:DbColumnName="Material_Unit_Price_incl_VAT" msprop:FriendlyName="Material_Unit_Price_incl_VAT" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="VAT_Decimal" msprop:Description="Value added tax applicable on the date of stock take, expressed as a decimal value like 0.14" msprop:design-time-name="01792244-7539-41f1-9637-6b9e17cad9e2" msprop:DbColumnName="VAT_Decimal" msprop:FriendlyName="VAT Decimal" type="xs:decimal" />
+                  <xs:element name="Material_Source_Quantity_on_Hand_Value_excl_VAT" msprop:Description="IM determined value of the quantity on hand, excluding VAT." msprop:design-time-name="a823d35e-bbe9-4b3a-9f22-9b7e1450315b" msprop:DbColumnName="Material_Source_Quantity_on_Hand_Value_excl_VAT" msprop:FriendlyName="Material Source Quantity on Hand Value excl VAT" type="xs:double" />
+                  <xs:element name="Material_Unit_Price_excl_VAT" msprop:Description="Derived fact - unit price excluding VAT" msprop:design-time-name="65fe8d9b-8a75-4ae9-894e-5f97a3cfb1d6" msprop:DbColumnName="Material_Unit_Price_excl_VAT" msprop:FriendlyName="Material Unit Price excl VAT" type="xs:double" minOccurs="0" />
+                  <xs:element name="Material_Quantity_Counted" msprop:Description="Derived fact - the quantity that was counted expressed in the material item quantity unit of measure" msprop:design-time-name="7445dab3-454a-4b3d-a007-9d764c8e3b9d" msprop:DbColumnName="Material_Quantity_Counted" msprop:FriendlyName="Material Quantity Counted" type="xs:double" />
+                  <xs:element name="Material_Quantity_on_Hand" msprop:Description="Derived fact - the quantity on hand, measured in the material item quantity unit of measure" msprop:design-time-name="779b2ba5-3149-4c07-a2f7-02a7dedff7f2" msprop:DbColumnName="Material_Quantity_on_Hand" msprop:FriendlyName="Material Quantity on Hand" type="xs:double" />
+                  <xs:element name="Material_Value_on_Hand_excl_VAT" msprop:Description="Derived fact - the value of the material on hand, excluding VAT" msprop:design-time-name="c9c82005-a4bb-425b-939d-4963818f65dc" msprop:DbColumnName="Material_Value_on_Hand_excl_VAT" msprop:FriendlyName="Material Value on Hand excl VAT" type="xs:double" />
+                  <xs:element name="Material_Value_Scrapped_excl_VAT" msprop:Description="Derived fact - the value of the material that was scrapped" msprop:design-time-name="c361cfe5-675d-4113-953d-a411dd4eeabd" msprop:DbColumnName="Material_Value_Scrapped_excl_VAT" msprop:FriendlyName="Material Value Scrapped excl VAT" type="xs:double" />
+                  <xs:element name="Import_Action" msprop:design-time-name="7d919ec0-f753-4c72-8da9-e1193a1b54df" msprop:DbColumnName="Import_Action" msprop:FriendlyName="Import_Action">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="IBPT_ID" msprop:design-time-name="c82d2b8e-1a0b-41c1-a38b-6c770bf30d0b" msprop:DbColumnName="IBPT_ID" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="Year_x0020_Dimension" msprop:design-time-name="67965a37-8ff7-45d5-b39a-c7909e9cb6d3" msprop:IsLogical="True" msprop:FriendlyName="Year Dimension" msprop:DbTableName="Year Dimension" msprop:TableType="View" msprop:Description="" msprop:QueryDefinition="SELECT        Date_Key, [Year]&#xD;&#xA;FROM            V_Min_Year_Key_Per_Year" msprop:QueryBuilder="SpecificQueryBuilder">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Date_Key" msprop:design-time-name="1fa1efb7-3b19-44a5-a04e-c432f2c516d1" msprop:DbColumnName="Date_Key" msprop:FriendlyName="Date_Key" type="xs:int" />
+                  <xs:element name="Year" msprop:design-time-name="79b2f772-28c4-4094-ac2a-8310872a9462" msprop:DbColumnName="Year" msprop:FriendlyName="Year" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Material" />
+          <xs:field xpath="Material_Item_Key" />
+        </xs:unique>
+        <xs:unique name="dbo_Stock_Take_Indicators_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Stock_Take_Indicators" />
+          <xs:field xpath="Stock_Take_Indicators_Key" />
+        </xs:unique>
+        <xs:unique name="dbo_Stock_Take_Fact_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Stock_Take_Fact" />
+          <xs:field xpath="Stock_Take_Transaction_ID" />
+        </xs:unique>
+        <xs:unique name="Year_x0020_Dimension_Constraint1" msdata:ConstraintName="Constraint1" msprop:IsLogical="True" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//Year_x0020_Dimension" />
+          <xs:field xpath="Date_Key" />
+        </xs:unique>
+        <xs:keyref name="FK_Stock_Take_Fact_Stock_Take_Indicators" refer="dbo_Stock_Take_Indicators_Constraint1">
+          <xs:selector xpath=".//dbo_Stock_Take_Fact" />
+          <xs:field xpath="Stock_Take_Indicators_Key" />
+        </xs:keyref>
+        <xs:keyref name="FK_Stock_Take_Fact_Material" refer="Constraint1">
+          <xs:selector xpath=".//dbo_Stock_Take_Fact" />
+          <xs:field xpath="Material_Item_Key" />
+        </xs:keyref>
+      </xs:element>
+      <xs:annotation>
+        <xs:appinfo>
+          <msdata:Relationship name="Stock_Take_Fact-Year_x0020_Dimension" msdata:parent="Year_x0020_Dimension" msdata:child="dbo_Stock_Take_Fact" msdata:parentkey="Date_Key" msdata:childkey="Stock_Take_Date_Key" msprop:IsLogical="True" msprop:Description="" />
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:schema>
+    <Material_x0020_Management xmlns="" />
+  </Schema>
+</DataSourceView>

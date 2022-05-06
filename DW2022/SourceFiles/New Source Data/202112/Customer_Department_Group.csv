@@ -1,0 +1,23 @@
+Customer_Group_ID,Customer_Group_Name,Internal_Or_External
+C00001,Natuurwetenskappe,Internal
+C00002,Gesondheidswetenskappe,Internal
+C00003,Ingenieurswese,Internal
+C00004,Inwoning en Voedseldienste,Internal
+C00005,Elektroniese Dienste,Internal
+C00006,Beskermingsdienste,Internal
+C00007,Inligtingstegnologie,Internal
+C00008,Biblioteek en Inligtingsdienste,Internal
+C00009,Fakulteit Ekonomiese & Bestuurswetenskappe,Internal
+C00011,NWU Kunste,Internal
+C00012,NWU Sport,Internal
+C00016,NWU Rugby Instituut,Internal
+C00017,Studenteraad,Internal
+C00020,Sportsvillage,Internal
+C00022,PASV,Internal
+C00024,Geesteswetenskappe,Internal
+C00025,Direkteur : Navorsingsondersteuning,Internal
+C00026,Higher Degrees and Ceremonies,Internal
+C00027,Campus Operations,Internal
+C00028,Kunsteraad,Internal
+C00029,Eenheid vir Oop Afstandsleer,Internal
+C00030,NWU Institutional Office,Internal

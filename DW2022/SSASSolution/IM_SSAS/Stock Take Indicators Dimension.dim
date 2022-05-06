@@ -1,0 +1,250 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="c5568452-fa64-4de5-94c9-fae69eb4bc69" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Stock Take Indicators Dimension</ID>
+  <Name>Stock Take Indicators Dimension</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="37" scrolltop="-5368" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="95" x="8414" y="14949" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Stock Take Indicators Dimension" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="8890" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000ba22000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Stock_Take_Indicators" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>37</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-5368</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>95</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="8f4ef2f3-97c5-4b5b-884a-89372d6ca3c1">
+    <DataSourceViewID>Material Management</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="d760e4b4-54d3-4294-896c-15dfeece563b">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="c62d74ae-1865-443d-9544-2c48e3c079d3">
+      <ID>Stock Take Indicators Key</ID>
+      <Name>Stock Take Indicators Key</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f3a60d0f-c479-4e38-b952-5f65a1836ce3">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1dacd90e-ed72-4805-ac92-7e212bece8e1">
+            <TableID>dbo_Stock_Take_Indicators</TableID>
+            <ColumnID>Stock_Take_Indicators_Key</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="7e365a39-2a0d-4cf1-b834-0940148e617c">
+          <AttributeID>Stock Take Comment</AttributeID>
+          <Name>Stock Take Comment</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a6474141-7c40-48f1-be02-03d982c9420f">
+          <AttributeID>Length Measured Indicator</AttributeID>
+          <Name>Length Measured Indicator</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0a40451c-e03b-422e-a0e0-6f35a82ab409">
+          <AttributeID>Width Measured Indicator</AttributeID>
+          <Name>Width Measured Indicator</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="63f1d64a-ee05-4041-b9ab-89e09390a8d6">
+          <AttributeID>Full Units Counted Indicator</AttributeID>
+          <Name>Full Units Counted Indicator</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c1f8167b-d85b-46c8-9c6a-82a6fb85c381">
+          <AttributeID>Material Scrapped Indicator</AttributeID>
+          <Name>Material Scrapped Indicator</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a6deded7-22be-44bd-863a-c1b18b36e27a">
+          <AttributeID>Unit Price Available Indicator</AttributeID>
+          <Name>Unit Price Available Indicator</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2a37d428-94e4-4cae-ba90-91afaeb42bbe">
+          <AttributeID>VAT Percentage</AttributeID>
+          <Name>VAT Percentage</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="bd9c1cef-947c-48e9-853a-98423829e3c2">
+      <ID>Stock Take Comment</ID>
+      <Name>Stock Take Comment</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2cc8750c-67bb-49e1-a480-f739a775ce67">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="93f4b18d-5c87-4d14-800d-f87228be5fcb">
+            <TableID>dbo_Stock_Take_Indicators</TableID>
+            <ColumnID>Stock_Take_Comment</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ebea0034-9210-4889-97ef-1fdf50924980">
+      <ID>Length Measured Indicator</ID>
+      <Name>Length Measured Indicator</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="856f081c-9c1f-46ee-9c5d-64ef6e808214">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="39387e6f-242f-4ab6-9e5b-84abc4fc5f3d">
+            <TableID>dbo_Stock_Take_Indicators</TableID>
+            <ColumnID>Length_Measured_Indicator</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3eeb2c37-a83a-4e88-bac7-65d71d1eb8de">
+      <ID>Width Measured Indicator</ID>
+      <Name>Width Measured Indicator</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f2749252-7435-4939-8967-007862311dab">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2bd063f9-f359-4f72-86f7-a1e971818bea">
+            <TableID>dbo_Stock_Take_Indicators</TableID>
+            <ColumnID>Width_Measured_Indicator</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="73129ff9-b90f-4ee4-be8a-63f905f9d38b">
+      <ID>Full Units Counted Indicator</ID>
+      <Name>Full Units Counted Indicator</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="45eb93c8-dba2-4c30-b897-e13b6b0e5f54">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2e0ee26a-50ad-4524-a57e-6c6e108f4245">
+            <TableID>dbo_Stock_Take_Indicators</TableID>
+            <ColumnID>Full_Units_Counted_Indicator</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b861ee6a-34e1-487d-9a0a-100bcb632178">
+      <ID>Material Scrapped Indicator</ID>
+      <Name>Material Scrapped Indicator</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="59c1a68b-99df-4fa7-a65a-36873e411481">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="abace023-c3bf-4d15-98e1-4714b2017525">
+            <TableID>dbo_Stock_Take_Indicators</TableID>
+            <ColumnID>Material_Scrapped_Indicator</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b987a168-35ea-4602-af05-b541757fa76d">
+      <ID>Unit Price Available Indicator</ID>
+      <Name>Unit Price Available Indicator</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1fa5ccfa-18a8-4cd9-9cc4-2c7863445548">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4a40f4f3-4814-4729-8188-2c6f3802ff68">
+            <TableID>dbo_Stock_Take_Indicators</TableID>
+            <ColumnID>Unit_Price_Available_Indicator</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0df0b8d6-dcf6-42fd-bc0a-69a146c97db9">
+      <ID>VAT Percentage</ID>
+      <Name>VAT Percentage</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3fed3a4b-0626-49e8-b36e-1057f2396e20">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1a352176-5286-45bd-b1d8-ae75cc36a6f2">
+            <TableID>dbo_Stock_Take_Indicators</TableID>
+            <ColumnID>VAT_Percentage</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

@@ -1,0 +1,1411 @@
+M_Year,M_Material_Item_ID,M_Material_Type,M_Material_Item_Category,M_Material_Item_Detail_1,M_Material_Item_Detail_2,M_Material_Item_Size,M_Material_Item_Size_Unit_Of_Measure,M_Material_Item_Size_Note,M_Material_Item_Standard_Length_mm,M_Material_Item_Standard_Width_or_Diameter_mm,M_Material_Item_Standard_Height_mm,M_Material_Item_Standard_Interior_Diameter_mm,M_Material_Item_Standard_Thinkness_or_Wall_mm,M_Material_Item_Quantity_Unit_of_Measure,M_Material_Group,IBPT_ID,ErrorCode,ErrorColumn,ErrorDescription
+2021,ALM00020,Aluminium,Bar,Round,*None,8,mm,*None,-1.00,8.00,-1.00,-1.00,-1.00,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00073,Stainless steel,Tubing,Hydraulic,*None,21.5 x 2.5,mm,*None,-1.00,21.50,-1.00,-1.00,2.50,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00006,Mild steel,Angle iron,*None,*None,40 x 40 x 3,mm,*None,-1.00,40.00,40.00,-1.00,3.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00021,Glass,Cone,*None,*None,29,*None,*None,-1.00,-1.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00081,Brass,Tubing,Square,*None,31.6 x 31.6 x 1.2,mm,*None,-1.00,31.60,31.60,-1.00,1.20,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,CPR00008,Copper,Tubing,*None,*None,28.7 x 1.2,mm,*None,-1.00,28.70,-1.00,27.50,1.20,m,Copper,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,VNT00001,Vesconite,Rod,*None,*None,12,mm,*None,-1.00,12.00,-1.00,-1.00,-1.00,m,Ertalon/Vescolene,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00031,Mild steel,Bar,Flat,*None,50 x 10,mm,*None,-1.00,50.00,-1.00,-1.00,10.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00075,Stainless steel,Tubing,Hydraulic,*None,33.4 x 2.6,mm,*None,-1.00,33.40,-1.00,-1.00,2.60,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00073,Aluminium,Tubing,Round,*None,25.4 x 3,mm,*None,-1.00,25.40,-1.00,22.40,3.00,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00084,Aluminium,Tubing,Round,*None,50.4 x 1.6,mm,*None,-1.00,50.40,-1.00,48.80,1.60,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PPL00002,Polypropylene,Bar,Round,*None,15,mm,*None,-1.00,15.00,-1.00,-1.00,-1.00,m,Polypropylene,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00076,Brass,Tubing,Round,*None,63.7 x 1.7,mm,*None,-1.00,63.70,-1.00,62.00,1.70,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,TFL00002,Teflon,Bar,Round,*None,7,mm,*None,-1.00,7.00,-1.00,-1.00,-1.00,m,Tufnol/Teflon,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00078,Aluminium,Tubing,Round,*None,32 x 2,mm,*None,-1.00,32.00,-1.00,30.00,2.00,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00111,Aluminium,U channel,*None,*None,76.3 x 38 x 8,mm,*None,-1.00,76.30,38.00,-1.00,8.00,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PPL00001,Polypropylene,Bar,Round,*None,10,mm,*None,-1.00,10.00,-1.00,-1.00,-1.00,m,Polypropylene,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00004,Glass,Clip,Conical,POM,NS34,*None,*None,-1.00,-1.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00050,Stainless steel,Sheet,*None,*None,3,mm,*None,2500.00,1250.00,-1.00,-1.00,3.00,m²,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00052,Stainless steel,Tubing,Dairy,*None,15 x 1,mm,*None,-1.00,15.00,-1.00,-1.00,1.00,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PSP00035,Perspex,Tubing,Round,*None,50 x 40 x 5,mm,*None,-1.00,50.00,-1.00,40.00,5.00,m,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PVC00010,PVC,Rod,*None,*None,35,mm,*None,-1.00,35.00,-1.00,-1.00,-1.00,m,PVC,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00045,Stainless steel,Sheet,*None,*None,0.9,mm,*None,2500.00,1250.00,-1.00,-1.00,.90,m²,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PSP00056,Perspex,Tubing,Round,*None,200 x 194 x 3,mm,*None,-1.00,200.00,-1.00,194.00,3.00,m,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00031,Aluminium,Bar,Round,*None,45,mm,*None,-1.00,45.00,-1.00,-1.00,-1.00,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PSP00025,Perspex,Sheet,*None,*None,25,mm,*None,3050.00,2030.00,-1.00,-1.00,25.00,m²,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,TFL00008,Teflon,Sheet,*None,*None,3,mm,*None,1200.00,1200.00,-1.00,-1.00,3.00,m²,Tufnol/Teflon,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00010,Stainless steel,Bar,Flat,*None,65 x 6,mm,*None,-1.00,65.00,-1.00,-1.00,6.00,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00029,Stainless steel,Bar,Round,*None,32,mm,*None,-1.00,32.00,-1.00,-1.00,-1.00,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,VLN00003,Vescolene,Rod,*None,*None,30,mm,*None,-1.00,30.00,-1.00,-1.00,-1.00,m,Ertalon/Vescolene,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,CPR00010,Copper,Tubing,*None,*None,38 x 1.6,mm,*None,-1.00,38.00,-1.00,36.40,1.60,m,Copper,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00018,Brass,Bar,Hexagon,*None,9.55,mm,*None,-1.00,9.55,-1.00,-1.00,-1.00,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00040,Brass,Bar,Square,*None,6.35 x 6.35,mm,*None,-1.00,6.35,6.35,-1.00,-1.00,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00071,Mild steel,Sheet,Galvinised,*None,0.7,mm,*None,2450.00,1225.00,-1.00,-1.00,.70,m²,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00073,Mild steel,Sheet,Galvinised,*None,1.2,mm,*None,2450.00,1225.00,-1.00,-1.00,1.20,m²,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PSP00055,Perspex,Tubing,Round,*None,200 x 190 x 5,mm,*None,-1.00,200.00,-1.00,190.00,5.00,m,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00085,Mild steel,Tubing,Rectangular,*None,26 x 9.5 x 1.3,mm,*None,-1.00,26.00,9.50,-1.00,1.30,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00056,Brass,Tubing,Round,*None,6.35 x 0.8,mm,*None,-1.00,6.35,-1.00,5.55,.80,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00034,Brass,Bar,Round,*None,30,mm,*None,-1.00,30.00,-1.00,-1.00,-1.00,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00096,Glass,Tubing,Boro,*None,44 x 2.3,mm,*None,-1.00,44.00,-1.00,-1.00,2.30,m,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00069,Aluminium,Tubing,Round,*None,19 x 1.8,mm,*None,-1.00,19.00,-1.00,17.20,1.80,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00089,Aluminium,Tubing,Round,*None,51.1 x 1.8,mm,*None,-1.00,51.10,-1.00,49.30,1.80,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00071,Brass,Tubing,Round,*None,51 x 4.6,mm,*None,-1.00,51.00,-1.00,46.40,4.60,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00084,Stainless steel,Tubing,Round,*None,22 x 2.5,mm,*None,-1.00,22.00,-1.00,19.50,2.50,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00015,Mild steel,Bar,Flat,*None,12.7 x 3.17,mm,*None,-1.00,12.70,-1.00,-1.00,3.17,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,NYL00001,Nylatron,Bar,Round,*None,50,mm,*None,-1.00,50.00,-1.00,-1.00,-1.00,m,Polypropylene,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00068,Glass,Tubing,Boro,*None,7 x 1.5,mm,*None,-1.00,7.00,-1.00,-1.00,1.50,m,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00093,Aluminium,Tubing,Round,*None,70 x 5,mm,*None,-1.00,70.00,-1.00,65.00,5.00,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PSP00041,Perspex,Tubing,Round,*None,70 x 64 x 3,mm,*None,-1.00,70.00,-1.00,64.00,3.00,m,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,TFN00019,Tufnol,Tubing,*None,*None,65  x 50,mm,*None,-1.00,65.00,-1.00,50.00,15.00,m,Tufnol/Teflon,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00027,Aluminium,Bar,Round,*None,25,mm,*None,-1.00,25.00,-1.00,-1.00,-1.00,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PCN00001,Polycarbonate,Rod,*None,*None,26,mm,*None,-1.00,26.00,-1.00,-1.00,-1.00,m,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PVC00004,PVC,Rod,*None,*None,10,mm,*None,-1.00,10.00,-1.00,-1.00,-1.00,m,PVC,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00120,Glass,Tubing,Screw thread,*None,GL 32,*None,*None,-1.00,-1.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00055,Mild steel,Bar,Round,Bright,24,mm,*None,-1.00,24.00,-1.00,-1.00,-1.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00065,Glass,Stopcock,Single way,SWB,18.8 / 6,*None,*None,-1.00,-1.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00097,Glass,Tubing,Boro,*None,46 x 1.6,mm,*None,-1.00,46.00,-1.00,-1.00,1.60,m,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00046,Glass,Screw cap,Closed,*None,GL 18,*None,*None,-1.00,-1.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00008,Stainless steel,Bar,Flat,*None,25 x 6,mm,*None,-1.00,25.00,-1.00,-1.00,6.00,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PPL00008,Polypropylene,Bar,Round,*None,60,mm,*None,-1.00,60.00,-1.00,-1.00,-1.00,m,Polypropylene,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PSP00017,Perspex,Sheet,*None,*None,4,mm,*None,3050.00,2030.00,-1.00,-1.00,4.00,m²,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00083,Aluminium,Tubing,Round,*None,38.4 x 2,mm,*None,-1.00,38.40,-1.00,36.40,2.00,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00015,Stainless steel,Bar,Round,*None,4,mm,*None,-1.00,4.00,-1.00,-1.00,-1.00,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PSP00001,Perspex,Rod,*None,*None,6,mm,*None,-1.00,6.00,-1.00,-1.00,-1.00,m,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00014,Stainless steel,Bar,Round,*None,3.5,mm,*None,-1.00,3.50,-1.00,-1.00,-1.00,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00081,Mild steel,Sheet,*None,*None,1.6,mm,*None,2450.00,1225.00,-1.00,-1.00,1.60,m²,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00078,Mild steel,Sheet,*None,*None,1,mm,*None,2450.00,1225.00,-1.00,-1.00,1.00,m²,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00104,Glass,Tubing,Boro,*None,56 x 1.8,mm,*None,-1.00,56.00,-1.00,-1.00,1.80,m,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00106,Glass,Tubing,Boro,*None,60 x 3.2,mm,*None,-1.00,60.00,-1.00,-1.00,3.20,m,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00023,Glass,Cone,*None,*None,40,*None,*None,-1.00,-1.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00053,Aluminium,Sheet,*None,*None,8,mm,*None,2500.00,1250.00,-1.00,-1.00,8.00,m²,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00089,Glass,Tubing,Boro,*None,30 x 2,mm,*None,-1.00,30.00,-1.00,-1.00,2.00,m,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00034,Stainless steel,Bar,Square,*None,6 x 6,mm,*None,-1.00,6.00,6.00,-1.00,-1.00,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,VNT00003,Vesconite,Rod,*None,*None,25,mm,*None,-1.00,25.00,-1.00,-1.00,-1.00,m,Ertalon/Vescolene,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00055,Glass,Socket,*None,*None,40,*None,*None,-1.00,-1.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00063,Stainless steel,Tubing,Dairy,*None,63.5 x 1.6,mm,*None,-1.00,63.50,-1.00,-1.00,1.60,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00063,Aluminium,Tubing,Round,*None,8 x 1,mm,*None,-1.00,8.00,-1.00,7.00,1.00,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00048,Glass,Screw cap,Closed,*None,GL 32,*None,*None,-1.00,-1.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00018,Stainless steel,Bar,Round,*None,8,mm,*None,-1.00,8.00,-1.00,-1.00,-1.00,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PVC00016,PVC,Sheet,Simona,*None,6,mm,*None,2000.00,1000.00,-1.00,-1.00,6.00,m²,PVC,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00002,Stainless steel,Angle iron,*None,*None,30 x 30 x 3,mm,*None,-1.00,30.00,30.00,-1.00,3.00,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00058,Mild steel,Bar,Round,Bright,30,mm,*None,-1.00,30.00,-1.00,-1.00,-1.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PVC00005,PVC,Rod,*None,*None,12,mm,*None,-1.00,12.00,-1.00,-1.00,-1.00,m,PVC,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00055,Stainless steel,Tubing,Dairy,*None,25.4 x 1.5,mm,*None,-1.00,25.40,-1.00,-1.00,1.50,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00079,Mild steel,Sheet,*None,*None,1.2,mm,*None,2450.00,1225.00,-1.00,-1.00,1.20,m²,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00020,Glass,Cone,*None,*None,24,*None,*None,-1.00,-1.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00074,Mild steel,Sheet,Galvinised,*None,1.6,mm,*None,2450.00,1225.00,-1.00,-1.00,1.60,m²,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00058,Stainless steel,Tubing,Dairy,*None,41.26 x 1.6,mm,*None,-1.00,41.26,-1.00,-1.00,1.60,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00021,Mild steel,Bar,Flat,*None,30 x 3,mm,*None,-1.00,30.00,-1.00,-1.00,3.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00102,Glass,Tubing,Boro,*None,54 x 1.8,mm,*None,-1.00,54.00,-1.00,-1.00,1.80,m,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PSP00037,Perspex,Tubing,Round,*None,60 x 50 x 5,mm,*None,-1.00,60.00,-1.00,50.00,5.00,m,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00012,Aluminium,Bar,Flat,*None,25.4 x 3.15,mm,*None,-1.00,25.40,-1.00,-1.00,3.15,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00039,Aluminium,Bar,Square,*None,30.2 x 30.2,mm,*None,-1.00,30.20,30.20,-1.00,-1.00,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ELN00002,Ertalon,Rod,*None,*None,50,mm,*None,-1.00,50.00,-1.00,-1.00,-1.00,m,Ertalon/Vescolene,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PSP00005,Perspex,Rod,*None,*None,70,mm,*None,-1.00,70.00,-1.00,-1.00,-1.00,m,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00043,Aluminium,Sheet,*None,*None,0.7,mm,*None,2500.00,1250.00,-1.00,-1.00,.70,m²,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00064,Glass,Stopcock,Single way,SWB,14.5 / 4,*None,*None,-1.00,-1.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PVC00017,PVC,Sheet,Simona,*None,6.5,mm,*None,2000.00,1000.00,-1.00,-1.00,6.50,m²,PVC,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00050,Glass,Socket,*None,*None,12,*None,*None,-1.00,-1.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00001,Stainless steel,Angle iron,*None,*None,25.2 x 25.2 x 3.1,mm,*None,-1.00,25.20,25.20,-1.00,3.10,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00021,Aluminium,Bar,Round,*None,9.5,mm,*None,-1.00,9.50,-1.00,-1.00,-1.00,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00043,Brass,Bar,Square,*None,12.7 x 12.7,mm,*None,-1.00,12.70,12.70,-1.00,-1.00,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PSP00043,Perspex,Tubing,Round,*None,80 x 70 x 5,mm,*None,-1.00,80.00,-1.00,70.00,5.00,m,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PVC00022,PVC,Sheet,*None,*None,8,mm,*None,1000.00,2000.00,-1.00,-1.00,8.00,m²,PVC,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00061,Stainless steel,Tubing,Dairy,*None,60.3 x 2.8,mm,*None,-1.00,60.30,-1.00,-1.00,2.80,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00091,Stainless steel,Tubing,Round,*None,60.33 x 2.77,mm,*None,-1.00,60.33,-1.00,57.56,2.77,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PSP00011,Perspex,Sheet,Tinted,*None,3,mm,*None,3050.00,2030.00,-1.00,-1.00,3.00,m²,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00047,Aluminium,Sheet,*None,*None,1.6,mm,*None,2500.00,1250.00,-1.00,-1.00,1.60,m²,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00074,Stainless steel,Tubing,Hydraulic,*None,26.8 x 2.5,mm,*None,-1.00,26.80,-1.00,-1.00,2.50,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00003,Mild steel,Angle iron,*None,*None,25 x 25 x 5,mm,*None,-1.00,25.00,25.00,-1.00,5.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00025,Stainless steel,Bar,Round,*None,24,mm,*None,-1.00,24.00,-1.00,-1.00,-1.00,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00037,Mild steel,Bar,Flat,*None,100 x 6,mm,*None,-1.00,100.00,-1.00,-1.00,6.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PPL00003,Polypropylene,Bar,Round,*None,25,mm,*None,-1.00,25.00,-1.00,-1.00,-1.00,m,Polypropylene,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00019,Stainless steel,Bar,Round,*None,10,mm,*None,-1.00,10.00,-1.00,-1.00,-1.00,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00060,Glass,Stopcock,Single way,PTFE,14.5 / 4,*None,*None,-1.00,-1.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00097,Mild steel,Tubing,Round,*None,38 x 35 x 1.5,mm,*None,-1.00,38.00,-1.00,35.00,1.50,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,TFN00006,Tufnol,Sheet,*None,*None,8.34,mm,*None,-1.00,-1.00,-1.00,-1.00,8.34,m²,Tufnol/Teflon,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00001,Mild steel,Angle iron,*None,*None,20 x 20 x 2,mm,*None,-1.00,20.00,20.00,-1.00,2.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00070,Stainless steel,Tubing,Hydraulic,*None,12.7 x 1.2,mm,*None,-1.00,12.70,-1.00,-1.00,1.20,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00115,Mild steel,Tubing,Square,*None,20 x 20 x 1.6,mm,*None,-1.00,20.00,20.00,-1.00,1.60,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,TFL00001,Teflon,Bar,Round,*None,6,mm,*None,-1.00,6.00,-1.00,-1.00,-1.00,m,Tufnol/Teflon,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PVC00018,PVC,Sheet,*None,*None,3,mm,*None,1000.00,2000.00,-1.00,-1.00,3.00,m²,PVC,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PVC00019,PVC,Sheet,*None,*None,4,mm,*None,1000.00,2000.00,-1.00,-1.00,4.00,m²,PVC,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PVC00014,PVC,Rod,*None,*None,90,mm,*None,-1.00,90.00,-1.00,-1.00,-1.00,m,PVC,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00045,Aluminium,Sheet,*None,*None,1,mm,*None,2500.00,1250.00,-1.00,-1.00,1.00,m²,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PVC00021,PVC,Sheet,*None,*None,6,mm,*None,1000.00,2000.00,-1.00,-1.00,6.00,m²,PVC,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00089,Mild steel,Tubing,Rectangular,*None,76 x 38 x 2.0,mm,*None,-1.00,76.00,38.00,-1.00,2.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00073,Glass,Tubing,Boro,*None,12 x 1.5,mm,*None,-1.00,12.00,-1.00,-1.00,1.50,m,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00107,Glass,Tubing,Boro,*None,65 x 2.2,mm,*None,-1.00,65.00,-1.00,-1.00,2.20,m,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00018,Mild steel,Bar,Flat,*None,25 x 5,mm,*None,-1.00,25.00,-1.00,-1.00,5.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00034,Mild steel,Bar,Flat,*None,60 x 16,mm,*None,-1.00,60.00,-1.00,-1.00,16.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00053,Brass,Sheet,*None,*None,8,mm,*None,2000.00,1000.00,-1.00,-1.00,8.00,m²,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00043,Stainless steel,Sheet,*None,*None,0.5,mm,*None,2500.00,1250.00,-1.00,-1.00,.50,m²,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00025,Aluminium,Bar,Round,*None,16,mm,*None,-1.00,16.00,-1.00,-1.00,-1.00,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PVC00003,PVC,Rod,*None,*None,8,mm,*None,-1.00,8.00,-1.00,-1.00,-1.00,m,PVC,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00103,Glass,Tubing,Boro,*None,54 x 2.5,mm,*None,-1.00,54.00,-1.00,-1.00,2.50,m,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00087,Mild steel,Tubing,Rectangular,*None,38 x 25 x 1.6,mm,*None,-1.00,38.00,25.00,-1.00,1.60,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,TFN00018,Tufnol,Tubing,*None,*None,63 x 50,mm,*None,-1.00,63.00,-1.00,50.00,13.00,m,Tufnol/Teflon,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PSP00023,Perspex,Sheet,*None,*None,15,mm,*None,3050.00,2030.00,-1.00,-1.00,15.00,m²,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00035,Brass,Bar,Round,*None,32,mm,*None,-1.00,32.00,-1.00,-1.00,-1.00,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00055,Aluminium,Sheet,*None,*None,12.5,mm,*None,2500.00,1250.00,-1.00,-1.00,12.50,m²,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00062,Glass,Stopcock,Single way,PTFE,24-Aug,*None,*None,-1.00,-1.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PVC00029,PVC,Tubing,*None,*None,75 x 67 x 4,mm,*None,-1.00,75.00,-1.00,67.00,4.00,m,PVC,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00049,Stainless steel,Sheet,*None,*None,2,mm,*None,2500.00,1250.00,-1.00,-1.00,2.00,m²,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00009,Aluminium,Bar,Flat,*None,12.7 x 3.15,mm,*None,-1.00,12.70,-1.00,-1.00,3.15,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00063,Mild steel,Bar,Round,*None,12,mm,*None,-1.00,12.00,-1.00,-1.00,-1.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00076,Aluminium,Tubing,Round,*None,31.7 x 1.8,mm,*None,-1.00,31.70,-1.00,29.90,1.80,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00077,Aluminium,Tubing,Round,*None,32 x 3.5,mm,*None,-1.00,32.00,-1.00,28.50,3.50,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00095,Stainless steel,Tubing,Square,*None,80.3 x 80.3 x 1.8,mm,*None,-1.00,80.30,80.30,-1.00,1.80,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00037,Brass,Bar,Round,*None,40,mm,*None,-1.00,40.00,-1.00,-1.00,-1.00,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,TFL00007,Teflon,Bar,Round,*None,60,mm,*None,-1.00,60.00,-1.00,-1.00,-1.00,m,Tufnol/Teflon,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PSP00003,Perspex,Rod,*None,*None,10,mm,*None,-1.00,10.00,-1.00,-1.00,-1.00,m,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00029,Glass,Filter disc,Por 3,*None,30,mm,*None,-1.00,30.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,TFN00013,Tufnol,Tubing,*None,*None,19 x 12.5,mm,*None,-1.00,19.00,-1.00,12.50,6.50,m,Tufnol/Teflon,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00046,Stainless steel,Sheet,*None,*None,1,mm,*None,2500.00,1250.00,-1.00,-1.00,1.00,m²,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00054,Glass,Socket,*None,*None,29,*None,*None,-1.00,-1.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00077,Glass,Tubing,Boro,*None,14 x 2.2,mm,*None,-1.00,14.00,-1.00,-1.00,2.20,m,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00017,Glass,Cone,Langpunt,*None,45,*None,*None,-1.00,-1.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00072,Glass,Tubing,Boro,*None,12 x 1,mm,*None,-1.00,12.00,-1.00,-1.00,1.00,m,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00098,Glass,Tubing,Boro,*None,46 x 2.3,mm,*None,-1.00,46.00,-1.00,-1.00,2.30,m,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00078,Stainless steel,Tubing,Rectangular,*None,30 x 19.8 x 1.5,mm,*None,-1.00,30.00,19.80,-1.00,1.50,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00083,Stainless steel,Tubing,Round,*None,19 x 1.6,mm,*None,-1.00,19.00,-1.00,17.40,1.60,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,TFN00014,Tufnol,Tubing,*None,*None,19 x 15.5,mm,*None,-1.00,19.00,-1.00,15.50,3.50,m,Tufnol/Teflon,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00059,Aluminium,Sheet,*None,*None,30,mm,*None,2500.00,1250.00,-1.00,-1.00,30.00,m²,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00066,Aluminium,Tubing,Round,*None,15.8 x 1.6,mm,*None,-1.00,15.80,-1.00,14.20,1.60,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PSP00033,Perspex,Tubing,Round,*None,30 x 26 x 2,mm,*None,-1.00,30.00,-1.00,26.00,2.00,m,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00038,Glass,Joint,Spherical,Cup,29,*None,*None,-1.00,-1.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00075,Mild steel,Sheet,*None,*None,0.5,mm,*None,2450.00,1225.00,-1.00,-1.00,.50,m²,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00091,Mild steel,Tubing,Rectangular,*None,76 x 50 x 2.5,mm,*None,-1.00,76.00,50.00,-1.00,2.50,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00070,Brass,Tubing,Round,*None,50.8 x 1.2,mm,*None,-1.00,50.80,-1.00,49.60,1.20,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00068,Brass,Tubing,Round,*None,38.1 x 1.2,mm,*None,-1.00,38.10,-1.00,36.90,1.20,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00103,Mild steel,Tubing,Round,*None,48.5 x 42.5 x 3,mm,*None,-1.00,48.50,-1.00,42.50,3.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00013,Brass,Bar,Flat,*None,76.5 x 6.25,mm,*None,-1.00,76.50,-1.00,-1.00,6.25,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00017,Brass,Bar,Hexagon,*None,8,mm,*None,-1.00,8.00,-1.00,-1.00,-1.00,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PVC00011,PVC,Rod,*None,*None,40,mm,*None,-1.00,40.00,-1.00,-1.00,-1.00,m,PVC,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PSP00006,Perspex,Sheet,Black,*None,5,mm,*None,3050.00,2030.00,-1.00,-1.00,5.00,m²,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PSP00014,Perspex,Sheet,*None,*None,1.5,mm,*None,3050.00,2030.00,-1.00,-1.00,1.50,m²,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00048,Mild steel,Bar,Round,Bright,6,mm,*None,-1.00,6.00,-1.00,-1.00,-1.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00061,Aluminium,Sheet,*None,*None,50,mm,*None,2500.00,1250.00,-1.00,-1.00,50.00,m²,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00052,Brass,Sheet,*None,*None,6.7,mm,*None,2000.00,1000.00,-1.00,-1.00,6.70,m²,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00066,Glass,Tubing,Boro,*None,6 x 1,mm,*None,-1.00,6.00,-1.00,-1.00,1.00,m,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00092,Stainless steel,Tubing,Square,*None,20 x 20 x 1.5,mm,*None,-1.00,20.00,20.00,-1.00,1.50,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00009,Glass,Clip,Spherical,POM,NS13,*None,*None,-1.00,-1.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00083,Mild steel,Sheet,*None,*None,3,mm,*None,2450.00,1225.00,-1.00,-1.00,3.00,m²,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,TFL00009,Teflon,Sheet,*None,*None,16,mm,*None,1200.00,1200.00,-1.00,-1.00,16.00,m²,Tufnol/Teflon,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00093,Glass,Tubing,Boro,*None,38 x 2,mm,*None,-1.00,38.00,-1.00,-1.00,2.00,m,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00111,Mild steel,Tubing,Square,*None,12.7 x 12.7 x 1,mm,*None,-1.00,12.70,12.70,-1.00,1.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00022,Glass,Cone,*None,*None,34,*None,*None,-1.00,-1.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PSP00012,Perspex,Sheet,White,*None,3,mm,*None,3050.00,2030.00,-1.00,-1.00,3.00,m²,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00025,Mild steel,Bar,Flat,*None,40 x 5,mm,*None,-1.00,40.00,-1.00,-1.00,5.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00026,Mild steel,Bar,Flat,*None,40 x 6,mm,*None,-1.00,40.00,-1.00,-1.00,6.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00032,Aluminium,Bar,Round,*None,51,mm,*None,-1.00,51.00,-1.00,-1.00,-1.00,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00014,Glass,Cone,Langpunt,*None,29,*None,*None,-1.00,-1.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00005,Stainless steel,Angle iron,*None,*None,64 x 64 x 6,mm,*None,-1.00,64.00,64.00,-1.00,6.00,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00115,Glass,Tubing,Boro,*None,120 x 5,mm,*None,-1.00,120.00,-1.00,-1.00,5.00,m,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00095,Mild steel,Tubing,Round,*None,32 x 28.5 x 1.75,mm,*None,-1.00,32.00,-1.00,28.50,1.75,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00004,Aluminium,Angle iron,*None,*None,25 x 25 x 2.2,mm,*None,-1.00,25.00,25.00,-1.00,2.20,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00022,Aluminium,Bar,Round,*None,10,mm,*None,-1.00,10.00,-1.00,-1.00,-1.00,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00090,Stainless steel,Tubing,Round,*None,50 x 1.2,mm,*None,-1.00,50.00,-1.00,48.80,1.20,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PSP00008,Perspex,Sheet,Green,*None,3,mm,*None,3050.00,2030.00,-1.00,-1.00,3.00,m²,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00094,Mild steel,Tubing,Round,*None,25.5 x 21.6 x 2,mm,*None,-1.00,25.50,-1.00,21.60,2.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00016,Aluminium,Bar,Flat,*None,38 x 6.15,mm,*None,-1.00,38.00,-1.00,-1.00,6.15,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,VLN00001,Vescolene,Rod,*None,*None,20,mm,*None,-1.00,20.00,-1.00,-1.00,-1.00,m,Ertalon/Vescolene,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00094,Aluminium,Tubing,Round,*None,108 x 3.5,mm,*None,-1.00,108.00,-1.00,104.50,3.50,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PVC00025,PVC,Tubing,*None,*None,25 x 20 x 2.5,mm,*None,-1.00,25.00,-1.00,20.00,2.50,m,PVC,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PSP00018,Perspex,Sheet,*None,*None,5,mm,*None,3050.00,2030.00,-1.00,-1.00,5.00,m²,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00063,Brass,Tubing,Round,*None,28.6 x 1.8,mm,*None,-1.00,28.60,-1.00,26.80,1.80,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00088,Stainless steel,Tubing,Round,*None,44.45 x 1.5,mm,*None,-1.00,44.45,-1.00,42.95,1.50,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00098,Aluminium,Tubing,Square,*None,19.2 x 19.2 x 3.15,mm,*None,-1.00,19.20,19.20,-1.00,3.15,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00011,Mild steel,Angle iron,*None,*None,50 x 50 x 8,mm,*None,-1.00,50.00,50.00,-1.00,8.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00003,Glass,Clip,Conical,POM,NS29,*None,*None,-1.00,-1.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00079,Aluminium,Tubing,Round,*None,34.9 x 4.7,mm,*None,-1.00,34.90,-1.00,30.20,4.70,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PPL00004,Polypropylene,Bar,Round,*None,30,mm,*None,-1.00,30.00,-1.00,-1.00,-1.00,m,Polypropylene,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00027,Glass,Filter disc,Por 3,*None,10,mm,*None,-1.00,10.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PPL00019,Polypropylene,Sheet,*None,*None,60,mm,*None,1000.00,2000.00,-1.00,-1.00,60.00,m²,Polypropylene,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00078,Glass,Tubing,Boro,*None,15 x 1.8,mm,*None,-1.00,15.00,-1.00,-1.00,1.80,m,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00118,Glass,Tubing,Screw thread,*None,GL 18,*None,*None,-1.00,-1.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PSP00034,Perspex,Tubing,Round,*None,40 x 30 x 5,mm,*None,-1.00,40.00,-1.00,30.00,5.00,m,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PSP00044,Perspex,Tubing,Round,*None,80 x 74 x 3,mm,*None,-1.00,80.00,-1.00,74.00,3.00,m,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00119,Glass,Tubing,Screw thread,*None,GL 25,*None,*None,-1.00,-1.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,CPR00005,Copper,Tubing,*None,*None,15.9 x 0.8,mm,*None,-1.00,15.90,-1.00,15.10,.80,m,Copper,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00091,Glass,Tubing,Boro,*None,32 x 2,mm,*None,-1.00,32.00,-1.00,-1.00,2.00,m,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00064,Brass,Tubing,Round,*None,31.8 x 3.5,mm,*None,-1.00,31.80,-1.00,28.30,3.50,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,TFN00010,Tufnol,Tubing,*None,*None,12.5  x 9.5,mm,*None,-1.00,12.50,-1.00,9.50,3.00,m,Tufnol/Teflon,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00056,Glass,Socket,*None,*None,45,*None,*None,-1.00,-1.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,CPR00007,Copper,Tubing,*None,*None,22 x 1.5,mm,*None,-1.00,22.00,-1.00,20.50,1.50,m,Copper,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,TFN00009,Tufnol,Tubing,*None,*None,9.5 x 6,mm,*None,-1.00,9.50,-1.00,6.00,3.50,m,Tufnol/Teflon,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00024,Aluminium,Bar,Round,*None,12.7,mm,*None,-1.00,12.70,-1.00,-1.00,-1.00,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00105,Aluminium,Tubing,Square,*None,50.8 x 50.8 x 6,mm,*None,-1.00,50.80,50.80,-1.00,6.00,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00050,Aluminium,Sheet,*None,*None,3,mm,*None,2500.00,1250.00,-1.00,-1.00,3.00,m²,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00013,Mild steel,Angle iron,*None,*None,60 x 60 x 8,mm,*None,-1.00,60.00,60.00,-1.00,8.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PSP00036,Perspex,Tubing,Round,*None,50 x 44 x 3,mm,*None,-1.00,50.00,-1.00,44.00,3.00,m,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00030,Glass,Filter disc,Por 3,*None,50,mm,*None,-1.00,50.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00055,Brass,Sheet,*None,*None,12.7,mm,*None,2000.00,1000.00,-1.00,-1.00,12.70,m²,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00030,Mild steel,Bar,Flat,*None,50 x 8,mm,*None,-1.00,50.00,-1.00,-1.00,8.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00042,Stainless steel,Sheet,Magnetic,Bright,1,mm,*None,-1.00,-1.00,-1.00,-1.00,1.00,m²,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PPL00010,Polypropylene,Sheet,*None,*None,1.5,mm,*None,1000.00,2000.00,-1.00,-1.00,1.50,m²,Polypropylene,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00057,Stainless steel,Tubing,Dairy,*None,33.35 x 2.7,mm,*None,-1.00,33.35,-1.00,-1.00,2.70,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00092,Aluminium,Tubing,Round,*None,68.5 x 2.5,mm,*None,-1.00,68.50,-1.00,66.00,2.50,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00051,Glass,Socket,*None,*None,14,*None,*None,-1.00,-1.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PSP00026,Perspex,Tubing,Round,*None,10 x 7 x 1.5,mm,*None,-1.00,10.00,-1.00,7.00,1.50,m,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00002,Aluminium,Angle iron,*None,*None,14.8 x 14.8 x 1.8,mm,*None,-1.00,14.80,14.80,-1.00,1.80,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00043,Mild steel,Bar,Hexagon,*None,27,mm,*None,-1.00,27.00,-1.00,-1.00,-1.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00104,Mild steel,Tubing,Round,*None,56 x 53 x 1.5,mm,*None,-1.00,56.00,-1.00,53.00,1.50,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00049,Brass,Sheet,Engraving,*None,3,mm,*None,600.00,2000.00,-1.00,-1.00,3.00,m²,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00071,Glass,Tubing,Boro,*None,10 x 1.5,mm,*None,-1.00,10.00,-1.00,-1.00,1.50,m,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00051,Stainless steel,Tubing,Dairy,*None,8 x 1.2,mm,*None,-1.00,8.00,-1.00,-1.00,1.20,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00072,Brass,Tubing,Round,*None,51 x 4.2,mm,*None,-1.00,51.00,-1.00,46.80,4.20,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00112,Mild steel,Tubing,Square,*None,12.7 x 12.7 x 1.6,mm,*None,-1.00,12.70,12.70,-1.00,1.60,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00035,Glass,Joint,Spherical,Ball,19,*None,*None,-1.00,-1.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00019,Mild steel,Bar,Flat,*None,25 x 6,mm,*None,-1.00,25.00,-1.00,-1.00,6.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00036,Glass,Joint,Spherical,Ball,29,*None,*None,-1.00,-1.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00070,Glass,Tubing,Boro,*None,9 x 1.5,mm,*None,-1.00,9.00,-1.00,-1.00,1.50,m,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00089,Stainless steel,Tubing,Round,*None,48.26 x 2.77,mm,*None,-1.00,48.26,-1.00,45.49,2.77,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00057,Brass,Tubing,Round,*None,10 x 1.6,mm,*None,-1.00,10.00,-1.00,8.40,1.60,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PVC00024,PVC,Sheet,*None,*None,30,mm,*None,1000.00,2000.00,-1.00,-1.00,30.00,m²,PVC,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00072,Mild steel,Sheet,Galvinised,*None,1,mm,*None,2450.00,1225.00,-1.00,-1.00,1.00,m²,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00011,Brass,Bar,Flat,*None,51.03 x 3.3,mm,*None,-1.00,51.03,-1.00,-1.00,3.30,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PSP00040,Perspex,Tubing,Round,*None,70 x 60 x 5,mm,*None,-1.00,70.00,-1.00,60.00,5.00,m,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PVC00030,PVC,Tubing,*None,*None,110 x 105 x 2.5,mm,*None,-1.00,110.00,-1.00,105.00,2.50,m,PVC,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PVC00023,PVC,Sheet,*None,*None,10,mm,*None,1000.00,2000.00,-1.00,-1.00,10.00,m²,PVC,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00113,Glass,Tubing,Boro,*None,95 x 2.5,mm,*None,-1.00,95.00,-1.00,-1.00,2.50,m,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00065,Stainless steel,Tubing,Hydraulic,*None,3.18 x 0.9,mm,*None,-1.00,3.18,-1.00,-1.00,.90,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00072,Stainless steel,Tubing,Hydraulic,*None,21.5 x 2,mm,*None,-1.00,21.50,-1.00,-1.00,2.00,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00053,Glass,Socket,*None,*None,24,*None,*None,-1.00,-1.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00110,Mild steel,Tubing,Round,*None,76 x 71 x 2.5,mm,*None,-1.00,76.00,-1.00,71.00,2.50,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00028,Mild steel,Bar,Flat,*None,40 x 10,mm,*None,-1.00,40.00,-1.00,-1.00,10.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00041,Mild steel,Bar,Hexagon,*None,19,mm,*None,-1.00,19.00,-1.00,-1.00,-1.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00021,Stainless steel,Bar,Round,*None,12.7,mm,*None,-1.00,12.70,-1.00,-1.00,-1.00,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00086,Glass,Tubing,Boro,*None,26 x 2,mm,*None,-1.00,26.00,-1.00,-1.00,2.00,m,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00073,Brass,Tubing,Round,*None,51 x 2,mm,*None,-1.00,51.00,-1.00,49.00,2.00,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PTL00008,Polyethylene,Sheet,*None,*None,60,mm,*None,2000.00,1000.00,-1.00,-1.00,60.00,m²,Polyethylene,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00064,Aluminium,Tubing,Round,*None,9 x 1.1,mm,*None,-1.00,9.00,-1.00,7.90,1.10,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00075,Brass,Tubing,Round,*None,63.5 x 3.5,mm,*None,-1.00,63.50,-1.00,60.00,3.50,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PSP00053,Perspex,Tubing,Round,*None,150 x 142 x 4,mm,*None,-1.00,150.00,-1.00,142.00,4.00,m,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00042,Brass,Bar,Square,*None,9.6 x 9.6,mm,*None,-1.00,9.60,9.60,-1.00,-1.00,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PVC00006,PVC,Rod,*None,*None,15,mm,*None,-1.00,15.00,-1.00,-1.00,-1.00,m,PVC,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PVC00013,PVC,Rod,*None,*None,60,mm,*None,-1.00,60.00,-1.00,-1.00,-1.00,m,PVC,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00086,Stainless steel,Tubing,Round,*None,38.1 x 1.5,mm,*None,-1.00,38.10,-1.00,36.60,1.50,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00064,Mild steel,Bar,Round,*None,20,mm,*None,-1.00,20.00,-1.00,-1.00,-1.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PVC00015,PVC,Sheet,Simona,*None,5,mm,*None,2000.00,1000.00,-1.00,-1.00,5.00,m²,PVC,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00100,Mild steel,Tubing,Round,*None,48 x 44 x 2,mm,*None,-1.00,48.00,-1.00,44.00,2.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00022,Brass,Bar,Hexagon,*None,20,mm,*None,-1.00,20.00,-1.00,-1.00,-1.00,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00051,Mild steel,Bar,Round,Bright,12,mm,*None,-1.00,12.00,-1.00,-1.00,-1.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00070,Mild steel,Sheet,Galvinised,*None,0.5,mm,*None,2450.00,1225.00,-1.00,-1.00,.50,m²,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00112,Glass,Tubing,Boro,*None,90 x 3.5,mm,*None,-1.00,90.00,-1.00,-1.00,3.50,m,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00108,Aluminium,U channel,*None,*None,12.7 x 9.54 x 1.5,mm,*None,-1.00,12.70,9.54,-1.00,1.50,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00013,Aluminium,Bar,Flat,*None,25.4 x 4.6,mm,*None,-1.00,25.40,-1.00,-1.00,4.60,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00057,Mild steel,Bar,Round,Bright,28,mm,*None,-1.00,28.00,-1.00,-1.00,-1.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00008,Glass,Clip,Spherical,Nickel,NS29,*None,*None,-1.00,-1.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00074,Aluminium,Tubing,Round,*None,25.4 x 1.6,mm,*None,-1.00,25.40,-1.00,23.80,1.60,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00001,Brass,Bar,Flat,*None,12.7  x 3.2,mm,*None,-1.00,12.70,-1.00,-1.00,3.20,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00026,Aluminium,Bar,Round,*None,20,mm,*None,-1.00,20.00,-1.00,-1.00,-1.00,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00054,Brass,Sheet,*None,*None,9.7,mm,*None,2000.00,1000.00,-1.00,-1.00,9.70,m²,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00064,Stainless steel,Tubing,Dairy,*None,76.3 x 1.5,mm,*None,-1.00,76.30,-1.00,-1.00,1.50,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00077,Stainless steel,Tubing,Hydraulic,*None,9.53,mm,"(3/8"")",-1.00,-1.00,-1.00,-1.00,-1.00,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00001,Glass,Clip,Conical,POM,NS14,*None,*None,-1.00,-1.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,TFN00015,Tufnol,Tubing,*None,*None,22  x 15.5,mm,*None,-1.00,22.00,-1.00,15.50,6.50,m,Tufnol/Teflon,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00066,Mild steel,Bar,Square,*None,10 x 10,mm,*None,-1.00,10.00,10.00,-1.00,-1.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00047,Glass,Screw cap,Closed,*None,GL 25,*None,*None,-1.00,-1.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00045,Glass,Screw cap,Closed,*None,GL 14,*None,*None,-1.00,-1.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00070,Aluminium,Tubing,Round,*None,19 x 1.2,mm,*None,-1.00,19.00,-1.00,17.80,1.20,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00109,Mild steel,Tubing,Round,*None,60 x 53.5 x 3.25,mm,*None,-1.00,60.00,-1.00,53.50,3.25,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00061,Glass,Stopcock,Single way,PTFE,24-Jun,*None,*None,-1.00,-1.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00108,Glass,Tubing,Boro,*None,65 x 3.2,mm,*None,-1.00,65.00,-1.00,-1.00,3.20,m,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00067,Stainless steel,Tubing,Hydraulic,*None,8,mm,*None,-1.00,8.00,-1.00,-1.00,-1.00,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00062,Aluminium,Tubing,Rectangular,*None,50 x 25 x 2,mm,*None,-1.00,50.00,25.00,-1.00,2.00,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PSP00020,Perspex,Sheet,*None,*None,8,mm,*None,3050.00,2030.00,-1.00,-1.00,8.00,m²,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00074,Glass,Tubing,Boro,*None,13 x 1.5,mm,*None,-1.00,13.00,-1.00,-1.00,1.50,m,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00041,Glass,Rod,Boro,*None,5,mm,*None,-1.00,5.00,-1.00,-1.00,-1.00,m,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PPL00016,Polypropylene,Sheet,*None,*None,30,mm,*None,1000.00,2000.00,-1.00,-1.00,30.00,m²,Polypropylene,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PSP00057,Perspex,Tubing,Round,*None,250 x 240 x 5,mm,*None,-1.00,250.00,-1.00,240.00,5.00,m,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00082,Glass,Tubing,Boro,*None,20 x 1.8,mm,*None,-1.00,20.00,-1.00,-1.00,1.80,m,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00100,Aluminium,Tubing,Square,*None,25.3x25.3x1.6,mm,*None,-1.00,25.30,25.30,-1.00,1.60,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,VNT00004,Vesconite,Rod,*None,*None,30,mm,*None,-1.00,30.00,-1.00,-1.00,-1.00,m,Ertalon/Vescolene,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00094,Glass,Tubing,Boro,*None,40 x 2.3,mm,*None,-1.00,40.00,-1.00,-1.00,2.30,m,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00116,Mild steel,Tubing,Square,*None,22 x 22 x 1.2,mm,*None,-1.00,22.00,22.00,-1.00,1.20,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PPL00012,Polypropylene,Sheet,*None,*None,8,mm,*None,1000.00,2000.00,-1.00,-1.00,8.00,m²,Polypropylene,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00102,Aluminium,Tubing,Square,*None,25.5 x 25.5 x 3.3,mm,*None,-1.00,25.50,25.50,-1.00,3.30,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00004,Stainless steel,Angle iron,*None,*None,50 x 50 x 5,mm,*None,-1.00,50.00,50.00,-1.00,5.00,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00050,Mild steel,Bar,Round,Bright,10,mm,*None,-1.00,10.00,-1.00,-1.00,-1.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00006,Glass,Clip,Spherical,Nickel,NS13,*None,*None,-1.00,-1.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00106,Aluminium,U channel,*None,*None,9.7 x 9.7 x 1.7,mm,*None,-1.00,9.70,9.70,-1.00,1.70,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PSP00045,Perspex,Tubing,Round,*None,80 x 75 x 2.5,mm,*None,-1.00,80.00,-1.00,75.00,2.50,m,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00080,Brass,Tubing,Square,*None,25.4 x 25.4 x 1.2,mm,*None,-1.00,25.40,25.40,-1.00,1.20,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00005,Mild steel,Angle iron,*None,*None,30 x 30 x 5,mm,*None,-1.00,30.00,30.00,-1.00,5.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00008,Mild steel,Angle iron,*None,*None,40 x 40 x 6,mm,*None,-1.00,40.00,40.00,-1.00,6.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00023,Brass,Bar,Hexagon,*None,23.88,mm,*None,-1.00,23.88,-1.00,-1.00,-1.00,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00033,Aluminium,Bar,Round,*None,65,mm,*None,-1.00,65.00,-1.00,-1.00,-1.00,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00104,Aluminium,Tubing,Square,*None,50.8 x 50.8 x 3.26,mm,*None,-1.00,50.80,50.80,-1.00,3.26,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00019,Brass,Bar,Hexagon,*None,10,mm,*None,-1.00,10.00,-1.00,-1.00,-1.00,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00044,Glass,Rod,Boro,*None,9,mm,*None,-1.00,9.00,-1.00,-1.00,-1.00,m,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PPL00011,Polypropylene,Sheet,*None,*None,3,mm,*None,1000.00,2000.00,-1.00,-1.00,3.00,m²,Polypropylene,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00109,Aluminium,U channel,*None,*None,12.7 x 12.7 x 2,mm,*None,-1.00,12.70,12.70,-1.00,2.00,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PPL00005,Polypropylene,Bar,Round,*None,35,mm,*None,-1.00,35.00,-1.00,-1.00,-1.00,m,Polypropylene,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ELT00001,Ertalyte,Rod,*None,*None,20,mm,*None,-1.00,20.00,-1.00,-1.00,-1.00,m,Ertalon/Vescolene,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00080,Mild steel,Sheet,*None,*None,1.5,mm,*None,2450.00,1225.00,-1.00,-1.00,1.50,m²,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PSP00019,Perspex,Sheet,*None,*None,6,mm,*None,3050.00,2030.00,-1.00,-1.00,6.00,m²,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00076,Glass,Tubing,Boro,*None,14 x 1.5,mm,*None,-1.00,14.00,-1.00,-1.00,1.50,m,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00088,Glass,Tubing,Boro,*None,30 x 1.4,mm,*None,-1.00,30.00,-1.00,-1.00,1.40,m,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00102,Mild steel,Tubing,Round,*None,48.5 x 40.7 x 3.9,mm,*None,-1.00,48.50,-1.00,40.70,3.90,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00008,Brass,Bar,Flat,*None,38.26 x 15.89,mm,*None,-1.00,38.26,-1.00,-1.00,15.89,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00028,Brass,Bar,Round,*None,12,mm,*None,-1.00,12.00,-1.00,-1.00,-1.00,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00114,Glass,Tubing,Boro,*None,100 x 2.5,mm,*None,-1.00,100.00,-1.00,-1.00,2.50,m,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00099,Glass,Tubing,Boro,*None,48 x 2.3,mm,*None,-1.00,48.00,-1.00,-1.00,2.30,m,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00020,Mild steel,Bar,Flat,*None,25 x 8,mm,*None,-1.00,25.00,-1.00,-1.00,8.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PSP00048,Perspex,Tubing,Round,*None,110 x 104 x 3,mm,*None,-1.00,110.00,-1.00,104.00,3.00,m,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00046,Mild steel,Bar,Round,Bright,4.75,mm,*None,-1.00,4.75,-1.00,-1.00,-1.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00016,Glass,Cone,Langpunt,*None,40,*None,*None,-1.00,-1.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00025,Glass,Filter disc,Por 0,*None,25,mm,*None,-1.00,25.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00046,Brass,Sheet,Engraving,*None,1.2,mm,*None,600.00,2000.00,-1.00,-1.00,1.20,m²,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,CPR00002,Copper,Sheet,*None,*None,0.9,mm,*None,600.00,1800.00,-1.00,-1.00,.90,m²,Copper,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00093,Mild steel,Tubing,Round,*None,16 x 12 x 2,mm,*None,-1.00,16.00,-1.00,12.00,2.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00002,Brass,Bar,Flat,*None,12.7 x 6.5,mm,*None,-1.00,12.70,-1.00,-1.00,6.50,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00039,Glass,Joint,Spherical,Cup,19,*None,*None,-1.00,-1.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PSP00010,Perspex,Sheet,Opal,*None,5,mm,*None,3050.00,2030.00,-1.00,-1.00,5.00,m²,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00060,Stainless steel,Tubing,Dairy,*None,51 x 1.2,mm,*None,-1.00,51.00,-1.00,-1.00,1.20,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00090,Aluminium,Tubing,Round,*None,51.5 x 1.2,mm,*None,-1.00,51.50,-1.00,50.30,1.20,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00107,Aluminium,U channel,*None,*None,9.9 x 13 x 2,mm,*None,-1.00,9.90,13.00,-1.00,2.00,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00040,Aluminium,Sheet,Anodised,*None,1.1,mm,*None,2440.00,1220.00,-1.00,-1.00,1.10,m²,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,TFN00003,Tufnol,Sheet,*None,*None,0.76,mm,*None,-1.00,-1.00,-1.00,-1.00,.76,m²,Tufnol/Teflon,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00092,Mild steel,Tubing,Round,*None,10 x 6 x 2,mm,*None,-1.00,10.00,-1.00,6.00,2.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00058,Brass,Tubing,Round,*None,12.7 x 4,mm,*None,-1.00,12.70,-1.00,8.70,4.00,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00087,Stainless steel,Tubing,Round,*None,41.2 x 1.5,mm,*None,-1.00,41.20,-1.00,39.70,1.50,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00117,Mild steel,Tubing,Square,*None,22 x 22 x 1.6,mm,*None,-1.00,22.00,22.00,-1.00,1.60,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00038,Mild steel,Bar,Flat,*None,100 x 8,mm,*None,-1.00,100.00,-1.00,-1.00,8.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PSP00007,Perspex,Sheet,Blue,*None,3,mm,*None,3050.00,2030.00,-1.00,-1.00,3.00,m²,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00002,Mild steel,Angle iron,*None,*None,25 x 25 x 3,mm,*None,-1.00,25.00,25.00,-1.00,3.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00003,Stainless steel,Angle iron,*None,*None,40 x 40 x 3,mm,*None,-1.00,40.00,40.00,-1.00,3.00,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00022,Mild steel,Bar,Flat,*None,30 x 5,mm,*None,-1.00,30.00,-1.00,-1.00,5.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00017,Mild steel,Bar,Flat,*None,20 x 5,mm,*None,-1.00,20.00,-1.00,-1.00,5.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00009,Stainless steel,Bar,Flat,*None,50 x 5,mm,*None,-1.00,50.00,-1.00,-1.00,5.00,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00010,Glass,Clip,Spherical,POM,NS19,*None,*None,-1.00,-1.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00090,Glass,Tubing,Boro,*None,30 x 2.8,mm,*None,-1.00,30.00,-1.00,-1.00,2.80,m,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,TFL00006,Teflon,Bar,Round,*None,20,mm,*None,-1.00,20.00,-1.00,-1.00,-1.00,m,Tufnol/Teflon,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00036,Stainless steel,Bar,Square,*None,12 x 12,mm,*None,-1.00,12.00,12.00,-1.00,-1.00,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00013,Glass,Cone,Langpunt,*None,24,*None,*None,-1.00,-1.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00057,Aluminium,Sheet,*None,*None,20,mm,*None,2500.00,1250.00,-1.00,-1.00,20.00,m²,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00116,Glass,Tubing,Boro,*None,125 x 5,mm,*None,-1.00,125.00,-1.00,-1.00,5.00,m,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00121,Glass,Tubing,Soda,*None,8 x 0.9,mm,*None,-1.00,8.00,-1.00,7.10,.90,m,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00079,Brass,Tubing,Square,*None,19 x 19 x 1.2,mm,*None,-1.00,19.00,19.00,-1.00,1.20,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00067,Mild steel,Bar,Square,*None,12 x 12,mm,*None,-1.00,12.00,12.00,-1.00,-1.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00032,Glass,Filter disc,Por 4,*None,50,mm,*None,-1.00,50.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00054,Aluminium,Sheet,*None,*None,12,mm,*None,2500.00,1250.00,-1.00,-1.00,12.00,m²,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00063,Glass,Stopcock,Single way,SWB,14.5 / 2.5,*None,*None,-1.00,-1.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00080,Stainless steel,Tubing,Round,*None,6 x 1,mm,*None,-1.00,6.00,-1.00,5.00,1.00,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00012,Stainless steel,Bar,Round,*None,2.5,mm,*None,4200.00,2.50,-1.00,-1.00,-1.00,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00049,Aluminium,Sheet,*None,*None,2.5,mm,*None,2500.00,1250.00,-1.00,-1.00,2.50,m²,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00047,Stainless steel,Sheet,*None,*None,1.2,mm,*None,2500.00,1250.00,-1.00,-1.00,1.20,m²,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00048,Stainless steel,Sheet,*None,*None,1.5,mm,*None,2500.00,1250.00,-1.00,-1.00,1.50,m²,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,TFN00004,Tufnol,Sheet,*None,*None,1.6,mm,*None,-1.00,-1.00,-1.00,-1.00,1.60,m²,Tufnol/Teflon,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00019,Aluminium,Bar,Round,*None,6,mm,*None,-1.00,6.00,-1.00,-1.00,-1.00,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PVC00009,PVC,Rod,*None,*None,30,mm,*None,-1.00,30.00,-1.00,-1.00,-1.00,m,PVC,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00077,Mild steel,Sheet,*None,*None,0.9,mm,*None,2450.00,1225.00,-1.00,-1.00,.90,m²,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PSP00042,Perspex,Tubing,Round,*None,75 x 69 x 3,mm,*None,-1.00,75.00,-1.00,69.00,3.00,m,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00020,Brass,Bar,Hexagon,*None,10.9,mm,*None,-1.00,10.90,-1.00,-1.00,-1.00,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PPL00015,Polypropylene,Sheet,*None,*None,25,mm,*None,1000.00,2000.00,-1.00,-1.00,25.00,m²,Polypropylene,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,TFN00012,Tufnol,Tubing,*None,*None,16 x 12.5,mm,*None,-1.00,16.00,-1.00,12.50,3.50,m,Tufnol/Teflon,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00039,Mild steel,Bar,Flat,*None,100 x 10,mm,*None,-1.00,100.00,-1.00,-1.00,10.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00039,Brass,Bar,Round,*None,50,mm,*None,-1.00,50.00,-1.00,-1.00,-1.00,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00068,Aluminium,Tubing,Round,*None,19 x 3,mm,*None,-1.00,19.00,-1.00,16.00,3.00,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PVC00027,PVC,Tubing,*None,*None,32 x 27 x 2.5,mm,*None,-1.00,32.00,-1.00,27.00,2.50,m,PVC,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PVC00001,PVC,Rod,*None,*None,5,mm,*None,-1.00,5.00,-1.00,-1.00,-1.00,m,PVC,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00048,Aluminium,Sheet,*None,*None,2,mm,*None,2500.00,1250.00,-1.00,-1.00,2.00,m²,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PTL00006,Polyethylene,Sheet,*None,*None,40,mm,*None,2000.00,1000.00,-1.00,-1.00,40.00,m²,Polyethylene,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00059,Stainless steel,Tubing,Dairy,*None,48.4 x 3.5,mm,*None,-1.00,48.40,-1.00,-1.00,3.50,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00098,Mild steel,Tubing,Round,*None,42 x 37 x 2.5,mm,*None,-1.00,42.00,-1.00,37.00,2.50,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00101,Mild steel,Tubing,Round,*None,48.5 x 38.6 x 4.95,mm,*None,-1.00,48.50,-1.00,38.60,4.95,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00001,Aluminium,Angle iron,*None,*None,12.7 x 12.7 x 1.54,mm,*None,-1.00,12.70,12.70,-1.00,1.54,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00013,Stainless steel,Bar,Round,*None,3,mm,*None,-1.00,3.00,-1.00,-1.00,-1.00,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00044,Brass,Bar,Square,*None,38 x 38,mm,*None,-1.00,38.00,38.00,-1.00,-1.00,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00105,Glass,Tubing,Boro,*None,58 x 4.5,mm,*None,-1.00,58.00,-1.00,-1.00,4.50,m,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00026,Glass,Filter disc,Por 2,*None,60,mm,*None,-1.00,60.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PSP00050,Perspex,Tubing,Round,*None,120 x 114 x 3,mm,*None,-1.00,120.00,-1.00,114.00,3.00,m,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PPL00006,Polypropylene,Bar,Round,*None,40,mm,*None,-1.00,40.00,-1.00,-1.00,-1.00,m,Polypropylene,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00019,Glass,Cone,*None,*None,19,*None,*None,-1.00,-1.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00042,Glass,Rod,Boro,*None,6,mm,*None,-1.00,6.00,-1.00,-1.00,-1.00,m,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,CPR00006,Copper,Tubing,*None,*None,19 x 1.9,mm,*None,-1.00,19.00,-1.00,17.10,1.90,m,Copper,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00009,Mild steel,Angle iron,*None,*None,50 x 50 x 5,mm,*None,-1.00,50.00,50.00,-1.00,5.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00099,Mild steel,Tubing,Round,*None,43 x 40 x 1.5,mm,*None,-1.00,43.00,-1.00,40.00,1.50,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00005,Glass,Clip,Conical,POM,NS45,*None,*None,-1.00,-1.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00006,Stainless steel,Bar,Flat,*None,13 x 6,mm,*None,-1.00,13.00,-1.00,-1.00,6.00,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00026,Stainless steel,Bar,Round,*None,25,mm,*None,-1.00,25.00,-1.00,-1.00,-1.00,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,TFN00008,Tufnol,Sheet,*None,*None,20.36,mm,*None,-1.00,-1.00,-1.00,-1.00,20.36,m²,Tufnol/Teflon,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00084,Glass,Tubing,Boro,*None,24 x 1.2,mm,*None,-1.00,24.00,-1.00,-1.00,1.20,m,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00027,Brass,Bar,Round,*None,10,mm,*None,-1.00,10.00,-1.00,-1.00,-1.00,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00075,Glass,Tubing,Boro,*None,13 x 2.2,mm,*None,-1.00,13.00,-1.00,-1.00,2.20,m,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00080,Glass,Tubing,Boro,*None,18 x 1.8,mm,*None,-1.00,18.00,-1.00,-1.00,1.80,m,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PSP00052,Perspex,Tubing,Round,*None,150 x 140 x 5,mm,*None,-1.00,150.00,-1.00,140.00,5.00,m,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PSP00022,Perspex,Sheet,*None,*None,12,mm,*None,3050.00,2030.00,-1.00,-1.00,12.00,m²,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00107,Mild steel,Tubing,Round,*None,60 x 51 x 4.5,mm,*None,-1.00,60.00,-1.00,51.00,4.50,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PSP00038,Perspex,Tubing,Round,*None,60 x 52 x 4,mm,*None,-1.00,60.00,-1.00,52.00,4.00,m,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00002,Glass,Clip,Conical,POM,NS24,*None,*None,-1.00,-1.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00048,Brass,Sheet,Engraving,*None,2,mm,*None,600.00,2000.00,-1.00,-1.00,2.00,m²,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00086,Mild steel,Tubing,Rectangular,*None,26 x 12 x 1.6,mm,*None,-1.00,26.00,12.00,-1.00,1.60,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00023,Stainless steel,Bar,Round,*None,20,mm,*None,-1.00,20.00,-1.00,-1.00,-1.00,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ELT00002,Ertalyte,Rod,*None,*None,40,mm,*None,-1.00,40.00,-1.00,-1.00,-1.00,m,Ertalon/Vescolene,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00054,Stainless steel,Tubing,Dairy,*None,22 x 1.5,mm,*None,-1.00,22.00,-1.00,-1.00,1.50,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00066,Brass,Tubing,Round,*None,38.1 x 3.3,mm,*None,-1.00,38.10,-1.00,34.80,3.30,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00003,Aluminium,Angle iron,*None,*None,19.3 x 19.3 x 3.4,mm,*None,-1.00,19.30,19.30,-1.00,3.40,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00036,Mild steel,Bar,Flat,*None,90 x 12,mm,*None,-1.00,90.00,-1.00,-1.00,12.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,TFL00004,Teflon,Bar,Round,*None,10,mm,*None,-1.00,10.00,-1.00,-1.00,-1.00,m,Tufnol/Teflon,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,VNT00002,Vesconite,Rod,*None,*None,18,mm,*None,-1.00,18.00,-1.00,-1.00,-1.00,m,Ertalon/Vescolene,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00045,Brass,Sheet,Engraving,*None,0.8,mm,*None,600.00,2000.00,-1.00,-1.00,.80,m²,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PTL00007,Polyethylene,Sheet,*None,*None,50,mm,*None,2000.00,1000.00,-1.00,-1.00,50.00,m²,Polyethylene,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PSP00013,Perspex,Sheet,*None,*None,1,mm,*None,3050.00,2030.00,-1.00,-1.00,1.00,m²,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,CPR00001,Copper,Bar,Flat,*None,15.2 x 3.2,mm,*None,-1.00,15.20,-1.00,-1.00,3.20,m,Copper,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00029,Mild steel,Bar,Flat,*None,50 x 6,mm,*None,-1.00,50.00,-1.00,-1.00,6.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00056,Aluminium,Sheet,*None,*None,16,mm,*None,2500.00,1250.00,-1.00,-1.00,16.00,m²,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PTL00005,Polyethylene,Sheet,*None,*None,15,mm,*None,2000.00,1000.00,-1.00,-1.00,15.00,m²,Polyethylene,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00012,Mild steel,Angle iron,*None,*None,60 x 60 x 6,mm,*None,-1.00,60.00,60.00,-1.00,6.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00012,Glass,Cone,Langpunt,*None,19,*None,*None,-1.00,-1.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PSP00002,Perspex,Rod,*None,*None,8,mm,*None,-1.00,8.00,-1.00,-1.00,-1.00,m,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00081,Glass,Tubing,Boro,*None,19 x 2.5,mm,*None,-1.00,19.00,-1.00,-1.00,2.50,m,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00067,Aluminium,Tubing,Round,*None,18.8 x 1.6,mm,*None,-1.00,18.80,-1.00,17.20,1.60,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00010,Mild steel,Angle iron,*None,*None,50 x 50 x 6,mm,*None,-1.00,50.00,50.00,-1.00,6.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00038,Brass,Bar,Round,*None,45,mm,*None,-1.00,45.00,-1.00,-1.00,-1.00,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00086,Aluminium,Tubing,Round,*None,51 x 2.2,mm,*None,-1.00,51.00,-1.00,48.80,2.20,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,TFN00005,Tufnol,Sheet,*None,*None,3.2,mm,*None,-1.00,-1.00,-1.00,-1.00,3.20,m²,Tufnol/Teflon,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00117,Glass,Tubing,Screw thread,*None,GL 14,*None,*None,-1.00,-1.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00033,Stainless steel,Bar,Round,*None,65,mm,*None,-1.00,65.00,-1.00,-1.00,-1.00,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PCN00002,Polycarbonate,Sheet,*None,*None,1,mm,*None,3050.00,2050.00,-1.00,-1.00,1.00,m²,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00109,Glass,Tubing,Boro,*None,70 x 2.2,mm,*None,-1.00,70.00,-1.00,-1.00,2.20,m,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00111,Glass,Tubing,Boro,*None,85 x 2.5,mm,*None,-1.00,85.00,-1.00,-1.00,2.50,m,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PSP00046,Perspex,Tubing,Round,*None,100 x 90 x 5,mm,*None,-1.00,100.00,-1.00,90.00,5.00,m,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00069,Brass,Tubing,Round,*None,44.5 x 3.3,mm,*None,-1.00,44.50,-1.00,41.20,3.30,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00082,Stainless steel,Tubing,Round,*None,12 x 1.2,mm,*None,-1.00,12.00,-1.00,10.80,1.20,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00017,Aluminium,Bar,Hexagon,*None,13,mm,*None,-1.00,13.00,-1.00,-1.00,-1.00,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00065,Brass,Tubing,Round,*None,31.8 x 2,mm,*None,-1.00,31.80,-1.00,29.80,2.00,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00053,Mild steel,Bar,Round,Bright,20,mm,*None,-1.00,20.00,-1.00,-1.00,-1.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00022,Stainless steel,Bar,Round,*None,16,mm,*None,-1.00,16.00,-1.00,-1.00,-1.00,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00068,Mild steel,Bar,Square,*None,19 x 19,mm,*None,-1.00,19.00,19.00,-1.00,-1.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00069,Mild steel,Bar,Square,*None,20 x 20,mm,*None,-1.00,20.00,20.00,-1.00,-1.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00106,Mild steel,Tubing,Round,*None,57.5 x 54 x 1.75,mm,*None,-1.00,57.50,-1.00,54.00,1.75,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00052,Mild steel,Bar,Round,Bright,16,mm,*None,-1.00,16.00,-1.00,-1.00,-1.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00058,Aluminium,Sheet,*None,*None,25,mm,*None,2500.00,1250.00,-1.00,-1.00,25.00,m²,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PSP00021,Perspex,Sheet,*None,*None,10,mm,*None,3050.00,2030.00,-1.00,-1.00,10.00,m²,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00061,Brass,Tubing,Round,*None,19 x 3.3,mm,*None,-1.00,19.00,-1.00,15.70,3.30,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00030,Stainless steel,Bar,Round,*None,38,mm,*None,-1.00,38.00,-1.00,-1.00,-1.00,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00030,Aluminium,Bar,Round,*None,40,mm,*None,-1.00,40.00,-1.00,-1.00,-1.00,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00062,Mild steel,Bar,Round,*None,10,mm,*None,-1.00,10.00,-1.00,-1.00,-1.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PTL00002,Polyethylene,Bar,Round,*None,25,mm,*None,-1.00,25.00,-1.00,-1.00,-1.00,m,Polyethylene,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00040,Glass,Joint,Spherical,Cup,35,*None,*None,-1.00,-1.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00016,Brass,Bar,Hexagon,*None,6.35,mm,*None,-1.00,6.35,-1.00,-1.00,-1.00,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00060,Brass,Tubing,Round,*None,15.9 x 1.2,mm,*None,-1.00,15.90,-1.00,14.70,1.20,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,TFN00011,Tufnol,Tubing,*None,*None,13 x 9,mm,*None,-1.00,13.00,-1.00,9.00,4.00,m,Tufnol/Teflon,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00017,Stainless steel,Bar,Round,*None,6,mm,*None,-1.00,6.00,-1.00,-1.00,-1.00,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PTL00003,Polyethylene,Sheet,*None,*None,3,mm,*None,2000.00,1000.00,-1.00,-1.00,3.00,m²,Polyethylene,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00097,Aluminium,Tubing,Square,*None,19.2 x 19.2 x 1.9,mm,*None,-1.00,19.20,19.20,-1.00,1.90,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00025,Brass,Bar,Round,*None,6,mm,*None,-1.00,6.00,-1.00,-1.00,-1.00,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,TFN00017,Tufnol,Tubing,*None,*None,38  x 25,mm,*None,-1.00,38.00,-1.00,25.00,13.00,m,Tufnol/Teflon,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00007,Aluminium,Angle iron,*None,*None,50.7 x 50.7 x 6.35,mm,*None,-1.00,50.70,50.70,-1.00,6.35,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00032,Mild steel,Bar,Flat,*None,60 x 6,mm,*None,-1.00,60.00,-1.00,-1.00,6.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00040,Mild steel,Bar,Hexagon,*None,11,mm,*None,-1.00,11.00,-1.00,-1.00,-1.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00059,Mild steel,Bar,Round,Bright,40,mm,*None,-1.00,40.00,-1.00,-1.00,-1.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00051,Brass,Sheet,*None,*None,6.5,mm,*None,2000.00,1000.00,-1.00,-1.00,6.50,m²,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00122,Glass,Valve,90°,Produran,0-4,mm,Passage,-1.00,-1.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00033,Glass,Filter disc,Por 5,*None,50,mm,*None,-1.00,50.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00034,Glass,Hose bent,*None,*None,GL 14,*None,*None,-1.00,-1.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00014,Aluminium,Bar,Flat,*None,31.34 x 4.5,mm,*None,-1.00,31.34,-1.00,-1.00,4.50,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00015,Glass,Cone,Langpunt,*None,34,*None,*None,-1.00,-1.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00024,Glass,Cone,*None,*None,45,*None,*None,-1.00,-1.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ELN00001,Ertalon,Rod,*None,*None,40,mm,*None,-1.00,40.00,-1.00,-1.00,-1.00,m,Ertalon/Vescolene,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00007,Glass,Clip,Spherical,Nickel,NS19,*None,*None,-1.00,-1.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PSP00039,Perspex,Tubing,Round,*None,64 x 58 x 3,mm,*None,-1.00,64.00,-1.00,58.00,3.00,m,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00012,Brass,Bar,Flat,*None,75.38 x 15.55,mm,*None,-1.00,75.38,-1.00,-1.00,15.55,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00033,Mild steel,Bar,Flat,*None,60 x 8,mm,*None,-1.00,60.00,-1.00,-1.00,8.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00029,Brass,Bar,Round,*None,14,mm,*None,-1.00,14.00,-1.00,-1.00,-1.00,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00032,Brass,Bar,Round,*None,22,mm,*None,-1.00,22.00,-1.00,-1.00,-1.00,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00035,Stainless steel,Bar,Square,*None,10 x 10,mm,*None,-1.00,10.00,10.00,-1.00,-1.00,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PVC00008,PVC,Rod,*None,*None,25,mm,*None,-1.00,25.00,-1.00,-1.00,-1.00,m,PVC,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00071,Stainless steel,Tubing,Hydraulic,*None,17.3 x 12.5,mm,*None,-1.00,17.30,-1.00,-1.00,12.50,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00087,Aluminium,Tubing,Round,*None,51 x 1.6,mm,*None,-1.00,51.00,-1.00,49.40,1.60,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00014,Brass,Bar,Flat,*None,76.5 x 6.7,mm,*None,-1.00,76.50,-1.00,-1.00,6.70,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00049,Mild steel,Bar,Round,Bright,8,mm,*None,-1.00,8.00,-1.00,-1.00,-1.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00082,Mild steel,Sheet,*None,*None,1.7,mm,*None,2450.00,1225.00,-1.00,-1.00,1.70,m²,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PSP00015,Perspex,Sheet,*None,*None,2,mm,*None,3050.00,2030.00,-1.00,-1.00,2.00,m²,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00044,Stainless steel,Sheet,*None,*None,0.7,mm,*None,2500.00,1250.00,-1.00,-1.00,.70,m²,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00065,Aluminium,Tubing,Round,*None,9.5 x 1.2,mm,*None,-1.00,9.50,-1.00,8.30,1.20,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00112,Aluminium,U channel,*None,*None,102 x 50.5 x 8,mm,*None,-1.00,102.00,50.50,-1.00,8.00,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PVC00007,PVC,Rod,*None,*None,20,mm,*None,-1.00,20.00,-1.00,-1.00,-1.00,m,PVC,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PPL00017,Polypropylene,Sheet,*None,*None,40,mm,*None,1000.00,2000.00,-1.00,-1.00,40.00,m²,Polypropylene,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00108,Mild steel,Tubing,Round,*None,60 x 52 x 4,mm,*None,-1.00,60.00,-1.00,52.00,4.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,TFN00020,Tufnol,Tubing,*None,*None,120 x 100,mm,*None,-1.00,120.00,-1.00,100.00,20.00,m,Tufnol/Teflon,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00010,Aluminium,Bar,Flat,*None,25.16 x 6.3,mm,*None,-1.00,25.16,-1.00,-1.00,6.30,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00061,Mild steel,Bar,Round,*None,8,mm,*None,-1.00,8.00,-1.00,-1.00,-1.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,TFN00001,Tufnol,Bar,Round,*None,50,mm,*None,-1.00,50.00,-1.00,-1.00,-1.00,m,Tufnol/Teflon,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00052,Aluminium,Sheet,*None,*None,6,mm,*None,2500.00,1250.00,-1.00,-1.00,6.00,m²,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00011,Glass,Cone,Langpunt,*None,14,*None,*None,-1.00,-1.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PSP00031,Perspex,Tubing,Round,*None,16 x 12 x 2,mm,*None,-1.00,16.00,-1.00,12.00,2.00,m,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PVC00028,PVC,Tubing,*None,*None,50 x 45 x 2.5,mm,*None,-1.00,50.00,-1.00,45.00,2.50,m,PVC,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PTL00001,Polyethylene,Bar,Round,*None,20,mm,*None,-1.00,20.00,-1.00,-1.00,-1.00,m,Polyethylene,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,TFN00002,Tufnol,Bar,Round,*None,70,mm,*None,-1.00,70.00,-1.00,-1.00,-1.00,m,Tufnol/Teflon,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,VNT00006,Vesconite,Rod,*None,*None,40,mm,*None,-1.00,40.00,-1.00,-1.00,-1.00,m,Ertalon/Vescolene,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00044,Aluminium,Sheet,*None,*None,0.9,mm,*None,2500.00,1250.00,-1.00,-1.00,.90,m²,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00028,Stainless steel,Bar,Round,*None,30,mm,*None,-1.00,30.00,-1.00,-1.00,-1.00,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00103,Aluminium,Tubing,Square,*None,38.35 x 38.35 x 2.9,mm,*None,-1.00,38.35,38.35,-1.00,2.90,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00122,Mild steel,Tubing,Square,*None,38 x 38 x 1.6,mm,*None,-1.00,38.00,38.00,-1.00,1.60,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,VNL00002,Vesconylon,Rod,*None,*None,25,mm,*None,-1.00,25.00,-1.00,-1.00,-1.00,m,Ertalon/Vescolene,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00041,Stainless steel,Sheet,Magnetic,Bright,0.8,mm,*None,-1.00,-1.00,-1.00,-1.00,.80,m²,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00076,Mild steel,Sheet,*None,*None,0.7,mm,*None,2450.00,1225.00,-1.00,-1.00,.70,m²,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00092,Glass,Tubing,Boro,*None,36 x 2,mm,*None,-1.00,36.00,-1.00,-1.00,2.00,m,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00066,Stainless steel,Tubing,Hydraulic,*None,6.35,mm,"(1/4"")",-1.00,6.35,-1.00,-1.00,-1.00,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00035,Aluminium,Bar,Square,*None,9.5 x 9.5,mm,*None,-1.00,9.50,9.50,-1.00,-1.00,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00037,Aluminium,Bar,Square,*None,15.82 x 15.82,mm,*None,-1.00,15.82,15.82,-1.00,-1.00,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PSP00004,Perspex,Rod,*None,*None,40,mm,*None,-1.00,40.00,-1.00,-1.00,-1.00,m,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00123,Mild steel,Tubing,Square,*None,38 x 38 x 2,mm,*None,-1.00,38.00,38.00,-1.00,2.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00005,Aluminium,Angle iron,*None,*None,25.5 x 25.5 x 3.6,mm,*None,-1.00,25.50,25.50,-1.00,3.60,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00056,Mild steel,Bar,Round,Bright,25,mm,*None,-1.00,25.00,-1.00,-1.00,-1.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00082,Aluminium,Tubing,Round,*None,38.2 x 3.6,mm,*None,-1.00,38.20,-1.00,34.60,3.60,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PPL00013,Polypropylene,Sheet,*None,*None,12,mm,*None,1000.00,2000.00,-1.00,-1.00,12.00,m²,Polypropylene,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00090,Mild steel,Tubing,Rectangular,*None,76 x 50 x 2,mm,*None,-1.00,76.00,50.00,-1.00,2.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00009,Brass,Bar,Flat,*None,38.46 x 4.8,mm,*None,-1.00,38.46,-1.00,-1.00,4.80,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00027,Mild steel,Bar,Flat,*None,40 x 8,mm,*None,-1.00,40.00,-1.00,-1.00,8.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00100,Glass,Tubing,Boro,*None,50 x 2.5,mm,*None,-1.00,50.00,-1.00,-1.00,2.50,m,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00088,Aluminium,Tubing,Round,*None,51 x 1.2,mm,*None,-1.00,51.00,-1.00,49.80,1.20,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00031,Stainless steel,Bar,Round,*None,45,mm,*None,-1.00,45.00,-1.00,-1.00,-1.00,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00028,Glass,Filter disc,Por 3,*None,20,mm,*None,-1.00,20.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00060,Aluminium,Sheet,*None,*None,40,mm,*None,2500.00,1250.00,-1.00,-1.00,40.00,m²,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00020,Stainless steel,Bar,Round,*None,12,mm,*None,-1.00,12.00,-1.00,-1.00,-1.00,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00052,Glass,Socket,*None,*None,19,*None,*None,-1.00,-1.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00127,Mild steel,Tubing,Square,*None,75 x 75 x 2,mm,*None,-1.00,75.00,75.00,-1.00,2.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PVC00012,PVC,Rod,*None,*None,50,mm,*None,-1.00,50.00,-1.00,-1.00,-1.00,m,PVC,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PSP00016,Perspex,Sheet,*None,*None,3,mm,*None,3050.00,2030.00,-1.00,-1.00,3.00,m²,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PTL00004,Polyethylene,Sheet,*None,*None,12,mm,*None,2000.00,1000.00,-1.00,-1.00,12.00,m²,Polyethylene,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00059,Brass,Tubing,Round,*None,12.7 x 1.6,mm,*None,-1.00,12.70,-1.00,11.10,1.60,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00105,Mild steel,Tubing,Round,*None,57 x 54 x 1.5,mm,*None,-1.00,57.00,-1.00,54.00,1.50,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00016,Mild steel,Bar,Flat,*None,20 x 3,mm,*None,-1.00,20.00,-1.00,-1.00,3.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00024,Brass,Bar,Round,*None,5,mm,*None,-1.00,5.00,-1.00,-1.00,-1.00,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00040,Stainless steel,Sheet,Magnetic,Bright,0.5,mm,*None,-1.00,-1.00,-1.00,-1.00,.50,m²,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00067,Glass,Tubing,Boro,*None,6 x 1.5,mm,*None,-1.00,6.00,-1.00,-1.00,1.50,m,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00101,Glass,Tubing,Boro,*None,52 x 2.5,mm,*None,-1.00,52.00,-1.00,-1.00,2.50,m,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00054,Mild steel,Bar,Round,Bright,22,mm,*None,-1.00,22.00,-1.00,-1.00,-1.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00030,Brass,Bar,Round,*None,16,mm,*None,-1.00,16.00,-1.00,-1.00,-1.00,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,VNT00005,Vesconite,Rod,*None,*None,35,mm,*None,-1.00,35.00,-1.00,-1.00,-1.00,m,Ertalon/Vescolene,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00031,Glass,Filter disc,Por 3,*None,65,mm,*None,-1.00,65.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00047,Brass,Sheet,Engraving,*None,1.6,mm,*None,600.00,2000.00,-1.00,-1.00,1.60,m²,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00051,Aluminium,Sheet,*None,*None,4.5,mm,*None,2500.00,1250.00,-1.00,-1.00,4.50,m²,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00114,Mild steel,Tubing,Square,*None,19 x 19 x 1.6,mm,*None,-1.00,19.00,19.00,-1.00,1.60,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00126,Mild steel,Tubing,Square,*None,75 x 75 x 1.6,mm,*None,-1.00,75.00,75.00,-1.00,1.60,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00032,Stainless steel,Bar,Round,*None,50,mm,*None,-1.00,50.00,-1.00,-1.00,-1.00,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00043,Glass,Rod,Boro,*None,8,mm,*None,-1.00,8.00,-1.00,-1.00,-1.00,m,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,VLN00002,Vescolene,Rod,*None,*None,25,mm,*None,-1.00,25.00,-1.00,-1.00,-1.00,m,Ertalon/Vescolene,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00085,Glass,Tubing,Boro,*None,24 x 1.8,mm,*None,-1.00,24.00,-1.00,-1.00,1.80,m,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00024,Mild steel,Bar,Flat,*None,30 x 8,mm,*None,-1.00,30.00,-1.00,-1.00,8.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00068,Stainless steel,Tubing,Hydraulic,*None,10 x 1,mm,*None,-1.00,10.00,-1.00,-1.00,1.00,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00071,Aluminium,Tubing,Round,*None,19.5 x 1.5,mm,*None,-1.00,19.50,-1.00,18.00,1.50,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,TFN00007,Tufnol,Sheet,*None,*None,13,mm,*None,-1.00,-1.00,-1.00,-1.00,13.00,m²,Tufnol/Teflon,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00015,Aluminium,Bar,Flat,*None,38 x 4.9,mm,*None,-1.00,38.00,-1.00,-1.00,4.90,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ELT00003,Ertalyte,Rod,*None,*None,60,mm,*None,-1.00,60.00,-1.00,-1.00,-1.00,m,Ertalon/Vescolene,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00096,Mild steel,Tubing,Round,*None,34 x 29 x 2.5,mm,*None,-1.00,34.00,-1.00,29.00,2.50,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00096,Aluminium,Tubing,Square,*None,17.9 x 17.9 x 1.1,mm,*None,-1.00,17.90,17.90,-1.00,1.10,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,CPR00004,Copper,Tubing,*None,*None,15 x 0.5,mm,*None,-1.00,15.00,-1.00,14.50,.50,m,Copper,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00088,Mild steel,Tubing,Rectangular,*None,38 x 25 x 2,mm,*None,-1.00,38.00,25.00,-1.00,2.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00113,Mild steel,Tubing,Square,*None,12.7 x 12.7 x 2,mm,*None,-1.00,12.70,12.70,-1.00,2.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,CPR00009,Copper,Tubing,*None,*None,28.7 x 1.0,mm,*None,-1.00,28.70,-1.00,27.70,1.00,m,Copper,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00099,Aluminium,Tubing,Square,*None,25 x 25 x 3.2,mm,*None,-1.00,25.00,25.00,-1.00,3.20,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00101,Aluminium,Tubing,Square,*None,25.3x25.3x2,mm,*None,-1.00,25.30,25.30,-1.00,2.00,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00123,Glass,Valve,Straight,Produran,0-4,mm,Passage,-1.00,-1.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00021,Brass,Bar,Hexagon,*None,12,mm,*None,-1.00,12.00,-1.00,-1.00,-1.00,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00033,Brass,Bar,Round,*None,25,mm,*None,-1.00,25.00,-1.00,-1.00,-1.00,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00079,Glass,Tubing,Boro,*None,16 x 1.8,mm,*None,-1.00,16.00,-1.00,-1.00,1.80,m,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00077,Brass,Tubing,Round,*None,70 x 3.2,mm,*None,-1.00,70.00,-1.00,66.80,3.20,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00079,Stainless steel,Tubing,Rectangular,*None,80 x 40 x 1.8,mm,*None,-1.00,80.00,40.00,-1.00,1.80,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00015,Brass,Bar,Flat,*None,76.59 x 9.64,mm,*None,-1.00,76.59,-1.00,-1.00,9.64,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PPL00018,Polypropylene,Sheet,*None,*None,50,mm,*None,1000.00,2000.00,-1.00,-1.00,50.00,m²,Polypropylene,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00110,Glass,Tubing,Boro,*None,75 x 3.2,mm,*None,-1.00,75.00,-1.00,-1.00,3.20,m,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00110,Aluminium,U channel,*None,*None,25.3 x 25.3 x 3.1,mm,*None,-1.00,25.30,25.30,-1.00,3.10,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00031,Brass,Bar,Round,*None,20,mm,*None,-1.00,20.00,-1.00,-1.00,-1.00,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PSP00009,Perspex,Sheet,Opal,*None,3,mm,*None,3050.00,2030.00,-1.00,-1.00,3.00,m²,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00075,Aluminium,Tubing,Round,*None,27.1 x 1.8,mm,*None,-1.00,27.10,-1.00,25.30,1.80,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00026,Brass,Bar,Round,*None,8,mm,*None,-1.00,8.00,-1.00,-1.00,-1.00,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PSP00047,Perspex,Tubing,Round,*None,100 x 94 x 3,mm,*None,-1.00,100.00,-1.00,94.00,3.00,m,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PCN00003,Polycarbonate,Sheet,*None,*None,6,mm,*None,3050.00,2050.00,-1.00,-1.00,6.00,m²,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00047,Mild steel,Bar,Round,Bright,5,mm,*None,-1.00,5.00,-1.00,-1.00,-1.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00041,Brass,Bar,Square,*None,8 x 8,mm,*None,-1.00,8.00,8.00,-1.00,-1.00,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00081,Aluminium,Tubing,Round,*None,38 x 3.3,mm,*None,-1.00,38.00,-1.00,34.70,3.30,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00036,Aluminium,Bar,Square,*None,13 x 13,mm,*None,-1.00,13.00,13.00,-1.00,-1.00,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00037,Stainless steel,Bar,Square,*None,25 x 25,mm,*None,-1.00,25.00,25.00,-1.00,-1.00,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00058,Glass,Stopcock,3-way,SWB,NS 14.5 / 2,*None,*None,-1.00,-1.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00042,Aluminium,Sheet,Vastrap,*None,2.8,mm,*None,2500.00,1200.00,-1.00,-1.00,2.80,m²,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PPL00007,Polypropylene,Bar,Round,*None,50,mm,*None,-1.00,50.00,-1.00,-1.00,-1.00,m,Polypropylene,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PSP00049,Perspex,Tubing,Round,*None,120 x 110 x 5,mm,*None,-1.00,120.00,-1.00,110.00,5.00,m,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00062,Brass,Tubing,Round,*None,25.4 x 2,mm,*None,-1.00,25.40,-1.00,23.40,2.00,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00119,Mild steel,Tubing,Square,*None,32 x 32 x 1.6,mm,*None,-1.00,32.00,32.00,-1.00,1.60,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00006,Aluminium,Angle iron,*None,*None,38 x 38 x 6,mm,*None,-1.00,38.00,38.00,-1.00,6.00,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00007,Brass,Bar,Flat,*None,38.17 x 9.65,mm,*None,-1.00,38.17,-1.00,-1.00,9.65,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PPL00009,Polypropylene,Bar,Round,*None,90,mm,*None,-1.00,90.00,-1.00,-1.00,-1.00,m,Polypropylene,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00038,Aluminium,Bar,Square,*None,20.28 x 20.28,mm,*None,-1.00,20.28,20.28,-1.00,-1.00,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00056,Stainless steel,Tubing,Dairy,*None,31.7 x 1.5,mm,*None,-1.00,31.70,-1.00,-1.00,1.50,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00085,Stainless steel,Tubing,Round,*None,30 x 2,mm,*None,-1.00,30.00,-1.00,28.00,2.00,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00067,Brass,Tubing,Round,*None,38.1 x 2,mm,*None,-1.00,38.10,-1.00,36.10,2.00,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00035,Mild steel,Bar,Flat,*None,80 x 6,mm,*None,-1.00,80.00,-1.00,-1.00,6.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00024,Stainless steel,Bar,Round,*None,22,mm,*None,-1.00,22.00,-1.00,-1.00,-1.00,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00027,Stainless steel,Bar,Round,*None,28,mm,*None,-1.00,28.00,-1.00,-1.00,-1.00,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00069,Stainless steel,Tubing,Hydraulic,*None,12 x 1,mm,*None,-1.00,12.00,-1.00,-1.00,1.00,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00085,Aluminium,Tubing,Round,*None,50.75 x 3.5,mm,*None,-1.00,50.75,-1.00,47.25,3.50,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00007,Stainless steel,Bar,Flat,*None,25 x 3,mm,*None,-1.00,25.00,-1.00,-1.00,3.00,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00036,Brass,Bar,Round,*None,38,mm,*None,-1.00,38.00,-1.00,-1.00,-1.00,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00081,Stainless steel,Tubing,Round,*None,10 x 1.2,mm,*None,-1.00,10.00,-1.00,8.80,1.20,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00044,Mild steel,Bar,Hollow,*None,32 x 16 x 8,mm,*None,-1.00,32.00,16.00,-1.00,8.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00016,Stainless steel,Bar,Round,*None,5,mm,*None,-1.00,5.00,-1.00,-1.00,-1.00,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00072,Aluminium,Tubing,Round,*None,22.5 x 1.9,mm,*None,-1.00,22.50,-1.00,20.60,1.90,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00004,Brass,Bar,Flat,*None,20.1 x 3.15,mm,*None,-1.00,20.10,-1.00,-1.00,3.15,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00050,Brass,Sheet,*None,*None,4.8,mm,*None,2000.00,1000.00,-1.00,-1.00,4.80,m²,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00059,Glass,Stopcock,Single way,PTFE,14.5 / 2.5,*None,*None,-1.00,-1.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00083,Glass,Tubing,Boro,*None,22 x 1.8,mm,*None,-1.00,22.00,-1.00,-1.00,1.80,m,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00006,Brass,Bar,Flat,*None,25.32 x 5.28,mm,*None,-1.00,25.32,-1.00,-1.00,5.28,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00065,Mild steel,Bar,Square,*None,8 x 8,mm,*None,-1.00,8.00,8.00,-1.00,-1.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00007,Mild steel,Angle iron,*None,*None,40 x 40 x 5,mm,*None,-1.00,40.00,40.00,-1.00,5.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00014,Mild steel,Bar,Flat,*None,12 x 3,mm,*None,-1.00,12.00,-1.00,-1.00,3.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00087,Glass,Tubing,Boro,*None,28 x 2,mm,*None,-1.00,28.00,-1.00,-1.00,2.00,m,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00069,Glass,Tubing,Boro,*None,8 x 1.5,mm,*None,-1.00,8.00,-1.00,-1.00,1.50,m,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PSP00027,Perspex,Tubing,Round,*None,12 x 6 x 3,mm,*None,-1.00,12.00,-1.00,6.00,3.00,m,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PSP00028,Perspex,Tubing,Round,*None,12 x 8 x 2,mm,*None,-1.00,12.00,-1.00,8.00,2.00,m,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PSP00030,Perspex,Tubing,Round,*None,15 x 11 x 2,mm,*None,-1.00,15.00,-1.00,11.00,2.00,m,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PSP00024,Perspex,Sheet,*None,*None,20,mm,*None,3050.00,2030.00,-1.00,-1.00,20.00,m²,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00023,Mild steel,Bar,Flat,*None,30 x 6,mm,*None,-1.00,30.00,-1.00,-1.00,6.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00053,Stainless steel,Tubing,Dairy,*None,19 x 1,mm,*None,-1.00,19.00,-1.00,-1.00,1.00,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PSP00051,Perspex,Tubing,Round,*None,132 x 126 x 3,mm,*None,-1.00,132.00,-1.00,126.00,3.00,m,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00003,Brass,Bar,Flat,*None,19.25 x 9.68,mm,*None,-1.00,19.25,-1.00,-1.00,9.68,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00045,Mild steel,Bar,Round,Bright,4,mm,*None,-1.00,4.00,-1.00,-1.00,-1.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,VNL00001,Vesconylon,Rod,*None,*None,20,mm,*None,-1.00,20.00,-1.00,-1.00,-1.00,m,Ertalon/Vescolene,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PPL00014,Polypropylene,Sheet,*None,*None,15,mm,*None,1000.00,2000.00,-1.00,-1.00,15.00,m²,Polypropylene,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00080,Aluminium,Tubing,Round,*None,37.95 x 1.6,mm,*None,-1.00,37.95,-1.00,36.35,1.60,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00118,Mild steel,Tubing,Square,*None,25 x 25 x 1.6,mm,*None,-1.00,25.00,25.00,-1.00,1.60,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00034,Aluminium,Bar,Square,*None,6.35 x 6.35,mm,*None,-1.00,6.35,6.35,-1.00,-1.00,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00078,Brass,Tubing,Square,*None,13 x 13 x 1.2,mm,*None,-1.00,13.00,13.00,-1.00,1.20,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00023,Aluminium,Bar,Round,*None,12,mm,*None,-1.00,12.00,-1.00,-1.00,-1.00,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00094,Stainless steel,Tubing,Square,*None,40 x 40 x 1.5,mm,*None,-1.00,40.00,40.00,-1.00,1.50,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PVC00026,PVC,Tubing,*None,*None,25 x 21 x 2,mm,*None,-1.00,25.00,-1.00,21.00,2.00,m,PVC,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00011,Stainless steel,Bar,Hexagon,*None,10,mm,*None,-1.00,10.00,-1.00,-1.00,-1.00,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00060,Mild steel,Bar,Round,*None,6,mm,*None,-1.00,6.00,-1.00,-1.00,-1.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00062,Stainless steel,Tubing,Dairy,*None,60.7 x 6.5,mm,*None,-1.00,60.70,-1.00,-1.00,6.50,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00074,Brass,Tubing,Round,*None,57.2 x 2.7,mm,*None,-1.00,57.20,-1.00,54.50,2.70,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00010,Brass,Bar,Flat,*None,38.52 x 3.25,mm,*None,-1.00,38.52,-1.00,-1.00,3.25,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00018,Glass,Cone,*None,*None,14,*None,*None,-1.00,-1.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00049,Glass,Screw cap,With aperture,*None,GL 14,*None,*None,-1.00,-1.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00095,Glass,Tubing,Boro,*None,42 x 2.3,mm,*None,-1.00,42.00,-1.00,-1.00,2.30,m,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00011,Aluminium,Bar,Flat,*None,25.3 x 12.7,mm,*None,-1.00,25.30,-1.00,-1.00,12.70,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00042,Mild steel,Bar,Hexagon,*None,22,mm,*None,-1.00,22.00,-1.00,-1.00,-1.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00028,Aluminium,Bar,Round,*None,30,mm,*None,-1.00,30.00,-1.00,-1.00,-1.00,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PSP00032,Perspex,Tubing,Round,*None,20 x 14 x 3,mm,*None,-1.00,20.00,-1.00,14.00,3.00,m,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00124,Mild steel,Tubing,Square,*None,50 x 50 x 1.6,mm,*None,-1.00,50.00,50.00,-1.00,1.60,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,SST00093,Stainless steel,Tubing,Square,*None,25 x 25 x 1.5,mm,*None,-1.00,25.00,25.00,-1.00,1.50,m,Stainless steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,TFN00016,Tufnol,Tubing,*None,*None,32  x 25,mm,*None,-1.00,32.00,-1.00,25.00,7.00,m,Tufnol/Teflon,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00004,Mild steel,Angle iron,*None,*None,30 x 30 x 3,mm,*None,-1.00,30.00,30.00,-1.00,3.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00121,Mild steel,Tubing,Square,*None,32 x 32 x 3,mm,*None,-1.00,32.00,32.00,-1.00,3.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PVC00020,PVC,Sheet,*None,*None,5,mm,*None,1000.00,2000.00,-1.00,-1.00,5.00,m²,PVC,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00095,Aluminium,Tubing,Round,*None,151 x 1.8,mm,*None,-1.00,151.00,-1.00,149.20,1.80,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PSP00054,Perspex,Tubing,Round,*None,180 x 172 x 4,mm,*None,-1.00,180.00,-1.00,172.00,4.00,m,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,BRS00005,Brass,Bar,Flat,*None,25.15 x 3.15,mm,*None,-1.00,25.15,-1.00,-1.00,3.15,m,Brass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PSP00029,Perspex,Tubing,Round,*None,12 x 10 x 1,mm,*None,-1.00,12.00,-1.00,10.00,1.00,m,Perspex,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00008,Aluminium,Angle iron,*None,*None,50.8 x 50.8 x 4.6,mm,*None,-1.00,50.80,50.80,-1.00,4.60,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,CPR00003,Copper,Sheet,*None,*None,3,mm,*None,600.00,1800.00,-1.00,-1.00,3.00,m²,Copper,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00018,Aluminium,Bar,Round,*None,4.7,mm,*None,-1.00,4.70,-1.00,-1.00,-1.00,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00084,Mild steel,Tubing,Rectangular,*None,16 x 9.5 x 1.63,mm,*None,-1.00,16.00,9.50,-1.00,1.63,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,MST00120,Mild steel,Tubing,Square,*None,32 x 32 x 2,mm,*None,-1.00,32.00,32.00,-1.00,2.00,m,Mild steel,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00029,Aluminium,Bar,Round,*None,32,mm,*None,-1.00,32.00,-1.00,-1.00,-1.00,m,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,TFL00003,Teflon,Bar,Round,*None,8,mm,*None,-1.00,8.00,-1.00,-1.00,-1.00,m,Tufnol/Teflon,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,PVC00002,PVC,Rod,*None,*None,6,mm,*None,-1.00,6.00,-1.00,-1.00,-1.00,m,PVC,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,GLS00057,Glass,Stopcock,3-way,PTFE,NS 18.8 / 2.5,*None,*None,-1.00,-1.00,-1.00,-1.00,-1.00,each,Glass,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,TFL00005,Teflon,Bar,Round,*None,16,mm,*None,-1.00,16.00,-1.00,-1.00,-1.00,m,Tufnol/Teflon,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00041,Aluminium,Sheet,Ripple plate,*None,1,mm,*None,2500.00,1250.00,-1.00,-1.00,1.00,m²,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+
+2021,ALM00046,Aluminium,Sheet,*None,*None,1.2,mm,*None,2500.00,1250.00,-1.00,-1.00,1.20,m²,Aluminium,5,-1071607683,0,The data value violates integrity constraints.
+

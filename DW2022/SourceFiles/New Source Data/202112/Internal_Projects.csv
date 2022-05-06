@@ -1,0 +1,375 @@
+Project_ID,Request_Date,Customer_ID,Project_Category,Project_Description,Status,Labour_Costs,Material_Costs,Handling_Fee,Service_Billing_Number
+P180203,2020/06/13,C00017-1-1,Engraving,Gravering : Ererolborde,,3828,597,0,
+P180226,2020/07/19,C00001-2-2,Equipment,Herstel en veranderinge (restoureer) van 3 x lywe vir klein diameter buise,,20020,692,173,6019411
+P180227,2020/07/19,C00001-2-2,Equipment,Vervaardiging van nuwe lywe,,142160,83120,20780,6019411
+P180229,2020/07/20,C00002-4-5,,Vervaardig 1 x Radioligandbad met 30 proef-openinge,,,,,
+P180392,2020/11/21,C00001-11-24,Equipment,Voorsien 6 x klampe (soos voorbeeld),,75,468,117,5626910
+P180403,2020/10/12,C00001-11-7,Repairs,Herstel van kompressor,,750,0,0,5628339
+P180404,2020/10/12,C00001-11-7,Repairs,Herstel van reënmeter,,900,985.6,246.4,5628339
+P180369,2020/10/31,C00002-22-3,Repairs,Diens van Lab Vacuum System,,8837.5,3736.8,934.2,5682105
+P180384,2021/11/28,C00002-2-1,Repairs,Service : Nitrogen Generator,Recovered in 2018,,,,5417124
+P180254,2020/08/02,C00002-5-6,Equipment,Vervaardig 1 x Radioligandbad met 30 proef-openinge,,,,,5166124
+P180306,2020/09/11,C00001-3-1,Equipment,Vervaardig 5 x Grond Erosie Apparate (Soil Erosion Display),,17063,5913.6,1478.4,5274527
+P180349,2020/10/15,C00001-2-4,,Manufacture : Light Box / Light Diffuser,,,,,5349943
+P180380,2020/11/05,C00001-11-8,,Diens/herste van 27 x Balanse,,,,,
+P190001,2020/06/06,C00002-3-2,,Diens/herstel van 14 x balanse,,0,0,0,
+P190002,2020/07/02,C00002-5-5,,Herinstalleer van ysmasjien en watersuiweraar,Cancelled,0,0,0,
+P190003,2020/10/09,C00009-1-1,Repairs,Maak van UARM-trofee,,190,200,50,5853773
+P190004,2020/10/15,C00001-2-3,,"Supply and manufacture : Telescope Dome/Magnetometer Shack, etc.",Cancelled,0,0,0,
+P190005,2020/10/10,C00001-11-5,Equipment,Vervaardig 1 x Teflonprop + 1 x glasbuis Por4,,1225,172,43,5622303
+P190006,2020/10/30,C00001-11-5,Equipment,Vervaardig 1 x Reaktor,,19095,1844,461,6008364
+P190007,2020/10/31,C00001-1-1,,Manufacture : Beam Splitter,,76000,13164,6582,
+P190008,2020/11/05,C00001-11-23,Equipment,Herstel temperatuurbeheer van waterbad,,525,1320,330,5773954
+P190009,2020/11/07,C00026-1-1,Repairs,Repair : Travelling Rails / 1 x Trolley + rail,,900,76,19,5685154
+P190010,2020/11/08,C00002-15-2,Equipment,Vervaardig/installeer vlekvryestaal rakkies vir 2 x nuwe yskaste,,20890,14232,3558,5408654
+P190011,2020/11/13,C00002-5-7,Repairs,Diens/herstel van roerder + powder coat van plaat,,2295,150,0,5416580
+P190012,2020/11/21,C00009-2-2,Engraving,Gravering : 1 x naam vir ererolbord : 2017 Mariska Olivier,,150,20,0,5710991
+P190013,2020/11/22,C00001-11-23,Repairs,Herstel van 2 x ysmasjiene,,5250,400,100,5773954
+P190014,2020/11/26,C00001-5-4,,Vervaardig 1 x Lugvloeimeter,Cancelled,0,0,0,
+P190015,2020/11/26,C00001-11-7,Repairs,Repair : Partisol Vacuum pump,,2470,10477.5,0,5830617
+P190016,2020/11/27,C00002-2-1,,Vervaardig 1 x Filterbuis,Cancelled,0,0,0,
+P190017,2020/11/28,C00002-5-3,Equipment,Yskas : Aanbring van 2 x slotte,,200,180,45,5681713
+P190018,2020/11/29,C00001-5-2,Equipment,Changes on Suspension Chamber,,1750,176,44,5572711
+P190019,2020/12/03,C00009-2-1,Engraving,2 x Name vir Ererolbord,,300,40,0,5710974
+P190020,2020/12/04,C00001-11-7,,Mounting of Winch - Welgegund + Filters,,,,,
+P190021,2021/01/14,C00001-11-1,Repairs,Herstel klep van vakuumbeheerde apparaat,,1225,20,5,5613923
+P190022,2021/01/15,C00001-5-21,Repairs,Herstel van slangtang,,300,0,0,5523749
+P190023,2021/01/15,C00020-1-2,Equipment,Herstel van 1 x trollie,,1710,488,122,5859120
+P190024,2021/01/17,C00002-5-9,Equipment,Vervaardig handvatsels vir radioligandbadden,,538,9.6,2.4,5562849
+P190025,2021/01/17,C00002-4-4,Equipment,Vervaardig handvatsels vir radioligandbadden,,538,9.6,2.4,5562849
+P190026,2021/01/10,C00016-1-1,,Vervaardig 1 x Yskasknip (Kelvinator Yskas),Cancelled,,,,
+P190027,2021/01/17,C00001-13-1,Repairs,Herstel van wetenskapapparaat,,2712.5,3.2,0.8,5921760
+P190028,2021/01/18,C00002-15-1,Repairs,Skoonmaak en behandeling van VVS komponente,,1575,0,0,5768606
+P190029,2021/01/18,C00002-8-2,Equipment,Aankoop van 3 x opvangbakke (drip trays),,300,2436,609,5515964
+P190030,2021/01/18,C00004-1-1,Equipment,Vervaardig 1 x pynappelskiller,,550,0,0,5770510
+P190031,2021/01/21,C00001-11-13,Equipment,Diens van Edwards vakuumpomp,,612.5,0,0,5613864
+P190032,2021/01/21,C00002-13-12,Equipment,Aankoop van 2 x 46 Viton O-ringe,,150,136,34,5569480
+P190033,2021/01/22,C00003-3-17,Glass blowing,Vervaardiging van glasapparate,,1676,3451.12,862.8,5524714
+P190034,2021/01/23,C00002-18-8,Equipment,Vervaardig 15 x proefbuisrakkies,,7091,180.2,45.05,5658214
+P190035,2021/01/23,C00001-11-1,,Herstel van glasware,,0,0,0,
+P190036,2021/01/25,C00001-11-7,Repairs,Herstel van vakuumpomp - Serial Nr. J430418,,1225,132,33,5628339
+P190037,2021/01/28,C00002-5-3,Equipment,Manufacture : Ramp for entrance : Building G16,,300,0,0,5610650
+P190038,2021/01/28,C00003-2-4,Glass blowing,Manufacture : Soxhlet Extractor,,1242,2440,610,5723462
+P190039,2021/01/09,C00001-1-1,,Toets van apparate : Dome : Mafikengkampus,,4025,1220,305,
+P190040,2021/01/29,C00002-15-3,Equipment,Diens van 2 x Atlas Copco SF24 Kompressors,,2502,5076.88,1269.22,5764848
+P190041,2021/01/29,C00002-2-1,,Diens van vakuumpomp,Cancelled - item scrapped,0,0,0,
+P190042,2021/01/30,C00001-11-10,Equipment,Vervaardig 1 x Vlekvryestaal kas,,8073,1028,0,6209521
+P190043,2021/01/30,C00001-11-29,Repairs,Herstel verhittingsbad,,350,0,0,5765297
+P190044,2021/01/30,C00001-11-15,Repairs,Herstel 8 x verhittingsmantels + 9 x bunsen branders,,1575,0,0,5765324
+P190045,2021/01/30,C00002-18-5,Equipment,Skerpmaak van 4 x skertjies + 2 x messe,,350,0,0,5869127
+P190046,2021/01/31,C00002-18-6,Engraving,Gravering van 4 x Ererol Name - 2018,,500,20,0,5684553
+P190047,2021/01/30,C00003-3-17,Equipment,Veranderinge aan watertrap,,262.5,132,33,5565414
+P190048,2021/01/31,C00002-13-12,Repairs,Herstel van kapsulevuller-masjien (spring en o-ring),,300,8,2,5569332
+P190049,2021/02/01,C00003-4-3,Equipment,"Vervaardig 24 x ""Hold Down Brackets""/vervaardig Sonkar onderdeel",,1662.5,68.8,17.2,5701742
+P190050,2021/02/01,C00002-8-2,,Herstel van urn,Cancelled - item scrapped,0,0,0,
+P190051,2021/02/04,C00001-11-1,Repairs,Laer maak van trollie + herstel van trolliewiel,,760,544.8,136.2,5803336
+P190052,2021/02/04,C00001-1-1,,Repair : Telescope,,20330,2732.8,683.2,
+P190053,2021/02/04,C00002-22-1,,Herstel van vakuumpomp,,185625,504,126,
+P190054,2021/02/04,C00008-2-1,Repairs,Herstel van muurhorlosie,,262.5,0,0,5799146
+P190055,2020/11/05,C00001-11-8,Microscopes and Balances,Diens/herstel van 64 x balanse,,41600,636,159,5750870
+P190056,2021/02/06,C00001-5-6,Repairs,Herstel skroefdrade van skudmasjien,,875,44,11,5948024
+P190057,2021/02/06,C00002-5-8,Equipment,Grotermaak van bestaande gate in hout proefbuishouer ,,175,0,0,6037000
+P190058,2021/02/07,C00003-2-2,Microscopes and Balances,Diens van balans,,1520,0,0,5860607
+P190059,2021/02/08,C00002-8-2,Glass blowing,Voorsien : 10 x 3 ml Glas Weegbootjies/20 x 5 ml Glas Weegbootjies,,300,1656,414,5604127
+P190060,2021/02/11,C00003-3-15,Microscopes and Balances,Diens van skale,,3900,0,0,573959
+P190061,2021/02/04,C00003-6-5,,Veranderinge aan microcoal burner,,5400,0,0,
+P190062,2021/02/12,C00002-5-3,Equipment,Replacement of lock : Chemicals Cabinet,,570,184,46,5878010
+P190063,2021/02/06,C00001-1-1,,Manufacture : Parts : Telescope,,5320,528.8,132.2,
+P190064,2021/02/12,C00003-4-2,Repairs,Herstel van binder,,1200,0,0,5884612
+P190065,2021/02/13,C00002-8-3,Equipment,Diens van vakuumpomp,,726,1803.2,450.8,5757093
+P190066,2021/02/13,C00002-4-4,Microscopes and Balances,Herstel van balans,,190,0,0,5897890
+P190067,2021/02/13,C00001-11-15,Microscopes and Balances,Herstel van balanse,,1225,0,0,5741517
+P190068,2021/02/14,C00001-3-1,Microscopes and Balances,Herstel van mikroskoop-onderdeel,,262.5,1.2,0.3,5747871
+P190069,2021/02/18,C00002-6-3,Repairs,Herstel van klimaatkamer (yskas),,570,0,0,5818166
+P190070,2021/02/18,C00001-11-1,Glass blowing,Vervaardig 5 x Glas T-aansluitings + 2 x Bends,,700,60,15,5704883
+P190071,2021/02/19,C00030-1-1,Equipment,Vervaardig 150 x tentpenne wat pas oor vierkantpyp,,1837.5,244,61,5806352
+P190072,2021/02/19,C00004-1-3,Repairs,Herstel van vergieter,,300,0,0,5653893
+P190073,2021/02/19,C00001-15-2,Equipment,Diens/herstel van 2 x vakuumpompe,,1520,52,13,5832272
+P190074,2021/02/25,C00001-11-1,Equipment,Ontwerp en vervaardig Kamera-opstelling (soos op foto),,15960,589.6,147.4,5884497
+P190075,2021/02/22,C00001-11-4,Equipment,Sny van keramiekbuis,,175,0,0,6162389
+P190076,2021/02/25,C00001-11-1,Repairs,Repair burst disc holder,,87.5,0,0,5770531
+P190077,2021/02/27,C00001-5-4,Equipment,"Vervaardig ""overflow"" op methanol stofie",,525,2.4,0.6,5770583
+P190078,2021/02/28,C00001-11-1,Equipment,Sny van kepies in 12 x plaatjies (soos voorbeeld),,262.5,0,0,5770531
+P190079,2021/02/28,C00001-11-15,Equipment,Vervaardig 15 x koppelinge (piesangproppe),,1050,400.8,100.2,5765324
+P190080,2021/02/28,C00001-5-10,Equipment,Vervaardig 1 x hysbaktrollie,,2688,887,0,5707598
+P190081,2021/02/28,C00003-3-14,,Modify : Spray Chamber,Moved to External,0,0,0,
+P190082,2021/03/04,C00002-17-2,Engraving,Gravering van 5 x Plaatjies vir geskenke,,560,40,0,5776848
+P190083,2021/03/04,C00002-20-1,Engraving,Gravering van 9 x plaatjies + 1 naamplaat vir trofee,,1570,450,0,5795080
+P190084,2021/03/04,C00002-15-3,Equipment,Diens van Nitrogen generator,,1050,4875,0,5764848
+P190085,2021/03/05,C00002-28-1,Repairs,Herstel van elektroforese apparate,,525,0,0,5798645
+P190086,2021/03/04,C00001-11-13,Repairs,Herstel van vakuumpomp,,1045,0,0,5803101
+P190087,2021/03/04,C00003-3-15,Glass blowing,Herstel van condenser,,190,80,20,5799652
+P190088,2021/02/12,C00001-5-20,Glass blowing,Manufacture : Soxhlet Extractor,,844,6332.8,833.2,5620761
+P190089,2021/03/06,C00001-2-5,Equipment,Manufacture : Radio Interferometer,,84000,16840,4210,5733324
+P190090,2021/03/06,C00001-11-15,Repairs,Verandering aan 1 x probe,,475,404,101,585949
+P190091,2021/03/07,C00001-11-15,Glass blowing,Herstel van 2 x glasflesse,,95,0,0,5859949
+P190092,2021/03/07,C00001-11-29,Repairs,Herstel van 1 x verhittingsmantel,,525,152,38,5765297
+P190093,2021/03/07,C00002-15-2,Equipment,Herstel van stikstofgenereerder,,1662.5,0,0,5769213
+P190094,2021/03/07,C00002-15-1,Equipment,Herstel van stikstofgenereerder,,1050,4875,0,5768606
+P190095,2021/03/08,C00004-0-2,Equipment,Vervaardig 1 x Porsieraam vir groot pan,,3349,81.6,20.4,5743334
+P190096,2021/03/11,C00002-5-3,Repairs,Clean and polish ice machine + repair ice machine,,7312.5,21.5,0,6352509
+P190097,2021/03/11,C00003-6-2,Equipment,Voorsien Vlekvryestaal pyp (21.5 x 2 mm x 180 mm),,87.5,12,3,5798211
+P190098,2021/03/11,C00002-5-5,Equipment,Vassit van oogwasstasies,,1050,0,0,5797608
+P190099,2021/03/11,C00001-11-15,Microscopes and Balances,Herstel van balans,,2090,1174.4,293.6,5859949
+P190100,2021/02/22,C00001-1-1,,Lightning Damage : Repair Telescope + Manufacture : Extensions for Camera,,11970,14000,0,
+P190101,2021/03/11,C00012-1-2,Repairs,Herstel van 2 x spiese,,175,0,0,5765170
+P190102,2021/03/12,C00001-11-1,Repairs,Hertel skroefdraad van 2 x sample cylinders,,525,0,0,5803336
+P190103,2021/03/12,C00001-5-23,,Verander 2 x mikroskooptafels,,0,0,0,
+P190104,2021/03/12,C00001-5-4,Equipment,Vervaardig 4 x Stoppers,,350,4.56,1.14,5797910
+P190105,2021/03/13,C00002-15-2,Repairs,Maintenance and Service of 4 x Nitrogen + 1 x Hydrogen Generators,,11500,0,0,5737069
+P190106,2021/03/14,C00002-13-4,Repairs,Herstel onderdeel van tabletpers,,285,0,0,5853706
+P190107,2021/03/14,C00011-1-4,Engraving,Maak van 14 x Pukkie Talenttrofees + gravering van plaatjies : Groot en klein trofee,,6656,764,0,5850894
+P190108,2021/03/15,C00001-5-8,Repairs,Hertel van 2 x 20 Mikron Siwwe + 3 x telbakkies,,1818,145.6,36.4,5876085
+P190109,2021/03/25,C00002-13-9,Equipment,Manufacture : Centrifuge rotor for 12 mm test tubes as per sample for 72 tubes + 2 x plastic clips + grotermaak van gaatjies - 2 x proefbuisrakkies,,5695,887,0,5807997
+P190110,2021/03/25,C00002-5-12,Equipment,Vervaardig 1 x spanner,,600,8.8,2.2,5795670
+P190111,2021/03/25,C00001-8-1,Engraving,Gravering van 10 x Trofees + 10 x Klein Vierkantskildjies,,2880,320,0,5793561
+P190112,2021/03/25,C00001-5-27,Equipment,Vervaardig 6 x bottel propringetjies,,481,45.18,11.3,5800547
+P190113,2021/03/14,C00002-13-8,Glass blowing,Vervaardig 1 x watertrap,,262.5,0,0,5796109
+P190114,2021/03/26,C00001-5-4,Equipment,Vervaardig 4 x Hoods (tub deksels),,21973,7657,0,6019300
+P190115,2021/03/26,C00001-2-4,Repairs,Repair : Telescope,,2800,0,0,587367
+P190116,2021/03/27,C00002-13-11,Repairs,Voorsien 2 x silencers vir vakuum op capsugel masjien,,3400,3154.4,788.6,6437669
+P190117,2021/03/27,C00008-2-1,Repairs,Herstel van megafoon,,265,0,0,5797729
+P190118,2021/03/28,C00001-5-8,Repairs,Vervanging van blenderlem,,175,1496,374,5874820
+P190119,2021/03/28,C00001-11-7,,Herstel van vakuumpomp,Cancelled,0,0,0,
+P190120,2021/03/28,C00005-1-1,Repairs,Modifikasies aan elektriese kas,,760,4.8,1.2,5795220
+P190121,2021/04/03,C00008-2-1,,Herstel van urn,Cancelled - item scrapped,0,0,0,
+P190122,2021/03/04,C00028-1-1,Engraving,Gravering van 3 x plaatjies vir trofee,,270,0,0,5876337
+P190123,2021/04/03,C00003-3-13,Glass blowing,Vervaardig 5 x filter candles on 10 mm glass tube (as per sample),,468,3002,0,5793728
+P190124,2021/04/04,C00002-18-7,Engraving,Vervaardig 1 x sementblok trofee,,1686,124,0,6386887
+P190125,2021/08/04,C00002-4-3,Equipment,Aanbring van slot op yskasdeur,,1140,128,32,5899059
+P190126,2021/03/25,C00001-5-24,Equipment,Skerpmaak van 2 x snoeiskêre,,150,0,0,5832996
+P190127,2021/08/04,C00001-14-1,Equipment,Manufacture : Redox flow battery end plate ,,1363,95,0,5802252
+P190128,2021/08/04,C00001-11-1,Microscopes and Balances,Herstel van balans,,1995,1380,345,5884497
+P190129,2021/09/04,C00002-22-1,,Vervaardig 1 x Muis Guillotine,Moved to External,0,0,0,
+P190130,2021/09/04,C00002-21-8,Glass blowing,Vervaardig 1 x Filterbuis,,570,252.5,0,5792314
+P190131,2021/10/04,C00001-11-4,Equipment,Vervaardig 20 x Passive Sampler dakkies,,10830,440,110,6162389
+P190132,2021/10/04,C00002-15-2,Repairs,Veranderinge aan vrieskasrakkies,,0,8035,0,5879414
+P190133,2021/11/04,C00002-22-2,Repairs,Herstel vere (springs) van apparate,,475,16,4,6213001
+P190134,2021/04/15,C00020-1-2,Equipment,Vervaardig 4 x staanders waaraan magnete gemonteer word vir messe,,4750,250.4,62.6,5899668
+P190135,2021/04/15,C00001-11-20,Equipment,Vervaardig Redox flow battery (soos voorbeeld),,8210,1864,932,5818804
+P190136,2021/04/16,C00001-11-30,Repairs,"Herstel van ""ticker timer"" apparaat",,190,0,0,5995190
+P190137,2021/04/15,C00002-2-1,Equipment,Vervaardig 10 x Vlekvryestaal rakkies - 20 rakkie eenheid,,21440,2048,512,5803764
+P190138,2021/04/16,C00002-2-1,Equipment,Vervaardig : 2 x Proefbuishouers : Bead Beater : 24 proefbuise,,2768,297.6,74.4,5805372
+P190139,2021/04/16,C00002-15-3,Repairs,Herstel van stikstofgenereerder,,1031,4862,0,5946747
+P190140,2021/04/16,C00028-1-1,,Bestaande trofee : Vervang ou plaatjies met nuwe plaatjies + gravering van 1 x nuwe plaatjie per trofee/Vervaardig 4 x nuwe trofee + aanbring van plaatjies + gravering van 1 x plaatjie per trofee,Cancelled,0,0,0,
+P190141,2021/04/16,C00001-11-1,Repairs,Herstel van verhittingsplaat roerder,,380,0,0,5884497
+P190142,2021/04/16,C00001-11-32,Equipment,Diens/herstel van vakuumpomp,,380,20,5,6137527
+P190143,2021/04/23,C00004-2-2,Equipment,Vervaardig Vlekvryestaal Trollie vir Bain Marie,,3174,1188.8,297.2,5821122
+P190144,2021/04/25,C00001-11-29,Repairs,Vervang wiel van trollie,,190,116.8,29.2,5859833
+P190145,2021/04/25,C00002-15-1,Repairs,Skoonmaak en behandeling van VVS komponente,,665,0,0,5954448
+P190146,2021/04/26,C00001-18-1,Repairs,Daizy Incubators/Fibre analizers/Ankom extraction system/Labcon Water purifier/Plastic heat sealer,,8075,9816,2454,6097629
+P190147,2021/04/26,C00001-18-1,Microscopes and Balances,2 x Analitical Balances + 2 x Platform balances,,3610,0,0,6107122
+P190148,2021/04/23,C00001-1-1,,Focal Reducer : Telescope,,3610,834.4,208.6,
+P190149,2021/04/29,C00001-11-7,Equipment,Diens/herstel van vakuumpomp,,1520,0,0,5830140
+P190150,2021/04/29,C00001-5-7,Equipment,Vervaardig PTFE Multi Sample houer,,5010,990,0,5905296
+P190151,2021/04/30,C00001-14-1,Glass blowing,Manufacture : Double Walled Duran Flasks - 100 ml,,2075,260,65,5836959
+P190152,2021/05/03,C00001-5-25,Repairs,Herstel van kompressor,,570,24,6,5881737
+P190153,2021/03/05,C00002-6-7,,Herstel van solar charger,Moved to External,,0,0,
+P190154,2021/05/06,C00001-11-1,Equipment,Vervaardig 1 x kraanhandvatsel,,1520,906.44,226.6,5932996
+P190155,2021/05/06,C00001-3-1,Repairs,Herstel van skudmasjien,,1140,31.2,7.8,
+P190156,2021/06/05,C00002-13-1,,Herstel van shredder,Cancelled - item scrapped,0,0,0,
+P190157,2021/05/07,C00001-11-20,Repairs,Herstel van Peristaltiese pomp,,1520,2064,516,5929789
+P190158,2021/05/07,C00003-2-4,Glass blowing,Manufacture : 2 x Reducers (as per example) + 1 x Termo Couple Holder,,570,288,72,5937392
+P190159,2021/05/07,C00002-28-1,Repairs,Herstel van inkubator,,7695,28,7,6078734
+P190160,2021/05/13,C00001-11-7,Repairs,Herstel 1 x UPS,,2470,2296,574,5955007
+P190161,2021/05/14,C00002-17-2,Engraving,Gravering van 13 x plaatjies vir horlosies,,1712,43,0,5918324
+P190162,2021/05/14,C00012-1-2,Repairs,Vervaardig 10 x draadstele vir hamergooi-apparate,,1520,0,0,5927502
+P190163,2021/05/13,C00001-6-1,Equipment,Manufacture : 26 x Stainless Steel Weights : 28 mm diameter x 34 mm length/ea,,2460,320,80,5854620
+P190164,2021/05/14,C00004-1-1,Repairs,Herstel van uitsuigwaaier,,1330,0,0,5857472
+P190165,2021/05/14,C00022-1-4,Engraving,Gravering : 1 x naam vir ererolbord : 2018 Cosette Troskie,,194,6,0,6075690
+P190166,2021/05/10,C00012-1-2,Equipment,Merk van voorraad,,2660,0,0,5899103
+P190167,2021/05/16,C00001-11-1,Equipment,Diens van koue roerplaat,,570,0,0,5932996
+P190168,2021/04/16,C00002-13-9,Equipment,Service of Peak Nitrogen Generator : S/N A12-02-051,,1200,31938,0,5808008
+P190169,2021/05/21,C00009-3-2,Engraving,Gravering : 1 x Plaatjie vir trofee,,100,0,0,5926210
+P190170,2021/05/21,C00001-2-4,Repairs,Modify : Light Box,,475,0,0,5906913
+P190171,2021/05/27,C00001-5-25,Microscopes and Balances,Diens van 4 x Mikroskope,,3800,0,0,598894
+P190172,2021/05/27,C00001-5-8,Repairs,Herstel van groeikas,,570,5,0,5934999
+P190173,2021/05/27,C00001-1-3,Equipment,Vervaardig 2 x Neutron Monitor Trollies,,41800,9547.83,1432.17,6415789
+P190174,2021/05/27,C00003-2-4,Glass blowing,Manufacture : T-Connections (x4) + 2-Neck Flasks (x3),,1140,1469,0,5893032
+P190175,2021/05/27,C00001-12-3,Glass blowing,Manufacture : Calcining Apparatus,,1433,5706.67,1141.33,5887588
+P190176,2021/05/29,C00002-25-1,Equipment,Manufacture : 2 x Aluminium trolleys,,3395,940,235,5913809
+P190177,2021/05/21,C00004-1-1,Repairs,Herstel pot-deksel skarnier,,4536,164.65,0,6032123
+P190178,2021/05/30,C00002-13-10,Equipment,Manufacture : Magnet tube holder (as per drawing),,1280,16.4,4.1,5948657
+P190179,2021/06/03,C00009-1-1,Engraving,Maak van UARM-trofee,,250,0,0,5974308
+P190180,2021/06/03,C00003-6-9,Glass blowing,Vervaardig Y-kolom,,285,0,0,5922387
+P190181,2021/06/04,C00003-3-16,Equipment,Verandering aan 1 x bracket,,378,1.6,0.4,5907025
+P190182,2021/06/05,C00002-15-2,Equipment,Manufacture : 3 x Micro Balance Glass Screens,,4330,2580,645,5910602 + 5911492
+P190183,2021/06/06,C00002-21-5,Engraving,Gravering : 2 x A4-grootte Kantoorborde,,550,120,0,5910440
+P190184,2021/06/06,C00003-4-5,Equipment,Manufacture : 20 x Aluminium Connectors (as per drawing),,3242,88,22,5907947
+P190185,2021/06/06,C00001-11-7,,Herstel 1 x UPS,Cancelled,0,0,0,
+P190186,2021/06/06,C00001-5-22,Equipment,Vervaardig 100 x 25 Mikron Siffies (soos voorbeeld),,52355,960,240,5912161
+P190187,2021/06/07,C00002-21-6,Repairs,Diens van Edwards vakuumpomp - S/N 076034348,,1000,0,0,5927541
+P190188,2021/06/07,C00002-18-6,,Maak van voetstuk vir groot skildvormige trofee,Cancelled,0,0,0,
+P190189,2021/06/10,C00002-26-1,Equipment,Halveer/in helfte sny van 10 x sponsrolle,,380,0,0,6084468
+P190190,2021/06/11,C00001-5-4,Equipment,Manufacture : Compression fitting on flange.  Knurled Nut,,1140,80,20,5952589
+P190191,2021/06/11,C00003-3-15,Microscopes and Balances,Diens van 1 x Top Pan Balans + 1 x Analitiese Balans,,1140,0,0,6040301
+P190192,2021/06/11,C00001-13-1,Equipment,Vervaardig 1 x Rolling man,,2800,24,6,6140480
+P190193,2021/06/11,C00002-15-2,Equipment,Manufacture : 6 x Aluminium Heating Blocks - 20 holes - 11.8 x 22 mm,,11898,936,234,5921952
+P190194,2021/06/04,C00002-18-2,Engraving,Gravering 1 x plaatjie vir trofee,,104,4.8,1.2,5939854
+P190195,2021/06/13,C00002-7-1,Microscopes and Balances,Herstel van 1 x Skaal,,570,156,39,5959745
+P190196,2021/06/19,C00002-28-2,Repairs,Grotermaak van bestaande gate in proefbuishouer /Herstel van stikstofgenereerder,,1900,0,0,5957569
+P190197,2021/06/21,C00003-6-8,Equipment,Trektoetsmonsters,,4370,0,0,6098853
+P190198,2021/06/24,C00003-3-15,Glass blowing,Verandering aan kwartzbuis,,190,0,0,6027344
+P190199,2021/06/21,C00001-3-1,Repairs,Herstel van Accutom apparaat,,1330,0,0,5979766+6032151
+P190200,2021/06/26,C00003-3-15,Glass blowing,Kortersny van glasbuise,,380,0,0,6017154
+P190201,2021/06/27,C00003-3-12,Glass blowing,Vervaardig 2 x glasapparate (soos bespreek),,1050,48,12,5951592
+P190202,2021/06/27,C00001-5-4,Equipment,Aankope : 4 x Air Flow Sensors (Omni Instruments),,3300,15277.6,3819.4,5952678
+P190203,2021/06/27,C00001-11-7,Repairs,Repair : Regulator + repair thread - aluminium tube,,285,0,0,6135720
+P190204,2021/06/27,C00001-11-5,Repairs,Nasien van stepper motor,,380,0,0,6209564
+P190205,2021/07/01,C00001-5-4,Equipment,Voorsien PVC pyp,,380,1032,258,6033332
+P190206,2021/07/01,C00012-1-2,Repairs,Heg van spies handgreep,,285,0,0,5998292
+P190207,2021/07/08,C00020-1-2,Repairs,Herstel van 1 x trollie,,2280,1510,0,6026247
+P190208,2021/07/08,C00002-18-6,Engraving,Vervaardig houtbasis vir groot skildvormige skild,,760,130,0,5969835
+P190209,2021/07/08,C00022-1-3,Engraving,Gravering van 4 x naamplaatjies vir vysels,,500,36,0,6075690
+P190210,2021/07/05,C00012-1-1,Repairs,Herstel van Boulmasjien,,200,0,0,6160580
+P190211,2021/07/09,C00001-11-12,Repairs,Herstel van lek op 'n koperpypie,,95,0,0,6137125
+P190212,2021/07/09,C00002-28-3,Glass blowing,Herstel van glasapparaat (pH Elektrode),,285,0,0,6133508
+P190213,2021/07/10,C00002-6-3,Repairs,Herstel van trollie,,1140,20,5,60774977
+P190214,2021/07/10,C00009-1-2,,Vervaardig 1 x muntstuk vir koffiemasjien,,0,0,0,
+P190215,2021/07/10,C00002-15-2,Repairs,2 x Vakuumpompe,,3800,0,0,6393028
+P190216,2021/07/04,C00001-9-1,Repairs,Herstel van motor op apparaat,,1600,0,0,6024288
+P190217,2021/07/10,C00001-14-3,Repairs,Herstel van elektrode,,190,0,0,6137125
+P190218,2021/07/10,C00001-2-4,Repairs,Repair : Light Box,,1045,1,0.25,6032076
+P190219,2021/07/15,C00001-11-13,,Diens van Edwards vakuumpomp,Not repearable,0,0,0,
+P190220,2021/07/15,C00001-2-2,Equipment,Manufacture : 2 x Neuton Monitor Shipping Crates : including 1 set of tiedown straps,,10875,5524.55,552.45,5982558
+P190221,2021/07/11,C00005-1-3,Repairs,Alterations to cabinet (Veranderinge aan sleutelkas),,2345,28,7,5975667
+P190222,2021/07/11,C00001-5-4,Equipment,Vervaardig instrumentasie monteerplaat,,1140,124.8,31.2,6112886
+P190223,2021/07/11,C00001-17-1,,Repair : pH-meter,Not repearable,0,0,0,
+P190224,2021/07/11,C00001-2-1,Equipment,Manufacture : 1 x Collimating Slits,,2470,5.6,1.4,6032018
+P190225,2021/07/15,C00004-1-1,Equipment,Vervaardig 6 x Bin Dolleys,,12189,2134.56,533.64,6206599
+P190226,2021/07/16,C00002-15-1,Equipment,Skoonmaak en behandeling van VVS komponente,,880,0,0,6135856
+P190227,2021/07/16,C00002-13-3,,Herstel heating stage vir mikroskoop,,0,0,0,
+P190228,2021/05/07,C00002-28-2,Repairs,Herstel van stikstofgenereerder,,570,0,0,6027495
+P190229,2021/07/19,C00002-5-3,Repairs,Vervang gloeilamp van UV lig,,175,75,0,6074657
+P190230,2021/07/17,C00001-11-10,Equipment,Studente Prakties,,2200,0,0,6078689
+P190231,2021/07/17,C00006-1-2,Equipment,Aankoop van 10 x boute vir reserveerplaatjies,,25,6.4,1.6,6006513
+P190232,2021/07/22,C00002-2-1,Repairs,Herstel + veranderinge aan waterbaddens,,1600,2320,580,6337296
+P190233,2021/07/23,C00001-11-26,Microscopes and Balances,Herstel van 1 x balans/houtstokkies,,1200,0,0,6154812
+P190234,2021/07/26,C00001-5-24,Equipment,Veranderinge aan hysbaktrollie,,1200,67.2,16.8,6213510
+P190235,2021/07/26,C00001-5-10,Glass blowing,Kortersny van glasbuisies,,285,0,0,6116150
+P190236,2021/05/23,C00002-18-5,,Vervaardig en installeer van 4 x Ererolborde (name uitgesluit),,0,0,0,
+P190237,2021/07/29,C00001-14-2,,Repair : Drying Oven (tripping electricity),,3600,1208,302,
+P190238,2021/07/29,C00001-1-4,Equipment,Vervaardig 1 x Dekplaat,,380,9.6,2.4,6239135
+P190239,2021/07/31,C00028-1-1,,Gravering van 2 x plaatjies vir trofee,,180,0,0,
+P190240,2021/07/31,C00002-15-9,,Repair Hydrogen generator,Cancelled - duplicate,0,0,0,
+P190241,2021/07/31,C00002-5-10,Glass blowing,Repair condenser and grinding of NMR tubes,,300,181.6,45.4,6158113
+P190242,2021/07/31,C00001-11-31,Equipment,Manufacture : Small perspex reactor,,5300,344,86,6317059
+P190243,2021/08/02,C00002-20-1,Engraving,Herstel van 19 x lampies,,2660,97.6,24.4,6173537
+P190244,2021/08/01,C00001-11-29,Repairs,Herstel van trollie se wiel/e,,400,12,0,6109469
+P190245,2021/08/02,C00002-6-3,Glass blowing,Vervaardig 5 x 6 ml Glasweegbootjies,,133.75,316.25,0,6214712
+P190246,2021/08/02,C00001-3-1,Repairs,Diens en Herstel van Accutom apparaat,,1200,12,3,6145496
+P190247,2021/08/06,C00003-2-7,Glass blowing,Manufacture : U-shape Tube,,400,124,31,6156939
+P190248,2021/08/06,C00001-11-6,Glass blowing,Supply : Candle Filters x 4 + repair platinum wire,,571,2369,0,6234352/6249234
+P190249,2021/08/06,C00001-16-1,Equipment,"Manufacture and Supply Auger Drill Extensions, 2 x 1 m, with PTO Adapter",,2426,349,0,6111111
+P190250,2021/08/07,C00001-5-4,Equipment,Veranderinge aan Tub deksels,,37800,5024,1256,6337157
+P190251,2021/08/07,C00001-2-4,Repairs,Repair : Telescope,,1200,0,0,6137899
+P190252,2021/08/13,C00001-5-26,Engraving,Vervaardig 1 x Ererolbord + gravering van gravoply naamplaatjies,,7750,2080,520,6213374
+P190253,2021/08/13,C00001-11-5,Equipment,"Vervaardig : Sonsel + vervaardig tafel vir ""glass coating""",,3100,80.8,20.2,6445856
+P190254,2021/08/14,C00001-1-2,Equipment,Pier and Rails for Sun Telescope,,17600,6939.2,1734.8,6333486
+P190255,2021/08/14,C00003-4-2,Repairs,Herstel van shredder,,800,0,0,6161654
+P190256,2021/08/15,C00011-1-3,Equipment,Vervaardig 18 x Lig Kleur Filter Houers,,987,1314.96,328.74,6140214
+P190257,2021/08/15,C00002-22-2,Repairs,Herstel van 4 x trollies se wiele,,700,432,108,6209775
+P190258,2021/08/19,C00009-4-1,Engraving,Gravering van 8 x plaatjies vir trofeë/13 x Plaatjies vir Uile trofeë (2 x groot uile + 11 x klein uiltjies),,1840,50,0,6207262+6207292
+P190259,2021/08/19,C00001-11-28,,Boor van gaatjie in plastiekprop,,100,0,0,
+P190260,2021/08/19,C00003-4-3,Equipment,"Vervaardig : Onderdele vir ""Brake Caliper""-veranderinge/Masjineer : Koppeling-As",,633,87,0,6214506
+P190261,2021/08/19,C00012-1-2,Equipment,Merk van 2 x spiese,,200,0,0,6156160
+P190262,2021/08/19,C00003-6-2,Repairs,Herstel van vloeimeter,,395,0,0,6161132
+P190263,2021/08/20,C00001-5-24,Equipment,Vakuumpomp : Vervang pypaansluiting,,200,40,10,6212406
+P190264,2021/08/22,C00003-2-4,Glass blowing,Manufacture : 2 x 3 Neck Flasks + Supply 1 x Condenser,,550,688,172,6333489
+P190265,2021/08/22,C00001-5-10,Repairs,Herstel van pH-Meter,,300,0,0,6398077
+P190266,2021/06/20,C00002-21-7,Equipment,Vervaardig 4 x VVS vrieskasrakkies : 20 rakkie eenheid,,8985,492,123,5938780
+P190267,2021/08/23,C00001-11-13,Equipment,Diens van vakuumpomp,,800,40,10,6214797
+P190268,2021/08/26,C00001-9-6,Repairs,Herstel van 5 x Bailers,,1200,5.6,1.4,6207547
+P190269,2021/08/26,C00002-5-11,Repairs,Herstel van aansluiting op waterdrup,,300,0,0,6433811
+P190270,2021/08/27,C00001-5-10,Engraving,Maak van 2 x Mildred van der Merwe-Radloff Skilde,,495,65,0,6300801
+P190271,2021/08/27,C00001-11-27,Repairs,Herstel van vakuumpomp + temperatuurbeheer apparaat + verhitters,,2600,403.2,100.8,6395994
+P190272,2021/08/27,C00001-11-5,Equipment,Vervaardig 2 x laptop staanders,,2200,168,42,6316163
+P190273,2021/08/26,C00003-4-1,Repairs,Herstel van vakuumpomp en aankope van materiale,,1100,339,84.75,6169833
+P190274,2021/08/28,C00003-4-3,Equipment,Aankoop van 30 mm dia Aluminiumstaaf x 150 mm,,100,27.2,6.8,6214733
+P190275,2021/08/29,C00001-11-15,Microscopes and Balances,Kalibreer van 20 x balanse,,1350,0,0,6225959
+P190276,2021/08/29,C00002-8-3,Repairs,Herstel van skudmasjien,,200,0,0,6254453
+P190277,2021/09/03,C00001-11-15,Repairs,Herstel : Vakuumpomp + verhittingsmantel,,600,0,0,6367068
+P190278,2021/09/04,C00002-4-8,Repairs,Diens/herstel van vakuumpomp,,800,0,0,6257093
+P190279,2021/09/04,C00001-2-3,,Telescope Dome for Nooitgedacht,,0,0,0,
+P190280,2021/09/05,C00022-1-2,Engraving,Gravering : 1 x naam vir ererolbord : 2019 Marco Lambrechts,,200,0,0,6559219
+P190281,2021/09/05,C00002-28-1,Repairs,Herstel van inkubator,,1600,0,0,6254759
+P190282,2021/09/05,C00004-1-1,Repairs,Herstel van porsieraam,,400,3,0,6217257
+P190283,2021/09/03,C00003-6-6,,Veranderinge aan hitteruilers,,675,0,0,
+P190284,2021/09/03,C00002-13-9,Repairs,Nasien van N2 generator,,1200,64,16,6317308
+P190285,2021/09/09,C00001-9-1,Repairs,Herstel van loogbuise,,2200,80,20,6252882
+P190286,2021/09/09,C00002-6-3,Equipment,Aankoop van 40 x glasteëls,,830,2392,598,6362202
+P190287,2021/08/27,C00029-1-1,Equipment,Vervaardig 30 x Perspex Naamplate,,3900,280.5,0,6331235
+P190288,2021/09/10,C00024-2-1,Equipment,Drill out override lock through metal box and replace it,,400,48,0,6250773
+P190289,2021/09/10,C00002-19-1,Engraving,Maak van 17 x Skildjies + gravering van trofees + maak van 'n voetstuk,,6060,770,0,6344747/6362682/6430483
+P190290,2021/09/11,C00009-1-1,Engraving,Verandering aan trofee + gravering van plaatjie,,800,0,0,6429273
+P190291,2021/09/11,C00001-15-1,,Manufacture : Scheffler Parablic Dish,,0,0,0,
+P190292,2021/09/12,C00001-11-5,,Vervaardig Teflon spacers : 0.25 + 0.5 mm  /  Vervaardig 6 x Glas Filterbuisies,,400,0,0,
+P190293,2021/09/12,C00001-12-1,,Repair : Milestone glassware apparatus for the Microwave Extration Unit,,2000,92,23,
+P190294,2021/09/12,C00002-26-1,Repairs,Sweis van plaat van apparaat,,200,0,0,6276568
+P190295,2021/09/13,C00002-13-10,Equipment,Manufacture : Magnet holder,,10500,184,46,6429840
+P190296,2021/09/16,C00001-11-5,,Vervaardiging van selle,,15400,0,0,
+P190297,2021/09/17,C00001-5-20,Repairs,Herstel van apparaat,,2494,484.8,121.2,6332985
+P190298,2021/09/17,C00003-4-3,Equipment,Vervaardig 4 x Spacers,,400,20,5,6336066
+P190299,2021/09/17,C00001-11-25,Repairs,Aankoop van gloeilampie,,100,80,0,6317059
+P190300,2021/09/18,C00016-1-1,Engraving,Gravering van 10 x Medaljes,,1000,0,0,6304509
+P190301,2021/09/19,C00002-24-2,Repairs,Diens/herstel van shredder,,1000,100,25,6363831
+P190302,2021/09/25,C00002-6-6,Repairs,Herstel van waterbad + 2 x roerplate,,800,328,82,6333783
+P190303,2021/09/25,C00002-5-3,,Herstel van glasfles,Cancelled,0,0,0,
+P190304,2021/09/25,C00001-13-1,Repairs,Herstel van verskeie wetenskapsentrum apparaat,,9200,2500,0,6440929
+P190305,2021/10/01,C00012-1-2,Equipment,Maak van voetstuk vir trofee,,250,0,0,6320911
+P190306,2021/10/01,C00003-4-3,Equipment,Sny van plaatjies,,700,0,0,6336207
+P190307,2021/10/01,C00003-6-2,Equipment,Trektoetsmonsters,,2800,0,0,6325387
+P190308,2021/10/01,C00002-15-9,Equipment,Manufacture : 3 x Aluminium Heating Blocks - 20 holes - 11.8 x 22 mm,,7872,672,168,6335421
+P190309,2021/10/03,C00001-2-6,Repairs,Herste van trollie,,500,312,78,6333865
+P190310,2021/10/03,C00001-11-29,Repairs,Herstel van roerder + bak van trollie + verhittingsmantel,,1400,128,32,6348861
+P190311,2021/10/03,C00001-12-2,Repairs,Repair : Apparatus,,800,0,0,6365492
+P190312,2021/10/03,C00001-5-4,Equipment,Manufacture : 8 x ES642 Inlets (as per sample),,1800,184,46,6337157
+P190313,2021/10/10,C00001-11-27,Microscopes and Balances,Diens/herstel van 9 x Mikrobalanse,,5850,0,0,6445576
+P190314,2021/10/10,C00001-1-1,,Telescope,,46400,4460,1115,
+P190315,2021/10/11,C00006-1-1,Repairs,Herstel van sleutel snymasjien,,500,0,0,6332845
+P190316,2021/10/11,C00025-1-1,Engraving,Gravering van 1 x Medalje,,120,0,0,6326107
+P190317,2021/10/14,C00003-4-1,Equipment,Aankoop van 76 x 16 mm Brass Flat Bar x 114 mm (x2),,200,576,144,6333555
+P190318,2021/09/16,C00002-6-5,Equipment,Skerpmaak van 12 x skêre,,400,0,0,6336049
+P190319,2021/10/15,C00012-1-2,Engraving,Skoonmaak en gravering van 2 x Trofeës,,1050,0,0,6360622
+P190320,2021/10/15,C00012-2-1,Engraving,Gravering van 9 x trofeës,,855,0,0,6356189
+P190321,2021/10/15,C00001-14-4,Equipment,"Vervaardig  ""cathode plates"" x 5",,600,32,8,6396104
+P190322,2021/09/06,C00001-5-20,,Vervaardig apparaat met 3 siwwe,,5100,0,0,
+P190323,2021/10/17,C00008-2-1,Equipment,Voorsien + boor van gate in 6 x M12 x 40 mm Allen Caps,,400,20,5,6356361
+P190324,2021/10/18,C00001-2-2,Repairs,Veranderinge aan kalibrasie monitor buise,,1800,25,0,6395883
+P190325,2021/10/21,C00002-13-6,Repairs,Herstel van waterbad,,800,250,0,6432456
+P190326,2021/10/14,C00002-6-7,Repairs,Herstel van apparaat (perspexpote vir koekstaander),,200,16,4,6350865
+P190327,2021/10/09,C00002-24-1,,Skerpmaak en skoonmaak van 2 x stelle teater-instrumente,,2025,0,0,
+P190328,2021/10/14,C00002-13-9,Equipment,Installation of vacuum pomp,,400,0,0,6375674
+P190329,2021/10/25,C00002-13-3,Repairs,Vervang lampie van apparaat/herstel mikroskoopo,,500,76,19,6365032
+P190330,2021/10/23,C00001-14-1,,Manufacture : 4 x Redox flow battery inner frames,,9675,0,0,
+P190331,2021/10/23,C00002-4-9,,Veranderinge aan CPP houers - hoogte 100 mm/200 mm/300 mm (8 van elk),,0,0,0,
+P190332,2021/10/23,C00030-2-1,Equipment,Aankoop van 6 x perspexplate,,0,1514.4,378.6,6339658
+P190333,2021/10/30,C00001-11-13,Equipment,Aankoop van O-ringe,,100,72.8,18.2,6445613
+P190334,2021/10/31,C00011-1-5,Engraving,Gravering van 1 x plaatjie vir Pukki Talentfeestrofee,,110,0,0,6393861
+P190335,2021/11/01,C00002-17-3,,Vervaardig 1 x Aluminium trollie,,0,0,0,6388928
+P190336,2021/10/30,C00001-11-7,Repairs,Herstel van reënmeter,,3800,930.4,232.6,6436000
+P190337,2021/11/05,C00001-5-10,Repairs,Herstel van momentumtrollie,,400,1.2,0.3,6446121
+P190338,2021/11/05,C00002-18-5,Engraving,Gravering van 1 x Trofee (blou kolf met geel bad eentjies),,110,0,0,6414855
+P190339,2021/11/11,C00002-21-5,Engraving,Gravering 3 x trofeeplaatjies + maak van 3 x skildjies,,1040,130,0,6443369
+P190340,2021/11/11,C00002-18-6,,Gravering : 4 x Ererol Name - 2019 (Borde by trappe),,0,0,0,
+P190341,2021/11/11,C00007-1-3,,Manufacture and installation : perspex arrow,,0,0,0,
+P190342,2021/11/11,C00012-1-2,Repairs,Herstel van paalspring-paal / herstel van wiel op cover,,4400,132,33,6440416
+P190343,2021/11/11,C00001-15-1,,3 x Parabolic Cookers,,22800,0,0,
+P190344,2021/11/05,C00001-1-2,Equipment,Installasie van voetstuk op dak + Koste van Tegniese Dienste - Sonteleskoop,,1400,18553.57,1904.43,6461331 + 6482865
+P190345,2021/11/13,C00002-2-1,Repairs,Diens van stikstofgenerator,,2200,19266.9,0,6545393
+P190346,2021/11/13,C00001-2-5,,Manufacture : Basic knockdown Radio Interferometer (ladder frame/electronics/unpainted/220 VAC only,,0,0,0,
+P190347,2021/11/14,C00002-15-9,Repairs,Repair : Vacuum pump,,1000,40,10,646719
+P190348,2021/11/14,C00002-27-1,Equipment,Aankoop van Savant Speedvac Vacuum Concentrator,,0,2000,0,6420129
+P190349,2021/11/14,C00007-1-4,Equipment,Manufacture : 2 x Large projector brackets,,3453,822.72,205.68,6421786
+P190350,2021/11/14,C00001-3-1,Repairs,Herstel van Accutom apparaat,,1600,680,170,6452216
+P190351,2021/11/18,C00026-1-1,Repairs,Repair : Steamer,,300,0,0,6468201
+P190352,2021/11/18,C00002-18-5,,Aanbring van name op 4 x Ererolborde,,0,0,0,6426604
+P190353,2021/11/19,C00001-9-1,,Vervaardig : Filterbuis-staander + drukreguleerklep,,0,0,0,6431245
+P190354,2021/11/19,C00001-11-7,Equipment,Painting of containers and fence + repair existing fence,,200,21974.83,5295.17,6432077
+P190355,2021/11/20,C00001-3-1,Equipment,Aankoop van rubber mounts,,200,384,96,6461795
+P190356,2021/11/11,C00001-15-3,,Manufacture : Cube Puzzles (x 2) + Rolling Man (x 1),,9000,0,0,
+P190357,2021/11/20,C00003-6-7,Equipment,Aankoop van materiale,,100,36.67,18.33,6440035
+P190358,2021/11/26,C00002-8-3,Repairs,Poleer van apparaat,,225,0,0,6573266
+P190359,2021/11/27,C00002-4-10,Equipment,Vervaardig 2 x Rekenaarskerm-staanders,,755,145,0,6456494
+P190360,2021/11/27,C00027-1-1,,Wasgoedpennetjielaan : Vervanging van borde,,4800,0,0,
+P190361,2021/11/29,C00026-1-1,,Herstel van trollies en rails,,4725,0,0,

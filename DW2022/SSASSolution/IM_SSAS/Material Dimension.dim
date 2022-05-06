@@ -1,0 +1,589 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="0d29d5aa-982a-4d3a-a3f3-c8b7844e2dae" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Material Dimension</ID>
+  <Name>Material Dimension</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="1391" scrolltop="-5049" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="8414" y="15769" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Material Dimension" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="13361" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00003134000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Material" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>1391</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-5049</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>75</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="276">
+            <Shape Id="Material Item Key" Expanded="true">
+              <Attributes>
+                <Attribute Id="Material Item Key" />
+                <Attribute Id="Material Group" />
+                <Attribute Id="Material Item Category" />
+                <Attribute Id="Material Item Current Name" />
+                <Attribute Id="Material Item Detail 1" />
+                <Attribute Id="Material Item Detail 2" />
+                <Attribute Id="Material Item ID" />
+                <Attribute Id="Material Item Quantity Unit Of Measure" />
+                <Attribute Id="Material Item Size" />
+                <Attribute Id="Material Item Size Note" />
+                <Attribute Id="Material Item Size Unit Of Measure" />
+                <Attribute Id="Material Item Standard Height mm" />
+                <Attribute Id="Material Item Standard Interior Diameter mm" />
+                <Attribute Id="Material Item Standard Length mm" />
+                <Attribute Id="Material Item Standard Thinkness Or Wall mm" />
+                <Attribute Id="Material Item Standard Width Or Diameter mm" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Material Item Name" Expanded="false">
+              <Attributes>
+                <Attribute Id="Material Item Name" />
+              </Attributes>
+              <Position x="370" y="20" />
+            </Shape>
+            <Shape Id="Material Category Item Type" Expanded="false">
+              <Attributes>
+                <Attribute Id="Material Category Item Type" />
+              </Attributes>
+              <Position x="720" y="20" />
+            </Shape>
+            <Shape Id="Material Type" Expanded="false">
+              <Attributes>
+                <Attribute Id="Material Type" />
+              </Attributes>
+              <Position x="1070" y="20" />
+            </Shape>
+            <Shape Id="Material Current Group" Expanded="false">
+              <Attributes>
+                <Attribute Id="Material Current Group" />
+              </Attributes>
+              <Position x="1420" y="20" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="191febfa-a352-4655-9458-763bbf56e47c">
+    <DataSourceViewID>Material Management</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="a80e8e99-15fa-4849-9eaa-1f0b5d2d12cc">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="0d4be88e-f2e1-4682-a037-53a9c14d4584">
+      <ID>Material Item Key</ID>
+      <Name>Material Item Key</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b7cf5c6f-30d6-4e15-b352-22b1b7b975df">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="05034049-3941-469f-b06f-28e51b52f92d">
+            <TableID>dbo_Material</TableID>
+            <ColumnID>Material_Item_Key</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="dfd1d15a-baad-48fe-af68-22808ed4824c">
+          <AttributeID>Material Item ID</AttributeID>
+          <Name>Material Item ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9a19c89b-ea91-4759-b892-14c851d54060">
+          <AttributeID>Material Item Current Name</AttributeID>
+          <Name>Material Item Current Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d2d310a5-0962-41d1-b272-ecbf4f187d35">
+          <AttributeID>Material Item Name</AttributeID>
+          <Name>Material Item Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="35ec7a8f-b550-4d44-9ef0-47c7bd59dfbc">
+          <AttributeID>Material Item Category</AttributeID>
+          <Name>Material Item Category</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0b576e03-e24d-4c49-8254-2c6a95b4b10d">
+          <AttributeID>Material Item Detail 1</AttributeID>
+          <Name>Material Item Detail 1</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="cf530bee-4182-4045-a6ad-51df1991ddbd">
+          <AttributeID>Material Item Detail 2</AttributeID>
+          <Name>Material Item Detail 2</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="95873faf-b5e0-42d1-92b5-9268525b0231">
+          <AttributeID>Material Item Size</AttributeID>
+          <Name>Material Item Size</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="22a14073-ba8f-40db-8482-793a7b05dfb6">
+          <AttributeID>Material Item Size Unit Of Measure</AttributeID>
+          <Name>Material Item Size Unit Of Measure</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="52b68357-e19e-413f-a0e4-b1533276beb2">
+          <AttributeID>Material Item Size Note</AttributeID>
+          <Name>Material Item Size Note</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d44e7007-b874-482f-a60c-10888f9ffaf4">
+          <AttributeID>Material Item Standard Length mm</AttributeID>
+          <Name>Material Item Standard Length mm</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e2ad8428-0da7-41ca-8b5b-e7e5b3e6d0ad">
+          <AttributeID>Material Item Standard Width Or Diameter mm</AttributeID>
+          <Name>Material Item Standard Width Or Diameter mm</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d740e212-5636-4e63-a6b2-d8a7ea2f15a4">
+          <AttributeID>Material Item Standard Height mm</AttributeID>
+          <Name>Material Item Standard Height mm</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ffa001f4-4cd8-4c03-b5ea-5f05aa8d663b">
+          <AttributeID>Material Item Standard Interior Diameter mm</AttributeID>
+          <Name>Material Item Standard Interior Diameter mm</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c759a6dc-11cc-437b-8f21-35b052874e21">
+          <AttributeID>Material Item Standard Thinkness Or Wall mm</AttributeID>
+          <Name>Material Item Standard Thinkness Or Wall mm</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2343b1b0-de90-41dd-9823-44146ee23776">
+          <AttributeID>Material Item Quantity Unit Of Measure</AttributeID>
+          <Name>Material Item Quantity Unit Of Measure</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="873ad284-a839-4b65-a84b-e9aac90ffc72">
+          <AttributeID>Material Group</AttributeID>
+          <Name>Material Group</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2114a6f5-06e8-4d87-b454-ccd7b3904063">
+      <ID>Material Item ID</ID>
+      <Name>Material Item ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ed5b15a8-8747-4240-8644-71c8a7821cc5">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="08135004-5531-499d-a8d2-99e62ab5e516">
+            <TableID>dbo_Material</TableID>
+            <ColumnID>Material_Item_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3f427f6d-f0f2-44aa-9bab-7299d8699f0d">
+      <ID>Material Current Group</ID>
+      <Name>Material Current Group</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2f9d5c64-1013-4d99-8843-7729ad4788f9">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3414baeb-f354-4a6f-9473-298b63f36188">
+            <TableID>dbo_Material</TableID>
+            <ColumnID>Material_Current_Group</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="21a41517-e8d9-4fee-be03-76fd36eeea2c">
+      <ID>Material Group</ID>
+      <Name>Material Group</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8e366735-a196-4930-bd8d-da058ee7af13">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="79aa8093-d3e7-4a61-8477-2ade521e5e24">
+            <TableID>dbo_Material</TableID>
+            <ColumnID>Material_Group</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="65af8b84-30d2-4918-a56a-88d3029545e1">
+      <ID>Material Type</ID>
+      <Name>Material Type</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="75d7fc93-5824-486f-9c53-60028ca3ef50">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="29115995-376d-41be-bc56-88d43a4989a7">
+            <TableID>dbo_Material</TableID>
+            <ColumnID>Material_Type</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="1ab0a642-d630-4929-ad64-5646e565b11a">
+          <AttributeID>Material Current Group</AttributeID>
+          <Name>Material Current Group</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="04933811-d19e-4c81-8831-98891d9416f0">
+      <ID>Material Item Current Name</ID>
+      <Name>Material Item Current Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a38247e6-212d-4e32-9ac6-100e74f1bc2f">
+          <DataType>WChar</DataType>
+          <DataSize>150</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e74d3f12-51c8-44e4-982f-69314593f78d">
+            <TableID>dbo_Material</TableID>
+            <ColumnID>Material_Item_Current_Name</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9e7c3f2d-d7a3-474c-a52b-c9e32f3347fd">
+      <ID>Material Item Name</ID>
+      <Name>Material Item Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="aa7474df-add0-4d50-93e6-510689499b7b">
+          <DataType>WChar</DataType>
+          <DataSize>150</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c7c3bc79-d787-4269-a8d8-143d051e9e8c">
+            <TableID>dbo_Material</TableID>
+            <ColumnID>Material_Item_Name</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="df095e30-decf-4304-b476-6510f0b25762">
+          <AttributeID>Material Category Item Type</AttributeID>
+          <Name>Material Category Item Type</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="31cd15d9-1325-4eff-8362-f5815e3e9e69">
+      <ID>Material Category Item Type</ID>
+      <Name>Material Category Item Type</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="262fa3ec-c8d6-43c9-b35e-803be28ff939">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6466f89d-d93c-40ae-a118-95bed726f286">
+            <TableID>dbo_Material</TableID>
+            <ColumnID>Material_Category_Item_Type</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="ebf3fffd-95a3-43d6-9a23-dc6ea119bfc6">
+          <AttributeID>Material Type</AttributeID>
+          <Name>Material Type</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="03d30da4-23f9-41d3-b35f-0db7e7681f5d">
+      <ID>Material Item Category</ID>
+      <Name>Material Item Category</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f6944c65-9d2b-4c43-a3d1-11ca57c8de34">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4c852420-3903-422a-afa9-02f2f758b662">
+            <TableID>dbo_Material</TableID>
+            <ColumnID>Material_Item_Category</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="edf04abf-49b7-4ad5-ba03-49c6ba5af2f0">
+      <ID>Material Item Detail 1</ID>
+      <Name>Material Item Detail 1</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7d7b3422-6e22-47ef-9edd-8f4bcd55508b">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a8addb8e-5a80-424d-87da-5fb99fd573fc">
+            <TableID>dbo_Material</TableID>
+            <ColumnID>Material_Item_Detail_1</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1cb6026e-6474-42bb-84d3-80eed8a42891">
+      <ID>Material Item Detail 2</ID>
+      <Name>Material Item Detail 2</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c5d227c7-bcf5-4c86-b8eb-c676c984c25c">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b15a7ed9-73aa-4f98-9883-d85d2b486fcc">
+            <TableID>dbo_Material</TableID>
+            <ColumnID>Material_Item_Detail_2</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f756786d-a4a0-4da9-8473-b163994bcd81">
+      <ID>Material Item Size</ID>
+      <Name>Material Item Size</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9c7ca241-99ff-4668-9794-1f5a4373c9ed">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c0b44508-2b8b-4adf-92f8-33d3dfdba5fe">
+            <TableID>dbo_Material</TableID>
+            <ColumnID>Material_Item_Size</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3af5d8af-11cd-42b4-ada4-0eb4ad26e60b">
+      <ID>Material Item Size Unit Of Measure</ID>
+      <Name>Material Item Size Unit Of Measure</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5e68d4c9-1634-4e17-85fc-46dcab84e39c">
+          <DataType>WChar</DataType>
+          <DataSize>5</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ff42c994-411f-42f9-a35a-3f3ace7d2658">
+            <TableID>dbo_Material</TableID>
+            <ColumnID>Material_Item_Size_Unit_Of_Measure</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0edd7bac-0b0b-4663-9ad7-9556862634ee">
+      <ID>Material Item Size Note</ID>
+      <Name>Material Item Size Note</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1dba0c5d-a545-4c5a-aa33-78df316eb3d7">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="798e1582-e31b-49dd-ba0f-72bb4db29cc6">
+            <TableID>dbo_Material</TableID>
+            <ColumnID>Material_Item_Size_Note</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2e8525db-4baf-497d-a621-15628c864b63">
+      <ID>Material Item Standard Length mm</ID>
+      <Name>Material Item Standard Length mm</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c2c7c891-26e3-4aa1-89bf-4cf53f0bf2bf">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d1fc6421-9264-442e-a001-77cb5aedbb9a">
+            <TableID>dbo_Material</TableID>
+            <ColumnID>Material_Item_Standard_Length_mm</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyDisplayFolder>Material standard measurement</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9f0c80c0-19ea-414b-962f-942296c5f960">
+      <ID>Material Item Standard Width Or Diameter mm</ID>
+      <Name>Material Item Standard Width Or Diameter mm</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="249e7fb7-7b28-4f71-baa7-cacf535b8fd2">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6859fffd-f815-4f5a-8f2e-c417d2bbd643">
+            <TableID>dbo_Material</TableID>
+            <ColumnID>Material_Item_Standard_Width_or_Diameter_mm</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyDisplayFolder>Material standard measurement</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f7bc4e7f-a000-458d-b8e3-87b37c5083c9">
+      <ID>Material Item Standard Height mm</ID>
+      <Name>Material Item Standard Height mm</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="880e1136-d45b-4b82-8f7d-20d69a451640">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e8f68695-7163-4904-a5b4-99f913acec56">
+            <TableID>dbo_Material</TableID>
+            <ColumnID>Material_Item_Standard_Height_mm</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyDisplayFolder>Material standard measurement</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f5f9dd4e-e24e-4081-9d46-65a940966a88">
+      <ID>Material Item Standard Interior Diameter mm</ID>
+      <Name>Material Item Standard Interior Diameter mm</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="da30adb9-5777-44a3-8aec-8da131d927c3">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="99e6197c-058b-4d89-9493-4a0cc53ee3c9">
+            <TableID>dbo_Material</TableID>
+            <ColumnID>Material_Item_Standard_Interior_Diameter_mm</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyDisplayFolder>Material standard measurement</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="61cffb34-c8ff-4d01-a33d-58f6436b0760">
+      <ID>Material Item Standard Thinkness Or Wall mm</ID>
+      <Name>Material Item Standard Thinkness Or Wall mm</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f9737978-e110-4f9d-92ac-7c2ebdc0971a">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="59c3c7b0-5473-48b9-a8d3-f3c137639fd3">
+            <TableID>dbo_Material</TableID>
+            <ColumnID>Material_Item_Standard_Thinkness_or_Wall_mm</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyDisplayFolder>Material standard measurement</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0b44e760-3939-45c5-87c4-23853f76fd45">
+      <ID>Material Item Quantity Unit Of Measure</ID>
+      <Name>Material Item Quantity Unit Of Measure</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ca37297e-d3d4-4bec-acb7-22d3e1e7cf7f">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="620365cf-59c1-4c21-9ab4-04898aea4c19">
+            <TableID>dbo_Material</TableID>
+            <ColumnID>Material_Item_Quantity_Unit_of_Measure</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="603c2a01-fe13-4587-ace7-3aa10f772586">
+      <ID>Hierarchy</ID>
+      <Name>Material Type Hierarchy</Name>
+      <Levels>
+        <Level dwd:design-time-name="c646c331-d8b8-4acb-8f14-31b2203723b4">
+          <ID>Material Current Group</ID>
+          <Name>Material Current Group</Name>
+          <SourceAttributeID>Material Current Group</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="886724b6-db70-4071-be7f-98a7e6ac0f1e">
+          <ID>Material Type</ID>
+          <Name>Material Type</Name>
+          <SourceAttributeID>Material Type</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="afda6d1f-31ae-4458-9ea5-58532587fe7a">
+          <ID>Material Category Item Type</ID>
+          <Name>Material Category Item Type</Name>
+          <SourceAttributeID>Material Category Item Type</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="2faeff9b-9e87-424e-89cc-e214872d136e">
+          <ID>Material Item Name</ID>
+          <Name>Material Item Name</Name>
+          <SourceAttributeID>Material Item Name</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
