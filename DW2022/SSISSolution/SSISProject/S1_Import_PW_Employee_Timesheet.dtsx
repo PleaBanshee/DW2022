@@ -11,8 +11,8 @@
   DTS:LocaleID="7177"
   DTS:ObjectName="S1_Import_PW_Employee_Timesheet"
   DTS:PackageType="5"
-  DTS:VersionBuild="128"
-  DTS:VersionGUID="{8B5F767B-4C95-4A13-8474-9C078299B5C0}">
+  DTS:VersionBuild="132"
+  DTS:VersionGUID="{A6D0E4C3-CD98-4797-98E5-54E4D1158C00}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -226,7 +226,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="Current_DateTime">
       <DTS:VariableValue
-        DTS:DataType="7">5/5/2022 10:56:04 PM</DTS:VariableValue>
+        DTS:DataType="7">5/9/2022 5:22:51 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -388,13 +388,13 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">[REPLACENULL](#{Package\Import PW Employee TimeSheets\Reads Employee Timesheet CSV File.Outputs[Flat File Source Output].Columns[E_Week_End_Date]},[GETDATE]())</property>
+                          name="Expression">[REPLACENULL](#{Package\Import PW Employee TimeSheets\Reads Employee Timesheet CSV File.Outputs[Flat File Source Output].Columns[E_Week_End_Date]},2020 - 01 - 01)</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
-                          name="FriendlyExpression">REPLACENULL(E_Week_End_Date,GETDATE())</property>
+                          name="FriendlyExpression">REPLACENULL(E_Week_End_Date,2020 - 01 - 01)</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
@@ -461,13 +461,13 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">[REPLACENULL](#{Package\Import PW Employee TimeSheets\Reads Employee Timesheet CSV File.Outputs[Flat File Source Output].Columns[E_Hours]},0.0)</property>
+                          name="Expression">[REPLACENULL](#{Package\Import PW Employee TimeSheets\Reads Employee Timesheet CSV File.Outputs[Flat File Source Output].Columns[E_Hours]},NULL(DT_NUMERIC,38,4))</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
-                          name="FriendlyExpression">REPLACENULL(E_Hours,0.0)</property>
+                          name="FriendlyExpression">REPLACENULL(E_Hours,NULL(DT_NUMERIC,38,4))</property>
                       </properties>
                     </inputColumn>
                   </inputColumns>
@@ -2083,7 +2083,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
       DTS:LocaleID="-1"
       DTS:ObjectName="Update Import_Batch_Process_Task Failure"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:LoggingOptions
         DTS:FilterKind="0" />
@@ -2115,7 +2115,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
       DTS:LocaleID="-1"
       DTS:ObjectName="Update Import_Batch_Process_Task Success"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:LoggingOptions
         DTS:FilterKind="0" />
@@ -2353,6 +2353,50 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           Id="Package\Import PW Employee TimeSheets\Derived Column"
           TopLeft="329.714285811599,208.176469987651" />
         <EdgeLayout
+          Id="Package\Import PW Employee TimeSheets.Paths[Row Count Output 11]"
+          TopLeft="405.942857264499,146.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,61.5764699876514"
+              Start="0,0"
+              End="0,54.0764699876514">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,54.0764699876514" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Import PW Employee TimeSheets.Paths[Row Count Output 1]"
+          TopLeft="404.5285714529,483.54117733929">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,40.1647060753977"
+              Start="0,0"
+              End="0,32.6647060753977">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32.6647060753977" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\Import PW Employee TimeSheets.Paths[Output 0]"
           TopLeft="404.557145715733,565.305883414688">
           <EdgeLayout.Curve>
@@ -2446,50 +2490,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,41.441179162492" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Import PW Employee TimeSheets.Paths[Row Count Output 11]"
-          TopLeft="405.942857264499,146.6">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,61.5764699876514"
-              Start="0,0"
-              End="0,54.0764699876514">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,54.0764699876514" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Import PW Employee TimeSheets.Paths[Row Count Output 1]"
-          TopLeft="404.5285714529,483.54117733929">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,40.1647060753977"
-              Start="0,0"
-              End="0,32.6647060753977">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,32.6647060753977" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

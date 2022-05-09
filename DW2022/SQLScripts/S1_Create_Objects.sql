@@ -297,7 +297,7 @@ CREATE TABLE [dbo].[S1_PW_Employee_Timesheet](
 	[E_Week_End_Date] [date] NOT NULL,
 	[E_Project_ID] [nvarchar](7) NOT NULL,
 	[E_Employee] [nvarchar](20) NOT NULL,
-	[E_Hours] [decimal](38, 4) NOT NULL,
+	[E_Hours] [decimal](38, 4),
 	[IPBT_ID] [int] NOT NULL
 ) ON [PRIMARY]
 GO
