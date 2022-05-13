@@ -9,10 +9,10 @@
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="15.0.2000.180"
   DTS:LocaleID="7177"
-  DTS:ObjectName="S1_Import_MM_PW_Customers"
+  DTS:ObjectName="S1_Import_PW_Customers"
   DTS:PackageType="5"
-  DTS:VersionBuild="92"
-  DTS:VersionGUID="{63A15B14-06CD-4DA0-9EF8-1DC82161A374}">
+  DTS:VersionBuild="93"
+  DTS:VersionGUID="{45BFB107-0578-4396-9452-A83C9B38DAEC}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -32,7 +32,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\Llewellyn\Desktop\DW2022_Repo\DW2022\ErrorFiles\S1_Import_MM_PW_Customers_202012_Errors.csv">
+          DTS:ConnectionString="C:\Users\Llewellyn\Desktop\DW2022_Repo\DW2022\ErrorFiles\S1_Import_PW_Customers_202012_Errors.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -268,7 +268,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="Current_DateTime">
       <DTS:VariableValue
-        DTS:DataType="7">5/6/2022 9:44:36 AM</DTS:VariableValue>
+        DTS:DataType="7">5/13/2022 11:23:59 AM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""

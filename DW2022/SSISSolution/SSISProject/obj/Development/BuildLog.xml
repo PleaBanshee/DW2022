@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>SSISProject</Name>
-    <LastWriteTime>2022-05-06T07:51:39.2218137Z</LastWriteTime>
+    <LastWriteTime>2022-05-13T09:23:43.2951128Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -93,7 +93,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>S1_Import_PW_Customers.dtsx</Name>
-      <LastWriteTime>2022-05-06T07:44:35.0342445Z</LastWriteTime>
+      <LastWriteTime>2022-05-13T09:23:43.0651141Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
