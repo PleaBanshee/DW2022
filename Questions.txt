@@ -1,0 +1,13 @@
+1. Wat moet die description vir die Date_Key in die Employee_TimeSheet_Fact table wees? Dis reg soos dit is
+2. Moet daardie rye met grys text teenwoordig wees in die Fact en Dimension Sheets? Ja, sien 11
+3. Is Costs veronderstel om 'n Dimension te wees vir die Project_Management_Fact? Ja
+4. Moet daar supernatural keys wees vir elke fact table? Nee
+5. Maak dit saak of die attribute names match tussen die dimension en fact tables (byvoorbeeld die surrogate key names)? Ja
+6. Moet attribute names match vanaf die Stage 1 Sheets na die Dimensions en Fact table sheets? Nie nodig nie, maar kan wees
+7. Moet elke dimension sheet beskry watter tipe dimension dit is, aangesien dit al klaar aangedui is in die Bus Matrix Sheet? Ja
+8. Moet daar 'n Departments dimension wees? Nee
+9. Moet daar department attributes in die Customer Dimension wees? Ja
+10. Is ons Service Billing Number Dimension Sheet reg? Ja
+11. Housekeeping dimensions (grey)? Every type 2 dimension has them
+12. Service Billing Number degenerate dimension? Ja
+12. Project management fact vs project cost analysis? Should be project cost analysis
