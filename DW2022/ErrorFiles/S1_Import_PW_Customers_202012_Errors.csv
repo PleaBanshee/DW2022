@@ -1,3 +1,3 @@
 C_Customer_ID,C_Department_ID,C_Customer_Name,C_Contact_Person,C_Address_Line_1,C_Address_Line_2,C_City_Town,C_Postal_Code,IBPT_ID,ErrorCode,ErrorColumn,ErrorDescription
-,C00001-10,Terina Vermeulen,Terina Vermeulen,*Unknown Address Line 1,Unknown Address Line 2,*Unknown City or Town,****,11,-1071607683,60,The data value violates integrity constraints.
+,C00001-10,Terina Vermeulen,Terina Vermeulen,*Unknown Address Line 1,Unknown Address Line 2,*Unknown City or Town,****,12,-1071607683,60,The data value violates integrity constraints.
 
