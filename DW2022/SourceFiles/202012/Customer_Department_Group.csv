@@ -1,0 +1,26 @@
+Customer_Group_ID,Customer_Group_Name,Internal_Or_External
+C00001,Natuurwetenskappe,Internal
+C00002,Gesondheidswetenskappe,Internal
+C00003,Ingenieurswese,Internal
+C00004,Inwoning en Voedseldienste,Internal
+C00005,Elektroniese Dienste,Internal
+C00006,Beskermingsdienste,Internal
+C00007,Inligtingstegnologie,Internal
+C00008,Biblioteek en Inligtingsdienste,Internal
+C00009,Fakulteit Ekonomiese & Bestuurswetenskappe,Internal
+C00010,Sportburo,Internal
+C00011,Pukkunste,Internal
+C00012,Puksport,Internal
+C00013,School of Business & Governance,Internal
+C00014,Education,Internal
+C00015,Tegniese Dienste,Internal
+C00016,PUK Rugby Instituut,Internal
+C00017,Studenteraad,Internal
+C00019,Kantoor van die Direkteur Finansiële Beplanning,Internal
+C00020,Puk Sportsvillage,Internal
+C00021,Fakulteit Teologie,Internal
+C00022,PASV,Internal
+C00024,Geesteswetenskappe,Internal
+C00025,Direkteur : Navorsingsondersteuning,Internal
+C00026,Higher Degrees and Ceremonies,Internal
+C-E0001,External and Private Customers,External

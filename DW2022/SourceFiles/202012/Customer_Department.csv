@@ -1,0 +1,72 @@
+Department_ID,Department_Name,Customer_Group_ID
+C00001-1,Department of Physics,C00001
+C00001-10,Sentrum vir Waterwetenskappe (Eco Analytica),C00001
+C00001-11,Skool vir Chemie,C00001
+C00001-12,Skool vir Chemie Mafikengkampus,C00001
+C00001-13,Wetenskapsentrum,C00001
+C00001-2,Skool vir Fisika (Centre for Space Research),C00001
+C00001-3,Geologie,C00001
+C00001-4,Mikrobiologie NW,C00001
+C00001-5,Skool vir Omgewingswetenskappe,C00001
+C00001-6,School of Biological Sciences,C00001
+C00001-7,School of Mathematical and Statistical Sciences,C00001
+C00001-8,Sentrum vir Bedryfswiskunde,C00001
+C00001-9,Sentrum vir Waterwetenskappe,C00001
+C00002-1,Industriële Farmasie (Cenquam),C00002
+C00002-10,Lipiedkliniek,C00002
+C00002-11,Skool vir Menslike Bewegingskunde,C00002
+C00002-12,Mikrobiologie,C00002
+C00002-13,PCDDP,C00002
+C00002-14,Sentrum vir Farmaseutiese en Bio-Mediese Dienste,C00002
+C00002-15,Sentrum vir Menslike Metabolomika,C00002
+C00002-28,Skool vir Biochemie,C00002
+C00002-16,Skool vir Biologiese Wetenskappe,C00002
+C00002-17,Skool vir Farmasie,C00002
+C00002-18,Skool vir Fisiologie,C00002
+C00002-19,Skool vir Verbruikerswetenskappe,C00002
+C00002-2,Centre of Excellance for Nutrition,C00002
+C00002-20,Skool vir Verpleegkunde,C00002
+C00002-21,Skool vir Voeding,C00002
+C00002-22,Vivarium,C00002
+C00002-23,Sentrum van Uitnemendheid vir Farmaseutiese Wetenskappe,C00002
+C00002-3,Eenheid vir Geneesmiddelnavorsing,C00002
+C00002-4,Farmakologie,C00002
+C00002-5,Farmaseutiese Chemie,C00002
+C00002-6,Farmaseutika,C00002
+C00002-7,Gesondheidsorgsentrum,C00002
+C00002-8,Industriële Farmasie,C00002
+C00003-1,Dekaan Ingenieurswese,C00003
+C00003-2,Dekaan Ingenieurswese (HYSA),C00003
+C00003-3,Skool vir Chemies & Mineraal,C00003
+C00003-4,Skool vir Elektries en Elektronies,C00003
+C00003-5,Skool vir Meganies en Kerningenieurswese,C00003
+C00003-6,Skool vir Meganies en Materiaal,C00003
+C00004-0,Inwoning en Voedseldienste,C00004
+C00004-1,Voorhuis,C00004
+C00004-2,Drakenstein Restaurant,C00004
+C00004-3,Dampad,C00004
+C00005-1,Elektroniese Dienste,C00005
+C00006-1,Beskermingsdienste,C00006
+C00007-1,Inligtingstegnologie,C00007
+C00008-1,Biblioteek en Inligtingsdienste,C00008
+C00008-2,FP Biblioteek,C00008
+C00009-1,Fakulteit Ekonomiese & Bestuurswetenskappe,C00009
+C00009-2,Skool vir Rekeningkunde Wetenskappe,C00009
+C00009-3,School of Business & Governance,C00009
+C00009-4,Skool vir Toerismebestuur,C00009
+C00010-1,Sportburo,C00010
+C00011-1,Pukkunste,C00011
+C00012-1,Puksport,C00012
+C00014-1,Self Directed Learning,C00014
+C00015-1,Tegniese Dienste,C00015
+C00015-2,Instandhouding en Fasiliteite,C00015
+C00016-1,PUK Rugby Instituut,C00016
+C00017-1,Studenteraad,C00017
+C00019-1,Kantoor van die Direkteur Finansiële Beplanning,C00019
+C00020-1,Puk Sportsvillage,C00020
+C00021-1,Fakulteit Teologie,C00021
+C00022-1,PASV,C00022
+C00024-1,School of Languages,C00024
+C00025-1,Direkteur : Navorsingsondersteuning,C00025
+C00026-1,Higher Degrees and Ceremonies,C00026
+C-E0001-EP,External Department or Private Customer,C-E0001
