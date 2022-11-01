@@ -1,0 +1,3031 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="3/9/2019 10:38:06 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-KD25EBE"
+  DTS:CreatorName="DESKTOP-KD25EBE\rkwuser"
+  DTS:DTSID="{CF84E505-E4A2-467D-AE26-38A45B0EDFDD}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.180"
+  DTS:LocaleID="7177"
+  DTS:ObjectName="DW_Import_MM_Stock_Take_Indicators"
+  DTS:PackageType="5"
+  DTS:VersionBuild="116"
+  DTS:VersionGUID="{DE1B94F8-A1CE-4D39-A348-B054A70671A6}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Error_File]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{DBD9AE11-8D90-4F58-ACCD-C288B5184BA9}"
+      DTS:ObjectName="Error_File">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[$Project::Error_Files_Folder] + @[System::PackageName] + "_" +  @[User::IB_String] + "_Errors.csv"</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="7177"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\Llewellyn\Desktop\Honours Resources\ITRI621 - DATA WAREHOUSING\PROJECT\DW2022\DW2022\ErrorFiles\DW_Import_MM_Stock_Take_Indicators_202112_Errors.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Stock_Take_Comment"
+              DTS:DTSID="{0C5BE31F-42C0-4741-B105-0CCD73CDAF13}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Length_Measured_Indicator"
+              DTS:DTSID="{B29B080E-55C4-4D78-B68D-9A7BDA3D98FA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Width_Measured_Indicator"
+              DTS:DTSID="{04CADDF1-0D8D-46D9-B495-7BC88C9E9050}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Full_Units_Counted_Indicator"
+              DTS:DTSID="{82C02F2F-214F-4433-B61B-BE94B0D10255}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Material_Scrapped_Indicator"
+              DTS:DTSID="{482B0377-DF53-4212-BF41-C7B457D1E5F7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Unit_Price_Available_Indicator"
+              DTS:DTSID="{B9AEE567-9E84-4B29-981F-D5AB8E1D24C8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="20"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="VAT_Percentage"
+              DTS:DTSID="{11B1A781-5650-4401-9217-BEEFA588D8F4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="6"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Import_Action"
+              DTS:DTSID="{575EEFE9-3F82-453B-BFCE-DA8AB4C7AA80}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Effective_Date"
+              DTS:DTSID="{BD3E0069-A222-4E01-A949-985C2F495DD8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="IBPT_ID"
+              DTS:DTSID="{C6F13AF6-DBA7-4876-AC92-9D592FED801B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorCode"
+              DTS:DTSID="{BF0DE5AC-786B-4DE0-8416-B6EE78CB29D5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorColumn"
+              DTS:DTSID="{4A561A6B-B09A-4522-A627-53BA18247ABA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="500"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorDescription"
+              DTS:DTSID="{4126A6F4-D32F-47F3-897C-E7045ACB7E6B}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:PackageParameters>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="3"
+      DTS:DTSID="{AED9C10D-9C86-4C7F-8E69-5BDC22FA4DA1}"
+      DTS:ObjectName="IBP_ID">
+      <DTS:Property
+        DTS:DataType="3"
+        DTS:Name="ParameterValue">0</DTS:Property>
+    </DTS:PackageParameter>
+  </DTS:PackageParameters>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{3EAD1671-E4B2-428E-9949-832D5CFBB1B4}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="GETDATE()"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Current_DateTime">
+      <DTS:VariableValue
+        DTS:DataType="7">8/24/2022 10:51:41 PM</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{95F99037-A603-4AE5-86E8-2A2088C6CBA9}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="(DT_DATE) ( (DT_WSTR, 4)( @[$Project::IB_Year]) + &quot;-&quot; + (DT_WSTR, 2)( @[$Project::IB_Month] ) + &quot;-01&quot;)"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Effective_Date">
+      <DTS:VariableValue
+        DTS:DataType="7">12/1/2021</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{6F498EB1-412B-4327-8C00-84CE8AA6B638}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="IBPT_Dim_Changing">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{AD3120A8-9473-4F55-93F7-A9F22FFC1FDA}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="IBPT_Dim_Fixed_Errors">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{203F8E75-9849-4554-AC63-96A93443D6C1}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="IBPT_Dim_Historical">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{3842CC51-A620-4F6B-8EB7-05E3C79BA02C}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="IBPT_Dim_New">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{08155B76-954C-4798-8962-DDD60F34B908}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="IBPT_Dim_Unchanged">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{586E52CA-D10D-434C-B695-54CA00CD92EF}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="IBPT_ID">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{F5777E50-68F3-45E4-B32A-CC2112D234D6}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="IBPT_Records_Failed">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{B02F879C-C475-4CC3-8E5C-A97418195572}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="IBPT_Records_In">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{3D2E7CF2-4E35-42A9-9E89-386FC72A2236}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[User::IBPT_Records_In]- @[User::IBPT_Records_Failed] -  @[User::IBPT_Dim_Fixed_Errors]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="IBPT_Records_Out">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{0F4A8C22-7EF1-426E-AEBD-95EBC0919356}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="(DT_WSTR, 4)( @[$Project::IB_Year]  ) +   (DT_WSTR, 2)( @[$Project::IB_Month]  )"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="IB_String">
+      <DTS:VariableValue
+        DTS:DataType="8">202112</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{A2CD1E47-19FF-476B-BB19-AE83741ABCE6}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="Open_Date">
+      <DTS:VariableValue
+        DTS:DataType="7">1/1/2999</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Create Import_Batch_Process_Task"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{06DB73CE-07A5-44BF-BE25-28F807BE8112}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Create Import_Batch_Process_Task"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{45AE6B60-21DF-4E6E-B8AC-51CCC622AE5B}"
+          SQLTask:IsStoredProc="True"
+          SQLTask:SqlStatementSource="Create_Import_Batch_Process_Task" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="RC"
+            SQLTask:DtsVariableName="User::IBPT_ID"
+            SQLTask:ParameterDirection="ReturnValue"
+            SQLTask:DataType="11"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="IBP_ID"
+            SQLTask:DtsVariableName="$Package::IBP_ID"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="11"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="IBPT_Description"
+            SQLTask:DtsVariableName="System::PackageName"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="16"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="IBPT_Start"
+            SQLTask:DtsVariableName="User::Current_DateTime"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="6"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Import Stock_Take_Indicators Dimension"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{BAEA8A3D-DD94-4CC0-A32A-70F4D75E662E}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Import Stock_Take_Indicators Dimension"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Import Stock_Take_Indicators Dimension\Count records in"
+              componentClassID="Microsoft.RowCount"
+              contactInfo="Row Count;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Counts rows as they pass through a data flow. For example, use the number of rows processed to determine whether or not to perform cleanup operations, or update text in an e-mail message to communicate processing status."
+              name="Count records in">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable to hold the row count."
+                  name="VariableName">User::IBPT_Records_In</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Import Stock_Take_Indicators Dimension\Count records in.Inputs[Row Count Input 1]"
+                  hasSideEffects="true"
+                  name="Row Count Input 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import Stock_Take_Indicators Dimension\Count records in.Outputs[Row Count Output 1]"
+                  name="Row Count Output 1"
+                  synchronousInputId="Package\Import Stock_Take_Indicators Dimension\Count records in.Inputs[Row Count Input 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import Stock_Take_Indicators Dimension\Derived Column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Import Stock_Take_Indicators Dimension\Derived Column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import Stock_Take_Indicators Dimension\Derived Column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Import Stock_Take_Indicators Dimension\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Derived Column.Outputs[Derived Column Output].Columns[Import_Action]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="6"
+                      lineageId="Package\Import Stock_Take_Indicators Dimension\Derived Column.Outputs[Derived Column Output].Columns[Import_Action]"
+                      name="Import_Action"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">"Insert"</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">"Insert"</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Derived Column.Outputs[Derived Column Output].Columns[Effective_Date]"
+                      dataType="date"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Import Stock_Take_Indicators Dimension\Derived Column.Outputs[Derived Column Output].Columns[Effective_Date]"
+                      name="Effective_Date"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">@[User::Effective_Date]</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">@[User::Effective_Date]</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Derived Column.Outputs[Derived Column Output].Columns[IBPT_ID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Import Stock_Take_Indicators Dimension\Derived Column.Outputs[Derived Column Output].Columns[IBPT_ID]"
+                      name="IBPT_ID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">@[User::IBPT_ID]</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">@[User::IBPT_ID]</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Import Stock_Take_Indicators Dimension\Derived Column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Import Stock_Take_Indicators Dimension\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import Stock_Take_Indicators Dimension\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import Stock_Take_Indicators Dimension\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import Stock_Take_Indicators Dimension\Flat File Destination - write errors"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="7177"
+              name="Flat File Destination - write errors"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import Stock_Take_Indicators Dimension\Flat File Destination - write errors.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Error_File]"
+                  connectionManagerRefId="Package.ConnectionManagers[Error_File]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Import Stock_Take_Indicators Dimension\Flat File Destination - write errors.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Flat File Destination - write errors.Inputs[Flat File Destination Input].Columns[Stock_Take_Comment]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Stock_Take_Comment"
+                      externalMetadataColumnId="Package\Import Stock_Take_Indicators Dimension\Flat File Destination - write errors.Inputs[Flat File Destination Input].ExternalColumns[Stock_Take_Comment]"
+                      lineageId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output].Columns[Stock_Take_Comment]" />
+                    <inputColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Flat File Destination - write errors.Inputs[Flat File Destination Input].Columns[Length_Measured_Indicator]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Length_Measured_Indicator"
+                      externalMetadataColumnId="Package\Import Stock_Take_Indicators Dimension\Flat File Destination - write errors.Inputs[Flat File Destination Input].ExternalColumns[Length_Measured_Indicator]"
+                      lineageId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output].Columns[Length_Measured_Indicator]" />
+                    <inputColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Flat File Destination - write errors.Inputs[Flat File Destination Input].Columns[Width_Measured_Indicator]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Width_Measured_Indicator"
+                      externalMetadataColumnId="Package\Import Stock_Take_Indicators Dimension\Flat File Destination - write errors.Inputs[Flat File Destination Input].ExternalColumns[Width_Measured_Indicator]"
+                      lineageId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output].Columns[Width_Measured_Indicator]" />
+                    <inputColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Flat File Destination - write errors.Inputs[Flat File Destination Input].Columns[Full_Units_Counted_Indicator]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Full_Units_Counted_Indicator"
+                      externalMetadataColumnId="Package\Import Stock_Take_Indicators Dimension\Flat File Destination - write errors.Inputs[Flat File Destination Input].ExternalColumns[Full_Units_Counted_Indicator]"
+                      lineageId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output].Columns[Full_Units_Counted_Indicator]" />
+                    <inputColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Flat File Destination - write errors.Inputs[Flat File Destination Input].Columns[Material_Scrapped_Indicator]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Material_Scrapped_Indicator"
+                      externalMetadataColumnId="Package\Import Stock_Take_Indicators Dimension\Flat File Destination - write errors.Inputs[Flat File Destination Input].ExternalColumns[Material_Scrapped_Indicator]"
+                      lineageId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output].Columns[Material_Scrapped_Indicator]" />
+                    <inputColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Flat File Destination - write errors.Inputs[Flat File Destination Input].Columns[Unit_Price_Available_Indicator]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Unit_Price_Available_Indicator"
+                      externalMetadataColumnId="Package\Import Stock_Take_Indicators Dimension\Flat File Destination - write errors.Inputs[Flat File Destination Input].ExternalColumns[Unit_Price_Available_Indicator]"
+                      lineageId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output].Columns[Unit_Price_Available_Indicator]" />
+                    <inputColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Flat File Destination - write errors.Inputs[Flat File Destination Input].Columns[VAT_Percentage]"
+                      cachedDataType="wstr"
+                      cachedLength="20"
+                      cachedName="VAT_Percentage"
+                      externalMetadataColumnId="Package\Import Stock_Take_Indicators Dimension\Flat File Destination - write errors.Inputs[Flat File Destination Input].ExternalColumns[VAT_Percentage]"
+                      lineageId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output].Columns[VAT_Percentage]" />
+                    <inputColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Flat File Destination - write errors.Inputs[Flat File Destination Input].Columns[Import_Action]"
+                      cachedDataType="wstr"
+                      cachedLength="6"
+                      cachedName="Import_Action"
+                      externalMetadataColumnId="Package\Import Stock_Take_Indicators Dimension\Flat File Destination - write errors.Inputs[Flat File Destination Input].ExternalColumns[Import_Action]"
+                      lineageId="Package\Import Stock_Take_Indicators Dimension\Derived Column.Outputs[Derived Column Output].Columns[Import_Action]" />
+                    <inputColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Flat File Destination - write errors.Inputs[Flat File Destination Input].Columns[Effective_Date]"
+                      cachedDataType="date"
+                      cachedName="Effective_Date"
+                      externalMetadataColumnId="Package\Import Stock_Take_Indicators Dimension\Flat File Destination - write errors.Inputs[Flat File Destination Input].ExternalColumns[Effective_Date]"
+                      lineageId="Package\Import Stock_Take_Indicators Dimension\Derived Column.Outputs[Derived Column Output].Columns[Effective_Date]" />
+                    <inputColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Flat File Destination - write errors.Inputs[Flat File Destination Input].Columns[IBPT_ID]"
+                      cachedDataType="i4"
+                      cachedName="IBPT_ID"
+                      externalMetadataColumnId="Package\Import Stock_Take_Indicators Dimension\Flat File Destination - write errors.Inputs[Flat File Destination Input].ExternalColumns[IBPT_ID]"
+                      lineageId="Package\Import Stock_Take_Indicators Dimension\Derived Column.Outputs[Derived Column Output].Columns[IBPT_ID]" />
+                    <inputColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Flat File Destination - write errors.Inputs[Flat File Destination Input].Columns[ErrorCode]"
+                      cachedDataType="i4"
+                      cachedName="ErrorCode"
+                      externalMetadataColumnId="Package\Import Stock_Take_Indicators Dimension\Flat File Destination - write errors.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
+                      lineageId="Package\Import Stock_Take_Indicators Dimension\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]" />
+                    <inputColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Flat File Destination - write errors.Inputs[Flat File Destination Input].Columns[ErrorColumn]"
+                      cachedDataType="i4"
+                      cachedName="ErrorColumn"
+                      externalMetadataColumnId="Package\Import Stock_Take_Indicators Dimension\Flat File Destination - write errors.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
+                      lineageId="Package\Import Stock_Take_Indicators Dimension\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]" />
+                    <inputColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Flat File Destination - write errors.Inputs[Flat File Destination Input].Columns[ErrorDescription]"
+                      cachedDataType="wstr"
+                      cachedLength="500"
+                      cachedName="ErrorDescription"
+                      externalMetadataColumnId="Package\Import Stock_Take_Indicators Dimension\Flat File Destination - write errors.Inputs[Flat File Destination Input].ExternalColumns[ErrorDescription]"
+                      lineageId="Package\Import Stock_Take_Indicators Dimension\Get ErrorDescription.Outputs[Output 0].Columns[ErrorDescription]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Flat File Destination - write errors.Inputs[Flat File Destination Input].ExternalColumns[Stock_Take_Comment]"
+                      dataType="wstr"
+                      length="50"
+                      name="Stock_Take_Comment" />
+                    <externalMetadataColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Flat File Destination - write errors.Inputs[Flat File Destination Input].ExternalColumns[Length_Measured_Indicator]"
+                      dataType="wstr"
+                      length="50"
+                      name="Length_Measured_Indicator" />
+                    <externalMetadataColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Flat File Destination - write errors.Inputs[Flat File Destination Input].ExternalColumns[Width_Measured_Indicator]"
+                      dataType="wstr"
+                      length="50"
+                      name="Width_Measured_Indicator" />
+                    <externalMetadataColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Flat File Destination - write errors.Inputs[Flat File Destination Input].ExternalColumns[Full_Units_Counted_Indicator]"
+                      dataType="wstr"
+                      length="50"
+                      name="Full_Units_Counted_Indicator" />
+                    <externalMetadataColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Flat File Destination - write errors.Inputs[Flat File Destination Input].ExternalColumns[Material_Scrapped_Indicator]"
+                      dataType="wstr"
+                      length="50"
+                      name="Material_Scrapped_Indicator" />
+                    <externalMetadataColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Flat File Destination - write errors.Inputs[Flat File Destination Input].ExternalColumns[Unit_Price_Available_Indicator]"
+                      dataType="wstr"
+                      length="50"
+                      name="Unit_Price_Available_Indicator" />
+                    <externalMetadataColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Flat File Destination - write errors.Inputs[Flat File Destination Input].ExternalColumns[VAT_Percentage]"
+                      dataType="wstr"
+                      length="20"
+                      name="VAT_Percentage" />
+                    <externalMetadataColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Flat File Destination - write errors.Inputs[Flat File Destination Input].ExternalColumns[Import_Action]"
+                      dataType="wstr"
+                      length="6"
+                      name="Import_Action" />
+                    <externalMetadataColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Flat File Destination - write errors.Inputs[Flat File Destination Input].ExternalColumns[Effective_Date]"
+                      dataType="date"
+                      name="Effective_Date" />
+                    <externalMetadataColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Flat File Destination - write errors.Inputs[Flat File Destination Input].ExternalColumns[IBPT_ID]"
+                      dataType="i4"
+                      name="IBPT_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Flat File Destination - write errors.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
+                      dataType="i4"
+                      name="ErrorCode" />
+                    <externalMetadataColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Flat File Destination - write errors.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
+                      dataType="i4"
+                      name="ErrorColumn" />
+                    <externalMetadataColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Flat File Destination - write errors.Inputs[Flat File Destination Input].ExternalColumns[ErrorDescription]"
+                      dataType="wstr"
+                      length="500"
+                      name="ErrorDescription" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\Import Stock_Take_Indicators Dimension\Get ErrorDescription"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Includes and runs custom script code. For example, apply a business rule that limits the range of valid values in an &quot;income&quot; column or add values in two columns and calculate the average of the sum.;Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;12"
+              description="Includes and runs custom script code. For example, apply a business rule that limits the range of valid values in an &quot;income&quot; column or add values in two columns and calculate the average of the sum."
+              name="Get ErrorDescription"
+              version="12">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Stores the source code of the component"
+                  isArray="true"
+                  name="SourceCode"
+                  state="cdata">
+                  <arrayElements
+                    arrayElementCount="30">
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\AssemblyInfo.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("SC_00e1c9e6e4194c04b0ba52d7cd805cc4")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("SC_00e1c9e6e4194c04b0ba52d7cd805cc4")]
+[assembly: AssemblyCopyright("Copyright @  2020")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.0.0")]
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Resources.resx]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+</root>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[main.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[#region Help:  Introduction to the Script Component
+/* The Script Component allows you to perform virtually any operation that can be accomplished in
+ * a .Net application within the context of an Integration Services data flow.
+ *
+ * Expand the other regions which have "Help" prefixes for examples of specific ways to use
+ * Integration Services features within this script component. */
+#endregion
+
+#region Namespaces
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+using Microsoft.SqlServer.Dts.Runtime.Wrapper;
+#endregion
+
+/// <summary>
+/// This is the class to which to add your code.  Do not change the name, attributes, or parent
+/// of this class.
+/// </summary>
+[Microsoft.SqlServer.Dts.Pipeline.SSISScriptComponentEntryPointAttribute]
+public class ScriptMain : UserComponent
+{
+    #region Help:  Using Integration Services variables and parameters
+    /* To use a variable in this script, first ensure that the variable has been added to
+     * either the list contained in the ReadOnlyVariables property or the list contained in
+     * the ReadWriteVariables property of this script component, according to whether or not your
+     * code needs to write into the variable.  To do so, save this script, close this instance of
+     * Visual Studio, and update the ReadOnlyVariables and ReadWriteVariables properties in the
+     * Script Transformation Editor window.
+     * To use a parameter in this script, follow the same steps. Parameters are always read-only.
+     *
+     * Example of reading from a variable or parameter:
+     *  DateTime startTime = Variables.MyStartTime;
+     *
+     * Example of writing to a variable:
+     *  Variables.myStringVariable = "new value";
+     */
+    #endregion
+
+    #region Help:  Using Integration Services Connnection Managers
+    /* Some types of connection managers can be used in this script component.  See the help topic
+     * "Working with Connection Managers Programatically" for details.
+     *
+     * To use a connection manager in this script, first ensure that the connection manager has
+     * been added to either the list of connection managers on the Connection Managers page of the
+     * script component editor.  To add the connection manager, save this script, close this instance of
+     * Visual Studio, and add the Connection Manager to the list.
+     *
+     * If the component needs to hold a connection open while processing rows, override the
+     * AcquireConnections and ReleaseConnections methods.
+     * 
+     * Example of using an ADO.Net connection manager to acquire a SqlConnection:
+     *  object rawConnection = Connections.SalesDB.AcquireConnection(transaction);
+     *  SqlConnection salesDBConn = (SqlConnection)rawConnection;
+     *
+     * Example of using a File connection manager to acquire a file path:
+     *  object rawConnection = Connections.Prices_zip.AcquireConnection(transaction);
+     *  string filePath = (string)rawConnection;
+     *
+     * Example of releasing a connection manager:
+     *  Connections.SalesDB.ReleaseConnection(rawConnection);
+     */
+    #endregion
+
+    #region Help:  Firing Integration Services Events
+    /* This script component can fire events.
+     *
+     * Example of firing an error event:
+     *  ComponentMetaData.FireError(10, "Process Values", "Bad value", "", 0, out cancel);
+     *
+     * Example of firing an information event:
+     *  ComponentMetaData.FireInformation(10, "Process Values", "Processing has started", "", 0, fireAgain);
+     *
+     * Example of firing a warning event:
+     *  ComponentMetaData.FireWarning(10, "Process Values", "No rows were received", "", 0);
+     */
+    #endregion
+
+    /// <summary>
+    /// This method is called once, before rows begin to be processed in the data flow.
+    ///
+    /// You can remove this method if you don't need to do anything here.
+    /// </summary>
+    public override void PreExecute()
+    {
+        base.PreExecute();
+        /*
+         * Add your code here
+         */
+    }
+
+    /// <summary>
+    /// This method is called after all the rows have passed through this component.
+    ///
+    /// You can delete this method if you don't need to do anything here.
+    /// </summary>
+    public override void PostExecute()
+    {
+        base.PostExecute();
+        /*
+         * Add your code here
+         */
+    }
+
+    /// <summary>
+    /// This method is called once for every row that passes through the component from Input0.
+    ///
+    /// Example of reading a value from a column in the the row:
+    ///  string zipCode = Row.ZipCode
+    ///
+    /// Example of writing a value to a column in the row:
+    ///  Row.ZipCode = zipCode
+    /// </summary>
+    /// <param name="Row">The row that is currently passing through the component</param>
+    public override void Input0_ProcessInputRow(Input0Buffer Row)
+    {
+        Row.ErrorDescription = this.ComponentMetaData.GetErrorDescription(Row.ErrorCode);
+    }
+
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[BufferWrapper.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[/* THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
+*  Microsoft SQL Server Integration Services buffer wrappers
+*  This module defines classes for accessing data flow buffers
+*  THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT! */
+
+
+
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+
+public class Input0Buffer: ScriptBuffer
+
+{
+    public Input0Buffer(PipelineBuffer Buffer, int[] BufferColumnIndexes, OutputNameMap OutputMap)
+        : base(Buffer, BufferColumnIndexes, OutputMap)
+    {
+    }
+
+    public Int32 ErrorCode
+    {
+        get
+        {
+            return Buffer.GetInt32(BufferColumnIndexes[0]);
+        }
+    }
+    public bool ErrorCode_IsNull
+    {
+        get
+        {
+            return IsNull(0);
+        }
+    }
+
+    public String ErrorDescription
+    {
+        set
+        {
+            this[1] = value;
+        }
+    }
+    public bool ErrorDescription_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(1);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    new public bool NextRow()
+    {
+        return base.NextRow();
+    }
+
+    new public bool EndOfRowset()
+    {
+        return base.EndOfRowset();
+    }
+
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[ComponentWrapper.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[/* THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
+*  Microsoft SQL Server Integration Services component wrapper
+*  This module defines the base class for your component
+*  THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT! */
+
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+using Microsoft.SqlServer.Dts.Runtime.Wrapper;
+
+public class UserComponent: ScriptComponent
+{
+    public Connections Connections;
+    public Variables Variables;
+    public UserComponent()
+    {
+        Connections = new Connections(this);
+        Variables = new Variables(this);
+    }
+
+    public override void ProcessInput(int InputID, string InputName, PipelineBuffer Buffer, OutputNameMap OutputMap)
+    {
+
+        if (InputName.Equals(@"Input 0", StringComparison.Ordinal))
+        {
+            Input0_ProcessInput(new Input0Buffer(Buffer, GetColumnIndexes(InputID), OutputMap));
+        }
+
+    }
+
+    public virtual void Input0_ProcessInput(Input0Buffer Buffer)
+    {
+        while (Buffer.NextRow())
+        {
+            Input0_ProcessInputRow(Buffer);
+        }
+    }
+
+    public virtual void Input0_ProcessInputRow(Input0Buffer Row)
+    {
+    }
+
+}
+
+public class Connections
+{
+    ScriptComponent ParentComponent;
+
+    public Connections(ScriptComponent Component)
+    {
+        ParentComponent = Component;
+    }
+
+}
+
+public class Variables
+{
+    ScriptComponent ParentComponent;
+
+    public Variables(ScriptComponent Component)
+    {
+        ParentComponent = Component;
+    }
+
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[SC_00e1c9e6e4194c04b0ba52d7cd805cc4.csproj]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{f3cc74bd-c30d-4aa3-8284-fae765465f70}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SC_00e1c9e6e4194c04b0ba52d7cd805cc4</RootNamespace>
+    <AssemblyName>SC_881F80383E7145B19BF7C3DB02CBB934</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
+    <TargetFrameworkProfile></TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.SqlServer.TxScript, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.DTSRuntimeWrap, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.DTSPipelineWrap, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.PipelineHost, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Compile Include="main.cs" />
+    <Compile Include="BufferWrapper.cs" />
+    <Compile Include="ComponentWrapper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <!-- Include the build rules for a C# project.-->
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- This section defines VSTA properties that describe the host-changable project properties. -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}">
+        <ProjectProperties HostName="ScriptComponent" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" DebugInfoExeName="" DebugInfoCommandLine="" DebugInfoWorkingDir="" IconImageList="" />
+        <Host Name="ScriptComponent" GeneratedNamespace="SC_00e1c9e6e4194c04b0ba52d7cd805cc4" IconIndex="0"></Host>
+        <ProjectClient>
+          <HostIdentifier>SSIS_SC150</HostIdentifier>
+        </ProjectClient>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Project]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF16LE]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
+<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
+  <msb:PropertyGroup>
+    <msb:CodeName>SC_00e1c9e6e4194c04b0ba52d7cd805cc4</msb:CodeName>
+    <msb:Language>msBuild</msb:Language>
+    <msb:DisplayName>SC_00e1c9e6e4194c04b0ba52d7cd805cc4</msb:DisplayName>
+    <msb:ProjectId>{7B79F372-1393-4113-8869-4D4D55EFA7DC}</msb:ProjectId>
+  </msb:PropertyGroup>
+  <msb:ItemGroup>
+    <msb:Project Include="SC_00e1c9e6e4194c04b0ba52d7cd805cc4.csproj" />
+    <msb:File Include="Properties\Settings.Designer.cs" />
+    <msb:File Include="main.cs" />
+    <msb:File Include="BufferWrapper.cs" />
+    <msb:File Include="ComponentWrapper.cs" />
+    <msb:File Include="Properties\Settings.settings" />
+    <msb:File Include="Properties\AssemblyInfo.cs" />
+    <msb:File Include="Properties\Resources.resx" />
+    <msb:File Include="Properties\Resources.Designer.cs" />
+  </msb:ItemGroup>
+</c:Project>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Settings.Designer.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_00e1c9e6e4194c04b0ba52d7cd805cc4.Properties.Settings.get_Default():SC_00e1c9e6e4194c04b0ba52d7cd805cc4.Properties.Sett" +
+    "ings")]
+
+namespace SC_00e1c9e6e4194c04b0ba52d7cd805cc4.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Settings.settings]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Resources.Designer.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_00e1c9e6e4194c04b0ba52d7cd805cc4.Properties.Resources.get_ResourceManager():System.Resources.Resou" +
+    "rceManager")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_00e1c9e6e4194c04b0ba52d7cd805cc4.Properties.Resources.get_Culture():System.Globalization.CultureIn" +
+    "fo")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_00e1c9e6e4194c04b0ba52d7cd805cc4.Properties.Resources.set_Culture(System.Globalization.CultureInfo" +
+    "):Void")]
+
+namespace SC_00e1c9e6e4194c04b0ba52d7cd805cc4.Properties {
+    
+    
+    /// <summary>
+    ///   A strongly-typed resource class, for looking up localized strings, etc.
+    /// </summary>
+    // This class was auto-generated by the StronglyTypedResourceBuilder
+    // class via a tool like ResGen or Visual Studio.
+    // To add or remove a member, edit your .ResX file then rerun ResGen
+    // with the /str option, or rebuild your VS project.
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    internal class Resources {
+        
+        private static global::System.Resources.ResourceManager resourceMan;
+        
+        private static global::System.Globalization.CultureInfo resourceCulture;
+        
+        [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
+        internal Resources() {
+        }
+        
+        /// <summary>
+        ///   Returns the cached ResourceManager instance used by this class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if ((resourceMan == null)) {
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SC_00e1c9e6e4194c04b0ba52d7cd805cc4.Properties.Resources", typeof(Resources).Assembly);
+                    resourceMan = temp;
+                }
+                return resourceMan;
+            }
+        }
+        
+        /// <summary>
+        ///   Overrides the current thread's CurrentUICulture property for all
+        ///   resource lookups using this strongly typed resource class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
+                return resourceCulture;
+            }
+            set {
+                resourceCulture = value;
+            }
+        }
+    }
+}
+]]></arrayElement>
+                  </arrayElements>
+                </property>
+                <property
+                  dataType="System.String"
+                  description="Stores the binary representation of the component"
+                  isArray="true"
+                  name="BinaryCode"
+                  state="cdata">
+                  <arrayElements
+                    arrayElementCount="2">
+                    <arrayElement
+                      dataType="System.String"><![CDATA[SC_881F80383E7145B19BF7C3DB02CBB934.dll]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDAK+5HmAAAAAAAAAAAOAAIiALATAAABQAAAAIAAAAAAAAdjIA
+AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAACAAAAAAgAAAAAAAAMAYIUAABAA
+ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAACQyAABPAAAAAEAAAEgEAAAAAAAAAAAAAAAAAAAA
+AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAAfBIAAAAgAAAAFAAAAAIA
+AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAEgEAAAAQAAAAAYAAAAWAAAAAAAAAAAAAAAAAABAAABA
+LnJlbG9jAAAMAAAAAGAAAAACAAAAHAAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAABY
+MgAAAAAAAEgAAAACAAUAtCEAALgPAAABAAAAAAAAAGwxAAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4CKBAAAAoqHgIoEQAACipiAwIoEgAACgNvBgAABm8TAAAK
+bwgAAAYqHgIoDAAABioqAgMEBSgUAAAKKlICexUAAAoCexYAAAoWlG8XAAAKKiICFigYAAAKKiYC
+FwMoGQAACipaAywIAhcoGgAACipyAQAAcHMbAAAKeh4CKBwAAAoqHgIoHQAACip+AigeAAAKAgJz
+EAAABn0BAAAEAgJzEQAABn0CAAAEKpIEcp4AAHAabx8AAAosFQIFAgMoIAAACg4EcwUAAAZvDgAA
+BipKKwcCA28PAAAGA28KAAAGLfEqBio6AighAAAKAgN9AwAABCo6AighAAAKAgN9BAAABCoeAigh
+AAAKKq5+BQAABC0ecq4AAHDQBwAAAigiAAAKbyMAAApzJAAACoAFAAAEfgUAAAQqGn4GAAAEKh4C
+gAYAAAQqGn4HAAAEKh4CKCUAAAoqLnMXAAAGgAcAAAQqAAAAQlNKQgEAAQAAAAAADAAAAHY0LjAu
+MzAzMTkAAAAABQBsAAAAjAUAACN+AAD4BQAA4AYAACNTdHJpbmdzAAAAANgMAAAgAQAAI1VTAPgN
+AAAQAAAAI0dVSUQAAAAIDgAAsAEAACNCbG9iAAAAAAAAAAIAAAFXFaABCQEAAAD6ATMAFgAAAQAA
+ACAAAAAIAAAABwAAABgAAAAPAAAAJQAAABAAAAADAAAABwAAAAgAAAABAAAABQAAAAEAAAAAADAD
+AQAAAAAABgAqAhYFBgC+AhYFBgB2AQMFDwCKBQAABgCjAeIDBgANAuIDBgDuAeIDBgClAuIDBgBK
+AuIDBgBjAuIDBgC6AeIDBgDVAfkCCgB+AsMACgCsBMMADgCdBMMACgBUBMMACgBQBsMABgATBpoD
+BgBZAQMFBgC9BDYFBgBIBM0DEgApARoDEgCKARoDEgARAbgDBgA+ARYFFgABAM0EBgD0A5oDBgAT
+A5oDBgA3BJoDBgDkAJoDBgCVAJoDBgDVBuIDAAAAAEcAAAAAAAEAAQABABAArQMAABAAAQABAAEA
+EACQBAAAOQABAAUAAQAQADIGAABFAAEADAABABAABwYAAEkAAwAQAAEAEADIBQAASQAEABEAAAAQ
+AD0FmQVJAAUAEgAAARAA9wWZBWEABwAWAAYABwZ/AAYAyAWDAAEAQAaHAAEAQAaHABEAoQOLABEA
+AQGPABEAdwCTAFAgAAAAAMYA3AIGAAEAWCAAAAAAxgDnAgYAAQBgIAAAAADGALIGlwABAHkgAAAA
+AIYY9gQGAAIAgSAAAAAAhhj2BCUAAgCMIAAAAACGCIcAnQAFAKEgAAAAAIYIWANHAAUAqiAAAAAA
+hggOBBAABQC0IAAAAACGCG0DoQAGAMsgAAAAAIYAyQZHAAcA0yAAAAAAhgAaBkcABwDbIAAAAACG
+GPYEBgAHAPsgAAAAAMYApQamAAcAICEAAAAAxgGeBpcACwAzIQAAAADGAbIGlwAMADUhAAAAAIYY
+9gSwAA0ARCEAAAAAhhj2BLAADgBTIQAAAACDGPYEBgAPAFshAAAAAJMIuQS2AA8AhyEAAAAAkwjp
+ALsADwCOIQAAAACTCPUAwAAPAJYhAAAAAJYIJgbGABAAnSEAAAAAhhj2BAYAEAClIQAAAACRGPwE
+ywAQAAAAAQDNBgAAAQCyBAAAAgDSBQAAAwBiBAAAAQDzAgAAAQDzAgAAAQBQAAAAAgC5AAAAAwCy
+BAAABABiBAAAAQCyBAAAAQDNBgAAAQBWBgAAAQBWBgAAAQDzAgkA9gQBABEA9gQGABkA9gQKACkA
+9gQQADEA9gQQADkA9gQQAEEA9gQQAEkA9gQQAFEA9gQQAFkA9gQQAGEA9gQQAGkA9gQGAJkA9gQG
+ALkA9gQVAMkA9gQGAIkA3AIGAIkA5wIGAIkAWAAbANEAIwQgAHEA9gQlAHEAsgQvAHEA0gUzAHkA
+GgA3AHEAggM8AHEAkQNBAHEAiQMBANkA9gQQAHEAyQZHAHEAGgZHAIkA9gQGAOEAAAZLAIkA5gVS
+AJEA9gQGAPEApwBYAPEA0QZfAKEA9gRlAMEA9gQGAC4ACwDqAC4AEwDzAC4AGwASAS4AIwAbAS4A
+KwBEAS4AMwBEAS4AOwBEAS4AQwAbAS4ASwBKAS4AUwBEAS4AWwBhAUMAYwCrAakAcwASAckAcwAS
+AeEAewCrAeMAawCrAQMAAQAHAAUACAAHAAAAiwDPAAAAXAPTAAAAJgTXAAAAcQPTAAAAvQTbAAAA
+CQHgAAAAKgblAAIABgADAAIABwAFAAEACAAHAAEACQAJAAIAEwALAAIAFAANAAEAFQANAAIAFgAP
+AASAAAABAAAAAAAAAAAAAAAAACMAAAAEAAAAAAAAAAAAAABtAG4AAAAAAA8AAAAAAAAAAAAAAHYA
+YAYAAAAADwAAAAAAAAAAAAAAdgB9BgAAAAAEAAAAAAAAAAAAAABtAJoDAAAAAA8AAAAAAAAAAAAA
+AHYAbAQAAAAAAAAAAAEAAABHBQAAAAAAAABJRFRTQ29tcG9uZW50TWV0YURhdGExMDAAR2V0SW50
+MzIAU0NfODgxRjgwMzgzRTcxNDVCMTlCRjdDM0RCMDJDQkI5MzQAPE1vZHVsZT4ASW5wdXRJRABn
+ZXRfQ29tcG9uZW50TWV0YURhdGEAbXNjb3JsaWIAZGVmYXVsdEluc3RhbmNlAGdldF9FcnJvckNv
+ZGUAUnVudGltZVR5cGVIYW5kbGUAR2V0VHlwZUZyb21IYW5kbGUASW5wdXROYW1lAE1pY3Jvc29m
+dC5TcWxTZXJ2ZXIuRHRzLlBpcGVsaW5lAFR5cGUAZ2V0X0N1bHR1cmUAc2V0X0N1bHR1cmUAcmVz
+b3VyY2VDdWx0dXJlAEFwcGxpY2F0aW9uU2V0dGluZ3NCYXNlAEVkaXRvckJyb3dzYWJsZVN0YXRl
+AENvbXBpbGVyR2VuZXJhdGVkQXR0cmlidXRlAERlYnVnZ2VyTm9uVXNlckNvZGVBdHRyaWJ1dGUA
+RGVidWdnYWJsZUF0dHJpYnV0ZQBFZGl0b3JCcm93c2FibGVBdHRyaWJ1dGUAQXNzZW1ibHlUaXRs
+ZUF0dHJpYnV0ZQBBc3NlbWJseVRyYWRlbWFya0F0dHJpYnV0ZQBUYXJnZXRGcmFtZXdvcmtBdHRy
+aWJ1dGUAQXNzZW1ibHlDb25maWd1cmF0aW9uQXR0cmlidXRlAEFzc2VtYmx5RGVzY3JpcHRpb25B
+dHRyaWJ1dGUAQ29tcGlsYXRpb25SZWxheGF0aW9uc0F0dHJpYnV0ZQBBc3NlbWJseVByb2R1Y3RB
+dHRyaWJ1dGUAQXNzZW1ibHlDb3B5cmlnaHRBdHRyaWJ1dGUAU1NJU1NjcmlwdENvbXBvbmVudEVu
+dHJ5UG9pbnRBdHRyaWJ1dGUAQXNzZW1ibHlDb21wYW55QXR0cmlidXRlAFJ1bnRpbWVDb21wYXRp
+YmlsaXR5QXR0cmlidXRlAFByZUV4ZWN1dGUAUG9zdEV4ZWN1dGUAdmFsdWUAU3lzdGVtLlJ1bnRp
+bWUuVmVyc2lvbmluZwBTdHJpbmcAU3lzdGVtLkNvbXBvbmVudE1vZGVsAFNDXzg4MUY4MDM4M0U3
+MTQ1QjE5QkY3QzNEQjAyQ0JCOTM0LmRsbABnZXRfRXJyb3JDb2RlX0lzTnVsbABzZXRfRXJyb3JE
+ZXNjcmlwdGlvbl9Jc051bGwAU2V0TnVsbABzZXRfSXRlbQBTeXN0ZW0AcmVzb3VyY2VNYW4AU2Ny
+aXB0TWFpbgBTeXN0ZW0uQ29uZmlndXJhdGlvbgBTeXN0ZW0uR2xvYmFsaXphdGlvbgBTeXN0ZW0u
+UmVmbGVjdGlvbgBJbnZhbGlkT3BlcmF0aW9uRXhjZXB0aW9uAHNldF9FcnJvckRlc2NyaXB0aW9u
+AEdldEVycm9yRGVzY3JpcHRpb24AU3RyaW5nQ29tcGFyaXNvbgBDdWx0dXJlSW5mbwBPdXRwdXRO
+YW1lTWFwAE91dHB1dE1hcABNaWNyb3NvZnQuU3FsU2VydmVyLkRUU1BpcGVsaW5lV3JhcABJbnB1
+dDBCdWZmZXIAUGlwZWxpbmVCdWZmZXIAU2NyaXB0QnVmZmVyAGdldF9SZXNvdXJjZU1hbmFnZXIA
+TWljcm9zb2Z0LlNxbFNlcnZlci5EdHMuUGlwZWxpbmUuV3JhcHBlcgAuY3RvcgAuY2N0b3IAU3lz
+dGVtLkRpYWdub3N0aWNzAFN5c3RlbS5SdW50aW1lLkNvbXBpbGVyU2VydmljZXMAU3lzdGVtLlJl
+c291cmNlcwBTQ18wMGUxYzllNmU0MTk0YzA0YjBiYTUyZDdjZDgwNWNjNC5Qcm9wZXJ0aWVzLlJl
+c291cmNlcy5yZXNvdXJjZXMARGVidWdnaW5nTW9kZXMAU0NfMDBlMWM5ZTZlNDE5NGMwNGIwYmE1
+MmQ3Y2Q4MDVjYzQuUHJvcGVydGllcwBWYXJpYWJsZXMAQnVmZmVyQ29sdW1uSW5kZXhlcwBHZXRD
+b2x1bW5JbmRleGVzAFNldHRpbmdzAEVxdWFscwBDb25uZWN0aW9ucwBPYmplY3QARW5kT2ZSb3dz
+ZXQAZ2V0X0RlZmF1bHQAVXNlckNvbXBvbmVudABQYXJlbnRDb21wb25lbnQAU2NyaXB0Q29tcG9u
+ZW50AE1pY3Jvc29mdC5TcWxTZXJ2ZXIuVHhTY3JpcHQATWljcm9zb2Z0LlNxbFNlcnZlci5QaXBl
+bGluZUhvc3QASW5wdXQwX1Byb2Nlc3NJbnB1dABJbnB1dDBfUHJvY2Vzc0lucHV0Um93AE5leHRS
+b3cAZ2V0X0Fzc2VtYmx5AAAAAICbSQBzAE4AdQBsAGwAIABwAHIAbwBwAGUAcgB0AHkAIABjAGEA
+bgBuAG8AdAAgAGIAZQAgAHMAZQB0ACAAdABvACAARgBhAGwAcwBlAC4AIABBAHMAcwBpAGcAbgAg
+AGEAIAB2AGEAbAB1AGUAIAB0AG8AIAB0AGgAZQAgAGMAbwBsAHUAbQBuACAAaQBuAHMAdABlAGEA
+ZAAuAAAPSQBuAHAAdQB0ACAAMAAAcVMAQwBfADAAMABlADEAYwA5AGUANgBlADQAMQA5ADQAYwAw
+ADQAYgAwAGIAYQA1ADIAZAA3AGMAZAA4ADAANQBjAGMANAAuAFAAcgBvAHAAZQByAHQAaQBlAHMA
+LgBSAGUAcwBvAHUAcgBjAGUAcwAAYEFtY8DpCkm8bP2hJnmyHgAEIAEBCAMgAAEFIAEBEREEIAEB
+DgUgAQERWQQgABJpBCABDggJIAMBEj0dCBJBAwYSPQMGHQgEIAEICAQgAQIIBSACAQgcAyAAAgYg
+AgIOEXUFIAEdCAgGAAESeRF9BSAAEoCBByACAQ4SgIEIt3pcVhk04IkIiYRdzYCAzJEDBhIUAwYS
+GAMGEkUDBhJRAwYSVQMGEiAFIAEBEgwDIAAIBCABAQIJIAQBCA4SPRJBBSABARJFBAAAElEEAAAS
+VQUAAQESVQQAABIgAwAAAQMoAAgDKAACAygADgQIABJRBAgAElUECAASIAgBAAgAAAAAAB4BAAEA
+VAIWV3JhcE5vbkV4Y2VwdGlvblRocm93cwEIAQACAAAAAAAoAQAjU0NfMDBlMWM5ZTZlNDE5NGMw
+NGIwYmE1MmQ3Y2Q4MDVjYzQAAAUBAAAAABYBABFDb3B5cmlnaHQgQCAgMjAyMAAASQEAGi5ORVRG
+cmFtZXdvcmssVmVyc2lvbj12NC43AQBUDhRGcmFtZXdvcmtEaXNwbGF5TmFtZRIuTkVUIEZyYW1l
+d29yayA0LjcEAQAAALQAAADOyu++AQAAAJEAAABsU3lzdGVtLlJlc291cmNlcy5SZXNvdXJjZVJl
+YWRlciwgbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNL
+ZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5I1N5c3RlbS5SZXNvdXJjZXMuUnVudGltZVJlc291cmNl
+U2V0AgAAAAAAAAAAAAAAUEFEUEFEULQAAABMMgAAAAAAAAAAAABmMgAAACAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAWDIAAAAAAAAAAAAAAABfQ29yRGxsTWFpbgBtc2NvcmVlLmRsbAAAAAAA/yUAIAAQ
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAQAQAAAAGAAAgAAAAAAAAAAAAAAAAAAAAQABAAAAMAAAgAAAAAAAAAAAAAAAAAAAAQAAAAAA
+SAAAAFhAAADsAwAAAAAAAAAAAADsAzQAAABWAFMAXwBWAEUAUgBTAEkATwBOAF8ASQBOAEYATwAA
+AAAAvQTv/gAAAQAAAAEAAAAAAAAAAQAAAAAAPwAAAAAAAAAEAAAAAgAAAAAAAAAAAAAAAAAAAEQA
+AAABAFYAYQByAEYAaQBsAGUASQBuAGYAbwAAAAAAJAAEAAAAVAByAGEAbgBzAGwAYQB0AGkAbwBu
+AAAAAAAAALAETAMAAAEAUwB0AHIAaQBuAGcARgBpAGwAZQBJAG4AZgBvAAAAKAMAAAEAMAAwADAA
+MAAwADQAYgAwAAAAGgABAAEAQwBvAG0AbQBlAG4AdABzAAAAAAAAACIAAQABAEMAbwBtAHAAYQBu
+AHkATgBhAG0AZQAAAAAAAAAAAHAAJAABAEYAaQBsAGUARABlAHMAYwByAGkAcAB0AGkAbwBuAAAA
+AABTAEMAXwAwADAAZQAxAGMAOQBlADYAZQA0ADEAOQA0AGMAMAA0AGIAMABiAGEANQAyAGQANwBj
+AGQAOAAwADUAYwBjADQAAAAwAAgAAQBGAGkAbABlAFYAZQByAHMAaQBvAG4AAAAAADEALgAwAC4A
+MAAuADAAAABwACgAAQBJAG4AdABlAHIAbgBhAGwATgBhAG0AZQAAAFMAQwBfADgAOAAxAEYAOAAw
+ADMAOAAzAEUANwAxADQANQBCADEAOQBCAEYANwBDADMARABCADAAMgBDAEIAQgA5ADMANAAuAGQA
+bABsAAAASAASAAEATABlAGcAYQBsAEMAbwBwAHkAcgBpAGcAaAB0AAAAQwBvAHAAeQByAGkAZwBo
+AHQAIABAACAAIAAyADAAMgAwAAAAKgABAAEATABlAGcAYQBsAFQAcgBhAGQAZQBtAGEAcgBrAHMA
+AAAAAAAAAAB4ACgAAQBPAHIAaQBnAGkAbgBhAGwARgBpAGwAZQBuAGEAbQBlAAAAUwBDAF8AOAA4
+ADEARgA4ADAAMwA4ADMARQA3ADEANAA1AEIAMQA5AEIARgA3AEMAMwBEAEIAMAAyAEMAQgBCADkA
+MwA0AC4AZABsAGwAAABoACQAAQBQAHIAbwBkAHUAYwB0AE4AYQBtAGUAAAAAAFMAQwBfADAAMABl
+ADEAYwA5AGUANgBlADQAMQA5ADQAYwAwADQAYgAwAGIAYQA1ADIAZAA3AGMAZAA4ADAANQBjAGMA
+NAAAADQACAABAFAAcgBvAGQAdQBjAHQAVgBlAHIAcwBpAG8AbgAAADEALgAwAC4AMAAuADAAAAA4
+AAgAAQBBAHMAcwBlAG0AYgBsAHkAIABWAGUAcgBzAGkAbwBuAAAAMQAuADAALgAwAC4AMAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAMAAAAeDIAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
+                  </arrayElements>
+                </property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the Microsoft Visual Studio Tools for Applications project. Project names must be unique within a package."
+                  name="VSTAProjectName"
+                  typeConverter="NOTBROWSABLE">SC_881f80383e7145b19bf7c3db02cbb934</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the programming language used by the script."
+                  name="ScriptLanguage"
+                  typeConverter="Microsoft.SqlServer.VSTAHosting.ScriptingLanguages">CSharp</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a comma-separated list of read-only variables."
+                  name="ReadOnlyVariables"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ScriptUIVariablePickerDlg"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a comma-separated list of read/write variables."
+                  name="ReadWriteVariables"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ScriptUIWriteableVariablePickerDlg"></property>
+                <property
+                  dataType="System.String"
+                  description="List of breakpoints present on the script."
+                  isArray="true"
+                  name="BreakpointCollection"
+                  typeConverter="NOTBROWSABLE">
+                  <arrayElements
+                    arrayElementCount="0" />
+                </property>
+                <property
+                  dataType="System.String"
+                  description="Checksum to match component metedata against compiled codes."
+                  name="MetadataChecksum140"
+                  typeConverter="NOTBROWSABLE">06</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.ScriptComponentHost</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Import Stock_Take_Indicators Dimension\Get ErrorDescription.Inputs[Input 0]"
+                  hasSideEffects="true"
+                  name="Input 0">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Get ErrorDescription.Inputs[Input 0].Columns[ErrorCode]"
+                      cachedDataType="i4"
+                      cachedName="ErrorCode"
+                      lineageId="Package\Import Stock_Take_Indicators Dimension\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import Stock_Take_Indicators Dimension\Get ErrorDescription.Outputs[Output 0]"
+                  name="Output 0"
+                  synchronousInputId="Package\Import Stock_Take_Indicators Dimension\Get ErrorDescription.Inputs[Input 0]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Get ErrorDescription.Outputs[Output 0].Columns[ErrorDescription]"
+                      dataType="wstr"
+                      length="500"
+                      lineageId="Package\Import Stock_Take_Indicators Dimension\Get ErrorDescription.Outputs[Output 0].Columns[ErrorDescription]"
+                      name="ErrorDescription" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import Stock_Take_Indicators Dimension\Lookup - existing record"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="Lookup - existing record"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[Stock_Take_Indicators]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[Stock_Take_Indicators]) [refTable]
+where [refTable].[Stock_Take_Comment] = ? and [refTable].[Length_Measured_Indicator] = ? and [refTable].[Width_Measured_Indicator] = ? and [refTable].[Full_Units_Counted_Indicator] = ? and [refTable].[Material_Scrapped_Indicator] = ? and [refTable].[Unit_Price_Available_Indicator] = ? and [refTable].[VAT_Percentage] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="Stock_Take_Indicators_Key" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Stock_Take_Comment" dataType="DT_WSTR" length="50" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Length_Measured_Indicator" dataType="DT_WSTR" length="50" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Width_Measured_Indicator" dataType="DT_WSTR" length="50" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Full_Units_Counted_Indicator" dataType="DT_WSTR" length="50" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Material_Scrapped_Indicator" dataType="DT_WSTR" length="50" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Unit_Price_Available_Indicator" dataType="DT_WSTR" length="50" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="VAT_Percentage" dataType="DT_WSTR" length="20" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Effective_Date" dataType="DT_DBDATE" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Import_Action" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="IBPT_ID" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output].Columns[Stock_Take_Comment]};#{Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output].Columns[Length_Measured_Indicator]};#{Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output].Columns[Width_Measured_Indicator]};#{Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output].Columns[Full_Units_Counted_Indicator]};#{Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output].Columns[Material_Scrapped_Indicator]};#{Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output].Columns[Unit_Price_Available_Indicator]};#{Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output].Columns[VAT_Percentage]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import Stock_Take_Indicators Dimension\Lookup - existing record.Connections[OleDbConnection]"
+                  connectionManagerID="{D104457E-A478-43DE-980E-0366FC91C67E}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[AtomicDW]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Import Stock_Take_Indicators Dimension\Lookup - existing record.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Lookup - existing record.Inputs[Lookup Input].Columns[Stock_Take_Comment]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Stock_Take_Comment"
+                      lineageId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output].Columns[Stock_Take_Comment]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">Stock_Take_Comment</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Lookup - existing record.Inputs[Lookup Input].Columns[Length_Measured_Indicator]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Length_Measured_Indicator"
+                      lineageId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output].Columns[Length_Measured_Indicator]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">Length_Measured_Indicator</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Lookup - existing record.Inputs[Lookup Input].Columns[Width_Measured_Indicator]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Width_Measured_Indicator"
+                      lineageId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output].Columns[Width_Measured_Indicator]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">Width_Measured_Indicator</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Lookup - existing record.Inputs[Lookup Input].Columns[Full_Units_Counted_Indicator]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Full_Units_Counted_Indicator"
+                      lineageId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output].Columns[Full_Units_Counted_Indicator]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">Full_Units_Counted_Indicator</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Lookup - existing record.Inputs[Lookup Input].Columns[Material_Scrapped_Indicator]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Material_Scrapped_Indicator"
+                      lineageId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output].Columns[Material_Scrapped_Indicator]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">Material_Scrapped_Indicator</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Lookup - existing record.Inputs[Lookup Input].Columns[Unit_Price_Available_Indicator]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Unit_Price_Available_Indicator"
+                      lineageId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output].Columns[Unit_Price_Available_Indicator]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">Unit_Price_Available_Indicator</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Lookup - existing record.Inputs[Lookup Input].Columns[VAT_Percentage]"
+                      cachedDataType="wstr"
+                      cachedLength="20"
+                      cachedName="VAT_Percentage"
+                      lineageId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output].Columns[VAT_Percentage]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">VAT_Percentage</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import Stock_Take_Indicators Dimension\Lookup - existing record.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\Import Stock_Take_Indicators Dimension\Lookup - existing record.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Import Stock_Take_Indicators Dimension\Lookup - existing record.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\Import Stock_Take_Indicators Dimension\Lookup - existing record.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Import Stock_Take_Indicators Dimension\Lookup - existing record.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\Import Stock_Take_Indicators Dimension\Lookup - existing record.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Lookup - existing record.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import Stock_Take_Indicators Dimension\Lookup - existing record.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Lookup - existing record.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import Stock_Take_Indicators Dimension\Lookup - existing record.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import Stock_Take_Indicators Dimension\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Stock_Take_Indicators]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import Stock_Take_Indicators Dimension\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="{D104457E-A478-43DE-980E-0366FC91C67E}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[AtomicDW]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Import Stock_Take_Indicators Dimension\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="RedirectRow"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Stock_Take_Comment]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Stock_Take_Comment"
+                      externalMetadataColumnId="Package\Import Stock_Take_Indicators Dimension\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Stock_Take_Comment]"
+                      lineageId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output].Columns[Stock_Take_Comment]" />
+                    <inputColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Length_Measured_Indicator]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Length_Measured_Indicator"
+                      externalMetadataColumnId="Package\Import Stock_Take_Indicators Dimension\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Length_Measured_Indicator]"
+                      lineageId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output].Columns[Length_Measured_Indicator]" />
+                    <inputColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Width_Measured_Indicator]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Width_Measured_Indicator"
+                      externalMetadataColumnId="Package\Import Stock_Take_Indicators Dimension\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Width_Measured_Indicator]"
+                      lineageId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output].Columns[Width_Measured_Indicator]" />
+                    <inputColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Full_Units_Counted_Indicator]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Full_Units_Counted_Indicator"
+                      externalMetadataColumnId="Package\Import Stock_Take_Indicators Dimension\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Full_Units_Counted_Indicator]"
+                      lineageId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output].Columns[Full_Units_Counted_Indicator]" />
+                    <inputColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Material_Scrapped_Indicator]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Material_Scrapped_Indicator"
+                      externalMetadataColumnId="Package\Import Stock_Take_Indicators Dimension\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Material_Scrapped_Indicator]"
+                      lineageId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output].Columns[Material_Scrapped_Indicator]" />
+                    <inputColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Unit_Price_Available_Indicator]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Unit_Price_Available_Indicator"
+                      externalMetadataColumnId="Package\Import Stock_Take_Indicators Dimension\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Unit_Price_Available_Indicator]"
+                      lineageId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output].Columns[Unit_Price_Available_Indicator]" />
+                    <inputColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VAT_Percentage]"
+                      cachedDataType="wstr"
+                      cachedLength="20"
+                      cachedName="VAT_Percentage"
+                      externalMetadataColumnId="Package\Import Stock_Take_Indicators Dimension\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VAT_Percentage]"
+                      lineageId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output].Columns[VAT_Percentage]" />
+                    <inputColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Import_Action]"
+                      cachedDataType="wstr"
+                      cachedLength="6"
+                      cachedName="Import_Action"
+                      externalMetadataColumnId="Package\Import Stock_Take_Indicators Dimension\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Import_Action]"
+                      lineageId="Package\Import Stock_Take_Indicators Dimension\Derived Column.Outputs[Derived Column Output].Columns[Import_Action]" />
+                    <inputColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Effective_Date]"
+                      cachedDataType="date"
+                      cachedName="Effective_Date"
+                      externalMetadataColumnId="Package\Import Stock_Take_Indicators Dimension\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Effective_Date]"
+                      lineageId="Package\Import Stock_Take_Indicators Dimension\Derived Column.Outputs[Derived Column Output].Columns[Effective_Date]" />
+                    <inputColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[IBPT_ID]"
+                      cachedDataType="i4"
+                      cachedName="IBPT_ID"
+                      externalMetadataColumnId="Package\Import Stock_Take_Indicators Dimension\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IBPT_ID]"
+                      lineageId="Package\Import Stock_Take_Indicators Dimension\Derived Column.Outputs[Derived Column Output].Columns[IBPT_ID]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Stock_Take_Indicators_Key]"
+                      dataType="i4"
+                      name="Stock_Take_Indicators_Key" />
+                    <externalMetadataColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Stock_Take_Comment]"
+                      dataType="wstr"
+                      length="50"
+                      name="Stock_Take_Comment" />
+                    <externalMetadataColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Length_Measured_Indicator]"
+                      dataType="wstr"
+                      length="50"
+                      name="Length_Measured_Indicator" />
+                    <externalMetadataColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Width_Measured_Indicator]"
+                      dataType="wstr"
+                      length="50"
+                      name="Width_Measured_Indicator" />
+                    <externalMetadataColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Full_Units_Counted_Indicator]"
+                      dataType="wstr"
+                      length="50"
+                      name="Full_Units_Counted_Indicator" />
+                    <externalMetadataColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Material_Scrapped_Indicator]"
+                      dataType="wstr"
+                      length="50"
+                      name="Material_Scrapped_Indicator" />
+                    <externalMetadataColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Unit_Price_Available_Indicator]"
+                      dataType="wstr"
+                      length="50"
+                      name="Unit_Price_Available_Indicator" />
+                    <externalMetadataColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VAT_Percentage]"
+                      dataType="wstr"
+                      length="20"
+                      name="VAT_Percentage" />
+                    <externalMetadataColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Effective_Date]"
+                      dataType="dbDate"
+                      name="Effective_Date" />
+                    <externalMetadataColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Import_Action]"
+                      dataType="wstr"
+                      length="10"
+                      name="Import_Action" />
+                    <externalMetadataColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IBPT_ID]"
+                      dataType="i4"
+                      name="IBPT_ID" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import Stock_Take_Indicators Dimension\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Import Stock_Take_Indicators Dimension\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import Stock_Take_Indicators Dimension\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import Stock_Take_Indicators Dimension\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="Read S2_V_MM_Stock_Take_Indicators"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT *
+FROM S2_V_MM_Stock_Take_Indicators
+WHERE [ST_Year] = ?</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping">"Parameter0:Input",{79E28ECC-3A20-4B11-9D33-37CAFFDED240};</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Connections[OleDbConnection]"
+                  connectionManagerID="{371815E0-5DFD-4917-AD74-E833D9B8A0B2}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[Stage2]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output].Columns[Stock_Take_Comment]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output].ExternalColumns[ST_Stock_Take_Comment]"
+                      length="50"
+                      lineageId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output].Columns[Stock_Take_Comment]"
+                      name="Stock_Take_Comment"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output].Columns[Length_Measured_Indicator]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output].ExternalColumns[ST_Length_Measured_Indicator]"
+                      length="50"
+                      lineageId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output].Columns[Length_Measured_Indicator]"
+                      name="Length_Measured_Indicator"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output].Columns[Width_Measured_Indicator]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output].ExternalColumns[ST_Width_Measured_Indicator]"
+                      length="50"
+                      lineageId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output].Columns[Width_Measured_Indicator]"
+                      name="Width_Measured_Indicator"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output].Columns[Full_Units_Counted_Indicator]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output].ExternalColumns[ST_Full_Units_Counted_Indicator]"
+                      length="50"
+                      lineageId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output].Columns[Full_Units_Counted_Indicator]"
+                      name="Full_Units_Counted_Indicator"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output].Columns[Material_Scrapped_Indicator]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output].ExternalColumns[ST_Material_Scrapped_Indicator]"
+                      length="50"
+                      lineageId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output].Columns[Material_Scrapped_Indicator]"
+                      name="Material_Scrapped_Indicator"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output].Columns[Unit_Price_Available_Indicator]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output].ExternalColumns[ST_Unit_Price_Available_Indicator]"
+                      length="50"
+                      lineageId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output].Columns[Unit_Price_Available_Indicator]"
+                      name="Unit_Price_Available_Indicator"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output].Columns[VAT_Percentage]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output].ExternalColumns[ST_VAT_Percentage]"
+                      length="20"
+                      lineageId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output].Columns[VAT_Percentage]"
+                      name="VAT_Percentage"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output].ExternalColumns[ST_Year]"
+                      dataType="i4"
+                      name="ST_Year" />
+                    <externalMetadataColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output].ExternalColumns[ST_Stock_Take_Comment]"
+                      dataType="wstr"
+                      length="50"
+                      name="ST_Stock_Take_Comment" />
+                    <externalMetadataColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output].ExternalColumns[ST_Length_Measured_Indicator]"
+                      dataType="wstr"
+                      length="50"
+                      name="ST_Length_Measured_Indicator" />
+                    <externalMetadataColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output].ExternalColumns[ST_Width_Measured_Indicator]"
+                      dataType="wstr"
+                      length="50"
+                      name="ST_Width_Measured_Indicator" />
+                    <externalMetadataColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output].ExternalColumns[ST_Full_Units_Counted_Indicator]"
+                      dataType="wstr"
+                      length="50"
+                      name="ST_Full_Units_Counted_Indicator" />
+                    <externalMetadataColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output].ExternalColumns[ST_Material_Scrapped_Indicator]"
+                      dataType="wstr"
+                      length="50"
+                      name="ST_Material_Scrapped_Indicator" />
+                    <externalMetadataColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output].ExternalColumns[ST_Unit_Price_Available_Indicator]"
+                      dataType="wstr"
+                      length="50"
+                      name="ST_Unit_Price_Available_Indicator" />
+                    <externalMetadataColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output].ExternalColumns[ST_VAT_Percentage]"
+                      dataType="wstr"
+                      length="20"
+                      name="ST_VAT_Percentage" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Error Output].Columns[ST_Stock_Take_Comment]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Error Output].Columns[ST_Stock_Take_Comment]"
+                      name="ST_Stock_Take_Comment" />
+                    <outputColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Error Output].Columns[ST_Length_Measured_Indicator]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Error Output].Columns[ST_Length_Measured_Indicator]"
+                      name="ST_Length_Measured_Indicator" />
+                    <outputColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Error Output].Columns[ST_Width_Measured_Indicator]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Error Output].Columns[ST_Width_Measured_Indicator]"
+                      name="ST_Width_Measured_Indicator" />
+                    <outputColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Error Output].Columns[ST_Full_Units_Counted_Indicator]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Error Output].Columns[ST_Full_Units_Counted_Indicator]"
+                      name="ST_Full_Units_Counted_Indicator" />
+                    <outputColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Error Output].Columns[ST_Material_Scrapped_Indicator]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Error Output].Columns[ST_Material_Scrapped_Indicator]"
+                      name="ST_Material_Scrapped_Indicator" />
+                    <outputColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Error Output].Columns[ST_Unit_Price_Available_Indicator]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Error Output].Columns[ST_Unit_Price_Available_Indicator]"
+                      name="ST_Unit_Price_Available_Indicator" />
+                    <outputColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Error Output].Columns[ST_VAT_Percentage]"
+                      dataType="wstr"
+                      length="20"
+                      lineageId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Error Output].Columns[ST_VAT_Percentage]"
+                      name="ST_VAT_Percentage" />
+                    <outputColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import Stock_Take_Indicators Dimension\Row Count - Insert Errors"
+              componentClassID="Microsoft.RowCount"
+              contactInfo="Row Count;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Counts rows as they pass through a data flow. For example, use the number of rows processed to determine whether or not to perform cleanup operations, or update text in an e-mail message to communicate processing status."
+              name="Row Count - Insert Errors">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable to hold the row count."
+                  name="VariableName">User::IBPT_Records_Failed</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Import Stock_Take_Indicators Dimension\Row Count - Insert Errors.Inputs[Row Count Input 1]"
+                  hasSideEffects="true"
+                  name="Row Count Input 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import Stock_Take_Indicators Dimension\Row Count - Insert Errors.Outputs[Row Count Output 1]"
+                  name="Row Count Output 1"
+                  synchronousInputId="Package\Import Stock_Take_Indicators Dimension\Row Count - Insert Errors.Inputs[Row Count Input 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import Stock_Take_Indicators Dimension\Row Count - new"
+              componentClassID="Microsoft.RowCount"
+              contactInfo="Row Count;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Counts rows as they pass through a data flow. For example, use the number of rows processed to determine whether or not to perform cleanup operations, or update text in an e-mail message to communicate processing status."
+              name="Row Count - new">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable to hold the row count."
+                  name="VariableName">User::IBPT_Dim_New</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Import Stock_Take_Indicators Dimension\Row Count - new.Inputs[Row Count Input 1]"
+                  hasSideEffects="true"
+                  name="Row Count Input 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import Stock_Take_Indicators Dimension\Row Count - new.Outputs[Row Count Output 1]"
+                  name="Row Count Output 1"
+                  synchronousInputId="Package\Import Stock_Take_Indicators Dimension\Row Count - new.Inputs[Row Count Input 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import Stock_Take_Indicators Dimension\Row Count - unchanged"
+              componentClassID="Microsoft.RowCount"
+              contactInfo="Row Count;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Counts rows as they pass through a data flow. For example, use the number of rows processed to determine whether or not to perform cleanup operations, or update text in an e-mail message to communicate processing status."
+              name="Row Count - unchanged">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable to hold the row count."
+                  name="VariableName">User::IBPT_Dim_Unchanged</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Import Stock_Take_Indicators Dimension\Row Count - unchanged.Inputs[Row Count Input 1]"
+                  hasSideEffects="true"
+                  name="Row Count Input 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import Stock_Take_Indicators Dimension\Row Count - unchanged.Outputs[Row Count Output 1]"
+                  name="Row Count Output 1"
+                  synchronousInputId="Package\Import Stock_Take_Indicators Dimension\Row Count - unchanged.Inputs[Row Count Input 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Import Stock_Take_Indicators Dimension.Paths[Derived Column Output]"
+              endId="Package\Import Stock_Take_Indicators Dimension\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Derived Column Output"
+              startId="Package\Import Stock_Take_Indicators Dimension\Derived Column.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Import Stock_Take_Indicators Dimension.Paths[Lookup Match Output]"
+              endId="Package\Import Stock_Take_Indicators Dimension\Row Count - unchanged.Inputs[Row Count Input 1]"
+              name="Lookup Match Output"
+              startId="Package\Import Stock_Take_Indicators Dimension\Lookup - existing record.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\Import Stock_Take_Indicators Dimension.Paths[Lookup No Match Output]"
+              endId="Package\Import Stock_Take_Indicators Dimension\Row Count - new.Inputs[Row Count Input 1]"
+              name="Lookup No Match Output"
+              startId="Package\Import Stock_Take_Indicators Dimension\Lookup - existing record.Outputs[Lookup No Match Output]" />
+            <path
+              refId="Package\Import Stock_Take_Indicators Dimension.Paths[OLE DB Destination Error Output]"
+              endId="Package\Import Stock_Take_Indicators Dimension\Row Count - Insert Errors.Inputs[Row Count Input 1]"
+              name="OLE DB Destination Error Output"
+              startId="Package\Import Stock_Take_Indicators Dimension\OLE DB Destination.Outputs[OLE DB Destination Error Output]" />
+            <path
+              refId="Package\Import Stock_Take_Indicators Dimension.Paths[OLE DB Source Output]"
+              endId="Package\Import Stock_Take_Indicators Dimension\Count records in.Inputs[Row Count Input 1]"
+              name="OLE DB Source Output"
+              startId="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\Import Stock_Take_Indicators Dimension.Paths[Output 0]"
+              endId="Package\Import Stock_Take_Indicators Dimension\Flat File Destination - write errors.Inputs[Flat File Destination Input]"
+              name="Output 0"
+              startId="Package\Import Stock_Take_Indicators Dimension\Get ErrorDescription.Outputs[Output 0]" />
+            <path
+              refId="Package\Import Stock_Take_Indicators Dimension.Paths[Row Count Output 1]"
+              endId="Package\Import Stock_Take_Indicators Dimension\Get ErrorDescription.Inputs[Input 0]"
+              name="Row Count Output 1"
+              startId="Package\Import Stock_Take_Indicators Dimension\Row Count - Insert Errors.Outputs[Row Count Output 1]" />
+            <path
+              refId="Package\Import Stock_Take_Indicators Dimension.Paths[Row Count Output 11]"
+              endId="Package\Import Stock_Take_Indicators Dimension\Lookup - existing record.Inputs[Lookup Input]"
+              name="Row Count Output 1"
+              startId="Package\Import Stock_Take_Indicators Dimension\Count records in.Outputs[Row Count Output 1]" />
+            <path
+              refId="Package\Import Stock_Take_Indicators Dimension.Paths[Row Count Output 12]"
+              endId="Package\Import Stock_Take_Indicators Dimension\Derived Column.Inputs[Derived Column Input]"
+              name="Row Count Output 1"
+              startId="Package\Import Stock_Take_Indicators Dimension\Row Count - new.Outputs[Row Count Output 1]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Update Import_Batch_Process_Task Failure"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{52C931B4-323B-4F38-830E-3FCBA7073C7C}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Update Import_Batch_Process_Task Failure"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{45AE6B60-21DF-4E6E-B8AC-51CCC622AE5B}"
+          SQLTask:SqlStatementSource="Update Import_Batch_Process_Task set &#xA;    IBPT_End = @IBPT_End,&#xA;    IBPT_Status = 'Failed'&#xA;&#xA; Where IBPT_ID = @IBPT_ID" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="@IBPT_End"
+            SQLTask:DtsVariableName="User::Current_DateTime"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="6"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="IBPT_ID"
+            SQLTask:DtsVariableName="User::IBPT_ID"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="11"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Update Import_Batch_Process_Task Success"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{32E506B3-5BF4-4B34-84F3-E46DD1EF6F1A}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Update Import_Batch_Process_Task Success"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{45AE6B60-21DF-4E6E-B8AC-51CCC622AE5B}"
+          SQLTask:SqlStatementSource="Update Import_Batch_Process_Task set &#xA;    IBPT_End = @IBPT_End,&#xA;    IBPT_Status = 'Completed',&#xA;    IBPT_Records_In =  @IBPT_Records_In,&#xA;    IBPT_Records_Failed = @IBPT_Records_Failed,&#xA;    IBPT_Records_Out = @IBPT_Records_Out,&#xA;    IBPT_Dim_Historical = @IBPT_Dim_Historical,&#xA;    IBPT_Dim_Changing = @IBPT_Dim_Changing,&#xA;    IBPT_Dim_New = @IBPT_Dim_New,&#xA;    IBPT_Dim_Unchanged = @IBPT_Dim_Unchanged,&#xA;    IBPT_Dim_Fixed_Errors = @IBPT_Dim_Fixed_Errors&#xA; Where IBPT_ID = @IBPT_ID" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="@IBPT_End"
+            SQLTask:DtsVariableName="User::Current_DateTime"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="6"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="IBPT_Records_In"
+            SQLTask:DtsVariableName="User::IBPT_Records_In"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="11"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="IBPT_Records_Failed"
+            SQLTask:DtsVariableName="User::IBPT_Records_Failed"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="11"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="IBPT_Records_Out"
+            SQLTask:DtsVariableName="User::IBPT_Records_Out"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="11"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="IBPT_ID"
+            SQLTask:DtsVariableName="User::IBPT_ID"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="11"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="IBPT_Dim_Historical"
+            SQLTask:DtsVariableName="User::IBPT_Dim_Historical"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="11"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="IBPT_Dim_Changing"
+            SQLTask:DtsVariableName="User::IBPT_Dim_Changing"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="11"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="IBPT_Dim_New"
+            SQLTask:DtsVariableName="User::IBPT_Dim_New"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="11"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="IBPT_Dim_Unchanged"
+            SQLTask:DtsVariableName="User::IBPT_Dim_Unchanged"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="11"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="IBPT_Dim_Fixed_Errors"
+            SQLTask:DtsVariableName="User::IBPT_Dim_Fixed_Errors"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="11"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{E4DA8B16-FE44-4271-9A4D-DE2BB93BCF3D}"
+      DTS:From="Package\Create Import_Batch_Process_Task"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Import Stock_Take_Indicators Dimension" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{DF667387-B92D-47FF-8E6F-9F54823465C4}"
+      DTS:From="Package\Import Stock_Take_Indicators Dimension"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Update Import_Batch_Process_Task Success" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{343F92AF-4870-4757-8B7F-7631CFCFB337}"
+      DTS:From="Package\Import Stock_Take_Indicators Dimension"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\Update Import_Batch_Process_Task Failure"
+      DTS:Value="1" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="256,42"
+          Id="Package\Create Import_Batch_Process_Task"
+          TopLeft="198.428574620461,15.8901950745984" />
+        <NodeLayout
+          Size="274,42"
+          Id="Package\Import Stock_Take_Indicators Dimension"
+          TopLeft="228,108" />
+        <NodeLayout
+          Size="298,42"
+          Id="Package\Update Import_Batch_Process_Task Failure"
+          TopLeft="397.956043965775,214.095928468366" />
+        <NodeLayout
+          Size="306,42"
+          Id="Package\Update Import_Batch_Process_Task Success"
+          TopLeft="37.6483516580825,215.865159237597" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="326.428574620461,57.8901950745984">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="38.571425379539,50.1098049254016"
+              Start="0,0"
+              End="38.571425379539,42.6098049254016">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,21.0549024627008" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,21.0549024627008"
+                    Point2="0,25.0549024627008"
+                    Point3="4,25.0549024627008" />
+                  <mssgle:LineSegment
+                    End="34.571425379539,25.0549024627008" />
+                  <mssgle:CubicBezierSegment
+                    Point1="34.571425379539,25.0549024627008"
+                    Point2="38.571425379539,25.0549024627008"
+                    Point3="38.571425379539,29.0549024627008" />
+                  <mssgle:LineSegment
+                    End="38.571425379539,42.6098049254016" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="320.666666666667,150">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-130.018315008584,65.865159237597"
+              Start="0,0"
+              End="-130.018315008584,58.365159237597">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.5754924064615" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22.5754924064615"
+                    Point2="0,26.5754924064615"
+                    Point3="-4,26.5754924064615" />
+                  <mssgle:LineSegment
+                    End="-126.018315008584,26.5754924064615" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-126.018315008584,26.5754924064615"
+                    Point2="-130.018315008584,26.5754924064615"
+                    Point3="-130.018315008584,30.5754924064615" />
+                  <mssgle:LineSegment
+                    End="-130.018315008584,58.365159237597" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="409.333333333333,150">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="137.622710632442,64.095928468366"
+              Start="0,0"
+              End="137.622710632442,56.595928468366">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,21.8616373210533" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,21.8616373210533"
+                    Point2="0,25.8616373210533"
+                    Point3="4,25.8616373210533" />
+                  <mssgle:LineSegment
+                    End="133.622710632442,25.8616373210533" />
+                  <mssgle:CubicBezierSegment
+                    Point1="133.622710632442,25.8616373210533"
+                    Point2="137.622710632442,25.8616373210533"
+                    Point3="137.622710632442,29.8616373210533" />
+                  <mssgle:LineSegment
+                    End="137.622710632442,56.595928468366" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="53.5700076599709,30.8616373210533,30.4826953125,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Import Stock_Take_Indicators Dimension">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="174,42"
+          Id="Package\Import Stock_Take_Indicators Dimension\Get ErrorDescription"
+          TopLeft="245,575" />
+        <NodeLayout
+          Size="200,42"
+          Id="Package\Import Stock_Take_Indicators Dimension\Row Count - Insert Errors"
+          TopLeft="230,506" />
+        <NodeLayout
+          Size="156,42"
+          Id="Package\Import Stock_Take_Indicators Dimension\Count records in"
+          TopLeft="318.5,83.5" />
+        <EdgeLayout
+          Id="Package\Import Stock_Take_Indicators Dimension.Paths[Row Count Output 1]"
+          TopLeft="331,548">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,27"
+              Start="0,0"
+              End="0,19.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="265,42"
+          Id="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators"
+          TopLeft="257,18" />
+        <EdgeLayout
+          Id="Package\Import Stock_Take_Indicators Dimension.Paths[OLE DB Source Output]"
+          TopLeft="393,60">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,23.5"
+              Start="0,0"
+              End="0,16">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="154,42"
+          Id="Package\Import Stock_Take_Indicators Dimension\Derived Column"
+          TopLeft="263,360" />
+        <NodeLayout
+          Size="193,42"
+          Id="Package\Import Stock_Take_Indicators Dimension\Lookup - existing record"
+          TopLeft="305,162" />
+        <NodeLayout
+          Size="193,42"
+          Id="Package\Import Stock_Take_Indicators Dimension\Row Count - unchanged"
+          TopLeft="511,290" />
+        <EdgeLayout
+          Id="Package\Import Stock_Take_Indicators Dimension.Paths[Lookup Match Output]"
+          TopLeft="432.333333333333,204">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="175.166666666667,86"
+              Start="0,0"
+              End="175.166666666667,78.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30.8242548818088" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,30.8242548818088"
+                    Point2="0,34.8242548818088"
+                    Point3="4,34.8242548818088" />
+                  <mssgle:LineSegment
+                    End="171.166666666667,34.8242548818088" />
+                  <mssgle:CubicBezierSegment
+                    Point1="171.166666666667,34.8242548818088"
+                    Point2="175.166666666667,34.8242548818088"
+                    Point3="175.166666666667,38.8242548818088" />
+                  <mssgle:LineSegment
+                    End="175.166666666667,78.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="39.3919466145833,39.8242548818088,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="160,42"
+          Id="Package\Import Stock_Take_Indicators Dimension\Row Count - new"
+          TopLeft="262,294" />
+        <EdgeLayout
+          Id="Package\Import Stock_Take_Indicators Dimension.Paths[Lookup No Match Output]"
+          TopLeft="370.666666666667,204">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-28.6666666666667,90"
+              Start="0,0"
+              End="-28.6666666666667,82.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32.4439876670093" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,32.4439876670093"
+                    Point2="0,36.4439876670093"
+                    Point3="-4,36.4439876670093" />
+                  <mssgle:LineSegment
+                    End="-24.6666666666667,36.4439876670093" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-24.6666666666667,36.4439876670093"
+                    Point2="-28.6666666666667,36.4439876670093"
+                    Point3="-28.6666666666667,40.4439876670093" />
+                  <mssgle:LineSegment
+                    End="-28.6666666666667,82.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-70.1397200520833,41.4439876670093,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Import Stock_Take_Indicators Dimension.Paths[Row Count Output 11]"
+          TopLeft="399,125.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,36.5"
+              Start="0,0"
+              End="0,29">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,29" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Import Stock_Take_Indicators Dimension.Paths[Row Count Output 12]"
+          TopLeft="341,336">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,24"
+              Start="0,0"
+              End="0,16.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Import Stock_Take_Indicators Dimension\OLE DB Destination"
+          TopLeft="247,431" />
+        <EdgeLayout
+          Id="Package\Import Stock_Take_Indicators Dimension.Paths[Derived Column Output]"
+          TopLeft="336.25,402">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,29"
+              Start="0,0"
+              End="0,21.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,21.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Import Stock_Take_Indicators Dimension.Paths[OLE DB Destination Error Output]"
+          TopLeft="331.25,473">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,33"
+              Start="0,0"
+              End="0,25.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,25.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-73.20890625,7.033203125,146.4178125,11.43359375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="237,42"
+          Id="Package\Import Stock_Take_Indicators Dimension\Flat File Destination - write errors"
+          TopLeft="215,641" />
+        <EdgeLayout
+          Id="Package\Import Stock_Take_Indicators Dimension.Paths[Output 0]"
+          TopLeft="332.75,617">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,24"
+              Start="0,0"
+              End="0,16.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Import Stock_Take_Indicators Dimension\Lookup - existing record">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[Stock_Take_Indicators]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Import Stock_Take_Indicators Dimension\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Import Stock_Take_Indicators Dimension\Read S2_V_MM_Stock_Take_Indicators">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

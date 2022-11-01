@@ -1,0 +1,890 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="2/6/2021 12:33:52 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="P10974318-1"
+  DTS:CreatorName="P10974318-1\10974318"
+  DTS:DTSID="{426D5F21-D381-446D-AAD5-BF03EC78E07D}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.180"
+  DTS:LocaleID="7177"
+  DTS:ObjectName="DW_Recreate_DB_Objects"
+  DTS:PackageType="5"
+  DTS:VersionBuild="31"
+  DTS:VersionGUID="{ACBDA5CA-DA23-4142-AC2C-844FB9EF17C9}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[AtomicDW_Create_Objects.sql]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{F0E376A9-777B-467E-B63A-4BC8BB620CE9}"
+      DTS:ObjectName="AtomicDW_Create_Objects.sql">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[$Project::SQLScripts_Folder] + "AtomicDW_Create_Objects.sql"</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="D:\Uni 2022\Data Warehouses\Project\new github\DW2022\DW2022\SQLScripts\AtomicDW_Create_Objects.sql" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Date]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{E891CDCF-E46B-479C-88C5-311FEA5A6229}"
+      DTS:ObjectName="Date">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[$Project::Source_Files_Folder] + "Static\\Date.csv"</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="7177"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\Uni 2022\Data Warehouses\Project\new github\DW2022\DW2022\SourceFiles\Static\Date.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Date_Key"
+              DTS:DTSID="{75C662BC-616F-4699-BDB9-BC5990E04BDD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="133"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Date"
+              DTS:DTSID="{99330941-0E67-4BF6-AFD7-872398C61F96}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="20"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Date_Description"
+              DTS:DTSID="{C33C0025-B49C-4956-AB9C-8BC0249C67F5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="17"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Month_Of_Year"
+              DTS:DTSID="{F9A1B341-4AF9-4362-9E20-AC2EA77D4FBA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Month"
+              DTS:DTSID="{C540FFD4-E466-4AC1-AF50-2E05E0955B8C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Year"
+              DTS:DTSID="{EAA77C91-ECC0-4C01-9A72-56DD194AC968}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="7"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Year_Month"
+              DTS:DTSID="{67DB345B-80EA-4FA3-B562-D8EC18D5CCE5}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Date_Static]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{C4B98C49-89E2-4551-8BC5-54B956DDCD43}"
+      DTS:ObjectName="Date_Static">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[$Project::Source_Files_Folder]+"Static\\Date.csv"</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="7177"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\Uni 2022\Data Warehouses\Project\new github\DW2022\DW2022\SourceFiles\Static\Date.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Date_Key"
+              DTS:DTSID="{8AB8062F-53FD-4F5B-A167-A39EC2597696}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Date"
+              DTS:DTSID="{BB2E6983-737D-464B-9F4F-FC9A0F650BD9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Date_Description"
+              DTS:DTSID="{24ABEACB-B2EC-4F40-8A1E-41A8A4B0C15C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Month_Of_Year"
+              DTS:DTSID="{0E10E3E7-3335-4BE4-998D-CB7B793CBDF0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Month"
+              DTS:DTSID="{492AFC1E-5911-4F7C-B974-489F773D71FA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Year"
+              DTS:DTSID="{86A7E908-22A8-4B4A-92DA-193A5E5FDFDA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Year_Month"
+              DTS:DTSID="{6C9C30DB-E4A3-49D2-8072-5B117B085E31}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Week_End_Date"
+              DTS:DTSID="{AF015B0D-9C17-4C2A-B435-32095A3FDD6D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Week_Of_Year"
+              DTS:DTSID="{3E2C8674-D1B9-485A-BC4F-69808519AD80}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Execute SQL Task - Recreate AtomicDW Objects"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{9DDE396B-9A34-4A93-9F82-7704145B4E57}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute SQL Task - Recreate AtomicDW Objects"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{D104457E-A478-43DE-980E-0366FC91C67E}"
+          SQLTask:SqlStmtSourceType="FileConnection"
+          SQLTask:SqlStatementSource="AtomicDW_Create_Objects.sql" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Import static Date dimension data"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{A3E97DD5-EACE-4A9B-B846-91A1DD3B1915}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Import static Date dimension data"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Import static Date dimension data\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="7177"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">true</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import static Date dimension data\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Date_Static]"
+                  connectionManagerRefId="Package.ConnectionManagers[Date_Static]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Import static Date dimension data\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import static Date dimension data\Flat File Source.Outputs[Flat File Source Output].Columns[Date_Key]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import static Date dimension data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Date_Key]"
+                      lineageId="Package\Import static Date dimension data\Flat File Source.Outputs[Flat File Source Output].Columns[Date_Key]"
+                      name="Date_Key"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import static Date dimension data\Flat File Source.Outputs[Flat File Source Output].Columns[Date]"
+                      dataType="dbDate"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import static Date dimension data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Date]"
+                      lineageId="Package\Import static Date dimension data\Flat File Source.Outputs[Flat File Source Output].Columns[Date]"
+                      name="Date"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import static Date dimension data\Flat File Source.Outputs[Flat File Source Output].Columns[Date_Description]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import static Date dimension data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Date_Description]"
+                      length="20"
+                      lineageId="Package\Import static Date dimension data\Flat File Source.Outputs[Flat File Source Output].Columns[Date_Description]"
+                      name="Date_Description"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import static Date dimension data\Flat File Source.Outputs[Flat File Source Output].Columns[Month_Of_Year]"
+                      dataType="ui1"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import static Date dimension data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Month_Of_Year]"
+                      lineageId="Package\Import static Date dimension data\Flat File Source.Outputs[Flat File Source Output].Columns[Month_Of_Year]"
+                      name="Month_Of_Year"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import static Date dimension data\Flat File Source.Outputs[Flat File Source Output].Columns[Month]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import static Date dimension data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Month]"
+                      length="10"
+                      lineageId="Package\Import static Date dimension data\Flat File Source.Outputs[Flat File Source Output].Columns[Month]"
+                      name="Month"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import static Date dimension data\Flat File Source.Outputs[Flat File Source Output].Columns[Year]"
+                      dataType="i2"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import static Date dimension data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Year]"
+                      lineageId="Package\Import static Date dimension data\Flat File Source.Outputs[Flat File Source Output].Columns[Year]"
+                      name="Year"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import static Date dimension data\Flat File Source.Outputs[Flat File Source Output].Columns[Year_Month]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import static Date dimension data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Year_Month]"
+                      length="7"
+                      lineageId="Package\Import static Date dimension data\Flat File Source.Outputs[Flat File Source Output].Columns[Year_Month]"
+                      name="Year_Month"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import static Date dimension data\Flat File Source.Outputs[Flat File Source Output].Columns[Week_End_Date]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import static Date dimension data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Week_End_Date]"
+                      length="50"
+                      lineageId="Package\Import static Date dimension data\Flat File Source.Outputs[Flat File Source Output].Columns[Week_End_Date]"
+                      name="Week_End_Date"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import static Date dimension data\Flat File Source.Outputs[Flat File Source Output].Columns[Week_Of_Year]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import static Date dimension data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Week_Of_Year]"
+                      length="50"
+                      lineageId="Package\Import static Date dimension data\Flat File Source.Outputs[Flat File Source Output].Columns[Week_Of_Year]"
+                      name="Week_Of_Year"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Import static Date dimension data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Date_Key]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Date_Key" />
+                    <externalMetadataColumn
+                      refId="Package\Import static Date dimension data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Date" />
+                    <externalMetadataColumn
+                      refId="Package\Import static Date dimension data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Date_Description]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Date_Description" />
+                    <externalMetadataColumn
+                      refId="Package\Import static Date dimension data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Month_Of_Year]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Month_Of_Year" />
+                    <externalMetadataColumn
+                      refId="Package\Import static Date dimension data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Month]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Month" />
+                    <externalMetadataColumn
+                      refId="Package\Import static Date dimension data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Year]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Year" />
+                    <externalMetadataColumn
+                      refId="Package\Import static Date dimension data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Year_Month]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Year_Month" />
+                    <externalMetadataColumn
+                      refId="Package\Import static Date dimension data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Week_End_Date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Week_End_Date" />
+                    <externalMetadataColumn
+                      refId="Package\Import static Date dimension data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Week_Of_Year]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Week_Of_Year" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Import static Date dimension data\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import static Date dimension data\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Import static Date dimension data\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Import static Date dimension data\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import static Date dimension data\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import static Date dimension data\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import static Date dimension data\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import static Date dimension data\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Date]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import static Date dimension data\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="{D104457E-A478-43DE-980E-0366FC91C67E}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[AtomicDW]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Import static Date dimension data\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import static Date dimension data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Date_Key]"
+                      cachedDataType="i4"
+                      cachedName="Date_Key"
+                      externalMetadataColumnId="Package\Import static Date dimension data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Date_Key]"
+                      lineageId="Package\Import static Date dimension data\Flat File Source.Outputs[Flat File Source Output].Columns[Date_Key]" />
+                    <inputColumn
+                      refId="Package\Import static Date dimension data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Date]"
+                      cachedDataType="dbDate"
+                      cachedName="Date"
+                      externalMetadataColumnId="Package\Import static Date dimension data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Date]"
+                      lineageId="Package\Import static Date dimension data\Flat File Source.Outputs[Flat File Source Output].Columns[Date]" />
+                    <inputColumn
+                      refId="Package\Import static Date dimension data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Date_Description]"
+                      cachedDataType="wstr"
+                      cachedLength="20"
+                      cachedName="Date_Description"
+                      externalMetadataColumnId="Package\Import static Date dimension data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Date_Description]"
+                      lineageId="Package\Import static Date dimension data\Flat File Source.Outputs[Flat File Source Output].Columns[Date_Description]" />
+                    <inputColumn
+                      refId="Package\Import static Date dimension data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Month_Of_Year]"
+                      cachedDataType="ui1"
+                      cachedName="Month_Of_Year"
+                      externalMetadataColumnId="Package\Import static Date dimension data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Month_Of_Year]"
+                      lineageId="Package\Import static Date dimension data\Flat File Source.Outputs[Flat File Source Output].Columns[Month_Of_Year]" />
+                    <inputColumn
+                      refId="Package\Import static Date dimension data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Month]"
+                      cachedDataType="wstr"
+                      cachedLength="10"
+                      cachedName="Month"
+                      externalMetadataColumnId="Package\Import static Date dimension data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Month]"
+                      lineageId="Package\Import static Date dimension data\Flat File Source.Outputs[Flat File Source Output].Columns[Month]" />
+                    <inputColumn
+                      refId="Package\Import static Date dimension data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Year]"
+                      cachedDataType="i2"
+                      cachedName="Year"
+                      externalMetadataColumnId="Package\Import static Date dimension data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Year]"
+                      lineageId="Package\Import static Date dimension data\Flat File Source.Outputs[Flat File Source Output].Columns[Year]" />
+                    <inputColumn
+                      refId="Package\Import static Date dimension data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Year_Month]"
+                      cachedDataType="wstr"
+                      cachedLength="7"
+                      cachedName="Year_Month"
+                      externalMetadataColumnId="Package\Import static Date dimension data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Year_Month]"
+                      lineageId="Package\Import static Date dimension data\Flat File Source.Outputs[Flat File Source Output].Columns[Year_Month]" />
+                    <inputColumn
+                      refId="Package\Import static Date dimension data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Week_End_Date]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Week_End_Date"
+                      externalMetadataColumnId="Package\Import static Date dimension data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Week_End_Date]"
+                      lineageId="Package\Import static Date dimension data\Flat File Source.Outputs[Flat File Source Output].Columns[Week_End_Date]" />
+                    <inputColumn
+                      refId="Package\Import static Date dimension data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Week_Of_Year]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Week_Of_Year"
+                      externalMetadataColumnId="Package\Import static Date dimension data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Week_Of_Year]"
+                      lineageId="Package\Import static Date dimension data\Flat File Source.Outputs[Flat File Source Output].Columns[Week_Of_Year]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Import static Date dimension data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Date_Key]"
+                      dataType="i4"
+                      name="Date_Key" />
+                    <externalMetadataColumn
+                      refId="Package\Import static Date dimension data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Date]"
+                      dataType="dbDate"
+                      name="Date" />
+                    <externalMetadataColumn
+                      refId="Package\Import static Date dimension data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Date_Description]"
+                      dataType="wstr"
+                      length="20"
+                      name="Date_Description" />
+                    <externalMetadataColumn
+                      refId="Package\Import static Date dimension data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Month_Of_Year]"
+                      dataType="ui1"
+                      name="Month_Of_Year" />
+                    <externalMetadataColumn
+                      refId="Package\Import static Date dimension data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Month]"
+                      dataType="wstr"
+                      length="10"
+                      name="Month" />
+                    <externalMetadataColumn
+                      refId="Package\Import static Date dimension data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Year]"
+                      dataType="i4"
+                      name="Year" />
+                    <externalMetadataColumn
+                      refId="Package\Import static Date dimension data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Year_Month]"
+                      dataType="wstr"
+                      length="7"
+                      name="Year_Month" />
+                    <externalMetadataColumn
+                      refId="Package\Import static Date dimension data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Week_End_Date]"
+                      dataType="dbDate"
+                      name="Week_End_Date" />
+                    <externalMetadataColumn
+                      refId="Package\Import static Date dimension data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Week_Of_Year]"
+                      dataType="i4"
+                      name="Week_Of_Year" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import static Date dimension data\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Import static Date dimension data\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import static Date dimension data\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import static Date dimension data\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import static Date dimension data\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import static Date dimension data\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Import static Date dimension data.Paths[Flat File Source Output]"
+              endId="Package\Import static Date dimension data\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\Import static Date dimension data\Flat File Source.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{9FF7AE48-7F8C-43DF-BD37-AA7124E1A5FD}"
+      DTS:From="Package\Execute SQL Task - Recreate AtomicDW Objects"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Import static Date dimension data" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="306,42"
+          Id="Package\Execute SQL Task - Recreate AtomicDW Objects"
+          TopLeft="112,65" />
+        <NodeLayout
+          Size="240,42"
+          Id="Package\Import static Date dimension data"
+          TopLeft="147,143" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="266,107">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,36"
+              Start="0,0"
+              End="0,28.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Import static Date dimension data">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Import static Date dimension data\OLE DB Destination"
+          TopLeft="230.28571427355,108.764705893078" />
+        <NodeLayout
+          Size="150,42"
+          Id="Package\Import static Date dimension data\Flat File Source"
+          TopLeft="232,33" />
+        <EdgeLayout
+          Id="Package\Import static Date dimension data.Paths[Flat File Source Output]"
+          TopLeft="307,75">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="8.78571427355001,33.764705893078"
+              Start="0,0"
+              End="8.78571427355001,26.264705893078">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,12.882352946539" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,12.882352946539"
+                    Point2="0,16.882352946539"
+                    Point3="4,16.882352946539" />
+                  <mssgle:LineSegment
+                    End="4.78571427355001,16.882352946539" />
+                  <mssgle:CubicBezierSegment
+                    Point1="4.78571427355001,16.882352946539"
+                    Point2="8.78571427355001,16.882352946539"
+                    Point3="8.78571427355001,20.882352946539" />
+                  <mssgle:LineSegment
+                    End="8.78571427355001,26.264705893078" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Import static Date dimension data\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

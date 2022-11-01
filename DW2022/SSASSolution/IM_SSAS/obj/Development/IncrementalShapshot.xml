@@ -1,0 +1,89 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>IM_SSAS</Database>
+    <Server>LAPTOP-9V10U55C\MSSQLSERVER02</Server>
+    <ConnectionString>Data Source=LAPTOP-9V10U55C\MSSQLSERVER02;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>eqVKWaUcyiiK4ne+/Ub3yg7Tyo4=2022/10/26 13:06:352022/09/09 15:21:03</TimeStamp>
+        <ID>
+          <String>Atomic DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>2N700yA/hktmVU5Hh7ZvNgM9WTQ=2022/10/27 19:22:362022/10/27 19:17:10</TimeStamp>
+        <ID>
+          <String>Atomic DW Data Source</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>CCSKVSu1iBLGEBPbMq0HPHmn3a4=2022/10/27 20:41:562022/10/27 19:46:18</TimeStamp>
+        <ID>
+          <String>Employee 1</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>703XEh/dmxkFnhTHFb9k3y/rhbM=2022/10/27 20:15:562022/10/27 20:15:56</TimeStamp>
+        <ID>
+          <String>Date</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Y9EZmegrdlh900+JwGGoIzdP0RQ=2022/10/27 20:19:162022/10/27 20:19:16</TimeStamp>
+        <ID>
+          <String>Project</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>nagUbiIBJwz6TeBdnnPagv02L2Q=2022/10/27 20:20:312022/10/27 20:20:31</TimeStamp>
+        <ID>
+          <String>Project Status</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Gc8kJOG29pJNV2Wo/WAcb0Vynq4=2022/10/27 20:42:122022/10/27 20:37:18</TimeStamp>
+        <ID>
+          <String>Customer</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>Co0B8pmm56AgWDo2X3lma+tKb8g=2022/10/27 20:45:252022/10/27 20:45:24+1vv8BUJ/j4b9Mo+DuBCn1mdV1c=2022/10/27 20:45:252022/10/27 20:45:24</TimeStamp>
+        <ID>
+          <String>Atomic DW</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>QU0VjgFIezJrIIPPUxb3rFu45sI=2022/09/09 15:21:032022/09/09 15:21:03</TimeStamp>
+      <ID>
+        <String>IM_SSAS</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2022-10-27T19:06:57.39Z</LastDeployed>
+</DeploymentSnapshot>

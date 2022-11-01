@@ -1,0 +1,3508 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="3/9/2019 10:38:06 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-KD25EBE"
+  DTS:CreatorName="DESKTOP-KD25EBE\rkwuser"
+  DTS:DTSID="{1EEA7375-A614-47B8-857B-27A0A050C69F}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.180"
+  DTS:LocaleID="7177"
+  DTS:ObjectName="S2_Import_PW_Customers"
+  DTS:PackageType="5"
+  DTS:VersionBuild="130"
+  DTS:VersionGUID="{E6B72881-B819-4670-A68B-81CB0E19FA25}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Errors File]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{C75F03E9-B431-40D0-B462-1C001FBB9DFD}"
+      DTS:ObjectName="Errors File">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[$Project::Error_Files_Folder] + @[System::PackageName] + "_" +  @[User::IB_String] + "_Errors.csv"</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="7177"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\Uni 2022\Data Warehouses\Project\new github\DW2022\DW2022\ErrorFiles\S2_Import_PW_Customers_202112_Errors.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="20"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="C_Customer_ID"
+              DTS:DTSID="{EF597C88-A5CF-4223-97A8-E282A5CAA128}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="20"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="C_Department_ID"
+              DTS:DTSID="{ECEF7CCC-4D76-4FC8-8BEF-889DE0F86576}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="C_Customer_Name"
+              DTS:DTSID="{5302B2DD-64D4-4334-ACDF-07E8887902ED}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="C_Contact_Person"
+              DTS:DTSID="{34317F1E-12F6-4D73-8885-02AD6746AB6D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="C_Address_Line_2"
+              DTS:DTSID="{68A95906-ACDC-4E03-9F6B-F23D54253942}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="C_Address_Line_1"
+              DTS:DTSID="{B20576F1-8286-4BD7-BB4E-5161FDCF87C9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="C_City_Town"
+              DTS:DTSID="{CD2699EE-7CC2-470F-9445-71E8C7A6F034}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="4"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="C_Postal_Code"
+              DTS:DTSID="{175E2CCE-03E5-4F28-AB4B-5D28455693E7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="IB_Year"
+              DTS:DTSID="{3B1D3A0D-2D35-4DF1-A9D3-34C080687F85}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="IBPT_ID"
+              DTS:DTSID="{59DA1E21-98F4-42AB-9BAA-0D24EFBFC5FD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorCode"
+              DTS:DTSID="{A25238DD-D056-4E28-8155-73E11C3540F4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorColumn"
+              DTS:DTSID="{938A9E4B-CD4F-4489-AC2B-87A6B2150CED}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="500"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorDescription"
+              DTS:DTSID="{A0075545-010A-4162-B05A-5D75D9BC02BE}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Source File]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{D49586F6-1EAD-4BC6-8845-A7CB16A7A52F}"
+      DTS:ObjectName="Source File">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[$Project::Source_Files_Folder]  +  @[User::IB_String] + "\\" +   @[$Package::Source_File_Name]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="7177"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\Uni 2022\Data Warehouses\Project\new github\DW2022\DW2022\SourceFiles\202112\Customer.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="20"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="C_Customer_ID"
+              DTS:DTSID="{A4EE2F30-DCE9-442D-8423-00A3EE7A76D3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="20"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="C_Department_ID"
+              DTS:DTSID="{F5BA74B3-9CFA-439A-8B27-3E02FA4B936E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="C_Customer_Name"
+              DTS:DTSID="{5C5582C6-E9A6-4365-98D2-31C0980FB4FC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="C_Contact_Person"
+              DTS:DTSID="{3C919690-96D1-4801-AFE2-57ADC10E764B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="C_Address_Line_1"
+              DTS:DTSID="{7FDABCDC-9C6B-45E1-BEB7-78C4234B873C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="C_Address_Line_2"
+              DTS:DTSID="{1EB387DC-12A9-4499-8352-E33040C9D648}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="C_City_Town"
+              DTS:DTSID="{38580DF7-89FA-4BE4-8D02-639DEDE7A0F0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="4"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="C_Postal_Code"
+              DTS:DTSID="{BCE102CD-1E32-4E41-AF6B-54DBD5994226}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:PackageParameters>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="3"
+      DTS:DTSID="{ACEAD6C6-2EFD-4A83-93AC-05A4D001F38A}"
+      DTS:ObjectName="IBP_ID">
+      <DTS:Property
+        DTS:DataType="3"
+        DTS:Name="ParameterValue">0</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{AFAD5B25-E374-43B2-9813-D81C8729AA71}"
+      DTS:ObjectName="Source_File_Name">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">Customer.csv</DTS:Property>
+    </DTS:PackageParameter>
+  </DTS:PackageParameters>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{DEA17DAE-F066-46A9-9065-6C1D15B6C6F9}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="GETDATE()"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Current_DateTime">
+      <DTS:VariableValue
+        DTS:DataType="7">10/27/2022 2:12:43 PM</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{D7DD7AF0-C304-4655-91D1-109ABA688F5B}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="IBPT_ID">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{73F1B8A1-B097-4256-B50C-196ED9B848B3}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="IBPT_Records_Failed">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{4321DFCB-114C-4768-A0A4-49133297FD75}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="IBPT_Records_In">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{7DC5CBF3-179B-47CD-B2E4-78DBFE466E9D}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[User::IBPT_Records_In]- @[User::IBPT_Records_Failed]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="IBPT_Records_Out">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{7E53EBAA-1C85-4E58-A55A-93C6FFAEF608}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="(DT_WSTR, 4)( @[$Project::IB_Year]  ) +   (DT_WSTR, 2)( @[$Project::IB_Month]  )"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="IB_String">
+      <DTS:VariableValue
+        DTS:DataType="8">202112</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Create Import_Batch_Process_Task"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{19DC1F50-085D-4DD1-9313-206CEA9A02F0}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Create Import_Batch_Process_Task"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{269750FA-4CF7-455D-A89C-2803937A9C27}"
+          SQLTask:IsStoredProc="True"
+          SQLTask:SqlStatementSource="Create_Import_Batch_Process_Task" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="RC"
+            SQLTask:DtsVariableName="User::IBPT_ID"
+            SQLTask:ParameterDirection="ReturnValue"
+            SQLTask:DataType="11"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="IBP_ID"
+            SQLTask:DtsVariableName="$Package::IBP_ID"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="11"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="IBPT_Description"
+            SQLTask:DtsVariableName="System::PackageName"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="16"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="IBPT_Start"
+            SQLTask:DtsVariableName="User::Current_DateTime"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="6"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Import PW Customers"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{E1086138-A889-49A2-9773-73BCC51DE6B6}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Import PW Customers"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Import PW Customers\Derived Column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Import PW Customers\Derived Column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import PW Customers\Derived Column.Inputs[Derived Column Input].Columns[C_Department_ID]"
+                      cachedDataType="wstr"
+                      cachedLength="20"
+                      cachedName="C_Department_ID"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_Department_ID]"
+                      truncationRowDisposition="FailComponent"
+                      usageType="readWrite">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[REPLACENULL](#{Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_Department_ID]},"*Unknown")</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">REPLACENULL(C_Department_ID,"*Unknown")</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Import PW Customers\Derived Column.Inputs[Derived Column Input].Columns[C_Customer_Name]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="C_Customer_Name"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_Customer_Name]"
+                      truncationRowDisposition="FailComponent"
+                      usageType="readWrite">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[REPLACENULL](#{Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_Customer_Name]},"*Unknown Customer")</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">REPLACENULL(C_Customer_Name,"*Unknown Customer")</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Import PW Customers\Derived Column.Inputs[Derived Column Input].Columns[C_Contact_Person]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="C_Contact_Person"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_Contact_Person]"
+                      truncationRowDisposition="FailComponent"
+                      usageType="readWrite">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[REPLACENULL](#{Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_Contact_Person]},"*Unknown Contact Person")</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">REPLACENULL(C_Contact_Person,"*Unknown Contact Person")</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Import PW Customers\Derived Column.Inputs[Derived Column Input].Columns[C_Address_Line_2]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="C_Address_Line_1"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_Address_Line_1]"
+                      name="C_Address_Line_2"
+                      truncationRowDisposition="FailComponent"
+                      usageType="readWrite">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[REPLACENULL](#{Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_Address_Line_1]},[ISNULL](#{Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_Address_Line_2]}) ? "Unknown Address Line 2" : "*No Address Line 2")</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">REPLACENULL(C_Address_Line_2,ISNULL(C_Address_Line_1) ? "Unknown Address Line 2" : "*No Address Line 2")</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Import PW Customers\Derived Column.Inputs[Derived Column Input].Columns[C_Address_Line_1]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="C_Address_Line_2"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_Address_Line_2]"
+                      name="C_Address_Line_1"
+                      truncationRowDisposition="FailComponent"
+                      usageType="readWrite">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[REPLACENULL](#{Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_Address_Line_2]},"*Unknown Address Line 1")</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">REPLACENULL(C_Address_Line_1,"*Unknown Address Line 1")</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Import PW Customers\Derived Column.Inputs[Derived Column Input].Columns[C_City_Town]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="C_City_Town"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_City_Town]"
+                      truncationRowDisposition="FailComponent"
+                      usageType="readWrite">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[REPLACENULL](#{Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_City_Town]},"*Unknown City or Town")</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">REPLACENULL(C_City_Town,"*Unknown City or Town")</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Import PW Customers\Derived Column.Inputs[Derived Column Input].Columns[C_Postal_Code]"
+                      cachedDataType="wstr"
+                      cachedLength="4"
+                      cachedName="C_Postal_Code"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_Postal_Code]"
+                      truncationRowDisposition="FailComponent"
+                      usageType="readWrite">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[REPLACENULL](#{Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_Postal_Code]},"****")</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">REPLACENULL(C_Postal_Code,"****")</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import PW Customers\Derived Column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Import PW Customers\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import PW Customers\Derived Column.Outputs[Derived Column Output].Columns[IBPT_ID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Import PW Customers\Derived Column.Outputs[Derived Column Output].Columns[IBPT_ID]"
+                      name="IBPT_ID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">@[User::IBPT_ID]</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">@[User::IBPT_ID]</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Import PW Customers\Derived Column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Import PW Customers\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import PW Customers\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import PW Customers\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import PW Customers\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import PW Customers\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import PW Customers\Derived Column 1"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column 1"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Import PW Customers\Derived Column 1.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import PW Customers\Derived Column 1.Inputs[Derived Column Input].Columns[C_Department_ID]"
+                      cachedDataType="wstr"
+                      cachedLength="20"
+                      cachedName="C_Department_ID"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].Columns[C_Department_ID]"
+                      truncationRowDisposition="FailComponent"
+                      usageType="readWrite">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">"Unknown Customer Department ID"</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">"Unknown Customer Department ID"</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import PW Customers\Derived Column 1.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Import PW Customers\Derived Column 1.Inputs[Derived Column Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Import PW Customers\Derived Column 1.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Import PW Customers\Derived Column 1.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import PW Customers\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import PW Customers\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import PW Customers\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import PW Customers\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import PW Customers\Get Error Description"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Includes and runs custom script code. For example, apply a business rule that limits the range of valid values in an &quot;income&quot; column or add values in two columns and calculate the average of the sum.;Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;12"
+              description="Includes and runs custom script code. For example, apply a business rule that limits the range of valid values in an &quot;income&quot; column or add values in two columns and calculate the average of the sum."
+              name="Get Error Description"
+              version="12">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Stores the source code of the component"
+                  isArray="true"
+                  name="SourceCode"
+                  state="cdata">
+                  <arrayElements
+                    arrayElementCount="30">
+                    <arrayElement
+                      dataType="System.String"><![CDATA[ComponentWrapper.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[/* THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
+*  Microsoft SQL Server Integration Services component wrapper
+*  This module defines the base class for your component
+*  THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT! */
+
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+using Microsoft.SqlServer.Dts.Runtime.Wrapper;
+
+public class UserComponent: ScriptComponent
+{
+    public Connections Connections;
+    public Variables Variables;
+    public UserComponent()
+    {
+        Connections = new Connections(this);
+        Variables = new Variables(this);
+    }
+
+    public override void ProcessInput(int InputID, string InputName, PipelineBuffer Buffer, OutputNameMap OutputMap)
+    {
+
+        if (InputName.Equals(@"Input 0", StringComparison.Ordinal))
+        {
+            Input0_ProcessInput(new Input0Buffer(Buffer, GetColumnIndexes(InputID), OutputMap));
+        }
+
+    }
+
+    public virtual void Input0_ProcessInput(Input0Buffer Buffer)
+    {
+        while (Buffer.NextRow())
+        {
+            Input0_ProcessInputRow(Buffer);
+        }
+    }
+
+    public virtual void Input0_ProcessInputRow(Input0Buffer Row)
+    {
+    }
+
+}
+
+public class Connections
+{
+    ScriptComponent ParentComponent;
+
+    public Connections(ScriptComponent Component)
+    {
+        ParentComponent = Component;
+    }
+
+}
+
+public class Variables
+{
+    ScriptComponent ParentComponent;
+
+    public Variables(ScriptComponent Component)
+    {
+        ParentComponent = Component;
+    }
+
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Resources.resx]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+</root>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[main.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[#region Help:  Introduction to the Script Component
+/* The Script Component allows you to perform virtually any operation that can be accomplished in
+ * a .Net application within the context of an Integration Services data flow.
+ *
+ * Expand the other regions which have "Help" prefixes for examples of specific ways to use
+ * Integration Services features within this script component. */
+#endregion
+
+#region Namespaces
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+using Microsoft.SqlServer.Dts.Runtime.Wrapper;
+#endregion
+
+/// <summary>
+/// This is the class to which to add your code.  Do not change the name, attributes, or parent
+/// of this class.
+/// </summary>
+[Microsoft.SqlServer.Dts.Pipeline.SSISScriptComponentEntryPointAttribute]
+public class ScriptMain : UserComponent
+{
+    #region Help:  Using Integration Services variables and parameters
+    /* To use a variable in this script, first ensure that the variable has been added to
+     * either the list contained in the ReadOnlyVariables property or the list contained in
+     * the ReadWriteVariables property of this script component, according to whether or not your
+     * code needs to write into the variable.  To do so, save this script, close this instance of
+     * Visual Studio, and update the ReadOnlyVariables and ReadWriteVariables properties in the
+     * Script Transformation Editor window.
+     * To use a parameter in this script, follow the same steps. Parameters are always read-only.
+     *
+     * Example of reading from a variable or parameter:
+     *  DateTime startTime = Variables.MyStartTime;
+     *
+     * Example of writing to a variable:
+     *  Variables.myStringVariable = "new value";
+     */
+    #endregion
+
+    #region Help:  Using Integration Services Connnection Managers
+    /* Some types of connection managers can be used in this script component.  See the help topic
+     * "Working with Connection Managers Programatically" for details.
+     *
+     * To use a connection manager in this script, first ensure that the connection manager has
+     * been added to either the list of connection managers on the Connection Managers page of the
+     * script component editor.  To add the connection manager, save this script, close this instance of
+     * Visual Studio, and add the Connection Manager to the list.
+     *
+     * If the component needs to hold a connection open while processing rows, override the
+     * AcquireConnections and ReleaseConnections methods.
+     * 
+     * Example of using an ADO.Net connection manager to acquire a SqlConnection:
+     *  object rawConnection = Connections.SalesDB.AcquireConnection(transaction);
+     *  SqlConnection salesDBConn = (SqlConnection)rawConnection;
+     *
+     * Example of using a File connection manager to acquire a file path:
+     *  object rawConnection = Connections.Prices_zip.AcquireConnection(transaction);
+     *  string filePath = (string)rawConnection;
+     *
+     * Example of releasing a connection manager:
+     *  Connections.SalesDB.ReleaseConnection(rawConnection);
+     */
+    #endregion
+
+    #region Help:  Firing Integration Services Events
+    /* This script component can fire events.
+     *
+     * Example of firing an error event:
+     *  ComponentMetaData.FireError(10, "Process Values", "Bad value", "", 0, out cancel);
+     *
+     * Example of firing an information event:
+     *  ComponentMetaData.FireInformation(10, "Process Values", "Processing has started", "", 0, fireAgain);
+     *
+     * Example of firing a warning event:
+     *  ComponentMetaData.FireWarning(10, "Process Values", "No rows were received", "", 0);
+     */
+    #endregion
+
+    /// <summary>
+    /// This method is called once, before rows begin to be processed in the data flow.
+    ///
+    /// You can remove this method if you don't need to do anything here.
+    /// </summary>
+    public override void PreExecute()
+    {
+        base.PreExecute();
+        /*
+         * Add your code here
+         */
+    }
+
+    /// <summary>
+    /// This method is called after all the rows have passed through this component.
+    ///
+    /// You can delete this method if you don't need to do anything here.
+    /// </summary>
+    public override void PostExecute()
+    {
+        base.PostExecute();
+        /*
+         * Add your code here
+         */
+    }
+
+    /// <summary>
+    /// This method is called once for every row that passes through the component from Input0.
+    ///
+    /// Example of reading a value from a column in the the row:
+    ///  string zipCode = Row.ZipCode
+    ///
+    /// Example of writing a value to a column in the row:
+    ///  Row.ZipCode = zipCode
+    /// </summary>
+    /// <param name="Row">The row that is currently passing through the component</param>
+    public override void Input0_ProcessInputRow(Input0Buffer Row)
+    {
+        Row.ErrorDescription = this.ComponentMetaData.GetErrorDescription(Row.ErrorCode);
+    }
+
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[BufferWrapper.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[/* THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
+*  Microsoft SQL Server Integration Services buffer wrappers
+*  This module defines classes for accessing data flow buffers
+*  THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT! */
+
+
+
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+
+public class Input0Buffer: ScriptBuffer
+
+{
+    public Input0Buffer(PipelineBuffer Buffer, int[] BufferColumnIndexes, OutputNameMap OutputMap)
+        : base(Buffer, BufferColumnIndexes, OutputMap)
+    {
+    }
+
+    public Int32 ErrorCode
+    {
+        get
+        {
+            return Buffer.GetInt32(BufferColumnIndexes[0]);
+        }
+    }
+    public bool ErrorCode_IsNull
+    {
+        get
+        {
+            return IsNull(0);
+        }
+    }
+
+    public String ErrorDescription
+    {
+        set
+        {
+            this[1] = value;
+        }
+    }
+    public bool ErrorDescription_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(1);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    new public bool NextRow()
+    {
+        return base.NextRow();
+    }
+
+    new public bool EndOfRowset()
+    {
+        return base.EndOfRowset();
+    }
+
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[SC_830e0040cad142fab5beac1c02b05b26.csproj]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ef1fdfbf-b515-4832-b05c-6799b09d4553}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SC_830e0040cad142fab5beac1c02b05b26</RootNamespace>
+    <AssemblyName>SC_830e0040cad142fab5beac1c02b05b26</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.SqlServer.TxScript, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.DTSRuntimeWrap, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.DTSPipelineWrap, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.PipelineHost, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Compile Include="main.cs" />
+    <Compile Include="BufferWrapper.cs" />
+    <Compile Include="ComponentWrapper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <!-- Include the build rules for a C# project.-->
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- This section defines VSTA properties that describe the host-changable project properties. -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}">
+        <ProjectProperties HostName="ScriptComponent" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" DebugInfoExeName="" DebugInfoCommandLine="" DebugInfoWorkingDir="" IconImageList="" />
+        <Host Name="ScriptComponent" GeneratedNamespace="SC_830e0040cad142fab5beac1c02b05b26" IconIndex="0"></Host>
+        <ProjectClient>
+          <HostIdentifier>SSIS_SC150</HostIdentifier>
+        </ProjectClient>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Settings.Designer.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_830e0040cad142fab5beac1c02b05b26.Properties.Settings.get_Default():SC_830e0040cad142fab5beac1c02b05b26.Properties.Sett" +
+    "ings")]
+
+namespace SC_830e0040cad142fab5beac1c02b05b26.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Project]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF16LE]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
+<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="3.0" schemaVersion="1.0">
+  <msb:PropertyGroup>
+    <msb:Language>msBuild</msb:Language>
+    <msb:CodeName>SC_830e0040cad142fab5beac1c02b05b26</msb:CodeName>
+    <msb:DisplayName>SC_830e0040cad142fab5beac1c02b05b26</msb:DisplayName>
+    <msb:ProjectId>{87C70CAE-A055-4A88-987B-8C0ED9CEF047}</msb:ProjectId>
+  </msb:PropertyGroup>
+  <msb:ItemGroup>
+    <msb:Project Include="SC_830e0040cad142fab5beac1c02b05b26.csproj" />
+    <msb:File Include="Properties\Resources.resx" />
+    <msb:File Include="Properties\Settings.settings" />
+    <msb:File Include="Properties\AssemblyInfo.cs" />
+    <msb:File Include="Properties\Resources.Designer.cs" />
+    <msb:File Include="main.cs" />
+    <msb:File Include="BufferWrapper.cs" />
+    <msb:File Include="Properties\Settings.Designer.cs" />
+    <msb:File Include="ComponentWrapper.cs" />
+  </msb:ItemGroup>
+</c:Project>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\AssemblyInfo.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("SC_830e0040cad142fab5beac1c02b05b26")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("HP Inc.")]
+[assembly: AssemblyProduct("SC_830e0040cad142fab5beac1c02b05b26")]
+[assembly: AssemblyCopyright("Copyright @ HP Inc. 2022")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.0.0")]
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Settings.settings]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Resources.Designer.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_830e0040cad142fab5beac1c02b05b26.Properties.Resources.get_ResourceManager():System.Resources.Resou" +
+    "rceManager")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_830e0040cad142fab5beac1c02b05b26.Properties.Resources.get_Culture():System.Globalization.CultureIn" +
+    "fo")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_830e0040cad142fab5beac1c02b05b26.Properties.Resources.set_Culture(System.Globalization.CultureInfo" +
+    "):Void")]
+
+namespace SC_830e0040cad142fab5beac1c02b05b26.Properties {
+    
+    
+    /// <summary>
+    ///   A strongly-typed resource class, for looking up localized strings, etc.
+    /// </summary>
+    // This class was auto-generated by the StronglyTypedResourceBuilder
+    // class via a tool like ResGen or Visual Studio.
+    // To add or remove a member, edit your .ResX file then rerun ResGen
+    // with the /str option, or rebuild your VS project.
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    internal class Resources {
+        
+        private static global::System.Resources.ResourceManager resourceMan;
+        
+        private static global::System.Globalization.CultureInfo resourceCulture;
+        
+        [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
+        internal Resources() {
+        }
+        
+        /// <summary>
+        ///   Returns the cached ResourceManager instance used by this class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if ((resourceMan == null)) {
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SC_830e0040cad142fab5beac1c02b05b26.Properties.Resources", typeof(Resources).Assembly);
+                    resourceMan = temp;
+                }
+                return resourceMan;
+            }
+        }
+        
+        /// <summary>
+        ///   Overrides the current thread's CurrentUICulture property for all
+        ///   resource lookups using this strongly typed resource class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
+                return resourceCulture;
+            }
+            set {
+                resourceCulture = value;
+            }
+        }
+    }
+}
+]]></arrayElement>
+                  </arrayElements>
+                </property>
+                <property
+                  dataType="System.String"
+                  description="Stores the binary representation of the component"
+                  isArray="true"
+                  name="BinaryCode"
+                  state="cdata">
+                  <arrayElements
+                    arrayElementCount="2">
+                    <arrayElement
+                      dataType="System.String"><![CDATA[SC_830e0040cad142fab5beac1c02b05b26.dll]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDANRCEmMAAAAAAAAAAOAAIiALATAAABQAAAAIAAAAAAAAijIA
+AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAACAAAAAAgAAAAAAAAMAYIUAABAA
+ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAADgyAABPAAAAAEAAAGQEAAAAAAAAAAAAAAAAAAAA
+AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAAkBIAAAAgAAAAFAAAAAIA
+AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAGQEAAAAQAAAAAYAAAAWAAAAAAAAAAAAAAAAAABAAABA
+LnJlbG9jAAAMAAAAAGAAAAACAAAAHAAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAABs
+MgAAAAAAAEgAAAACAAUAtCEAAMwPAAABAAAAAAAAAIAxAAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4CKBAAAAoqHgIoEQAACipiAwIoEgAACgNvBgAABm8TAAAK
+bwgAAAYqHgIoDAAABioqAgMEBSgUAAAKKlICexUAAAoCexYAAAoWlG8XAAAKKiICFigYAAAKKiYC
+FwMoGQAACipaAywIAhcoGgAACipyAQAAcHMbAAAKeh4CKBwAAAoqHgIoHQAACip+AigeAAAKAgJz
+EAAABn0BAAAEAgJzEQAABn0CAAAEKpIEcp4AAHAabx8AAAosFQIFAgMoIAAACg4EcwUAAAZvDgAA
+BipKKwcCA28PAAAGA28KAAAGLfEqBio6AighAAAKAgN9AwAABCo6AighAAAKAgN9BAAABCoeAigh
+AAAKKq5+BQAABC0ecq4AAHDQBwAAAigiAAAKbyMAAApzJAAACoAFAAAEfgUAAAQqGn4GAAAEKh4C
+gAYAAAQqGn4HAAAEKh4CKCUAAAoqLnMXAAAGgAcAAAQqAAAAQlNKQgEAAQAAAAAADAAAAHY0LjAu
+MzAzMTkAAAAABQBsAAAAjAUAACN+AAD4BQAA4AYAACNTdHJpbmdzAAAAANgMAAAgAQAAI1VTAPgN
+AAAQAAAAI0dVSUQAAAAIDgAAxAEAACNCbG9iAAAAAAAAAAIAAAFXFaABCQEAAAD6ATMAFgAAAQAA
+ACAAAAAIAAAABwAAABgAAAAPAAAAJQAAABAAAAADAAAABwAAAAgAAAABAAAABQAAAAEAAAAAADAD
+AQAAAAAABgAqAhYFBgC+AhYFBgB2AQMFDwCKBQAABgCjAeIDBgANAuIDBgDuAeIDBgClAuIDBgBK
+AuIDBgBjAuIDBgC6AeIDBgDVAfkCCgB+AsMACgCsBMMADgCdBMMACgBUBMMACgBQBsMABgATBpoD
+BgBZAQMFBgC9BDYFBgBIBM0DEgApARoDEgCKARoDEgARAbgDBgA+ARYFFgABAM0EBgD0A5oDBgAT
+A5oDBgA3BJoDBgDkAJoDBgCVAJoDBgDVBuIDAAAAAEcAAAAAAAEAAQABABAArQMAABAAAQABAAEA
+EACQBAAAOQABAAUAAQAQADIGAABFAAEADAABABAABwYAAEkAAwAQAAEAEADIBQAASQAEABEAAAAQ
+AD0FmQVJAAUAEgAAARAA9wWZBWEABwAWAAYABwZ/AAYAyAWDAAEAQAaHAAEAQAaHABEAoQOLABEA
+AQGPABEAdwCTAFAgAAAAAMYA3AIGAAEAWCAAAAAAxgDnAgYAAQBgIAAAAADGALIGlwABAHkgAAAA
+AIYY9gQGAAIAgSAAAAAAhhj2BCUAAgCMIAAAAACGCIcAnQAFAKEgAAAAAIYIWANHAAUAqiAAAAAA
+hggOBBAABQC0IAAAAACGCG0DoQAGAMsgAAAAAIYAyQZHAAcA0yAAAAAAhgAaBkcABwDbIAAAAACG
+GPYEBgAHAPsgAAAAAMYApQamAAcAICEAAAAAxgGeBpcACwAzIQAAAADGAbIGlwAMADUhAAAAAIYY
+9gSwAA0ARCEAAAAAhhj2BLAADgBTIQAAAACDGPYEBgAPAFshAAAAAJMIuQS2AA8AhyEAAAAAkwjp
+ALsADwCOIQAAAACTCPUAwAAPAJYhAAAAAJYIJgbGABAAnSEAAAAAhhj2BAYAEAClIQAAAACRGPwE
+ywAQAAAAAQDNBgAAAQCyBAAAAgDSBQAAAwBiBAAAAQDzAgAAAQDzAgAAAQBQAAAAAgC5AAAAAwCy
+BAAABABiBAAAAQCyBAAAAQDNBgAAAQBWBgAAAQBWBgAAAQDzAgkA9gQBABEA9gQGABkA9gQKACkA
+9gQQADEA9gQQADkA9gQQAEEA9gQQAEkA9gQQAFEA9gQQAFkA9gQQAGEA9gQQAGkA9gQGAJkA9gQG
+ALkA9gQVAMkA9gQGAIkA3AIGAIkA5wIGAIkAWAAbANEAIwQgAHEA9gQlAHEAsgQvAHEA0gUzAHkA
+GgA3AHEAggM8AHEAkQNBAHEAiQMBANkA9gQQAHEAyQZHAHEAGgZHAIkA9gQGAOEAAAZLAIkA5gVS
+AJEA9gQGAPEApwBYAPEA0QZfAKEA9gRlAMEA9gQGAC4ACwDqAC4AEwDzAC4AGwASAS4AIwAbAS4A
+KwBEAS4AMwBEAS4AOwBKAS4AQwAbAS4ASwBXAS4AUwBEAS4AWwB1AUMAYwC/AakAcwASAckAcwAS
+AeEAewC/AeMAawC/AQMAAQAHAAUACAAHAAAAiwDPAAAAXAPTAAAAJgTXAAAAcQPTAAAAvQTbAAAA
+CQHgAAAAKgblAAIABgADAAIABwAFAAEACAAHAAEACQAJAAIAEwALAAIAFAANAAEAFQANAAIAFgAP
+AASAAAABAAAAAAAAAAAAAAAAACMAAAAEAAAAAAAAAAAAAABtAG4AAAAAAA8AAAAAAAAAAAAAAHYA
+YAYAAAAADwAAAAAAAAAAAAAAdgB9BgAAAAAEAAAAAAAAAAAAAABtAJoDAAAAAA8AAAAAAAAAAAAA
+AHYAbAQAAAAAAAAAAAEAAABHBQAAAAAAAABJRFRTQ29tcG9uZW50TWV0YURhdGExMDAAR2V0SW50
+MzIAU0NfODMwZTAwNDBjYWQxNDJmYWI1YmVhYzFjMDJiMDViMjYAPE1vZHVsZT4ASW5wdXRJRABn
+ZXRfQ29tcG9uZW50TWV0YURhdGEAbXNjb3JsaWIAZGVmYXVsdEluc3RhbmNlAGdldF9FcnJvckNv
+ZGUAUnVudGltZVR5cGVIYW5kbGUAR2V0VHlwZUZyb21IYW5kbGUASW5wdXROYW1lAE1pY3Jvc29m
+dC5TcWxTZXJ2ZXIuRHRzLlBpcGVsaW5lAFR5cGUAZ2V0X0N1bHR1cmUAc2V0X0N1bHR1cmUAcmVz
+b3VyY2VDdWx0dXJlAEFwcGxpY2F0aW9uU2V0dGluZ3NCYXNlAEVkaXRvckJyb3dzYWJsZVN0YXRl
+AENvbXBpbGVyR2VuZXJhdGVkQXR0cmlidXRlAERlYnVnZ2VyTm9uVXNlckNvZGVBdHRyaWJ1dGUA
+RGVidWdnYWJsZUF0dHJpYnV0ZQBFZGl0b3JCcm93c2FibGVBdHRyaWJ1dGUAQXNzZW1ibHlUaXRs
+ZUF0dHJpYnV0ZQBBc3NlbWJseVRyYWRlbWFya0F0dHJpYnV0ZQBUYXJnZXRGcmFtZXdvcmtBdHRy
+aWJ1dGUAQXNzZW1ibHlDb25maWd1cmF0aW9uQXR0cmlidXRlAEFzc2VtYmx5RGVzY3JpcHRpb25B
+dHRyaWJ1dGUAQ29tcGlsYXRpb25SZWxheGF0aW9uc0F0dHJpYnV0ZQBBc3NlbWJseVByb2R1Y3RB
+dHRyaWJ1dGUAQXNzZW1ibHlDb3B5cmlnaHRBdHRyaWJ1dGUAU1NJU1NjcmlwdENvbXBvbmVudEVu
+dHJ5UG9pbnRBdHRyaWJ1dGUAQXNzZW1ibHlDb21wYW55QXR0cmlidXRlAFJ1bnRpbWVDb21wYXRp
+YmlsaXR5QXR0cmlidXRlAFByZUV4ZWN1dGUAUG9zdEV4ZWN1dGUAdmFsdWUAU3lzdGVtLlJ1bnRp
+bWUuVmVyc2lvbmluZwBTdHJpbmcAU3lzdGVtLkNvbXBvbmVudE1vZGVsAFNDXzgzMGUwMDQwY2Fk
+MTQyZmFiNWJlYWMxYzAyYjA1YjI2LmRsbABnZXRfRXJyb3JDb2RlX0lzTnVsbABzZXRfRXJyb3JE
+ZXNjcmlwdGlvbl9Jc051bGwAU2V0TnVsbABzZXRfSXRlbQBTeXN0ZW0AcmVzb3VyY2VNYW4AU2Ny
+aXB0TWFpbgBTeXN0ZW0uQ29uZmlndXJhdGlvbgBTeXN0ZW0uR2xvYmFsaXphdGlvbgBTeXN0ZW0u
+UmVmbGVjdGlvbgBJbnZhbGlkT3BlcmF0aW9uRXhjZXB0aW9uAHNldF9FcnJvckRlc2NyaXB0aW9u
+AEdldEVycm9yRGVzY3JpcHRpb24AU3RyaW5nQ29tcGFyaXNvbgBDdWx0dXJlSW5mbwBPdXRwdXRO
+YW1lTWFwAE91dHB1dE1hcABNaWNyb3NvZnQuU3FsU2VydmVyLkRUU1BpcGVsaW5lV3JhcABJbnB1
+dDBCdWZmZXIAUGlwZWxpbmVCdWZmZXIAU2NyaXB0QnVmZmVyAGdldF9SZXNvdXJjZU1hbmFnZXIA
+TWljcm9zb2Z0LlNxbFNlcnZlci5EdHMuUGlwZWxpbmUuV3JhcHBlcgAuY3RvcgAuY2N0b3IAU3lz
+dGVtLkRpYWdub3N0aWNzAFN5c3RlbS5SdW50aW1lLkNvbXBpbGVyU2VydmljZXMAU3lzdGVtLlJl
+c291cmNlcwBTQ184MzBlMDA0MGNhZDE0MmZhYjViZWFjMWMwMmIwNWIyNi5Qcm9wZXJ0aWVzLlJl
+c291cmNlcy5yZXNvdXJjZXMARGVidWdnaW5nTW9kZXMAU0NfODMwZTAwNDBjYWQxNDJmYWI1YmVh
+YzFjMDJiMDViMjYuUHJvcGVydGllcwBWYXJpYWJsZXMAQnVmZmVyQ29sdW1uSW5kZXhlcwBHZXRD
+b2x1bW5JbmRleGVzAFNldHRpbmdzAEVxdWFscwBDb25uZWN0aW9ucwBPYmplY3QARW5kT2ZSb3dz
+ZXQAZ2V0X0RlZmF1bHQAVXNlckNvbXBvbmVudABQYXJlbnRDb21wb25lbnQAU2NyaXB0Q29tcG9u
+ZW50AE1pY3Jvc29mdC5TcWxTZXJ2ZXIuVHhTY3JpcHQATWljcm9zb2Z0LlNxbFNlcnZlci5QaXBl
+bGluZUhvc3QASW5wdXQwX1Byb2Nlc3NJbnB1dABJbnB1dDBfUHJvY2Vzc0lucHV0Um93AE5leHRS
+b3cAZ2V0X0Fzc2VtYmx5AAAAAICbSQBzAE4AdQBsAGwAIABwAHIAbwBwAGUAcgB0AHkAIABjAGEA
+bgBuAG8AdAAgAGIAZQAgAHMAZQB0ACAAdABvACAARgBhAGwAcwBlAC4AIABBAHMAcwBpAGcAbgAg
+AGEAIAB2AGEAbAB1AGUAIAB0AG8AIAB0AGgAZQAgAGMAbwBsAHUAbQBuACAAaQBuAHMAdABlAGEA
+ZAAuAAAPSQBuAHAAdQB0ACAAMAAAcVMAQwBfADgAMwAwAGUAMAAwADQAMABjAGEAZAAxADQAMgBm
+AGEAYgA1AGIAZQBhAGMAMQBjADAAMgBiADAANQBiADIANgAuAFAAcgBvAHAAZQByAHQAaQBlAHMA
+LgBSAGUAcwBvAHUAcgBjAGUAcwAAaCmt+1dGIk23LnO7+TigTQAEIAEBCAMgAAEFIAEBEREEIAEB
+DgUgAQERWQQgABJpBCABDggJIAMBEj0dCBJBAwYSPQMGHQgEIAEICAQgAQIIBSACAQgcAyAAAgYg
+AgIOEXUFIAEdCAgGAAESeRF9BSAAEoCBByACAQ4SgIEIt3pcVhk04IkIiYRdzYCAzJEDBhIUAwYS
+GAMGEkUDBhJRAwYSVQMGEiAFIAEBEgwDIAAIBCABAQIJIAQBCA4SPRJBBSABARJFBAAAElEEAAAS
+VQUAAQESVQQAABIgAwAAAQMoAAgDKAACAygADgQIABJRBAgAElUECAASIAgBAAgAAAAAAB4BAAEA
+VAIWV3JhcE5vbkV4Y2VwdGlvblRocm93cwEIAQACAAAAAAAoAQAjU0NfODMwZTAwNDBjYWQxNDJm
+YWI1YmVhYzFjMDJiMDViMjYAAAUBAAAAAAwBAAdIUCBJbmMuAAAdAQAYQ29weXJpZ2h0IEAgSFAg
+SW5jLiAyMDIyAABJAQAaLk5FVEZyYW1ld29yayxWZXJzaW9uPXY0LjcBAFQOFEZyYW1ld29ya0Rp
+c3BsYXlOYW1lEi5ORVQgRnJhbWV3b3JrIDQuNwQBAAAAtAAAAM7K774BAAAAkQAAAGxTeXN0ZW0u
+UmVzb3VyY2VzLlJlc291cmNlUmVhZGVyLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0
+dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkjU3lzdGVtLlJlc291
+cmNlcy5SdW50aW1lUmVzb3VyY2VTZXQCAAAAAAAAAAAAAABQQURQQURQtAAAAGAyAAAAAAAAAAAA
+AHoyAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAABsMgAAAAAAAAAAAAAAAF9Db3JEbGxNYWluAG1z
+Y29yZWUuZGxsAAAAAAD/JQAgABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAQAQAAAAGAAAgAAAAAAAAAAAAAAAAAAAAQABAAAAMAAAgAAAAAAAAAAAAAAAAAAAAQAAAAAA
+SAAAAFhAAAAIBAAAAAAAAAAAAAAIBDQAAABWAFMAXwBWAEUAUgBTAEkATwBOAF8ASQBOAEYATwAA
+AAAAvQTv/gAAAQAAAAEAAAAAAAAAAQAAAAAAPwAAAAAAAAAEAAAAAgAAAAAAAAAAAAAAAAAAAEQA
+AAABAFYAYQByAEYAaQBsAGUASQBuAGYAbwAAAAAAJAAEAAAAVAByAGEAbgBzAGwAYQB0AGkAbwBu
+AAAAAAAAALAEaAMAAAEAUwB0AHIAaQBuAGcARgBpAGwAZQBJAG4AZgBvAAAARAMAAAEAMAAwADAA
+MAAwADQAYgAwAAAAGgABAAEAQwBvAG0AbQBlAG4AdABzAAAAAAAAADAACAABAEMAbwBtAHAAYQBu
+AHkATgBhAG0AZQAAAAAASABQACAASQBuAGMALgAAAHAAJAABAEYAaQBsAGUARABlAHMAYwByAGkA
+cAB0AGkAbwBuAAAAAABTAEMAXwA4ADMAMABlADAAMAA0ADAAYwBhAGQAMQA0ADIAZgBhAGIANQBi
+AGUAYQBjADEAYwAwADIAYgAwADUAYgAyADYAAAAwAAgAAQBGAGkAbABlAFYAZQByAHMAaQBvAG4A
+AAAAADEALgAwAC4AMAAuADAAAABwACgAAQBJAG4AdABlAHIAbgBhAGwATgBhAG0AZQAAAFMAQwBf
+ADgAMwAwAGUAMAAwADQAMABjAGEAZAAxADQAMgBmAGEAYgA1AGIAZQBhAGMAMQBjADAAMgBiADAA
+NQBiADIANgAuAGQAbABsAAAAVgAZAAEATABlAGcAYQBsAEMAbwBwAHkAcgBpAGcAaAB0AAAAQwBv
+AHAAeQByAGkAZwBoAHQAIABAACAASABQACAASQBuAGMALgAgADIAMAAyADIAAAAAACoAAQABAEwA
+ZQBnAGEAbABUAHIAYQBkAGUAbQBhAHIAawBzAAAAAAAAAAAAeAAoAAEATwByAGkAZwBpAG4AYQBs
+AEYAaQBsAGUAbgBhAG0AZQAAAFMAQwBfADgAMwAwAGUAMAAwADQAMABjAGEAZAAxADQAMgBmAGEA
+YgA1AGIAZQBhAGMAMQBjADAAMgBiADAANQBiADIANgAuAGQAbABsAAAAaAAkAAEAUAByAG8AZAB1
+AGMAdABOAGEAbQBlAAAAAABTAEMAXwA4ADMAMABlADAAMAA0ADAAYwBhAGQAMQA0ADIAZgBhAGIA
+NQBiAGUAYQBjADEAYwAwADIAYgAwADUAYgAyADYAAAA0AAgAAQBQAHIAbwBkAHUAYwB0AFYAZQBy
+AHMAaQBvAG4AAAAxAC4AMAAuADAALgAwAAAAOAAIAAEAQQBzAHMAZQBtAGIAbAB5ACAAVgBlAHIA
+cwBpAG8AbgAAADEALgAwAC4AMAAuADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAMAAAAjDIAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
+                  </arrayElements>
+                </property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the Microsoft Visual Studio Tools for Applications project. Project names must be unique within a package."
+                  name="VSTAProjectName"
+                  typeConverter="NOTBROWSABLE">SC_830e0040cad142fab5beac1c02b05b26</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the programming language used by the script."
+                  name="ScriptLanguage"
+                  typeConverter="Microsoft.SqlServer.VSTAHosting.ScriptingLanguages">CSharp</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a comma-separated list of read-only variables."
+                  name="ReadOnlyVariables"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ScriptUIVariablePickerDlg"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a comma-separated list of read/write variables."
+                  name="ReadWriteVariables"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ScriptUIWriteableVariablePickerDlg"></property>
+                <property
+                  dataType="System.String"
+                  description="List of breakpoints present on the script."
+                  isArray="true"
+                  name="BreakpointCollection"
+                  typeConverter="NOTBROWSABLE">
+                  <arrayElements
+                    arrayElementCount="0" />
+                </property>
+                <property
+                  dataType="System.String"
+                  description="Checksum to match component metedata against compiled codes."
+                  name="MetadataChecksum140"
+                  typeConverter="NOTBROWSABLE">06</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.ScriptComponentHost</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Import PW Customers\Get Error Description.Inputs[Input 0]"
+                  hasSideEffects="true"
+                  name="Input 0">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import PW Customers\Get Error Description.Inputs[Input 0].Columns[ErrorCode]"
+                      cachedDataType="i4"
+                      cachedName="ErrorCode"
+                      lineageId="Package\Import PW Customers\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import PW Customers\Get Error Description.Outputs[Output 0]"
+                  name="Output 0"
+                  synchronousInputId="Package\Import PW Customers\Get Error Description.Inputs[Input 0]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import PW Customers\Get Error Description.Outputs[Output 0].Columns[ErrorDescription]"
+                      dataType="wstr"
+                      length="500"
+                      lineageId="Package\Import PW Customers\Get Error Description.Outputs[Output 0].Columns[ErrorDescription]"
+                      name="ErrorDescription" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import PW Customers\Lookup"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="Lookup"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[S2_PW_Customer_Department]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[S2_PW_Customer_Department]) [refTable]
+where [refTable].[D_Department_ID] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="D_Department_ID" dataType="DT_WSTR" length="20" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="IB_Year" dataType="DT_I2" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="D_Department_Name" dataType="DT_WSTR" length="60" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="D_Customer_Group_ID" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="IBPT_ID" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].Columns[C_Department_ID]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import PW Customers\Lookup.Connections[OleDbConnection]"
+                  connectionManagerID="{371815E0-5DFD-4917-AD74-E833D9B8A0B2}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[Stage2]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Import PW Customers\Lookup.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import PW Customers\Lookup.Inputs[Lookup Input].Columns[C_Department_ID]"
+                      cachedDataType="wstr"
+                      cachedLength="20"
+                      cachedName="C_Department_ID"
+                      lineageId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].Columns[C_Department_ID]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">D_Department_ID</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import PW Customers\Lookup.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\Import PW Customers\Lookup.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import PW Customers\Lookup.Outputs[Lookup Match Output].Columns[D_Department_ID]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Copy Column"
+                      length="20"
+                      lineageId="Package\Import PW Customers\Lookup.Outputs[Lookup Match Output].Columns[D_Department_ID]"
+                      name="D_Department_ID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">D_Department_ID</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Import PW Customers\Lookup.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\Import PW Customers\Lookup.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Import PW Customers\Lookup.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\Import PW Customers\Lookup.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import PW Customers\Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import PW Customers\Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import PW Customers\Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import PW Customers\Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import PW Customers\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[S2_PW_Customers]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import PW Customers\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="{371815E0-5DFD-4917-AD74-E833D9B8A0B2}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[Stage2]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Import PW Customers\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="RedirectRow"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import PW Customers\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[C_Customer_ID]"
+                      cachedDataType="wstr"
+                      cachedLength="20"
+                      cachedName="C_Customer_ID"
+                      externalMetadataColumnId="Package\Import PW Customers\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[C_Customer_ID]"
+                      lineageId="Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_Customer_ID]" />
+                    <inputColumn
+                      refId="Package\Import PW Customers\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[C_Department_ID]"
+                      cachedDataType="wstr"
+                      cachedLength="20"
+                      cachedName="C_Department_ID"
+                      externalMetadataColumnId="Package\Import PW Customers\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[C_Department_ID]"
+                      lineageId="Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_Department_ID]" />
+                    <inputColumn
+                      refId="Package\Import PW Customers\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[C_Customer_Name]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="C_Customer_Name"
+                      externalMetadataColumnId="Package\Import PW Customers\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[C_Customer_Name]"
+                      lineageId="Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_Customer_Name]" />
+                    <inputColumn
+                      refId="Package\Import PW Customers\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[C_Contact_Person]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="C_Contact_Person"
+                      externalMetadataColumnId="Package\Import PW Customers\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[C_Contact_Person]"
+                      lineageId="Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_Contact_Person]" />
+                    <inputColumn
+                      refId="Package\Import PW Customers\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[C_Address_Line_1]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="C_Address_Line_1"
+                      externalMetadataColumnId="Package\Import PW Customers\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[C_Address_Line_1]"
+                      lineageId="Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_Address_Line_1]" />
+                    <inputColumn
+                      refId="Package\Import PW Customers\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[C_Address_Line_2]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="C_Address_Line_2"
+                      externalMetadataColumnId="Package\Import PW Customers\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[C_Address_Line_2]"
+                      lineageId="Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_Address_Line_2]" />
+                    <inputColumn
+                      refId="Package\Import PW Customers\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[C_City_Town]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="C_City_Town"
+                      externalMetadataColumnId="Package\Import PW Customers\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[C_City_Town]"
+                      lineageId="Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_City_Town]" />
+                    <inputColumn
+                      refId="Package\Import PW Customers\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[C_Postal_Code]"
+                      cachedDataType="wstr"
+                      cachedLength="4"
+                      cachedName="C_Postal_Code"
+                      externalMetadataColumnId="Package\Import PW Customers\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[C_Postal_Code]"
+                      lineageId="Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_Postal_Code]" />
+                    <inputColumn
+                      refId="Package\Import PW Customers\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[IBPT_ID]"
+                      cachedDataType="i4"
+                      cachedName="IBPT_ID"
+                      externalMetadataColumnId="Package\Import PW Customers\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IBPT_ID]"
+                      lineageId="Package\Import PW Customers\Derived Column.Outputs[Derived Column Output].Columns[IBPT_ID]" />
+                    <inputColumn
+                      refId="Package\Import PW Customers\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[IB_Year]"
+                      cachedDataType="i2"
+                      cachedName="IB_Year"
+                      externalMetadataColumnId="Package\Import PW Customers\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IB_Year]"
+                      lineageId="Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[IB_Year]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Import PW Customers\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[C_Customer_ID]"
+                      dataType="wstr"
+                      length="20"
+                      name="C_Customer_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Import PW Customers\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[C_Department_ID]"
+                      dataType="wstr"
+                      length="20"
+                      name="C_Department_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Import PW Customers\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[C_Customer_Name]"
+                      dataType="wstr"
+                      length="100"
+                      name="C_Customer_Name" />
+                    <externalMetadataColumn
+                      refId="Package\Import PW Customers\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[C_Contact_Person]"
+                      dataType="wstr"
+                      length="50"
+                      name="C_Contact_Person" />
+                    <externalMetadataColumn
+                      refId="Package\Import PW Customers\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[C_Address_Line_1]"
+                      dataType="wstr"
+                      length="100"
+                      name="C_Address_Line_1" />
+                    <externalMetadataColumn
+                      refId="Package\Import PW Customers\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[C_Address_Line_2]"
+                      dataType="wstr"
+                      length="100"
+                      name="C_Address_Line_2" />
+                    <externalMetadataColumn
+                      refId="Package\Import PW Customers\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[C_City_Town]"
+                      dataType="wstr"
+                      length="50"
+                      name="C_City_Town" />
+                    <externalMetadataColumn
+                      refId="Package\Import PW Customers\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[C_Postal_Code]"
+                      dataType="wstr"
+                      length="4"
+                      name="C_Postal_Code" />
+                    <externalMetadataColumn
+                      refId="Package\Import PW Customers\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IBPT_ID]"
+                      dataType="i4"
+                      name="IBPT_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Import PW Customers\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IB_Year]"
+                      dataType="i2"
+                      name="IB_Year" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import PW Customers\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Import PW Customers\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import PW Customers\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import PW Customers\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import PW Customers\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import PW Customers\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import PW Customers\Read from S1_V_PW_Customers"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="Read from S1_V_PW_Customers"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[S1_PW_Customers]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT *
+FROM [dbo].[S1_V_PW_Customers]
+WHERE IB_Year = ?</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping">"Parameter0:Input",{79E28ECC-3A20-4B11-9D33-37CAFFDED240};</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import PW Customers\Read from S1_V_PW_Customers.Connections[OleDbConnection]"
+                  connectionManagerID="{64878C56-8722-4A7B-9DFA-0F9E0AF988BD}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[Stage1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].Columns[C_Customer_ID]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].ExternalColumns[C_Customer_ID]"
+                      length="20"
+                      lineageId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].Columns[C_Customer_ID]"
+                      name="C_Customer_ID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].Columns[C_Department_ID]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].ExternalColumns[C_Department_ID]"
+                      length="20"
+                      lineageId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].Columns[C_Department_ID]"
+                      name="C_Department_ID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].Columns[C_Customer_Name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].ExternalColumns[C_Customer_Name]"
+                      length="100"
+                      lineageId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].Columns[C_Customer_Name]"
+                      name="C_Customer_Name"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].Columns[C_Contact_Person]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].ExternalColumns[C_Contact_Person]"
+                      length="50"
+                      lineageId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].Columns[C_Contact_Person]"
+                      name="C_Contact_Person"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].Columns[C_Address_Line_1]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].ExternalColumns[C_Address_Line_1]"
+                      length="100"
+                      lineageId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].Columns[C_Address_Line_1]"
+                      name="C_Address_Line_1"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].Columns[C_Address_Line_2]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].ExternalColumns[C_Address_Line_2]"
+                      length="100"
+                      lineageId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].Columns[C_Address_Line_2]"
+                      name="C_Address_Line_2"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].Columns[C_City_Town]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].ExternalColumns[C_City_Town]"
+                      length="50"
+                      lineageId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].Columns[C_City_Town]"
+                      name="C_City_Town"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].Columns[C_Postal_Code]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].ExternalColumns[C_Postal_Code]"
+                      length="4"
+                      lineageId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].Columns[C_Postal_Code]"
+                      name="C_Postal_Code"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].Columns[IB_Year]"
+                      dataType="i2"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].ExternalColumns[IB_Year]"
+                      lineageId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].Columns[IB_Year]"
+                      name="IB_Year"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].ExternalColumns[C_Customer_ID]"
+                      dataType="wstr"
+                      length="20"
+                      name="C_Customer_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].ExternalColumns[C_Department_ID]"
+                      dataType="wstr"
+                      length="20"
+                      name="C_Department_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].ExternalColumns[C_Customer_Name]"
+                      dataType="wstr"
+                      length="100"
+                      name="C_Customer_Name" />
+                    <externalMetadataColumn
+                      refId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].ExternalColumns[C_Contact_Person]"
+                      dataType="wstr"
+                      length="50"
+                      name="C_Contact_Person" />
+                    <externalMetadataColumn
+                      refId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].ExternalColumns[C_Address_Line_1]"
+                      dataType="wstr"
+                      length="100"
+                      name="C_Address_Line_1" />
+                    <externalMetadataColumn
+                      refId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].ExternalColumns[C_Address_Line_2]"
+                      dataType="wstr"
+                      length="100"
+                      name="C_Address_Line_2" />
+                    <externalMetadataColumn
+                      refId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].ExternalColumns[C_City_Town]"
+                      dataType="wstr"
+                      length="50"
+                      name="C_City_Town" />
+                    <externalMetadataColumn
+                      refId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].ExternalColumns[C_Postal_Code]"
+                      dataType="wstr"
+                      length="4"
+                      name="C_Postal_Code" />
+                    <externalMetadataColumn
+                      refId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].ExternalColumns[IBPT_ID]"
+                      dataType="i4"
+                      name="IBPT_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].ExternalColumns[IB_Year]"
+                      dataType="i2"
+                      name="IB_Year" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Error Output].Columns[IB_Year]"
+                      dataType="i2"
+                      lineageId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Error Output].Columns[IB_Year]"
+                      name="IB_Year" />
+                    <outputColumn
+                      refId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Error Output].Columns[C_Customer_ID]"
+                      dataType="wstr"
+                      length="20"
+                      lineageId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Error Output].Columns[C_Customer_ID]"
+                      name="C_Customer_ID" />
+                    <outputColumn
+                      refId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Error Output].Columns[C_Department_ID]"
+                      dataType="wstr"
+                      length="20"
+                      lineageId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Error Output].Columns[C_Department_ID]"
+                      name="C_Department_ID" />
+                    <outputColumn
+                      refId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Error Output].Columns[C_Customer_Name]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Error Output].Columns[C_Customer_Name]"
+                      name="C_Customer_Name" />
+                    <outputColumn
+                      refId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Error Output].Columns[C_Contact_Person]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Error Output].Columns[C_Contact_Person]"
+                      name="C_Contact_Person" />
+                    <outputColumn
+                      refId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Error Output].Columns[C_Address_Line_1]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Error Output].Columns[C_Address_Line_1]"
+                      name="C_Address_Line_1" />
+                    <outputColumn
+                      refId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Error Output].Columns[C_Address_Line_2]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Error Output].Columns[C_Address_Line_2]"
+                      name="C_Address_Line_2" />
+                    <outputColumn
+                      refId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Error Output].Columns[C_City_Town]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Error Output].Columns[C_City_Town]"
+                      name="C_City_Town" />
+                    <outputColumn
+                      refId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Error Output].Columns[C_Postal_Code]"
+                      dataType="wstr"
+                      length="4"
+                      lineageId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Error Output].Columns[C_Postal_Code]"
+                      name="C_Postal_Code" />
+                    <outputColumn
+                      refId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import PW Customers\Row Count"
+              componentClassID="Microsoft.RowCount"
+              contactInfo="Row Count;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Counts rows as they pass through a data flow. For example, use the number of rows processed to determine whether or not to perform cleanup operations, or update text in an e-mail message to communicate processing status."
+              name="Row Count">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable to hold the row count."
+                  name="VariableName">User::IBPT_Records_In</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Import PW Customers\Row Count.Inputs[Row Count Input 1]"
+                  hasSideEffects="true"
+                  name="Row Count Input 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import PW Customers\Row Count.Outputs[Row Count Output 1]"
+                  name="Row Count Output 1"
+                  synchronousInputId="Package\Import PW Customers\Row Count.Inputs[Row Count Input 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import PW Customers\Row Count Errors"
+              componentClassID="Microsoft.RowCount"
+              contactInfo="Row Count;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Counts rows as they pass through a data flow. For example, use the number of rows processed to determine whether or not to perform cleanup operations, or update text in an e-mail message to communicate processing status."
+              name="Row Count Errors">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable to hold the row count."
+                  name="VariableName">User::IBPT_Records_Out</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Import PW Customers\Row Count Errors.Inputs[Row Count Input 1]"
+                  hasSideEffects="true"
+                  name="Row Count Input 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import PW Customers\Row Count Errors.Outputs[Row Count Output 1]"
+                  name="Row Count Output 1"
+                  synchronousInputId="Package\Import PW Customers\Row Count Errors.Inputs[Row Count Input 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import PW Customers\Union All"
+              componentClassID="Microsoft.UnionAll"
+              contactInfo="Union All;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Combines rows from multiple data flows without sorting. For example, add rows back to a data flow after correction of errors. If sorting is important, we recommend using the Merge transformation."
+              name="Union All"
+              version="1">
+              <inputs>
+                <input
+                  refId="Package\Import PW Customers\Union All.Inputs[Union All Input 1]"
+                  name="Union All Input 1">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import PW Customers\Union All.Inputs[Union All Input 1].Columns[C_Customer_ID]"
+                      cachedDataType="wstr"
+                      cachedLength="20"
+                      cachedName="C_Customer_ID"
+                      lineageId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].Columns[C_Customer_ID]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_Customer_ID]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Import PW Customers\Union All.Inputs[Union All Input 1].Columns[C_Department_ID]"
+                      cachedDataType="wstr"
+                      cachedLength="20"
+                      cachedName="C_Department_ID"
+                      lineageId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].Columns[C_Department_ID]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_Department_ID]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Import PW Customers\Union All.Inputs[Union All Input 1].Columns[C_Customer_Name]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="C_Customer_Name"
+                      lineageId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].Columns[C_Customer_Name]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_Customer_Name]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Import PW Customers\Union All.Inputs[Union All Input 1].Columns[C_Contact_Person]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="C_Contact_Person"
+                      lineageId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].Columns[C_Contact_Person]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_Contact_Person]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Import PW Customers\Union All.Inputs[Union All Input 1].Columns[C_Address_Line_1]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="C_Address_Line_1"
+                      lineageId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].Columns[C_Address_Line_1]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_Address_Line_1]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Import PW Customers\Union All.Inputs[Union All Input 1].Columns[C_Address_Line_2]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="C_Address_Line_2"
+                      lineageId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].Columns[C_Address_Line_2]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_Address_Line_2]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Import PW Customers\Union All.Inputs[Union All Input 1].Columns[C_City_Town]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="C_City_Town"
+                      lineageId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].Columns[C_City_Town]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_City_Town]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Import PW Customers\Union All.Inputs[Union All Input 1].Columns[C_Postal_Code]"
+                      cachedDataType="wstr"
+                      cachedLength="4"
+                      cachedName="C_Postal_Code"
+                      lineageId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].Columns[C_Postal_Code]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_Postal_Code]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Import PW Customers\Union All.Inputs[Union All Input 1].Columns[IB_Year]"
+                      cachedDataType="i2"
+                      cachedName="IB_Year"
+                      lineageId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].Columns[IB_Year]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[IB_Year]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Import PW Customers\Union All.Inputs[Union All Input 2]"
+                  hasSideEffects="true"
+                  name="Union All Input 2">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import PW Customers\Union All.Inputs[Union All Input 2].Columns[C_Customer_ID]"
+                      cachedDataType="wstr"
+                      cachedLength="20"
+                      cachedName="C_Customer_ID"
+                      lineageId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].Columns[C_Customer_ID]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_Customer_ID]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Import PW Customers\Union All.Inputs[Union All Input 2].Columns[C_Department_ID]"
+                      cachedDataType="wstr"
+                      cachedLength="20"
+                      cachedName="C_Department_ID"
+                      lineageId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].Columns[C_Department_ID]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_Department_ID]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Import PW Customers\Union All.Inputs[Union All Input 2].Columns[C_Customer_Name]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="C_Customer_Name"
+                      lineageId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].Columns[C_Customer_Name]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_Customer_Name]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Import PW Customers\Union All.Inputs[Union All Input 2].Columns[C_Contact_Person]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="C_Contact_Person"
+                      lineageId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].Columns[C_Contact_Person]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_Contact_Person]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Import PW Customers\Union All.Inputs[Union All Input 2].Columns[C_Address_Line_1]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="C_Address_Line_1"
+                      lineageId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].Columns[C_Address_Line_1]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_Address_Line_1]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Import PW Customers\Union All.Inputs[Union All Input 2].Columns[C_Address_Line_2]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="C_Address_Line_2"
+                      lineageId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].Columns[C_Address_Line_2]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_Address_Line_2]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Import PW Customers\Union All.Inputs[Union All Input 2].Columns[C_City_Town]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="C_City_Town"
+                      lineageId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].Columns[C_City_Town]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_City_Town]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Import PW Customers\Union All.Inputs[Union All Input 2].Columns[C_Postal_Code]"
+                      cachedDataType="wstr"
+                      cachedLength="4"
+                      cachedName="C_Postal_Code"
+                      lineageId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].Columns[C_Postal_Code]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_Postal_Code]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Import PW Customers\Union All.Inputs[Union All Input 2].Columns[IB_Year]"
+                      cachedDataType="i2"
+                      cachedName="IB_Year"
+                      lineageId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output].Columns[IB_Year]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[IB_Year]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Import PW Customers\Union All.Inputs[Union All Input 3]"
+                  dangling="true"
+                  hasSideEffects="true"
+                  name="Union All Input 3">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import PW Customers\Union All.Outputs[Union All Output 1]"
+                  name="Union All Output 1">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_Customer_ID]"
+                      dataType="wstr"
+                      length="20"
+                      lineageId="Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_Customer_ID]"
+                      name="C_Customer_ID" />
+                    <outputColumn
+                      refId="Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_Department_ID]"
+                      dataType="wstr"
+                      length="20"
+                      lineageId="Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_Department_ID]"
+                      name="C_Department_ID" />
+                    <outputColumn
+                      refId="Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_Customer_Name]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_Customer_Name]"
+                      name="C_Customer_Name" />
+                    <outputColumn
+                      refId="Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_Contact_Person]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_Contact_Person]"
+                      name="C_Contact_Person" />
+                    <outputColumn
+                      refId="Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_Address_Line_1]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_Address_Line_1]"
+                      name="C_Address_Line_1" />
+                    <outputColumn
+                      refId="Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_Address_Line_2]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_Address_Line_2]"
+                      name="C_Address_Line_2" />
+                    <outputColumn
+                      refId="Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_City_Town]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_City_Town]"
+                      name="C_City_Town" />
+                    <outputColumn
+                      refId="Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_Postal_Code]"
+                      dataType="wstr"
+                      length="4"
+                      lineageId="Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_Postal_Code]"
+                      name="C_Postal_Code" />
+                    <outputColumn
+                      refId="Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[IB_Year]"
+                      dataType="i2"
+                      lineageId="Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[IB_Year]"
+                      name="IB_Year" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import PW Customers\Write Errors"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="7177"
+              name="Write Errors"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import PW Customers\Write Errors.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Errors File]"
+                  connectionManagerRefId="Package.ConnectionManagers[Errors File]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Import PW Customers\Write Errors.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import PW Customers\Write Errors.Inputs[Flat File Destination Input].Columns[C_Customer_ID]"
+                      cachedDataType="wstr"
+                      cachedLength="20"
+                      cachedName="C_Customer_ID"
+                      externalMetadataColumnId="Package\Import PW Customers\Write Errors.Inputs[Flat File Destination Input].ExternalColumns[C_Customer_ID]"
+                      lineageId="Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_Customer_ID]" />
+                    <inputColumn
+                      refId="Package\Import PW Customers\Write Errors.Inputs[Flat File Destination Input].Columns[C_Department_ID]"
+                      cachedDataType="wstr"
+                      cachedLength="20"
+                      cachedName="C_Department_ID"
+                      externalMetadataColumnId="Package\Import PW Customers\Write Errors.Inputs[Flat File Destination Input].ExternalColumns[C_Department_ID]"
+                      lineageId="Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_Department_ID]" />
+                    <inputColumn
+                      refId="Package\Import PW Customers\Write Errors.Inputs[Flat File Destination Input].Columns[C_Customer_Name]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="C_Customer_Name"
+                      externalMetadataColumnId="Package\Import PW Customers\Write Errors.Inputs[Flat File Destination Input].ExternalColumns[C_Customer_Name]"
+                      lineageId="Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_Customer_Name]" />
+                    <inputColumn
+                      refId="Package\Import PW Customers\Write Errors.Inputs[Flat File Destination Input].Columns[C_Contact_Person]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="C_Contact_Person"
+                      externalMetadataColumnId="Package\Import PW Customers\Write Errors.Inputs[Flat File Destination Input].ExternalColumns[C_Contact_Person]"
+                      lineageId="Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_Contact_Person]" />
+                    <inputColumn
+                      refId="Package\Import PW Customers\Write Errors.Inputs[Flat File Destination Input].Columns[C_Address_Line_1]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="C_Address_Line_1"
+                      externalMetadataColumnId="Package\Import PW Customers\Write Errors.Inputs[Flat File Destination Input].ExternalColumns[C_Address_Line_1]"
+                      lineageId="Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_Address_Line_1]" />
+                    <inputColumn
+                      refId="Package\Import PW Customers\Write Errors.Inputs[Flat File Destination Input].Columns[C_Address_Line_2]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="C_Address_Line_2"
+                      externalMetadataColumnId="Package\Import PW Customers\Write Errors.Inputs[Flat File Destination Input].ExternalColumns[C_Address_Line_2]"
+                      lineageId="Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_Address_Line_2]" />
+                    <inputColumn
+                      refId="Package\Import PW Customers\Write Errors.Inputs[Flat File Destination Input].Columns[C_City_Town]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="C_City_Town"
+                      externalMetadataColumnId="Package\Import PW Customers\Write Errors.Inputs[Flat File Destination Input].ExternalColumns[C_City_Town]"
+                      lineageId="Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_City_Town]" />
+                    <inputColumn
+                      refId="Package\Import PW Customers\Write Errors.Inputs[Flat File Destination Input].Columns[C_Postal_Code]"
+                      cachedDataType="wstr"
+                      cachedLength="4"
+                      cachedName="C_Postal_Code"
+                      externalMetadataColumnId="Package\Import PW Customers\Write Errors.Inputs[Flat File Destination Input].ExternalColumns[C_Postal_Code]"
+                      lineageId="Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[C_Postal_Code]" />
+                    <inputColumn
+                      refId="Package\Import PW Customers\Write Errors.Inputs[Flat File Destination Input].Columns[IBPT_ID]"
+                      cachedDataType="i4"
+                      cachedName="IBPT_ID"
+                      externalMetadataColumnId="Package\Import PW Customers\Write Errors.Inputs[Flat File Destination Input].ExternalColumns[IBPT_ID]"
+                      lineageId="Package\Import PW Customers\Derived Column.Outputs[Derived Column Output].Columns[IBPT_ID]" />
+                    <inputColumn
+                      refId="Package\Import PW Customers\Write Errors.Inputs[Flat File Destination Input].Columns[ErrorCode]"
+                      cachedDataType="i4"
+                      cachedName="ErrorCode"
+                      externalMetadataColumnId="Package\Import PW Customers\Write Errors.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
+                      lineageId="Package\Import PW Customers\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]" />
+                    <inputColumn
+                      refId="Package\Import PW Customers\Write Errors.Inputs[Flat File Destination Input].Columns[ErrorColumn]"
+                      cachedDataType="i4"
+                      cachedName="ErrorColumn"
+                      externalMetadataColumnId="Package\Import PW Customers\Write Errors.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
+                      lineageId="Package\Import PW Customers\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]" />
+                    <inputColumn
+                      refId="Package\Import PW Customers\Write Errors.Inputs[Flat File Destination Input].Columns[ErrorDescription]"
+                      cachedDataType="wstr"
+                      cachedLength="500"
+                      cachedName="ErrorDescription"
+                      externalMetadataColumnId="Package\Import PW Customers\Write Errors.Inputs[Flat File Destination Input].ExternalColumns[ErrorDescription]"
+                      lineageId="Package\Import PW Customers\Get Error Description.Outputs[Output 0].Columns[ErrorDescription]" />
+                    <inputColumn
+                      refId="Package\Import PW Customers\Write Errors.Inputs[Flat File Destination Input].Columns[IB_Year]"
+                      cachedDataType="i2"
+                      cachedName="IB_Year"
+                      externalMetadataColumnId="Package\Import PW Customers\Write Errors.Inputs[Flat File Destination Input].ExternalColumns[IB_Year]"
+                      lineageId="Package\Import PW Customers\Union All.Outputs[Union All Output 1].Columns[IB_Year]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Import PW Customers\Write Errors.Inputs[Flat File Destination Input].ExternalColumns[C_Customer_ID]"
+                      dataType="wstr"
+                      length="20"
+                      name="C_Customer_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Import PW Customers\Write Errors.Inputs[Flat File Destination Input].ExternalColumns[C_Department_ID]"
+                      dataType="wstr"
+                      length="20"
+                      name="C_Department_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Import PW Customers\Write Errors.Inputs[Flat File Destination Input].ExternalColumns[C_Customer_Name]"
+                      dataType="wstr"
+                      length="100"
+                      name="C_Customer_Name" />
+                    <externalMetadataColumn
+                      refId="Package\Import PW Customers\Write Errors.Inputs[Flat File Destination Input].ExternalColumns[C_Contact_Person]"
+                      dataType="wstr"
+                      length="50"
+                      name="C_Contact_Person" />
+                    <externalMetadataColumn
+                      refId="Package\Import PW Customers\Write Errors.Inputs[Flat File Destination Input].ExternalColumns[C_Address_Line_1]"
+                      dataType="wstr"
+                      length="100"
+                      name="C_Address_Line_1" />
+                    <externalMetadataColumn
+                      refId="Package\Import PW Customers\Write Errors.Inputs[Flat File Destination Input].ExternalColumns[C_Address_Line_2]"
+                      dataType="wstr"
+                      length="100"
+                      name="C_Address_Line_2" />
+                    <externalMetadataColumn
+                      refId="Package\Import PW Customers\Write Errors.Inputs[Flat File Destination Input].ExternalColumns[C_City_Town]"
+                      dataType="wstr"
+                      length="50"
+                      name="C_City_Town" />
+                    <externalMetadataColumn
+                      refId="Package\Import PW Customers\Write Errors.Inputs[Flat File Destination Input].ExternalColumns[C_Postal_Code]"
+                      dataType="wstr"
+                      length="4"
+                      name="C_Postal_Code" />
+                    <externalMetadataColumn
+                      refId="Package\Import PW Customers\Write Errors.Inputs[Flat File Destination Input].ExternalColumns[IBPT_ID]"
+                      dataType="i4"
+                      name="IBPT_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Import PW Customers\Write Errors.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
+                      dataType="i4"
+                      name="ErrorCode" />
+                    <externalMetadataColumn
+                      refId="Package\Import PW Customers\Write Errors.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
+                      dataType="i4"
+                      name="ErrorColumn" />
+                    <externalMetadataColumn
+                      refId="Package\Import PW Customers\Write Errors.Inputs[Flat File Destination Input].ExternalColumns[ErrorDescription]"
+                      dataType="wstr"
+                      length="500"
+                      name="ErrorDescription" />
+                    <externalMetadataColumn
+                      refId="Package\Import PW Customers\Write Errors.Inputs[Flat File Destination Input].ExternalColumns[IB_Year]"
+                      dataType="i2"
+                      name="IB_Year" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Import PW Customers.Paths[Derived Column Output]"
+              endId="Package\Import PW Customers\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Derived Column Output"
+              startId="Package\Import PW Customers\Derived Column.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Import PW Customers.Paths[Derived Column Output1]"
+              endId="Package\Import PW Customers\Union All.Inputs[Union All Input 1]"
+              name="Derived Column Output"
+              startId="Package\Import PW Customers\Derived Column 1.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Import PW Customers.Paths[Lookup Match Output]"
+              endId="Package\Import PW Customers\Union All.Inputs[Union All Input 2]"
+              name="Lookup Match Output"
+              startId="Package\Import PW Customers\Lookup.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\Import PW Customers.Paths[Lookup No Match Output]"
+              endId="Package\Import PW Customers\Derived Column 1.Inputs[Derived Column Input]"
+              name="Lookup No Match Output"
+              startId="Package\Import PW Customers\Lookup.Outputs[Lookup No Match Output]" />
+            <path
+              refId="Package\Import PW Customers.Paths[OLE DB Destination Error Output]"
+              endId="Package\Import PW Customers\Row Count Errors.Inputs[Row Count Input 1]"
+              name="OLE DB Destination Error Output"
+              startId="Package\Import PW Customers\OLE DB Destination.Outputs[OLE DB Destination Error Output]" />
+            <path
+              refId="Package\Import PW Customers.Paths[OLE DB Source Output]"
+              endId="Package\Import PW Customers\Row Count.Inputs[Row Count Input 1]"
+              name="OLE DB Source Output"
+              startId="Package\Import PW Customers\Read from S1_V_PW_Customers.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\Import PW Customers.Paths[Output 0]"
+              endId="Package\Import PW Customers\Write Errors.Inputs[Flat File Destination Input]"
+              name="Output 0"
+              startId="Package\Import PW Customers\Get Error Description.Outputs[Output 0]" />
+            <path
+              refId="Package\Import PW Customers.Paths[Row Count Output 1]"
+              endId="Package\Import PW Customers\Get Error Description.Inputs[Input 0]"
+              name="Row Count Output 1"
+              startId="Package\Import PW Customers\Row Count Errors.Outputs[Row Count Output 1]" />
+            <path
+              refId="Package\Import PW Customers.Paths[Row Count Output 11]"
+              endId="Package\Import PW Customers\Lookup.Inputs[Lookup Input]"
+              name="Row Count Output 1"
+              startId="Package\Import PW Customers\Row Count.Outputs[Row Count Output 1]" />
+            <path
+              refId="Package\Import PW Customers.Paths[Union All Output 1]"
+              endId="Package\Import PW Customers\Derived Column.Inputs[Derived Column Input]"
+              name="Union All Output 1"
+              startId="Package\Import PW Customers\Union All.Outputs[Union All Output 1]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Update Import_Batch_Process_Task Failure"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{D66032C0-2C88-412D-AB70-B1FF054857C6}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Update Import_Batch_Process_Task Failure"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{269750FA-4CF7-455D-A89C-2803937A9C27}"
+          SQLTask:SqlStatementSource="Update Import_Batch_Process_Task set &#xA;    IBPT_End = @IBPT_End,&#xA;    IBPT_Status = 'Failed'&#xA; Where IBPT_ID = @IBPT_ID" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="@IBPT_End"
+            SQLTask:DtsVariableName="User::Current_DateTime"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="6"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="IBPT_ID"
+            SQLTask:DtsVariableName="User::IBPT_ID"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="11"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Update Import_Batch_Process_Task Success"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{B6FA8627-7F59-4206-A0D3-B547C3D659EE}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Update Import_Batch_Process_Task Success"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{269750FA-4CF7-455D-A89C-2803937A9C27}"
+          SQLTask:SqlStatementSource="Update Import_Batch_Process_Task set &#xA;    IBPT_End = @IBPT_End,&#xA;    IBPT_Status = 'Completed',&#xA;    IBPT_Records_In =  @IBPT_Records_In,&#xA;    IBPT_Records_Failed = @IBPT_Records_Failed,&#xA;    IBPT_Records_Out = @IBPT_Records_Out&#xA; Where IBPT_ID = @IBPT_ID" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="@IBPT_End"
+            SQLTask:DtsVariableName="User::Current_DateTime"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="6"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="IBPT_Records_In"
+            SQLTask:DtsVariableName="User::IBPT_Records_In"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="11"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="IBPT_Records_Failed"
+            SQLTask:DtsVariableName="User::IBPT_Records_Failed"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="11"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="IBPT_Records_Out"
+            SQLTask:DtsVariableName="User::IBPT_Records_Out"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="11"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="IBPT_ID"
+            SQLTask:DtsVariableName="User::IBPT_ID"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="11"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{C0B7B53A-6791-4FE7-BA90-129430E6EB93}"
+      DTS:From="Package\Create Import_Batch_Process_Task"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Import PW Customers" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{4C6C6C1A-6768-4441-BA7D-3D4595B93818}"
+      DTS:From="Package\Import PW Customers"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Update Import_Batch_Process_Task Success" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{70FBC15E-1107-43AC-BE30-8A69FF48D3D1}"
+      DTS:From="Package\Import PW Customers"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\Update Import_Batch_Process_Task Failure"
+      DTS:Value="1" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="256,41.6"
+          Id="Package\Create Import_Batch_Process_Task"
+          TopLeft="198.428574620461,15.8901950745984" />
+        <NodeLayout
+          Size="182.4,41.6"
+          Id="Package\Import PW Customers"
+          TopLeft="243,126.400000392596" />
+        <NodeLayout
+          Size="284,41.6"
+          Id="Package\Update Import_Batch_Process_Task Failure"
+          TopLeft="430.956043965775,244.495929067591" />
+        <NodeLayout
+          Size="305.6,41.6"
+          Id="Package\Update Import_Batch_Process_Task Success"
+          TopLeft="23.6483516580825,237.598493101279" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="330.314287310231,57.4901950745984">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,68.9098053179976"
+              Start="0,0"
+              End="0,61.4098053179976">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,61.4098053179976" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="305.133333333333,168.000000392596">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-128.684981675251,69.598492708683"
+              Start="0,0"
+              End="-128.684981675251,62.098492708683">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.2025196541272" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,24.2025196541272"
+                    Point2="0,28.2025196541272"
+                    Point3="-4,28.2025196541272" />
+                  <mssgle:LineSegment
+                    End="-124.684981675251,28.2025196541272" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-124.684981675251,28.2025196541272"
+                    Point2="-128.684981675251,28.2025196541272"
+                    Point3="-128.684981675251,32.2025196541272" />
+                  <mssgle:LineSegment
+                    End="-128.684981675251,62.098492708683" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="363.266666666667,168.000000392596">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="209.689377299108,76.495928674995"
+              Start="0,0"
+              End="209.689377299108,68.995928674995">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.9974806630849" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26.9974806630849"
+                    Point2="0,30.9974806630849"
+                    Point3="4,30.9974806630849" />
+                  <mssgle:LineSegment
+                    End="205.689377299108,30.9974806630849" />
+                  <mssgle:CubicBezierSegment
+                    Point1="205.689377299108,30.9974806630849"
+                    Point2="209.689377299108,30.9974806630849"
+                    Point3="209.689377299108,34.9974806630849" />
+                  <mssgle:LineSegment
+                    End="209.689377299108,68.995928674995" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="89.6033409933042,35.9974806630849,30.4826953125,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Import PW Customers">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="176.8,41.6"
+          Id="Package\Import PW Customers\Get Error Description"
+          TopLeft="403.35714963261,644.558828677273" />
+        <NodeLayout
+          Size="231.2,41.6"
+          Id="Package\Import PW Customers\Read from S1_V_PW_Customers"
+          TopLeft="386.214292197811,23.8529414338637" />
+        <NodeLayout
+          Size="135.2,41.6"
+          Id="Package\Import PW Customers\Write Errors"
+          TopLeft="418.357149888059,729.335299029565" />
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\Import PW Customers\OLE DB Destination"
+          TopLeft="410.50000689711,438.476475639575" />
+        <NodeLayout
+          Size="160.8,41.6"
+          Id="Package\Import PW Customers\Row Count Errors"
+          TopLeft="418.571435699658,553.047063124139" />
+        <NodeLayout
+          Size="129.6,41.6"
+          Id="Package\Import PW Customers\Row Count"
+          TopLeft="435.50000681196,108.911765735455" />
+        <NodeLayout
+          Size="152.8,41.6"
+          Id="Package\Import PW Customers\Derived Column"
+          TopLeft="415.500005960465,350.570592042567" />
+        <EdgeLayout
+          Id="Package\Import PW Customers.Paths[Output 0]"
+          TopLeft="488.857149760334,686.158828677273">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,43.1764703522916"
+              Start="0,0"
+              End="0,35.6764703522916">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35.6764703522916" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Import PW Customers.Paths[OLE DB Source Output]"
+          TopLeft="501.057149504886,65.4529414338637">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,43.458824301591"
+              Start="0,0"
+              End="0,35.958824301591">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35.958824301591" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Import PW Customers.Paths[OLE DB Destination Error Output]"
+          TopLeft="497.335721298384,480.076475639575">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,72.9705874845643"
+              Start="0,0"
+              End="0,65.4705874845643">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,65.4705874845643" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-73.20890625,27.0184968672822,146.4178125,11.43359375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Import PW Customers.Paths[Derived Column Output]"
+          TopLeft="493.800006428787,392.170592042567">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,46.305883597008"
+              Start="0,0"
+              End="0,38.805883597008">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,38.805883597008" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Import PW Customers.Paths[Row Count Output 1]"
+          TopLeft="495.364292666134,594.647063124139">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,49.9117655531345"
+              Start="0,0"
+              End="0,42.4117655531345">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,42.4117655531345" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="120,41.6"
+          Id="Package\Import PW Customers\Union All"
+          TopLeft="435.500007322857,274.676474363334" />
+        <NodeLayout
+          Size="112.8,41.6"
+          Id="Package\Import PW Customers\Lookup"
+          TopLeft="357.642863139814,183.500001093921" />
+        <NodeLayout
+          Size="162.4,41.6"
+          Id="Package\Import PW Customers\Derived Column 1"
+          TopLeft="562.642866120047,187.50000072928" />
+        <EdgeLayout
+          Id="Package\Import PW Customers.Paths[Row Count Output 11]"
+          TopLeft="500.30000681196,150.511765735455">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-86.2571436721458,32.9882353584656"
+              Start="0,0"
+              End="-86.2571436721458,25.4882353584656">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,12.4941176792328" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,12.4941176792328"
+                    Point2="0,16.4941176792328"
+                    Point3="-4,16.4941176792328" />
+                  <mssgle:LineSegment
+                    End="-82.2571436721458,16.4941176792328" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-82.2571436721458,16.4941176792328"
+                    Point2="-86.2571436721458,16.4941176792328"
+                    Point3="-86.2571436721458,20.4941176792328" />
+                  <mssgle:LineSegment
+                    End="-86.2571436721458,25.4882353584656" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Import PW Customers.Paths[Lookup No Match Output]"
+          TopLeft="470.442863139814,206.300000911601">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="92.2000029802327,0"
+              Start="0,0"
+              End="84.7000029802327,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="84.7000029802327,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-13.4563852286337,5,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Import PW Customers.Paths[Derived Column Output1]"
+          TopLeft="643.842866120047,229.10000072928">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-129.676192130524,45.5764736340534"
+              Start="0,0"
+              End="-129.676192130524,38.0764736340534">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.9860699149" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22.9860699149"
+                    Point2="0,26.9860699149"
+                    Point3="-4,26.9860699149" />
+                  <mssgle:LineSegment
+                    End="-125.676192130524,26.9860699149" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-125.676192130524,26.9860699149"
+                    Point2="-129.676192130524,26.9860699149"
+                    Point3="-129.676192130524,30.9860699149" />
+                  <mssgle:LineSegment
+                    End="-129.676192130524,38.0764736340534" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Import PW Customers.Paths[Lookup Match Output]"
+          TopLeft="414.042863139814,225.100001093921">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="62.7904775163757,49.5764732694132"
+              Start="0,0"
+              End="62.7904775163757,42.0764732694132">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,25.3544907516262" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,25.3544907516262"
+                    Point2="0,29.3544907516262"
+                    Point3="4,29.3544907516262" />
+                  <mssgle:LineSegment
+                    End="58.7904775163757,29.3544907516262" />
+                  <mssgle:CubicBezierSegment
+                    Point1="58.7904775163757,29.3544907516262"
+                    Point2="62.7904775163757,29.3544907516262"
+                    Point3="62.7904775163757,33.3544907516262" />
+                  <mssgle:LineSegment
+                    End="62.7904775163757,42.0764732694132" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-16.7961479605621,34.3544907516262,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Import PW Customers.Paths[Union All Output 1]"
+          TopLeft="493.700006641661,316.276474363334">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,34.2941176792328"
+              Start="0,0"
+              End="0,26.7941176792328">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.7941176792328" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Import PW Customers\Read from S1_V_PW_Customers">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Import PW Customers\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Import PW Customers\Lookup">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[S2_PW_Customer_Department]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

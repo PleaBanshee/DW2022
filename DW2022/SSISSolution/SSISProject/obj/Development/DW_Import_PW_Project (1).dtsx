@@ -1,0 +1,3448 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="3/9/2019 10:38:06 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-KD25EBE"
+  DTS:CreatorName="DESKTOP-KD25EBE\rkwuser"
+  DTS:DTSID="{026D0820-65E9-4AA5-AA0B-D7AB9A23ACB3}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.180"
+  DTS:LocaleID="7177"
+  DTS:ObjectName="DW_Import_MM_Material"
+  DTS:PackageType="5"
+  DTS:VersionBuild="136"
+  DTS:VersionGUID="{466AC164-E750-4164-B7A5-738576D6E5D2}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Error_File]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{17C5D8AF-F727-4692-ABC3-2740077F1C1F}"
+      DTS:ObjectName="Error_File">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[$Project::Error_Files_Folder] + @[System::PackageName] + "_" +  @[User::IB_String] + "_Errors.csv"</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="7177"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\Uni 2022\Data Warehouses\Project\new github\DW2022\DW2022\ErrorFiles\DW_Import_MM_Material_202112_Errors.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Material_Item_ID"
+              DTS:DTSID="{B9752C77-0CD7-40FD-8F21-769235CBF5FD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="20"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Material_Group"
+              DTS:DTSID="{A8D95D04-2F3B-4C6B-BE2F-087B7DE2450D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="20"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Material_Type"
+              DTS:DTSID="{815ACB49-F632-44DB-8F2A-379B1AA92269}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="20"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Material_Item_Category"
+              DTS:DTSID="{22C7C4B4-0327-4622-8F34-453A0921DA5B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="20"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Material_Item_Detail_1"
+              DTS:DTSID="{0107195F-949C-4406-BA02-0B902DDEB5CD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="20"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Material_Item_Detail_2"
+              DTS:DTSID="{9B3080DD-CB6F-49C0-9D33-827079ECEE67}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="20"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Material_Item_Size"
+              DTS:DTSID="{A12DD33C-578F-4D51-97BF-02366D3963CD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="5"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Material_Item_Size_Unit_Of_Measure"
+              DTS:DTSID="{BC65A0B8-C013-4EAF-892E-AFED1A90DCF9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="20"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Material_Item_Size_Note"
+              DTS:DTSID="{EE67E830-A152-4048-8EF0-7D28B9CC953A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="131"
+              DTS:DataPrecision="10"
+              DTS:DataScale="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Material_Item_Standard_Length_mm"
+              DTS:DTSID="{763F0F0C-35C0-4E63-9AC2-2AEB92213BA2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="131"
+              DTS:DataPrecision="10"
+              DTS:DataScale="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Material_Item_Standard_Width_or_Diameter_mm"
+              DTS:DTSID="{AE3E2CB3-D038-419D-B340-33F9825D2F1B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="131"
+              DTS:DataPrecision="10"
+              DTS:DataScale="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Material_Item_Standard_Height_mm"
+              DTS:DTSID="{54031295-5A79-4C75-A20B-89E372A9004F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="131"
+              DTS:DataPrecision="10"
+              DTS:DataScale="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Material_Item_Standard_Interior_Diameter_mm"
+              DTS:DTSID="{36BB663D-6F96-4C35-A2B8-7D2E4765D6A8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="131"
+              DTS:DataPrecision="10"
+              DTS:DataScale="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Material_Item_Standard_Thinkness_or_Wall_mm"
+              DTS:DTSID="{DA56C681-26D9-4E64-921C-4788F0BC1624}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Material_Item_Quantity_Unit_of_Measure"
+              DTS:DTSID="{01632F45-AB98-4CE9-9FC0-2962590CC254}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="IBPT_ID"
+              DTS:DTSID="{1A6B7BA9-D9B2-4088-B990-1631567412B1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="20"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Material_Current_Group"
+              DTS:DTSID="{CBA34A92-4670-499A-9107-21E134DBCF4E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="133"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Material_Item_Current_Name"
+              DTS:DTSID="{11A5FD91-9D5C-45D3-95F1-0D63F4CFCEC7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="133"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Material_Item_Name"
+              DTS:DTSID="{7256AF98-360C-4C6F-BFB8-61CFD7D7AD78}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="41"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Material_Category_Item_Type"
+              DTS:DTSID="{6CD162AF-902B-4ACB-B80F-75E9D52ED2EC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="11"
+              DTS:TextQualified="True"
+              DTS:ObjectName="IsCurrent"
+              DTS:DTSID="{35A55131-4820-494E-9D21-5148352F8942}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Effective_Date"
+              DTS:DTSID="{87AEB67B-F9F8-4BDF-8845-A6E01B09A6ED}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="6"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Import_Action"
+              DTS:DTSID="{B0A369CD-475E-45A9-B243-4FA561DDFACD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Expiration_Date"
+              DTS:DTSID="{D99A14AA-5822-4BE9-A6DD-E700843113B0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorCode"
+              DTS:DTSID="{2E3DFB01-1303-4C24-8A7D-4A422A9A3B89}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorColumn"
+              DTS:DTSID="{563EC922-9344-4648-9689-D8F8849A9EC8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="500"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorDescription"
+              DTS:DTSID="{0BB7728D-1647-49B9-A139-D48BBF717100}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Fixed_Error_File]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{DC060FCB-1AF2-4412-A790-1F50F1F31227}"
+      DTS:ObjectName="Fixed_Error_File">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[$Project::Error_Files_Folder] + @[System::PackageName] + "_" +  @[User::IB_String] + "_Fixed_Errors.csv"</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="7177"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\Uni 2022\Data Warehouses\Project\new github\DW2022\DW2022\ErrorFiles\DW_Import_MM_Material_202112_Fixed_Errors.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Material_Item_ID"
+              DTS:DTSID="{C36708BE-066E-4A28-935B-174E98EF8F58}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="20"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Material_Group"
+              DTS:DTSID="{3F899755-2E48-40FC-BEE4-A4334E85FE9D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="20"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Material_Type"
+              DTS:DTSID="{093F005B-6FCB-4B8E-92E6-64E339B2AB2D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="20"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Material_Item_Category"
+              DTS:DTSID="{245EF1DC-D6CC-4B41-8C9C-B164AF7E51DB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="20"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Material_Item_Detail_1"
+              DTS:DTSID="{86FC3405-57B2-42D2-8E72-B2C257E49AFD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="20"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Material_Item_Detail_2"
+              DTS:DTSID="{33107C6D-79A1-44A8-B0BE-382CFF36FA65}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="20"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Material_Item_Size"
+              DTS:DTSID="{CA52A077-C671-4920-A4E5-D3D94C035B6A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="5"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Material_Item_Size_Unit_Of_Measure"
+              DTS:DTSID="{E8E4FD0E-901F-4D86-8D0A-EF24F25B74EC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="20"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Material_Item_Size_Note"
+              DTS:DTSID="{EAE6CBE9-9710-4475-B476-AA61B9B731D0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="131"
+              DTS:DataPrecision="10"
+              DTS:DataScale="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Material_Item_Standard_Length_mm"
+              DTS:DTSID="{7FF12279-D815-4A94-980B-5DD2019F2248}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="131"
+              DTS:DataPrecision="10"
+              DTS:DataScale="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Material_Item_Standard_Width_or_Diameter_mm"
+              DTS:DTSID="{B5DCB289-F078-42D7-B467-0C692353EC33}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="131"
+              DTS:DataPrecision="10"
+              DTS:DataScale="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Material_Item_Standard_Height_mm"
+              DTS:DTSID="{4C9D595F-7797-49C8-919F-1687B4DC7DC9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="131"
+              DTS:DataPrecision="10"
+              DTS:DataScale="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Material_Item_Standard_Interior_Diameter_mm"
+              DTS:DTSID="{BF59B1FB-4552-4941-A6B9-CEE3BADAB776}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="131"
+              DTS:DataPrecision="10"
+              DTS:DataScale="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Material_Item_Standard_Thinkness_or_Wall_mm"
+              DTS:DTSID="{975FE950-D5A5-401D-802B-4725688B3DCA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Material_Item_Quantity_Unit_of_Measure"
+              DTS:DTSID="{06AE821A-2BC9-4DA4-BA3E-7ED1C9A35D95}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="20"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Material_Current_Group"
+              DTS:DTSID="{40F7C86F-05C6-40E9-B41B-8AB4FF6A1036}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="133"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Material_Item_Current_Name"
+              DTS:DTSID="{DC5B90B8-E606-4EE0-A0D0-98C0557603A5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="133"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Material_Item_Name"
+              DTS:DTSID="{DA6E8113-DB93-4DD6-9043-3371C752267C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="41"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Material_Category_Item_Type"
+              DTS:DTSID="{F2F98BE3-BF3E-4162-B9D8-D6F3F7C3DC0C}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Projects_Error]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{496E55F7-79D5-42F2-B7C7-48C48464B3EC}"
+      DTS:ObjectName="Projects_Error">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\istvan\Documents\ITRI621\bliksem\DW2022\DW2022\ErrorFiles\DW_Import_PW_Project_202012_Errors.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="7"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="IP_Project_ID"
+              DTS:DTSID="{38E792AD-CF1F-4956-B1A7-E3769F33E80A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="IP_Project_Category"
+              DTS:DTSID="{3ED143D6-C4AA-4424-AF72-3B3FAB3CDBD0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="200"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="IP_Project_Description"
+              DTS:DTSID="{A4ED6376-BC9E-482F-AC11-DB5B9E21237E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="133"
+              DTS:TextQualified="True"
+              DTS:ObjectName="IP_Request_Date"
+              DTS:DTSID="{A8F79EA5-920A-4C65-AD17-679A130C4054}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="IP_Status"
+              DTS:DTSID="{5B9B0BF9-AB1D-4DC4-B99D-AA902F9CF603}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="IBPT_ID"
+              DTS:DTSID="{E8E8A5FF-1101-4283-A90D-D211C202A8D8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Union All.Effective_Date"
+              DTS:DTSID="{0C8EF9EA-0AA5-44DB-945B-727F8DA63F20}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="6"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Union All.Import_Action"
+              DTS:DTSID="{CEAA5437-F94A-4522-93BA-2E0390F10F7B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="11"
+              DTS:TextQualified="True"
+              DTS:ObjectName="IsCurrent"
+              DTS:DTSID="{AE07BD2E-8B96-4530-B7DC-101450FC5513}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Expiration_Date"
+              DTS:DTSID="{EEEA9596-D7B7-4451-B1CB-3F975F8BC6BB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorCode"
+              DTS:DTSID="{4BC45201-B54E-4533-A764-714D7EC0EC02}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorColumn"
+              DTS:DTSID="{D4D72672-62D2-440C-9B14-167FF19A0315}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:PackageParameters>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="3"
+      DTS:DTSID="{C0BAE0A6-80D8-4FDD-9F41-CD1A10E79C9B}"
+      DTS:ObjectName="IBP_ID">
+      <DTS:Property
+        DTS:DataType="3"
+        DTS:Name="ParameterValue">0</DTS:Property>
+    </DTS:PackageParameter>
+  </DTS:PackageParameters>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{9C09FFCB-1F7C-447D-80F0-5B9033E33C04}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="GETDATE()"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Current_DateTime">
+      <DTS:VariableValue
+        DTS:DataType="7">10/27/2022 5:36:46 PM</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{86079016-F16A-4875-98A9-196BC8B48244}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="(DT_DATE) ( (DT_WSTR, 4)( @[$Project::IB_Year]) + &quot;-&quot; + (DT_WSTR, 2)( @[$Project::IB_Month] ) + &quot;-01&quot;)"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Effective_Date">
+      <DTS:VariableValue
+        DTS:DataType="7">12/1/2021</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{F50B76FA-2C14-4856-905A-6EDDB29E9F5C}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[User::Effective_Date]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Expiration_Date">
+      <DTS:VariableValue
+        DTS:DataType="7">12/1/2021</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{4631C5A4-785B-41ED-9A4D-7C7582765E8A}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="IBPT_Dim_Changing">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{3BB1177E-F1B6-4827-BFFD-F84910E9E8BC}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="IBPT_Dim_Fixed_Errors">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{1FB7AC80-A404-49B8-86E6-D4AEE7F52984}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="IBPT_Dim_Historical">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{288C1A5A-6661-4E7D-B17F-8F01AE8DEBA6}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="IBPT_Dim_New">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{04CCD0CE-D7CA-4897-92FA-A9A9846649E0}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="IBPT_Dim_Unchanged">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{F1C0AD59-820F-4448-8054-069EA2AEF9B8}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="IBPT_ID">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{324D614F-2187-4B94-AA3E-AA7D91D7BC62}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="IBPT_Records_Failed">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{66064BA0-401D-4ACB-9DAE-B8FC0610DDC3}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="IBPT_Records_In">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{8D9F5143-3987-471A-990A-6E32811CDCA4}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[User::IBPT_Records_In]- @[User::IBPT_Records_Failed] -  @[User::IBPT_Dim_Fixed_Errors]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="IBPT_Records_Out">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{7B46C4CE-60B1-4066-B44D-B68A5650F166}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="(DT_WSTR, 4)( @[$Project::IB_Year]  ) +   (DT_WSTR, 2)( @[$Project::IB_Month]  )"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="IB_String">
+      <DTS:VariableValue
+        DTS:DataType="8">202112</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{79D0E47A-D3DA-44E9-9782-DCAA90F10003}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="2999/12/31"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="No_Expiration_Date">
+      <DTS:VariableValue
+        DTS:DataType="3">8</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{700AF750-5613-4E1E-A43C-62371184C662}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="Open_Date">
+      <DTS:VariableValue
+        DTS:DataType="7">1/1/2999</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Create Import_Batch_Process_Task"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{9D39A800-4459-4227-A88E-20108633E92D}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Create Import_Batch_Process_Task"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{45AE6B60-21DF-4E6E-B8AC-51CCC622AE5B}"
+          SQLTask:IsStoredProc="True"
+          SQLTask:SqlStatementSource="Create_Import_Batch_Process_Task" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="RC"
+            SQLTask:DtsVariableName="User::IBPT_ID"
+            SQLTask:ParameterDirection="ReturnValue"
+            SQLTask:DataType="11"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="IBP_ID"
+            SQLTask:DtsVariableName="$Package::IBP_ID"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="11"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="IBPT_Description"
+            SQLTask:DtsVariableName="System::PackageName"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="16"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="IBPT_Start"
+            SQLTask:DtsVariableName="User::Current_DateTime"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="6"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Import Project Dimension"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{7708F7B7-09E7-4FDE-ABCD-D11B0A771A0C}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Import Project Dimension"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Import Project Dimension\Count records in 1"
+              componentClassID="Microsoft.RowCount"
+              contactInfo="Row Count;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Counts rows as they pass through a data flow. For example, use the number of rows processed to determine whether or not to perform cleanup operations, or update text in an e-mail message to communicate processing status."
+              name="Count records in 1">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable to hold the row count."
+                  name="VariableName">User::IBPT_Records_In</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Import Project Dimension\Count records in 1.Inputs[Row Count Input 1]"
+                  hasSideEffects="true"
+                  name="Row Count Input 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import Project Dimension\Count records in 1.Outputs[Row Count Output 1]"
+                  name="Row Count Output 1"
+                  synchronousInputId="Package\Import Project Dimension\Count records in 1.Inputs[Row Count Input 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import Project Dimension\Derived Column 1 1"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column 1 1"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Import Project Dimension\Derived Column 1 1.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import Project Dimension\Derived Column 1 1.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Import Project Dimension\Derived Column 1 1.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import Project Dimension\Derived Column 1 1.Outputs[Derived Column Output].Columns[IsCurrent]"
+                      dataType="bool"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Import Project Dimension\Derived Column 1 1.Outputs[Derived Column Output].Columns[IsCurrent]"
+                      name="IsCurrent"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_BOOL)("0")</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_BOOL)("0")</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import Project Dimension\Derived Column 1 1.Outputs[Derived Column Output].Columns[Expiration_Date]"
+                      dataType="date"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Import Project Dimension\Derived Column 1 1.Outputs[Derived Column Output].Columns[Expiration_Date]"
+                      name="Expiration_Date"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">@[User::Expiration_Date]</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">@[User::Expiration_Date]</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import Project Dimension\Derived Column 1 1.Outputs[Derived Column Output].Columns[IBPT_ID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Import Project Dimension\Derived Column 1 1.Outputs[Derived Column Output].Columns[IBPT_ID]"
+                      name="IBPT_ID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">@[User::IBPT_ID]</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">@[User::IBPT_ID]</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Import Project Dimension\Derived Column 1 1.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Import Project Dimension\Derived Column 1 1.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import Project Dimension\Derived Column 1 1.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import Project Dimension\Derived Column 1 1.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import Project Dimension\Derived Column 1 1.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import Project Dimension\Derived Column 1 1.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import Project Dimension\Derived Column 2"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column 2"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Import Project Dimension\Derived Column 2.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import Project Dimension\Derived Column 2.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Import Project Dimension\Derived Column 2.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import Project Dimension\Derived Column 2.Outputs[Derived Column Output].Columns[IsCurrent]"
+                      dataType="bool"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Import Project Dimension\Derived Column 2.Outputs[Derived Column Output].Columns[IsCurrent]"
+                      name="IsCurrent"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_BOOL)("1")</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_BOOL)("1")</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import Project Dimension\Derived Column 2.Outputs[Derived Column Output].Columns[Effective_Date]"
+                      dataType="date"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Import Project Dimension\Derived Column 2.Outputs[Derived Column Output].Columns[Effective_Date]"
+                      name="Effective_Date"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">@[User::Effective_Date]</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">@[User::Effective_Date]</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import Project Dimension\Derived Column 2.Outputs[Derived Column Output].Columns[Expiration_Date]"
+                      dataType="date"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Import Project Dimension\Derived Column 2.Outputs[Derived Column Output].Columns[Expiration_Date]"
+                      name="Expiration_Date"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">@[User::No_Expiration_Date]</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">@[User::No_Expiration_Date]</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import Project Dimension\Derived Column 2.Outputs[Derived Column Output].Columns[Import_Action]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="6"
+                      lineageId="Package\Import Project Dimension\Derived Column 2.Outputs[Derived Column Output].Columns[Import_Action]"
+                      name="Import_Action"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">"Insert"</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">"Insert"</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import Project Dimension\Derived Column 2.Outputs[Derived Column Output].Columns[IBPT_ID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Import Project Dimension\Derived Column 2.Outputs[Derived Column Output].Columns[IBPT_ID]"
+                      name="IBPT_ID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">@[User::IBPT_ID]</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">@[User::IBPT_ID]</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Import Project Dimension\Derived Column 2.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Import Project Dimension\Derived Column 2.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import Project Dimension\Derived Column 2.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import Project Dimension\Derived Column 2.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import Project Dimension\Derived Column 2.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import Project Dimension\Derived Column 2.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import Project Dimension\Derived Column 3 1"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column 3 1"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Import Project Dimension\Derived Column 3 1.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import Project Dimension\Derived Column 3 1.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Import Project Dimension\Derived Column 3 1.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import Project Dimension\Derived Column 3 1.Outputs[Derived Column Output].Columns[IBPT_ID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Import Project Dimension\Derived Column 3 1.Outputs[Derived Column Output].Columns[IBPT_ID]"
+                      name="IBPT_ID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">@[User::IBPT_ID]</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">@[User::IBPT_ID]</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Import Project Dimension\Derived Column 3 1.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Import Project Dimension\Derived Column 3 1.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import Project Dimension\Derived Column 3 1.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import Project Dimension\Derived Column 3 1.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import Project Dimension\Derived Column 3 1.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import Project Dimension\Derived Column 3 1.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import Project Dimension\Derived Column 4"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column 4"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Import Project Dimension\Derived Column 4.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import Project Dimension\Derived Column 4.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Import Project Dimension\Derived Column 4.Inputs[Derived Column Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Import Project Dimension\Derived Column 4.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Import Project Dimension\Derived Column 4.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import Project Dimension\Derived Column 4.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import Project Dimension\Derived Column 4.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import Project Dimension\Derived Column 4.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import Project Dimension\Derived Column 4.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import Project Dimension\Insert Destination - Atomic DW"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="Insert Destination - Atomic DW"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Project]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import Project Dimension\Insert Destination - Atomic DW.Connections[OleDbConnection]"
+                  connectionManagerID="{D104457E-A478-43DE-980E-0366FC91C67E}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[AtomicDW]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Import Project Dimension\Insert Destination - Atomic DW.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="RedirectRow"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import Project Dimension\Insert Destination - Atomic DW.Inputs[OLE DB Destination Input].Columns[IP_Project_ID]"
+                      cachedDataType="wstr"
+                      cachedLength="7"
+                      cachedName="IP_Project_ID"
+                      externalMetadataColumnId="Package\Import Project Dimension\Insert Destination - Atomic DW.Inputs[OLE DB Destination Input].ExternalColumns[Project_ID]"
+                      lineageId="Package\Import Project Dimension\Union All.Outputs[Union All Output 1].Columns[IP_Project_ID]" />
+                    <inputColumn
+                      refId="Package\Import Project Dimension\Insert Destination - Atomic DW.Inputs[OLE DB Destination Input].Columns[IP_Project_Category]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="IP_Project_Category"
+                      externalMetadataColumnId="Package\Import Project Dimension\Insert Destination - Atomic DW.Inputs[OLE DB Destination Input].ExternalColumns[Project_Category]"
+                      lineageId="Package\Import Project Dimension\Union All.Outputs[Union All Output 1].Columns[IP_Project_Category]" />
+                    <inputColumn
+                      refId="Package\Import Project Dimension\Insert Destination - Atomic DW.Inputs[OLE DB Destination Input].Columns[IP_Project_Description]"
+                      cachedDataType="wstr"
+                      cachedLength="200"
+                      cachedName="IP_Project_Description"
+                      externalMetadataColumnId="Package\Import Project Dimension\Insert Destination - Atomic DW.Inputs[OLE DB Destination Input].ExternalColumns[Project_Description]"
+                      lineageId="Package\Import Project Dimension\Union All.Outputs[Union All Output 1].Columns[IP_Project_Description]" />
+                    <inputColumn
+                      refId="Package\Import Project Dimension\Insert Destination - Atomic DW.Inputs[OLE DB Destination Input].Columns[IP_Request_Date]"
+                      cachedDataType="dbDate"
+                      cachedName="IP_Request_Date"
+                      externalMetadataColumnId="Package\Import Project Dimension\Insert Destination - Atomic DW.Inputs[OLE DB Destination Input].ExternalColumns[Project_Request_Date]"
+                      lineageId="Package\Import Project Dimension\Union All.Outputs[Union All Output 1].Columns[IP_Request_Date]" />
+                    <inputColumn
+                      refId="Package\Import Project Dimension\Insert Destination - Atomic DW.Inputs[OLE DB Destination Input].Columns[IP_Status]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="IP_Status"
+                      externalMetadataColumnId="Package\Import Project Dimension\Insert Destination - Atomic DW.Inputs[OLE DB Destination Input].ExternalColumns[Current_Project_Status]"
+                      lineageId="Package\Import Project Dimension\Union All.Outputs[Union All Output 1].Columns[IP_Status]" />
+                    <inputColumn
+                      refId="Package\Import Project Dimension\Insert Destination - Atomic DW.Inputs[OLE DB Destination Input].Columns[Effective_Date]"
+                      cachedDataType="date"
+                      cachedName="Effective_Date"
+                      externalMetadataColumnId="Package\Import Project Dimension\Insert Destination - Atomic DW.Inputs[OLE DB Destination Input].ExternalColumns[Effective_Date]"
+                      lineageId="Package\Import Project Dimension\Derived Column 2.Outputs[Derived Column Output].Columns[Effective_Date]" />
+                    <inputColumn
+                      refId="Package\Import Project Dimension\Insert Destination - Atomic DW.Inputs[OLE DB Destination Input].Columns[IsCurrent]"
+                      cachedDataType="bool"
+                      cachedName="IsCurrent"
+                      externalMetadataColumnId="Package\Import Project Dimension\Insert Destination - Atomic DW.Inputs[OLE DB Destination Input].ExternalColumns[IsCurrent]"
+                      lineageId="Package\Import Project Dimension\Derived Column 2.Outputs[Derived Column Output].Columns[IsCurrent]" />
+                    <inputColumn
+                      refId="Package\Import Project Dimension\Insert Destination - Atomic DW.Inputs[OLE DB Destination Input].Columns[Import_Action]"
+                      cachedDataType="wstr"
+                      cachedLength="6"
+                      cachedName="Import_Action"
+                      externalMetadataColumnId="Package\Import Project Dimension\Insert Destination - Atomic DW.Inputs[OLE DB Destination Input].ExternalColumns[Import_Action]"
+                      lineageId="Package\Import Project Dimension\Derived Column 2.Outputs[Derived Column Output].Columns[Import_Action]" />
+                    <inputColumn
+                      refId="Package\Import Project Dimension\Insert Destination - Atomic DW.Inputs[OLE DB Destination Input].Columns[IBPT_ID]"
+                      cachedDataType="i4"
+                      cachedName="IBPT_ID"
+                      externalMetadataColumnId="Package\Import Project Dimension\Insert Destination - Atomic DW.Inputs[OLE DB Destination Input].ExternalColumns[IBPT_ID]"
+                      lineageId="Package\Import Project Dimension\Derived Column 2.Outputs[Derived Column Output].Columns[IBPT_ID]" />
+                    <inputColumn
+                      refId="Package\Import Project Dimension\Insert Destination - Atomic DW.Inputs[OLE DB Destination Input].Columns[Expiration_Date]"
+                      cachedDataType="i4"
+                      cachedName="Expiration_Date"
+                      externalMetadataColumnId="Package\Import Project Dimension\Insert Destination - Atomic DW.Inputs[OLE DB Destination Input].ExternalColumns[Expiration_Date]"
+                      lineageId="Package\Import Project Dimension\Derived Column 2.Outputs[Derived Column Output].Columns[Expiration_Date]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Import Project Dimension\Insert Destination - Atomic DW.Inputs[OLE DB Destination Input].ExternalColumns[Project_Key]"
+                      dataType="i4"
+                      name="Project_Key" />
+                    <externalMetadataColumn
+                      refId="Package\Import Project Dimension\Insert Destination - Atomic DW.Inputs[OLE DB Destination Input].ExternalColumns[Project_ID]"
+                      dataType="wstr"
+                      length="20"
+                      name="Project_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Import Project Dimension\Insert Destination - Atomic DW.Inputs[OLE DB Destination Input].ExternalColumns[Project_Category]"
+                      dataType="wstr"
+                      length="50"
+                      name="Project_Category" />
+                    <externalMetadataColumn
+                      refId="Package\Import Project Dimension\Insert Destination - Atomic DW.Inputs[OLE DB Destination Input].ExternalColumns[Project_Description]"
+                      dataType="wstr"
+                      length="200"
+                      name="Project_Description" />
+                    <externalMetadataColumn
+                      refId="Package\Import Project Dimension\Insert Destination - Atomic DW.Inputs[OLE DB Destination Input].ExternalColumns[Project_Request_Date]"
+                      dataType="dbDate"
+                      name="Project_Request_Date" />
+                    <externalMetadataColumn
+                      refId="Package\Import Project Dimension\Insert Destination - Atomic DW.Inputs[OLE DB Destination Input].ExternalColumns[Current_Project_Status]"
+                      dataType="wstr"
+                      length="50"
+                      name="Current_Project_Status" />
+                    <externalMetadataColumn
+                      refId="Package\Import Project Dimension\Insert Destination - Atomic DW.Inputs[OLE DB Destination Input].ExternalColumns[Effective_Date]"
+                      dataType="dbDate"
+                      name="Effective_Date" />
+                    <externalMetadataColumn
+                      refId="Package\Import Project Dimension\Insert Destination - Atomic DW.Inputs[OLE DB Destination Input].ExternalColumns[Expiration_Date]"
+                      dataType="dbDate"
+                      name="Expiration_Date" />
+                    <externalMetadataColumn
+                      refId="Package\Import Project Dimension\Insert Destination - Atomic DW.Inputs[OLE DB Destination Input].ExternalColumns[IsCurrent]"
+                      dataType="bool"
+                      name="IsCurrent" />
+                    <externalMetadataColumn
+                      refId="Package\Import Project Dimension\Insert Destination - Atomic DW.Inputs[OLE DB Destination Input].ExternalColumns[Import_Action]"
+                      dataType="wstr"
+                      length="10"
+                      name="Import_Action" />
+                    <externalMetadataColumn
+                      refId="Package\Import Project Dimension\Insert Destination - Atomic DW.Inputs[OLE DB Destination Input].ExternalColumns[IBPT_ID]"
+                      dataType="i4"
+                      name="IBPT_ID" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import Project Dimension\Insert Destination - Atomic DW.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Import Project Dimension\Insert Destination - Atomic DW.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import Project Dimension\Insert Destination - Atomic DW.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import Project Dimension\Insert Destination - Atomic DW.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import Project Dimension\Insert Destination - Atomic DW.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import Project Dimension\Insert Destination - Atomic DW.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import Project Dimension\OLE DB Command - expire old records"
+              componentClassID="Microsoft.OLEDBCommand"
+              contactInfo="OLE DB Command;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+              description="Runs an SQL statement for each row in a data flow. For example, call a 'new employee setup' stored procedure for each row in the 'new employees' table. Note: running an SQL statement for each row of a large data flow may take a long time."
+              name="OLE DB Command - expire old records"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">UPDATE [dbo].[Project] SET
+ [IsCurrent] = ? ,
+ [Expiration_Date] = ?,
+ [Import_Action] = 'Expire'
+WHERE [Project_ID] = ? AND [IsCurrent] = '1'</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import Project Dimension\OLE DB Command - expire old records.Connections[OleDbConnection]"
+                  connectionManagerID="{D104457E-A478-43DE-980E-0366FC91C67E}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[AtomicDW]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Import Project Dimension\OLE DB Command - expire old records.Inputs[OLE DB Command Input]"
+                  errorOrTruncationOperation="Command Execution"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Command Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import Project Dimension\OLE DB Command - expire old records.Inputs[OLE DB Command Input].Columns[IsCurrent]"
+                      cachedDataType="bool"
+                      cachedName="IsCurrent"
+                      externalMetadataColumnId="Package\Import Project Dimension\OLE DB Command - expire old records.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
+                      lineageId="Package\Import Project Dimension\Derived Column 1 1.Outputs[Derived Column Output].Columns[IsCurrent]" />
+                    <inputColumn
+                      refId="Package\Import Project Dimension\OLE DB Command - expire old records.Inputs[OLE DB Command Input].Columns[Expiration_Date]"
+                      cachedDataType="date"
+                      cachedName="Expiration_Date"
+                      externalMetadataColumnId="Package\Import Project Dimension\OLE DB Command - expire old records.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
+                      lineageId="Package\Import Project Dimension\Derived Column 1 1.Outputs[Derived Column Output].Columns[Expiration_Date]" />
+                    <inputColumn
+                      refId="Package\Import Project Dimension\OLE DB Command - expire old records.Inputs[OLE DB Command Input].Columns[IP_Project_ID]"
+                      cachedDataType="wstr"
+                      cachedLength="7"
+                      cachedName="IP_Project_ID"
+                      externalMetadataColumnId="Package\Import Project Dimension\OLE DB Command - expire old records.Inputs[OLE DB Command Input].ExternalColumns[Param_2]"
+                      lineageId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Output].Columns[IP_Project_ID]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Import Project Dimension\OLE DB Command - expire old records.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
+                      dataType="bool"
+                      name="Param_0">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Import Project Dimension\OLE DB Command - expire old records.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
+                      dataType="dbDate"
+                      name="Param_1">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Import Project Dimension\OLE DB Command - expire old records.Inputs[OLE DB Command Input].ExternalColumns[Param_2]"
+                      dataType="wstr"
+                      length="20"
+                      name="Param_2">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import Project Dimension\OLE DB Command - expire old records.Outputs[OLE DB Command Output]"
+                  exclusionGroup="1"
+                  name="OLE DB Command Output"
+                  synchronousInputId="Package\Import Project Dimension\OLE DB Command - expire old records.Inputs[OLE DB Command Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Import Project Dimension\OLE DB Command - expire old records.Outputs[OLE DB Command Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Command Error Output"
+                  synchronousInputId="Package\Import Project Dimension\OLE DB Command - expire old records.Inputs[OLE DB Command Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import Project Dimension\OLE DB Command - expire old records.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import Project Dimension\OLE DB Command - expire old records.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import Project Dimension\OLE DB Command - expire old records.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import Project Dimension\OLE DB Command - expire old records.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import Project Dimension\OLE DB Command 1 - Update existing records"
+              componentClassID="Microsoft.OLEDBCommand"
+              contactInfo="OLE DB Command;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+              description="Runs an SQL statement for each row in a data flow. For example, call a 'new employee setup' stored procedure for each row in the 'new employees' table. Note: running an SQL statement for each row of a large data flow may take a long time."
+              name="OLE DB Command 1 - Update existing records"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">UPDATE [dbo].[Project] SET
+ [Current_Project_Status] = ?,
+[Project_Request_Date] = ?,
+[Import_Action] = 'Update'
+ WHERE [Project_ID] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import Project Dimension\OLE DB Command 1 - Update existing records.Connections[OleDbConnection]"
+                  connectionManagerID="{D104457E-A478-43DE-980E-0366FC91C67E}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[AtomicDW]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Import Project Dimension\OLE DB Command 1 - Update existing records.Inputs[OLE DB Command Input]"
+                  errorOrTruncationOperation="Command Execution"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Command Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import Project Dimension\OLE DB Command 1 - Update existing records.Inputs[OLE DB Command Input].Columns[IP_Status]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="IP_Status"
+                      externalMetadataColumnId="Package\Import Project Dimension\OLE DB Command 1 - Update existing records.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
+                      lineageId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Output].Columns[IP_Status]" />
+                    <inputColumn
+                      refId="Package\Import Project Dimension\OLE DB Command 1 - Update existing records.Inputs[OLE DB Command Input].Columns[IP_Project_ID]"
+                      cachedDataType="wstr"
+                      cachedLength="7"
+                      cachedName="IP_Project_ID"
+                      externalMetadataColumnId="Package\Import Project Dimension\OLE DB Command 1 - Update existing records.Inputs[OLE DB Command Input].ExternalColumns[Param_2]"
+                      lineageId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Output].Columns[IP_Project_ID]" />
+                    <inputColumn
+                      refId="Package\Import Project Dimension\OLE DB Command 1 - Update existing records.Inputs[OLE DB Command Input].Columns[IP_Request_Date]"
+                      cachedDataType="dbDate"
+                      cachedName="IP_Request_Date"
+                      externalMetadataColumnId="Package\Import Project Dimension\OLE DB Command 1 - Update existing records.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
+                      lineageId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Output].Columns[IP_Request_Date]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Import Project Dimension\OLE DB Command 1 - Update existing records.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
+                      dataType="wstr"
+                      length="50"
+                      name="Param_0">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Import Project Dimension\OLE DB Command 1 - Update existing records.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
+                      dataType="dbDate"
+                      name="Param_1">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Import Project Dimension\OLE DB Command 1 - Update existing records.Inputs[OLE DB Command Input].ExternalColumns[Param_2]"
+                      dataType="wstr"
+                      length="20"
+                      name="Param_2">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import Project Dimension\OLE DB Command 1 - Update existing records.Outputs[OLE DB Command Output]"
+                  exclusionGroup="1"
+                  name="OLE DB Command Output"
+                  synchronousInputId="Package\Import Project Dimension\OLE DB Command 1 - Update existing records.Inputs[OLE DB Command Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Import Project Dimension\OLE DB Command 1 - Update existing records.Outputs[OLE DB Command Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Command Error Output"
+                  synchronousInputId="Package\Import Project Dimension\OLE DB Command 1 - Update existing records.Inputs[OLE DB Command Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import Project Dimension\OLE DB Command 1 - Update existing records.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import Project Dimension\OLE DB Command 1 - Update existing records.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import Project Dimension\OLE DB Command 1 - Update existing records.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import Project Dimension\OLE DB Command 1 - Update existing records.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import Project Dimension\Read from S2_V_PW_Project"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="Read from S2_V_PW_Project"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT *
+ FROM [dbo].[S2_V_PW_Project]
+ WHERE [IB_Year] = ?</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping">"Parameter0:Input",{79E28ECC-3A20-4B11-9D33-37CAFFDED240};</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import Project Dimension\Read from S2_V_PW_Project.Connections[OleDbConnection]"
+                  connectionManagerID="{371815E0-5DFD-4917-AD74-E833D9B8A0B2}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[Stage2]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Output].Columns[IP_Project_ID]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Output].ExternalColumns[IP_Project_ID]"
+                      length="7"
+                      lineageId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Output].Columns[IP_Project_ID]"
+                      name="IP_Project_ID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Output].Columns[IP_Project_Category]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Output].ExternalColumns[IP_Project_Category]"
+                      length="50"
+                      lineageId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Output].Columns[IP_Project_Category]"
+                      name="IP_Project_Category"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Output].Columns[IP_Project_Description]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Output].ExternalColumns[IP_Project_Description]"
+                      length="200"
+                      lineageId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Output].Columns[IP_Project_Description]"
+                      name="IP_Project_Description"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Output].Columns[IP_Request_Date]"
+                      dataType="dbDate"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Output].ExternalColumns[IP_Request_Date]"
+                      lineageId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Output].Columns[IP_Request_Date]"
+                      name="IP_Request_Date"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Output].Columns[IP_Status]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Output].ExternalColumns[IP_Status]"
+                      length="50"
+                      lineageId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Output].Columns[IP_Status]"
+                      name="IP_Status"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Output].Columns[IBPT_ID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Output].ExternalColumns[IBPT_ID]"
+                      lineageId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Output].Columns[IBPT_ID]"
+                      name="IBPT_ID"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Output].ExternalColumns[IP_Project_ID]"
+                      dataType="wstr"
+                      length="7"
+                      name="IP_Project_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Output].ExternalColumns[IP_Project_Category]"
+                      dataType="wstr"
+                      length="50"
+                      name="IP_Project_Category" />
+                    <externalMetadataColumn
+                      refId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Output].ExternalColumns[IP_Project_Description]"
+                      dataType="wstr"
+                      length="200"
+                      name="IP_Project_Description" />
+                    <externalMetadataColumn
+                      refId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Output].ExternalColumns[IP_Request_Date]"
+                      dataType="dbDate"
+                      name="IP_Request_Date" />
+                    <externalMetadataColumn
+                      refId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Output].ExternalColumns[IP_Status]"
+                      dataType="wstr"
+                      length="50"
+                      name="IP_Status" />
+                    <externalMetadataColumn
+                      refId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Output].ExternalColumns[IB_Year]"
+                      dataType="i2"
+                      name="IB_Year" />
+                    <externalMetadataColumn
+                      refId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Output].ExternalColumns[IBPT_ID]"
+                      dataType="i4"
+                      name="IBPT_ID" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Error Output].Columns[IP_Project_ID]"
+                      dataType="wstr"
+                      length="7"
+                      lineageId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Error Output].Columns[IP_Project_ID]"
+                      name="IP_Project_ID" />
+                    <outputColumn
+                      refId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Error Output].Columns[IP_Project_Category]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Error Output].Columns[IP_Project_Category]"
+                      name="IP_Project_Category" />
+                    <outputColumn
+                      refId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Error Output].Columns[IP_Project_Description]"
+                      dataType="wstr"
+                      length="200"
+                      lineageId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Error Output].Columns[IP_Project_Description]"
+                      name="IP_Project_Description" />
+                    <outputColumn
+                      refId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Error Output].Columns[IP_Request_Date]"
+                      dataType="dbDate"
+                      lineageId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Error Output].Columns[IP_Request_Date]"
+                      name="IP_Request_Date" />
+                    <outputColumn
+                      refId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Error Output].Columns[IP_Status]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Error Output].Columns[IP_Status]"
+                      name="IP_Status" />
+                    <outputColumn
+                      refId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                    <outputColumn
+                      refId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Error Output].Columns[IBPT_ID]"
+                      dataType="i4"
+                      lineageId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Error Output].Columns[IBPT_ID]"
+                      name="IBPT_ID" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import Project Dimension\Row Count - changing 1"
+              componentClassID="Microsoft.RowCount"
+              contactInfo="Row Count;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Counts rows as they pass through a data flow. For example, use the number of rows processed to determine whether or not to perform cleanup operations, or update text in an e-mail message to communicate processing status."
+              name="Row Count - changing 1">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable to hold the row count."
+                  name="VariableName">User::IBPT_Dim_Changing</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Import Project Dimension\Row Count - changing 1.Inputs[Row Count Input 1]"
+                  hasSideEffects="true"
+                  name="Row Count Input 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import Project Dimension\Row Count - changing 1.Outputs[Row Count Output 1]"
+                  name="Row Count Output 1"
+                  synchronousInputId="Package\Import Project Dimension\Row Count - changing 1.Inputs[Row Count Input 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import Project Dimension\Row Count - Historical 1"
+              componentClassID="Microsoft.RowCount"
+              contactInfo="Row Count;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Counts rows as they pass through a data flow. For example, use the number of rows processed to determine whether or not to perform cleanup operations, or update text in an e-mail message to communicate processing status."
+              name="Row Count - Historical 1">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable to hold the row count."
+                  name="VariableName">User::IBPT_Dim_New</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Import Project Dimension\Row Count - Historical 1.Inputs[Row Count Input 1]"
+                  hasSideEffects="true"
+                  name="Row Count Input 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import Project Dimension\Row Count - Historical 1.Outputs[Row Count Output 1]"
+                  name="Row Count Output 1"
+                  synchronousInputId="Package\Import Project Dimension\Row Count - Historical 1.Inputs[Row Count Input 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import Project Dimension\Row Count - New 1"
+              componentClassID="Microsoft.RowCount"
+              contactInfo="Row Count;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Counts rows as they pass through a data flow. For example, use the number of rows processed to determine whether or not to perform cleanup operations, or update text in an e-mail message to communicate processing status."
+              name="Row Count - New 1">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable to hold the row count."
+                  name="VariableName">User::IBPT_Dim_New</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Import Project Dimension\Row Count - New 1.Inputs[Row Count Input 1]"
+                  hasSideEffects="true"
+                  name="Row Count Input 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import Project Dimension\Row Count - New 1.Outputs[Row Count Output 1]"
+                  name="Row Count Output 1"
+                  synchronousInputId="Package\Import Project Dimension\Row Count - New 1.Inputs[Row Count Input 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import Project Dimension\Row Count - Unchanged 1"
+              componentClassID="Microsoft.RowCount"
+              contactInfo="Row Count;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Counts rows as they pass through a data flow. For example, use the number of rows processed to determine whether or not to perform cleanup operations, or update text in an e-mail message to communicate processing status."
+              name="Row Count - Unchanged 1">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable to hold the row count."
+                  name="VariableName">User::IBPT_Dim_Unchanged</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Import Project Dimension\Row Count - Unchanged 1.Inputs[Row Count Input 1]"
+                  hasSideEffects="true"
+                  name="Row Count Input 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import Project Dimension\Row Count - Unchanged 1.Outputs[Row Count Output 1]"
+                  name="Row Count Output 1"
+                  synchronousInputId="Package\Import Project Dimension\Row Count - Unchanged 1.Inputs[Row Count Input 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import Project Dimension\Row Count -Insert Errors"
+              componentClassID="Microsoft.RowCount"
+              contactInfo="Row Count;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Counts rows as they pass through a data flow. For example, use the number of rows processed to determine whether or not to perform cleanup operations, or update text in an e-mail message to communicate processing status."
+              name="Row Count -Insert Errors">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable to hold the row count."
+                  name="VariableName">User::IBPT_Records_Failed</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Import Project Dimension\Row Count -Insert Errors.Inputs[Row Count Input 1]"
+                  hasSideEffects="true"
+                  name="Row Count Input 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import Project Dimension\Row Count -Insert Errors.Outputs[Row Count Output 1]"
+                  name="Row Count Output 1"
+                  synchronousInputId="Package\Import Project Dimension\Row Count -Insert Errors.Inputs[Row Count Input 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import Project Dimension\Slowly Changing Dimension 1"
+              componentClassID="Microsoft.SCD"
+              contactInfo="Slowly Changing Dimension;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;3"
+              description="Updates a SQL Server Analysis Services data warehouse dimension. Update dimension records that are already present and  insert dimension records that aren't. For example, update the DimProduct table of the AdventureWorksDW OLAP database with data from the Products table in the AdventureWorks OLTP database."
+              name="Slowly Changing Dimension 1"
+              version="3">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SELECT statement used to create a schema rowset."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT [Current_Project_Status], [Project_Category], [Project_Description], [Project_ID], [Project_Request_Date],[IsCurrent] FROM [dbo].[Project]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the WHERE clause in the SELECT statement that selects the current row among rows with identical business keys."
+                  name="CurrentRowWhere">[IsCurrent] = '1'</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether historical attribute updates are directed to the transformation output for changing attribute updates."
+                  name="UpdateChangingAttributeHistory">true</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the transformation fails when columns with fixed attributes contain changes."
+                  name="FailOnFixedAttributeChange">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the column name for the inferred member."
+                  name="InferredMemberIndicator"></property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether inferred member updates are detected."
+                  name="EnableInferredMember">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the transformation fails when a lookup of an existing record fails."
+                  name="FailOnLookupFailure">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies that all rows in the input are new or the transformation detects the change type."
+                  name="IncomingRowChangeType"
+                  typeConverter="IncomingRowChangeType">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import Project Dimension\Slowly Changing Dimension 1.Connections[LookupConnection]"
+                  connectionManagerID="{D104457E-A478-43DE-980E-0366FC91C67E}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[AtomicDW]"
+                  description="Defines the connection to use for lookups in the dimension table"
+                  name="LookupConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Import Project Dimension\Slowly Changing Dimension 1.Inputs[Slowly Changing Dimension Input]"
+                  name="Slowly Changing Dimension Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import Project Dimension\Slowly Changing Dimension 1.Inputs[Slowly Changing Dimension Input].Columns[IP_Status]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="IP_Status"
+                      externalMetadataColumnId="Package\Import Project Dimension\Slowly Changing Dimension 1.Inputs[Slowly Changing Dimension Input].ExternalColumns[Current_Project_Status]"
+                      lineageId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Output].Columns[IP_Status]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          name="ColumnType"
+                          typeConverter="ColumnType">2</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Import Project Dimension\Slowly Changing Dimension 1.Inputs[Slowly Changing Dimension Input].Columns[IP_Project_Category]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="IP_Project_Category"
+                      externalMetadataColumnId="Package\Import Project Dimension\Slowly Changing Dimension 1.Inputs[Slowly Changing Dimension Input].ExternalColumns[Project_Category]"
+                      lineageId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Output].Columns[IP_Project_Category]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          name="ColumnType"
+                          typeConverter="ColumnType">3</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Import Project Dimension\Slowly Changing Dimension 1.Inputs[Slowly Changing Dimension Input].Columns[IP_Project_Description]"
+                      cachedDataType="wstr"
+                      cachedLength="200"
+                      cachedName="IP_Project_Description"
+                      externalMetadataColumnId="Package\Import Project Dimension\Slowly Changing Dimension 1.Inputs[Slowly Changing Dimension Input].ExternalColumns[Project_Description]"
+                      lineageId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Output].Columns[IP_Project_Description]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          name="ColumnType"
+                          typeConverter="ColumnType">3</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Import Project Dimension\Slowly Changing Dimension 1.Inputs[Slowly Changing Dimension Input].Columns[IP_Project_ID]"
+                      cachedDataType="wstr"
+                      cachedLength="7"
+                      cachedName="IP_Project_ID"
+                      externalMetadataColumnId="Package\Import Project Dimension\Slowly Changing Dimension 1.Inputs[Slowly Changing Dimension Input].ExternalColumns[Project_ID]"
+                      lineageId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Output].Columns[IP_Project_ID]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          name="ColumnType"
+                          typeConverter="ColumnType">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Import Project Dimension\Slowly Changing Dimension 1.Inputs[Slowly Changing Dimension Input].Columns[IP_Request_Date]"
+                      cachedDataType="dbDate"
+                      cachedName="IP_Request_Date"
+                      externalMetadataColumnId="Package\Import Project Dimension\Slowly Changing Dimension 1.Inputs[Slowly Changing Dimension Input].ExternalColumns[Project_Request_Date]"
+                      lineageId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Output].Columns[IP_Request_Date]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          name="ColumnType"
+                          typeConverter="ColumnType">2</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Import Project Dimension\Slowly Changing Dimension 1.Inputs[Slowly Changing Dimension Input].ExternalColumns[Current_Project_Status]"
+                      dataType="wstr"
+                      length="50"
+                      name="Current_Project_Status" />
+                    <externalMetadataColumn
+                      refId="Package\Import Project Dimension\Slowly Changing Dimension 1.Inputs[Slowly Changing Dimension Input].ExternalColumns[Project_Category]"
+                      dataType="wstr"
+                      length="50"
+                      name="Project_Category" />
+                    <externalMetadataColumn
+                      refId="Package\Import Project Dimension\Slowly Changing Dimension 1.Inputs[Slowly Changing Dimension Input].ExternalColumns[Project_Description]"
+                      dataType="wstr"
+                      length="200"
+                      name="Project_Description" />
+                    <externalMetadataColumn
+                      refId="Package\Import Project Dimension\Slowly Changing Dimension 1.Inputs[Slowly Changing Dimension Input].ExternalColumns[Project_ID]"
+                      dataType="wstr"
+                      length="20"
+                      name="Project_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Import Project Dimension\Slowly Changing Dimension 1.Inputs[Slowly Changing Dimension Input].ExternalColumns[Project_Request_Date]"
+                      dataType="dbDate"
+                      name="Project_Request_Date" />
+                    <externalMetadataColumn
+                      refId="Package\Import Project Dimension\Slowly Changing Dimension 1.Inputs[Slowly Changing Dimension Input].ExternalColumns[IsCurrent]"
+                      dataType="bool"
+                      name="IsCurrent" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import Project Dimension\Slowly Changing Dimension 1.Outputs[Unchanged Output]"
+                  description="Unchanged rows"
+                  exclusionGroup="1"
+                  name="Unchanged Output"
+                  synchronousInputId="Package\Import Project Dimension\Slowly Changing Dimension 1.Inputs[Slowly Changing Dimension Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Import Project Dimension\Slowly Changing Dimension 1.Outputs[New Output]"
+                  description="New rows"
+                  exclusionGroup="1"
+                  name="New Output"
+                  synchronousInputId="Package\Import Project Dimension\Slowly Changing Dimension 1.Inputs[Slowly Changing Dimension Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Import Project Dimension\Slowly Changing Dimension 1.Outputs[Fixed Attribute Output]"
+                  description="Rows with changes in columns tagged FixedAttribute"
+                  exclusionGroup="1"
+                  name="Fixed Attribute Output"
+                  synchronousInputId="Package\Import Project Dimension\Slowly Changing Dimension 1.Inputs[Slowly Changing Dimension Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Import Project Dimension\Slowly Changing Dimension 1.Outputs[Changing Attribute Updates Output]"
+                  description="These rows contain new information for ChangingAttribute (Type 1) column changes"
+                  exclusionGroup="1"
+                  name="Changing Attribute Updates Output"
+                  synchronousInputId="Package\Import Project Dimension\Slowly Changing Dimension 1.Inputs[Slowly Changing Dimension Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Import Project Dimension\Slowly Changing Dimension 1.Outputs[Historical Attribute Inserts Output]"
+                  description="HistoricalAttribute (Type 2) changes result in these new rows"
+                  exclusionGroup="2"
+                  name="Historical Attribute Inserts Output"
+                  synchronousInputId="Package\Import Project Dimension\Slowly Changing Dimension 1.Inputs[Slowly Changing Dimension Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Import Project Dimension\Slowly Changing Dimension 1.Outputs[Inferred Member Updates Output]"
+                  description="Information to update unpopulated initial dimension row"
+                  exclusionGroup="1"
+                  name="Inferred Member Updates Output"
+                  synchronousInputId="Package\Import Project Dimension\Slowly Changing Dimension 1.Inputs[Slowly Changing Dimension Input]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import Project Dimension\Union All"
+              componentClassID="Microsoft.UnionAll"
+              contactInfo="Union All;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Combines rows from multiple data flows without sorting. For example, add rows back to a data flow after correction of errors. If sorting is important, we recommend using the Merge transformation."
+              name="Union All"
+              version="1">
+              <inputs>
+                <input
+                  refId="Package\Import Project Dimension\Union All.Inputs[Union All Input 2]"
+                  hasSideEffects="true"
+                  name="Union All Input 2">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import Project Dimension\Union All.Inputs[Union All Input 2].Columns[IP_Project_ID]"
+                      cachedDataType="wstr"
+                      cachedLength="7"
+                      cachedName="IP_Project_ID"
+                      lineageId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Output].Columns[IP_Project_ID]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Import Project Dimension\Union All.Outputs[Union All Output 1].Columns[IP_Project_ID]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Import Project Dimension\Union All.Inputs[Union All Input 2].Columns[IP_Project_Category]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="IP_Project_Category"
+                      lineageId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Output].Columns[IP_Project_Category]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Import Project Dimension\Union All.Outputs[Union All Output 1].Columns[IP_Project_Category]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Import Project Dimension\Union All.Inputs[Union All Input 2].Columns[IP_Project_Description]"
+                      cachedDataType="wstr"
+                      cachedLength="200"
+                      cachedName="IP_Project_Description"
+                      lineageId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Output].Columns[IP_Project_Description]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Import Project Dimension\Union All.Outputs[Union All Output 1].Columns[IP_Project_Description]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Import Project Dimension\Union All.Inputs[Union All Input 2].Columns[IP_Request_Date]"
+                      cachedDataType="dbDate"
+                      cachedName="IP_Request_Date"
+                      lineageId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Output].Columns[IP_Request_Date]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Import Project Dimension\Union All.Outputs[Union All Output 1].Columns[IP_Request_Date]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Import Project Dimension\Union All.Inputs[Union All Input 2].Columns[IP_Status]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="IP_Status"
+                      lineageId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Output].Columns[IP_Status]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Import Project Dimension\Union All.Outputs[Union All Output 1].Columns[IP_Status]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Import Project Dimension\Union All.Inputs[Union All Input 3]"
+                  hasSideEffects="true"
+                  name="Union All Input 3">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import Project Dimension\Union All.Inputs[Union All Input 3].Columns[IP_Project_ID]"
+                      cachedDataType="wstr"
+                      cachedLength="7"
+                      cachedName="IP_Project_ID"
+                      lineageId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Output].Columns[IP_Project_ID]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Import Project Dimension\Union All.Outputs[Union All Output 1].Columns[IP_Project_ID]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Import Project Dimension\Union All.Inputs[Union All Input 3].Columns[IP_Project_Category]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="IP_Project_Category"
+                      lineageId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Output].Columns[IP_Project_Category]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Import Project Dimension\Union All.Outputs[Union All Output 1].Columns[IP_Project_Category]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Import Project Dimension\Union All.Inputs[Union All Input 3].Columns[IP_Project_Description]"
+                      cachedDataType="wstr"
+                      cachedLength="200"
+                      cachedName="IP_Project_Description"
+                      lineageId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Output].Columns[IP_Project_Description]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Import Project Dimension\Union All.Outputs[Union All Output 1].Columns[IP_Project_Description]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Import Project Dimension\Union All.Inputs[Union All Input 3].Columns[IP_Request_Date]"
+                      cachedDataType="dbDate"
+                      cachedName="IP_Request_Date"
+                      lineageId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Output].Columns[IP_Request_Date]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Import Project Dimension\Union All.Outputs[Union All Output 1].Columns[IP_Request_Date]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Import Project Dimension\Union All.Inputs[Union All Input 3].Columns[IP_Status]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="IP_Status"
+                      lineageId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Output].Columns[IP_Status]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Import Project Dimension\Union All.Outputs[Union All Output 1].Columns[IP_Status]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Import Project Dimension\Union All.Inputs[Union All Input 1]"
+                  dangling="true"
+                  hasSideEffects="true"
+                  name="Union All Input 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import Project Dimension\Union All.Outputs[Union All Output 1]"
+                  name="Union All Output 1">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import Project Dimension\Union All.Outputs[Union All Output 1].Columns[IP_Project_ID]"
+                      dataType="wstr"
+                      length="7"
+                      lineageId="Package\Import Project Dimension\Union All.Outputs[Union All Output 1].Columns[IP_Project_ID]"
+                      name="IP_Project_ID" />
+                    <outputColumn
+                      refId="Package\Import Project Dimension\Union All.Outputs[Union All Output 1].Columns[IP_Project_Category]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Import Project Dimension\Union All.Outputs[Union All Output 1].Columns[IP_Project_Category]"
+                      name="IP_Project_Category" />
+                    <outputColumn
+                      refId="Package\Import Project Dimension\Union All.Outputs[Union All Output 1].Columns[IP_Project_Description]"
+                      dataType="wstr"
+                      length="200"
+                      lineageId="Package\Import Project Dimension\Union All.Outputs[Union All Output 1].Columns[IP_Project_Description]"
+                      name="IP_Project_Description" />
+                    <outputColumn
+                      refId="Package\Import Project Dimension\Union All.Outputs[Union All Output 1].Columns[IP_Request_Date]"
+                      dataType="dbDate"
+                      lineageId="Package\Import Project Dimension\Union All.Outputs[Union All Output 1].Columns[IP_Request_Date]"
+                      name="IP_Request_Date" />
+                    <outputColumn
+                      refId="Package\Import Project Dimension\Union All.Outputs[Union All Output 1].Columns[IP_Status]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Import Project Dimension\Union All.Outputs[Union All Output 1].Columns[IP_Status]"
+                      name="IP_Status" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Import Project Dimension.Paths[Changing Attribute Updates Output]"
+              endId="Package\Import Project Dimension\Row Count - changing 1.Inputs[Row Count Input 1]"
+              name="Changing Attribute Updates Output"
+              startId="Package\Import Project Dimension\Slowly Changing Dimension 1.Outputs[Changing Attribute Updates Output]" />
+            <path
+              refId="Package\Import Project Dimension.Paths[Derived Column Output]"
+              endId="Package\Import Project Dimension\Insert Destination - Atomic DW.Inputs[OLE DB Destination Input]"
+              name="Derived Column Output"
+              startId="Package\Import Project Dimension\Derived Column 2.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Import Project Dimension.Paths[Derived Column Output1]"
+              endId="Package\Import Project Dimension\OLE DB Command - expire old records.Inputs[OLE DB Command Input]"
+              name="Derived Column Output"
+              startId="Package\Import Project Dimension\Derived Column 1 1.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Import Project Dimension.Paths[Derived Column Output2]"
+              endId="Package\Import Project Dimension\Slowly Changing Dimension 1.Inputs[Slowly Changing Dimension Input]"
+              name="Derived Column Output"
+              startId="Package\Import Project Dimension\Derived Column 4.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Import Project Dimension.Paths[Derived Column Output3]"
+              endId="Package\Import Project Dimension\OLE DB Command 1 - Update existing records.Inputs[OLE DB Command Input]"
+              name="Derived Column Output"
+              startId="Package\Import Project Dimension\Derived Column 3 1.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Import Project Dimension.Paths[Historical Attribute Inserts Output]"
+              endId="Package\Import Project Dimension\Row Count - Historical 1.Inputs[Row Count Input 1]"
+              name="Historical Attribute Inserts Output"
+              startId="Package\Import Project Dimension\Slowly Changing Dimension 1.Outputs[Historical Attribute Inserts Output]" />
+            <path
+              refId="Package\Import Project Dimension.Paths[New Output]"
+              endId="Package\Import Project Dimension\Row Count - New 1.Inputs[Row Count Input 1]"
+              name="New Output"
+              startId="Package\Import Project Dimension\Slowly Changing Dimension 1.Outputs[New Output]" />
+            <path
+              refId="Package\Import Project Dimension.Paths[OLE DB Command Output]"
+              endId="Package\Import Project Dimension\Union All.Inputs[Union All Input 2]"
+              name="OLE DB Command Output"
+              startId="Package\Import Project Dimension\OLE DB Command - expire old records.Outputs[OLE DB Command Output]" />
+            <path
+              refId="Package\Import Project Dimension.Paths[OLE DB Destination Error Output]"
+              endId="Package\Import Project Dimension\Row Count -Insert Errors.Inputs[Row Count Input 1]"
+              name="OLE DB Destination Error Output"
+              startId="Package\Import Project Dimension\Insert Destination - Atomic DW.Outputs[OLE DB Destination Error Output]" />
+            <path
+              refId="Package\Import Project Dimension.Paths[OLE DB Source Output]"
+              endId="Package\Import Project Dimension\Count records in 1.Inputs[Row Count Input 1]"
+              name="OLE DB Source Output"
+              startId="Package\Import Project Dimension\Read from S2_V_PW_Project.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\Import Project Dimension.Paths[Row Count Output 1]"
+              endId="Package\Import Project Dimension\Union All.Inputs[Union All Input 3]"
+              name="Row Count Output 1"
+              startId="Package\Import Project Dimension\Row Count - New 1.Outputs[Row Count Output 1]" />
+            <path
+              refId="Package\Import Project Dimension.Paths[Row Count Output 11]"
+              endId="Package\Import Project Dimension\Derived Column 4.Inputs[Derived Column Input]"
+              name="Row Count Output 1"
+              startId="Package\Import Project Dimension\Count records in 1.Outputs[Row Count Output 1]" />
+            <path
+              refId="Package\Import Project Dimension.Paths[Row Count Output 12]"
+              endId="Package\Import Project Dimension\Derived Column 3 1.Inputs[Derived Column Input]"
+              name="Row Count Output 1"
+              startId="Package\Import Project Dimension\Row Count - changing 1.Outputs[Row Count Output 1]" />
+            <path
+              refId="Package\Import Project Dimension.Paths[Row Count Output 13]"
+              endId="Package\Import Project Dimension\Derived Column 1 1.Inputs[Derived Column Input]"
+              name="Row Count Output 1"
+              startId="Package\Import Project Dimension\Row Count - Historical 1.Outputs[Row Count Output 1]" />
+            <path
+              refId="Package\Import Project Dimension.Paths[Unchanged Output]"
+              endId="Package\Import Project Dimension\Row Count - Unchanged 1.Inputs[Row Count Input 1]"
+              name="Unchanged Output"
+              startId="Package\Import Project Dimension\Slowly Changing Dimension 1.Outputs[Unchanged Output]" />
+            <path
+              refId="Package\Import Project Dimension.Paths[Union All Output 1]"
+              endId="Package\Import Project Dimension\Derived Column 2.Inputs[Derived Column Input]"
+              name="Union All Output 1"
+              startId="Package\Import Project Dimension\Union All.Outputs[Union All Output 1]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Update Import_Batch_Process_Task Failure"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{1B97F1CB-596E-4F5B-BE8E-2EEEB547C2BF}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Update Import_Batch_Process_Task Failure"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{45AE6B60-21DF-4E6E-B8AC-51CCC622AE5B}"
+          SQLTask:SqlStatementSource="Update Import_Batch_Process_Task set &#xA;    IBPT_End = @IBPT_End,&#xA;    IBPT_Status = 'Failed'&#xA;&#xA; Where IBPT_ID = @IBPT_ID" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="@IBPT_End"
+            SQLTask:DtsVariableName="User::Current_DateTime"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="6"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="IBPT_ID"
+            SQLTask:DtsVariableName="User::IBPT_ID"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="11"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Update Import_Batch_Process_Task Success"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{854D0A6D-C7A0-4A44-A808-AC17D6347444}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Update Import_Batch_Process_Task Success"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{45AE6B60-21DF-4E6E-B8AC-51CCC622AE5B}"
+          SQLTask:SqlStatementSource="Update Import_Batch_Process_Task set &#xA;    IBPT_End = @IBPT_End,&#xA;    IBPT_Status = 'Completed',&#xA;    IBPT_Records_In =  @IBPT_Records_In,&#xA;    IBPT_Records_Failed = @IBPT_Records_Failed,&#xA;    IBPT_Records_Out = @IBPT_Records_Out,&#xA;    IBPT_Dim_Historical = @IBPT_Dim_Historical,&#xA;    IBPT_Dim_Changing = @IBPT_Dim_Changing,&#xA;    IBPT_Dim_New = @IBPT_Dim_New,&#xA;    IBPT_Dim_Unchanged = @IBPT_Dim_Unchanged,&#xA;    IBPT_Dim_Fixed_Errors = @IBPT_Dim_Fixed_Errors&#xA; Where IBPT_ID = @IBPT_ID" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="@IBPT_End"
+            SQLTask:DtsVariableName="User::Current_DateTime"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="6"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="IBPT_Records_In"
+            SQLTask:DtsVariableName="User::IBPT_Records_In"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="11"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="IBPT_Records_Failed"
+            SQLTask:DtsVariableName="User::IBPT_Records_Failed"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="11"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="IBPT_Records_Out"
+            SQLTask:DtsVariableName="User::IBPT_Records_Out"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="11"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="IBPT_ID"
+            SQLTask:DtsVariableName="User::IBPT_ID"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="11"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="IBPT_Dim_Historical"
+            SQLTask:DtsVariableName="User::IBPT_Dim_Historical"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="11"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="IBPT_Dim_Changing"
+            SQLTask:DtsVariableName="User::IBPT_Dim_Changing"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="11"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="IBPT_Dim_New"
+            SQLTask:DtsVariableName="User::IBPT_Dim_New"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="11"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="IBPT_Dim_Unchanged"
+            SQLTask:DtsVariableName="User::IBPT_Dim_Unchanged"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="11"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="IBPT_Dim_Fixed_Errors"
+            SQLTask:DtsVariableName="User::IBPT_Dim_Fixed_Errors"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="11"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{5E65F1EE-C2A5-4DA9-BF3F-74D106657785}"
+      DTS:From="Package\Create Import_Batch_Process_Task"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Import Project Dimension" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{F6A5344A-7249-42B9-8A2E-257A14AF85F3}"
+      DTS:From="Package\Import Project Dimension"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Update Import_Batch_Process_Task Success" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{0D6F843D-DA3F-4664-8251-54943442AA7D}"
+      DTS:From="Package\Import Project Dimension"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\Update Import_Batch_Process_Task Failure"
+      DTS:Value="1" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="256,42"
+          Id="Package\Create Import_Batch_Process_Task"
+          TopLeft="198.428574620461,15.8901950745984" />
+        <NodeLayout
+          Size="199,42"
+          Id="Package\Import Project Dimension"
+          TopLeft="228,113.352941251544" />
+        <NodeLayout
+          Size="298,42"
+          Id="Package\Update Import_Batch_Process_Task Failure"
+          TopLeft="397.956043965775,214.095928468366" />
+        <NodeLayout
+          Size="306,42"
+          Id="Package\Update Import_Batch_Process_Task Success"
+          TopLeft="37.6483516580825,215.865159237597" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="326.96428731023,57.8901950745984">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,55.4627461769456"
+              Start="0,0"
+              End="0,47.9627461769456">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,47.9627461769456" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="295.666666666667,155.352941251544">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-105.018315008584,60.512217986053"
+              Start="0,0"
+              End="-105.018315008584,53.012217986053">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.4944770711242" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.4944770711242"
+                    Point2="0,24.4944770711242"
+                    Point3="-4,24.4944770711242" />
+                  <mssgle:LineSegment
+                    End="-101.018315008584,24.4944770711242" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-101.018315008584,24.4944770711242"
+                    Point2="-105.018315008584,24.4944770711242"
+                    Point3="-105.018315008584,28.4944770711242" />
+                  <mssgle:LineSegment
+                    End="-105.018315008584,53.012217986053" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="359.333333333333,155.352941251544">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="187.622710632442,58.742987216822"
+              Start="0,0"
+              End="187.622710632442,51.242987216822">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.7783178564604" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,19.7783178564604"
+                    Point2="0,23.7783178564604"
+                    Point3="4,23.7783178564604" />
+                  <mssgle:LineSegment
+                    End="183.622710632442,23.7783178564604" />
+                  <mssgle:CubicBezierSegment
+                    Point1="183.622710632442,23.7783178564604"
+                    Point2="187.622710632442,23.7783178564604"
+                    Point3="187.622710632442,27.7783178564604" />
+                  <mssgle:LineSegment
+                    End="187.622710632442,51.242987216822" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="78.5700076599709,28.7783178564604,30.4826953125,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Import Project Dimension">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="121,42"
+          Id="Package\Import Project Dimension\Union All"
+          TopLeft="1293.5,563" />
+        <NodeLayout
+          Size="197,42"
+          Id="Package\Import Project Dimension\Row Count -Insert Errors"
+          TopLeft="1267.5,875.5" />
+        <NodeLayout
+          Size="203,42"
+          Id="Package\Import Project Dimension\Row Count - Unchanged 1"
+          TopLeft="1620,259.5" />
+        <NodeLayout
+          Size="162,42"
+          Id="Package\Import Project Dimension\Row Count - New 1"
+          TopLeft="1293,424.5" />
+        <NodeLayout
+          Size="209,42"
+          Id="Package\Import Project Dimension\Slowly Changing Dimension 1"
+          TopLeft="1249.5,257" />
+        <NodeLayout
+          Size="193,42"
+          Id="Package\Import Project Dimension\Row Count - Historical 1"
+          TopLeft="980,292" />
+        <NodeLayout
+          Size="215,42"
+          Id="Package\Import Project Dimension\Read from S2_V_PW_Project"
+          TopLeft="1261.5,19" />
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Import Project Dimension\Derived Column 2"
+          TopLeft="1272.5,665" />
+        <NodeLayout
+          Size="226,42"
+          Id="Package\Import Project Dimension\Insert Destination - Atomic DW"
+          TopLeft="1244.5,782" />
+        <NodeLayout
+          Size="193,42"
+          Id="Package\Import Project Dimension\Row Count - changing 1"
+          TopLeft="1523,365.5" />
+        <NodeLayout
+          Size="154,42"
+          Id="Package\Import Project Dimension\Derived Column 4"
+          TopLeft="1296,175" />
+        <NodeLayout
+          Size="172,42"
+          Id="Package\Import Project Dimension\Derived Column 1 1"
+          TopLeft="1027.5,409" />
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Import Project Dimension\Derived Column 3 1"
+          TopLeft="1529,458.5" />
+        <NodeLayout
+          Size="260,42"
+          Id="Package\Import Project Dimension\OLE DB Command - expire old records"
+          TopLeft="1001,525" />
+        <NodeLayout
+          Size="296,42"
+          Id="Package\Import Project Dimension\OLE DB Command 1 - Update existing records"
+          TopLeft="1568.5,564" />
+        <NodeLayout
+          Size="166,42"
+          Id="Package\Import Project Dimension\Count records in 1"
+          TopLeft="1291,92.5" />
+        <EdgeLayout
+          Id="Package\Import Project Dimension.Paths[OLE DB Command Output]"
+          TopLeft="1261,546">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="32.5,38"
+              Start="0,0"
+              End="25,38">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="12.25,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="12.25,0"
+                    Point2="16.25,0"
+                    Point3="16.25,4" />
+                  <mssgle:LineSegment
+                    End="16.25,34" />
+                  <mssgle:CubicBezierSegment
+                    Point1="16.25,34"
+                    Point2="16.25,38"
+                    Point3="20.25,38" />
+                  <mssgle:LineSegment
+                    End="25,38" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Import Project Dimension.Paths[New Output]"
+          TopLeft="1320.5,299">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="53.5,125.5"
+              Start="0,0"
+              End="53.5,118">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,46.7720797720798" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,46.7720797720798"
+                    Point2="0,50.7720797720798"
+                    Point3="4,50.7720797720798" />
+                  <mssgle:LineSegment
+                    End="49.5,50.7720797720798" />
+                  <mssgle:CubicBezierSegment
+                    Point1="49.5,50.7720797720798"
+                    Point2="53.5,50.7720797720798"
+                    Point3="53.5,54.7720797720798" />
+                  <mssgle:LineSegment
+                    End="53.5,118" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-0.341386718750002,55.7720797720798,54.1827734375,11.43359375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Import Project Dimension.Paths[Historical Attribute Inserts Output]"
+          TopLeft="1249.5,278">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-76.5,35"
+              Start="0,0"
+              End="-69,35">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-34.25,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-34.25,0"
+                    Point2="-38.25,0"
+                    Point3="-38.25,4" />
+                  <mssgle:LineSegment
+                    End="-38.25,31" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-38.25,31"
+                    Point2="-38.25,35"
+                    Point3="-42.25,35" />
+                  <mssgle:LineSegment
+                    End="-69,35" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-113.30638671875,-17.609375,150.1127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Import Project Dimension.Paths[Derived Column Output3]"
+          TopLeft="1610.5,500.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="106,63.5"
+              Start="0,0"
+              End="106,56">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,27.75" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,27.75"
+                    Point2="0,31.75"
+                    Point3="4,31.75" />
+                  <mssgle:LineSegment
+                    End="102,31.75" />
+                  <mssgle:CubicBezierSegment
+                    Point1="102,31.75"
+                    Point2="106,31.75"
+                    Point3="106,35.75" />
+                  <mssgle:LineSegment
+                    End="106,56" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Import Project Dimension.Paths[Derived Column Output2]"
+          TopLeft="1373,217">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-19,40"
+              Start="0,0"
+              End="-19,32.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16"
+                    Point2="0,20"
+                    Point3="-4,20" />
+                  <mssgle:LineSegment
+                    End="-15,20" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-15,20"
+                    Point2="-19,20"
+                    Point3="-19,24" />
+                  <mssgle:LineSegment
+                    End="-19,32.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Import Project Dimension.Paths[Derived Column Output1]"
+          TopLeft="1113.5,451">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="17.5,74"
+              Start="0,0"
+              End="17.5,66.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,33"
+                    Point2="0,37"
+                    Point3="4,37" />
+                  <mssgle:LineSegment
+                    End="13.5,37" />
+                  <mssgle:CubicBezierSegment
+                    Point1="13.5,37"
+                    Point2="17.5,37"
+                    Point3="17.5,41" />
+                  <mssgle:LineSegment
+                    End="17.5,66.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Import Project Dimension.Paths[Derived Column Output]"
+          TopLeft="1355.75,707">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,75"
+              Start="0,0"
+              End="0,67.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,67.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Import Project Dimension.Paths[Changing Attribute Updates Output]"
+          TopLeft="1387.5,299">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="232,66.5"
+              Start="0,0"
+              End="232,59">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.9031339031339" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22.9031339031339"
+                    Point2="0,26.9031339031339"
+                    Point3="4,26.9031339031339" />
+                  <mssgle:LineSegment
+                    End="228,26.9031339031339" />
+                  <mssgle:CubicBezierSegment
+                    Point1="228,26.9031339031339"
+                    Point2="232,26.9031339031339"
+                    Point3="232,30.9031339031339" />
+                  <mssgle:LineSegment
+                    End="232,59" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="37.46609375,31.9031339031339,157.0678125,11.6630859375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Import Project Dimension.Paths[Union All Output 1]"
+          TopLeft="1354,605">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Import Project Dimension.Paths[Unchanged Output]"
+          TopLeft="1458.5,279.25">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="161.5,0"
+              Start="0,0"
+              End="154,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="154,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="34.79966796875,5,84.4006640625,11.6630859375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Import Project Dimension.Paths[Row Count Output 13]"
+          TopLeft="1076.5,334">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="37,75"
+              Start="0,0"
+              End="37,67.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,33.5"
+                    Point2="0,37.5"
+                    Point3="4,37.5" />
+                  <mssgle:LineSegment
+                    End="33,37.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="33,37.5"
+                    Point2="37,37.5"
+                    Point3="37,41.5" />
+                  <mssgle:LineSegment
+                    End="37,67.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Import Project Dimension.Paths[Row Count Output 12]"
+          TopLeft="1619.5,407.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-9,51"
+              Start="0,0"
+              End="-9,43.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,21.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,21.5"
+                    Point2="0,25.5"
+                    Point3="-4,25.5" />
+                  <mssgle:LineSegment
+                    End="-5,25.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-5,25.5"
+                    Point2="-9,25.5"
+                    Point3="-9,29.5" />
+                  <mssgle:LineSegment
+                    End="-9,43.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Import Project Dimension.Paths[Row Count Output 11]"
+          TopLeft="1373.5,134.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,40.5"
+              Start="0,0"
+              End="0,33">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Import Project Dimension.Paths[Row Count Output 1]"
+          TopLeft="1373.41666666667,466.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,96.5"
+              Start="0,0"
+              End="0,89">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,89" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Import Project Dimension.Paths[OLE DB Source Output]"
+          TopLeft="1371.5,61">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,31.5"
+              Start="0,0"
+              End="0,24">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Import Project Dimension.Paths[OLE DB Destination Error Output]"
+          TopLeft="1357.5,824">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="8.5,51.5"
+              Start="0,0"
+              End="8.5,44">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,21.75" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,21.75"
+                    Point2="0,25.75"
+                    Point3="4,25.75" />
+                  <mssgle:LineSegment
+                    End="4.5,25.75" />
+                  <mssgle:CubicBezierSegment
+                    Point1="4.5,25.75"
+                    Point2="8.5,25.75"
+                    Point3="8.5,29.75" />
+                  <mssgle:LineSegment
+                    End="8.5,44" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-68.95890625,30.75,146.4178125,11.43359375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Import Project Dimension\Read from S2_V_PW_Project">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Import Project Dimension\Insert Destination - Atomic DW">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
